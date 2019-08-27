@@ -1,0 +1,17 @@
+site_name: protocols
+site_url: https://baillielab.net
+# bootstrap4 mkdocs readthedocs cinder
+theme:
+  name: cinder
+  #name: bootstrap386
+  custom_dir: themes/baillielab_mods
+# set `plugins: - search` to enable search, or `plugins: []` to disable
+plugins: []
+extra_templates: null
+markdown_extensions:
+    - pymdownx.extrarawhtml
+    - markdown_include.include:
+        base_path: docs
+# nav tree
+nav:
+  - Home: index.md
