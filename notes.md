@@ -12,7 +12,7 @@ pip install pymdown-extensions
 pip install mkdocs-cinder
 pip install mkdocs-bootstrap386
 
-
+pip install pdfminer.six
 
 
 

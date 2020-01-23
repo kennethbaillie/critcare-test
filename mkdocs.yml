@@ -1,5 +1,6 @@
-site_name: protocols
-site_url: https://baillielab.net
+site_name: critical care guidelines 
+site_url: https://critcare.net
+google_analytics: ['UA-31433459-6', '']
 # bootstrap4 mkdocs readthedocs cinder
 theme:
   name: cinder

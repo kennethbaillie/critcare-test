@@ -1,14 +1,18 @@
-﻿#!/opt/local/bin/python
-# -*- coding: UTF-8 -*-
-#version 2
-
 import os
+import sys
 import platform
 import subprocess
+
 #-----------------------------
 sourcedir = os.path.expanduser("~/Dropbox/6_websites/rie_app/site/")
 extradir = os.path.expanduser("~/Dropbox/6_websites/rie_app/extradir/")
-destination = "sidies:/home/borismit/public_html/rie.app/"
+secure_source = os.path.expanduser("~/Dropbox/6_websites/rie_app/secure/")
+#-----------------------------
+destination1 = "sidies:/home/borismit/public_html/rie.app/"
+secure_destination1 = os.path.expanduser("sidies:/home/borismit/.htpasswds/public_html/rie.app/")
+#-----------------------------
+destination2 = "sidies:/home/borismit/public_html/critcare.net/"
+secure_destination2 = os.path.expanduser("sidies:/home/borismit/.htpasswds/public_html/critcare.net/")
 #-----------------------------
 scriptpath = os.path.dirname(os.path.realpath(__file__))
 #-----------------------------
@@ -26,9 +30,6 @@ class cd:
         os.chdir(self.savedPath)
 #-----------------------------
 with cd(scriptpath):
-	cmd = "python {}".format(os.path.join(scriptpath, 'makelist.py'))
-	subprocess.call(cmd, shell=True)
-
 	cmd = "{} build".format(mkdocs)
 	subprocess.call(cmd, shell=True)
 
@@ -36,8 +37,29 @@ with cd(scriptpath):
 		cmd = "rsync --update -avzp {} {}".format(extradir, sourcedir)
 		subprocess.call(cmd, shell=True)
 
-	cmd = "rsync -avzp {} -e ssh {} --rsync-path /home/borismit/rsync/rsync-3.1.2/rsync".format(sourcedir, destination)
-	subprocess.call(cmd, shell=True)
 	#-----------------------------
+	cmd = "rsync -avzp {} -e ssh {} --rsync-path /home/borismit/rsync/rsync-3.1.2/rsync".format(sourcedir, destination1)
+	subprocess.call(cmd, shell=True)
+
+	if len(secure_source) > 1:
+		cmd = "rsync -avzp {} -e ssh {}  --rsync-path /home/borismit/rsync/rsync-3.1.2/rsync ".format(secure_source, secure_destination1)
+		subprocess.call(cmd, shell=True)
+	#-----------------------------
+
+	cmd = "rsync -avzp {} -e ssh {} --rsync-path /home/borismit/rsync/rsync-3.1.2/rsync".format(sourcedir, destination2)
+	subprocess.call(cmd, shell=True)
+
+	if len(secure_source) > 1:
+		cmd = "rsync -avzp {} -e ssh {}  --rsync-path /home/borismit/rsync/rsync-3.1.2/rsync ".format(secure_source, secure_destination2)
+		subprocess.call(cmd, shell=True)
+	#-----------------------------
+
+
+
+
+
+
+
+
 
 
