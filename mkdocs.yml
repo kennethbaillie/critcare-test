@@ -1,5 +1,6 @@
-site_name: critical care guidelines 
+site_name: critical care guidelines
 site_url: https://critcare.net
+site_dir: /tmp/rieapp_site
 google_analytics: ['UA-31433459-6', '']
 # bootstrap4 mkdocs readthedocs cinder
 theme:
@@ -10,9 +11,10 @@ theme:
 plugins: []
 extra_templates: null
 markdown_extensions:
-    - pymdownx.extrarawhtml
-    - markdown_include.include:
-        base_path: docs
+  - md_in_html
+  - markdown_include.include:
+      base_path: docs
+
 # nav tree
 nav:
   - Home: index.md

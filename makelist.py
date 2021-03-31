@@ -73,10 +73,10 @@ def add_pdf_to_search(thisfile):
             'content': get_unique_words(readpdf(thisfile)), # this is the slow bit
             })
 
-def accept(filename):
-    if filename.startswith('.') or filename.startswith('offline'):
+def accept(file_or_dir_name):
+    if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline'):
         return False
-    if filename.strip() in excluded:
+    if file_or_dir_name.strip() in excluded:
         return False
     return True
 
@@ -88,7 +88,7 @@ def makeid(thisname):
 
 def formatdir(thisdir, depth=0):
     text = ''
-    for entry in os.listdir(thisdir):
+    for entry in sorted(os.listdir(thisdir)):
         if os.path.isdir(os.path.join(thisdir, entry)):
             #text+=("<h5 style='margin-left:{}em;'>{}:</h5><ul class='list-group'>\n{}\n</ul>\n".format(depth+1, fixname(entry), formatdir(os.path.join(thisdir, entry), depth+1)))
             text+=('''
@@ -116,7 +116,20 @@ def formatdir(thisdir, depth=0):
 
         else:
             if accept(entry):
-                if use_viewerjs:
+                if entry.endswith('.txt'):
+                    print ("h:", entry)
+                    with open(os.path.join(thisdir,entry)) as f:
+                        filecontents = f.read()
+                    text+=('''
+                        <a href='{}'>
+                            <li class='list-group-item' style='margin-left:{}em;'>{}</li>
+                        </a>
+                        '''.format(
+                            filecontents,
+                            depth,
+                            fixname(entry))
+                            )
+                elif use_viewerjs:
                     text+=('''
                         <a href='ViewerJS/#../{}'>
                             <li class='list-group-item' style='margin-left:{}em;'>{}</li>
@@ -149,8 +162,12 @@ outfiletext = ""
 outfiletext += ('<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">\n')
 i=0
 uncategorised = []
+
 topdirlist = pin_to_top + [x for x in sorted(os.listdir(args.dir)) if x not in pin_to_top]
 for d in topdirlist:
+    if not(accept(d)):
+        print ("Skipping:", d)
+        continue
     if os.path.isdir(os.path.join(args.dir, d)):
         outfiletext += ('''
             <div class="panel panel-default">

@@ -1,9 +1,0 @@
-AuthType Basic
-AuthName "protocols"
-AuthUserFile "/home/borismit/.htpasswds/public_html/rie.app/passwd"
-require valid-user
-
-RewriteCond %{HTTPS} !on
-RewriteCond %{THE_REQUEST} ^(GET|HEAD)\ ([^\ ]+)
-RewriteRule ^ https://%{HTTP_HOST}%2 [L,R=301]
-

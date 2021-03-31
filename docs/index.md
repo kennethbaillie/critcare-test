@@ -1,6 +1,6 @@
 ---
-Title: critical care guidelines
-canonical_url: baillielab.net
+Title: protocols access system
+canonical_url: critcare.net
 disable_toc: true
 ---
 
@@ -16,98 +16,35 @@ disable_toc: true
   display:list-item;
   list-style-type: square;
 }
+.container {
+  /*
+    redefine bootstrap container
+    to have padding 0
+    in order to make
+    best use of screen space
+  */
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
 </style>
 
-
-<p class='small' style="color:red;">*DEMO ONLY. Protocols out of date*</p>
 
 <p>Search: <input id="search" type="text" placeholder="enter search term"></p>
 
 <div id="results"></div>
 
-<script>
-	var lunrIndex, $results, documents;
-
-    function initLunr() {
-      // retrieve the index file
-      $.getJSON("index.json")
-        .done(function(index) {
-            documents = index;
-
-            lunrIndex = lunr(function(){
-              this.ref('href')
-              this.field('content')
-              this.field("title", {
-                  boost: 10
-              });
-
-              documents.forEach(function(doc) {
-                try {
-                  this.add(doc)
-                } catch (e) {}
-              }, this)
-            })
-        })
-        .fail(function(jqxhr, textStatus, error) {
-            var err = textStatus + ", " + error;
-            console.error("Error getting Lunr index file:", err);
-        });
-    }
-
-    function search(query) {
-      return lunrIndex.search(query).map(function(result) {
-        return documents.filter(function(page) {
-          try {
-            return page.href === result.ref;
-          } catch (e) {
-            console.log('whoops')
-          }
-        })[0];
-      });
-    }
-
-    function renderResults(results) {
-      if (!results.length) {
-        return;
-      }
-      // show first twenty results
-      results.slice(0, 20).forEach(function(result) {
-        var $result = $("<li class='searchresult'>");
-        $result.append($("<a>", {
-          href: result.href,
-          text: result.title
-        }));
-        $results.append($result);
-      });
-    }
-
-    function initUI() {
-      $results = $("#results");
-
-      $("#search").keyup(function(){
-        // empty previous results
-        $results.empty();
-        // trigger search when at least two chars provided.
-        var query = $(this).val();
-        if (query.length < 2) {
-          return;
-        }
-        var results = search(query);
-        renderResults(results);
-      });
-    }
-
-    initLunr();
-    initUI();
-
-</script>
-
-<div class="col-xs-12 col-md-6">
-{!list.html!}
+<div class="col-xs-12 col-md-6 col-lg-4">
+  {!list.html!}
 </div>
 
-<div class="col-xs-12 col-md-6">
-<p>
-  All of these guidelines can be found on the NHS Lothian intranet.
-</p>
+<div class="col-xs-12 col-md-6 col-lg-8">
+  <p>
+    All of these guidelines can be found on the <a href="http://intranet.lothian.scot.nhs.uk/Directory/CriticalCare/Pages"> NHS Lothian intranet.
+  </p>
 </div>
+
+<script src="search.js"></script>
+
