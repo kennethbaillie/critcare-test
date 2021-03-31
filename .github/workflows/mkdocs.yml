@@ -8,12 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Install dependencies
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: |
-        pip install mkdocs
-        pip install markdown-include
-        pip install mkdocs-cinder
 
-      - run: mkdocs gh-deploy --force
+        run: |
+          pip install setuptools
+          pip install wheel
+          pip install mkdocs
+          pip install markdown-include
+          pip install mkdocs-cinder
+
+      - name: Run mkdocs
+        run: mkdocs gh-deploy --force

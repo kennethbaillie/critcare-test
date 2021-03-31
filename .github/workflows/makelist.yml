@@ -27,10 +27,10 @@ jobs:
           pip install wheel
           pip install pdfminer.six
 
-      - name: Regenerate author page
+      - name: Make list
         run: python makelist.py
 
-      - name: Commit author page if changed
+      - name: Commit pages if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
