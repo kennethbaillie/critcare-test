@@ -176,6 +176,13 @@ i=0
 uncategorised = []
 
 edir = os.path.join(args.dir, "Emergencies")
+# clear emergencies
+for filename in os.listdir(edir):
+    cmd = 'rm "{}"'.format(os.path.join(edir,filename))
+    print (cmd)
+    subprocess.call(cmd, shell=True)
+
+# copy emergencies
 if os.path.exists(edir):
     for root, dirs, files in os.walk(args.dir):
        for name in files:
