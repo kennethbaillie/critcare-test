@@ -10,6 +10,7 @@ Section editors:
 - Diabetes and Glucose: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
 - Drugs: Tom Craven Thomas.Craven@ed.ac.uk
 - ECLS: Grant Price
+- Emergencies: Kenny Baillie j.k.baillie@ed.ac.uk
 - End of life care: Murray Blackstock murrayblackstock@nhs.net
 - Ethics and Law: Monika Beatty
 - GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk

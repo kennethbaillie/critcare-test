@@ -9,6 +9,10 @@ disable_toc: true
 <!-- https://lunrjs.com/guides/getting_started.html -->
 
 <style>
+.emergency{
+  color: red;
+}
+
 .searchresult{
   margin: 0 0 0 5px;
   font-size: smaller;
@@ -16,6 +20,7 @@ disable_toc: true
   display:list-item;
   list-style-type: square;
 }
+
 .container {
   /*
     redefine bootstrap container

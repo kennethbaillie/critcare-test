@@ -8,6 +8,7 @@ import re
 import os
 import sys
 import json
+import subprocess
 from io import StringIO
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
@@ -80,6 +81,12 @@ def accept(file_or_dir_name):
         return False
     return True
 
+def eclass(filename):
+    if "Emergency" in filename or "emergency" in filename or "Emergencies" in filename:
+        return "emergency"
+    else:
+        return ""
+
 def fixname(thisname):
     return thisname.replace("_"," ").split('.')[0]
 
@@ -97,7 +104,7 @@ def formatdir(thisdir, depth=0):
                 <div class='panel-group' id='{}'>
                     <div class='panel'>
                         <h5 style='margin-left:{}em;'>
-                            <a data-toggle='collapse' data-parent='#{}' href='#collapse{}'>
+                            <a class='{}' data-toggle='collapse' data-parent='#{}' href='#collapse{}'>
                                 {} &raquo;
                             </a>
                         </h5>
@@ -109,6 +116,7 @@ def formatdir(thisdir, depth=0):
                 '''.format(
                         makeid(entry),
                         depth+1,
+                        eclass(entry),
                         makeid(entry),
                         makeid(entry),
                         fixname(entry),
@@ -123,30 +131,33 @@ def formatdir(thisdir, depth=0):
                     with open(os.path.join(thisdir,entry)) as f:
                         filecontents = f.read()
                     text+=('''
-                        <a href='{}'>
+                        <a class='{}' href='{}'>
                             <li class='list-group-item' style='margin-left:{}em;'>{}</li>
                         </a>
                         '''.format(
+                            eclass(entry),
                             filecontents,
                             depth,
                             fixname(entry))
                             )
                 elif use_viewerjs:
                     text+=('''
-                        <a href='ViewerJS/#../{}'>
+                        <a class='{}' href='ViewerJS/#../{}'>
                             <li class='list-group-item' style='margin-left:{}em;'>{}</li>
                         </a>
                         '''.format(
+                            eclass(entry),
                             os.path.relpath(os.path.join(thisdir, entry), args.basedir),
                             depth,
                             fixname(entry))
                             )
                 else:
                     text+=('''
-                        <a href='{}'>
+                        <a class='{}' href='{}'>
                             <li class='list-group-item' style='margin-left:{}em;'>{}</li>
                         </a>
                         '''.format(
+                            eclass(entry),
                             os.path.relpath(os.path.join(thisdir, entry), args.basedir),
                             depth,
                             fixname(entry))
@@ -159,21 +170,32 @@ def formatdir(thisdir, depth=0):
 
 
 searchlist = []
-
 outfiletext = ""
 outfiletext += ('<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">\n')
 i=0
 uncategorised = []
 
-topdirlist = pin_to_top + [x for x in sorted(os.listdir(args.dir)) if x not in pin_to_top]
+edir = os.path.join(args.dir, "Emergencies")
+if os.path.exists(edir):
+    for root, dirs, files in os.walk(args.dir):
+       for name in files:
+            if eclass(name)=="emergency":
+                cmd = 'cp "{}" "{}"'.format(
+                    os.path.join(root, name),
+                    edir
+                    )
+                print (cmd)
+                subprocess.call(cmd, shell=True)
+
+topdirlist = [x for x in sorted(os.listdir(args.dir)) if x not in pin_to_top]
+topdirlist = pin_to_top + topdirlist
 for d in topdirlist:
     if not(accept(d)):
-        print ("Skipping:", d)
         continue
     if os.path.isdir(os.path.join(args.dir, d)):
         outfiletext += ('''
             <div class="panel panel-default">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
+                <a role="button" class="{}" data-toggle="collapse" data-parent="#accordion" href="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
                     <div class="panel-heading" role="tab" id="heading{}" style="background: #f5f5f5;">
                         <h4 class="panel-title">
                           {}
@@ -185,6 +207,7 @@ for d in topdirlist:
                 </div>
             </div>
           '''.format(
+                eclass(d),
                 i,
                 i,
                 i,
@@ -205,7 +228,7 @@ if len(uncategorised)>0:
     o.write("<div class='panel panel-default' style='margin-top:1em;'><ul class='list-group'>\n")
     for entry in uncategorised:
         if accept(entry):
-            o.write(("\t<a href='{}'><li class='list-group-item'>{}</li></a>\n".format(os.path.relpath(os.path.join(args.dir, entry), args.basedir), fixname(entry))))
+            o.write(("\t<a class='{}' href='{}'><li class='list-group-item'>{}</li></a>\n".format(eclass(entry), os.path.relpath(os.path.join(args.dir, entry), args.basedir), fixname(entry))))
             add_pdf_to_search(os.path.join(args.dir, entry))
     o.write('</ul></div>\n')
 
