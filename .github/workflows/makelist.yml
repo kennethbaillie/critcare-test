@@ -25,6 +25,7 @@ jobs:
         run: |
           pip install setuptools
           pip install wheel
+          pip install pdfminer
 
       - name: Regenerate author page
         run: python makelist.py
