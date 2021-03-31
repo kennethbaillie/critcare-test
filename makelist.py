@@ -89,6 +89,8 @@ def makeid(thisname):
 def formatdir(thisdir, depth=0):
     text = ''
     for entry in sorted(os.listdir(thisdir)):
+        if not accept(entry):
+            continue
         if os.path.isdir(os.path.join(thisdir, entry)):
             #text+=("<h5 style='margin-left:{}em;'>{}:</h5><ul class='list-group'>\n{}\n</ul>\n".format(depth+1, fixname(entry), formatdir(os.path.join(thisdir, entry), depth+1)))
             text+=('''

@@ -1,4 +1,4 @@
-site_name: critical care guidelines
+site_name: NHS Lothian Critical Care Guidelines
 site_url: https://critcare.net
 site_dir: /tmp/rieapp_site
 google_analytics: ['UA-31433459-6', '']
@@ -6,7 +6,7 @@ google_analytics: ['UA-31433459-6', '']
 theme:
   name: cinder
   #name: bootstrap386
-  custom_dir: themes/baillielab_mods
+  custom_dir: themes/mods
 # set `plugins: - search` to enable search, or `plugins: []` to disable
 plugins: []
 extra_templates: null

@@ -1,6 +1,9 @@
 {
     "name": "Guidelines App",
     "short_name": "Guidelines",
+    "description": "NHS Lothian Critical Care Guidelines.",
+    "display": "fullscreen",
+    "start_url": "/",
     "icons": [
         {
             "src": "/img/favicon/android-chrome-192x192.png",
