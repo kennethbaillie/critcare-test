@@ -75,7 +75,7 @@ def add_pdf_to_search(thisfile):
             })
 
 def accept(file_or_dir_name):
-    if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline'):
+    if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline') or file_or_dir_name.startswith('_'):
         return False
     if file_or_dir_name.strip() in excluded:
         return False
