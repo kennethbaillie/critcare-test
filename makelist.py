@@ -8,6 +8,7 @@ import re
 import os
 import sys
 import json
+import shutil
 import subprocess
 from io import StringIO
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -19,10 +20,10 @@ scriptpath = os.path.dirname(os.path.realpath(__file__))
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'docs/criticalcare/'))
-parser.add_argument('-o', '--outputfile', default=os.path.join(scriptpath,'docs/list.html'))
-parser.add_argument('-i', '--indexfile', default=os.path.join(scriptpath,'docs/index.json'))
-parser.add_argument('-b', '--basedir', default=os.path.join(scriptpath,'docs'))
+parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/'))
+parser.add_argument('-p', '--publicdir', default=os.path.join(scriptpath,'docs/critcare_pub/criticalcare/'))
+parser.add_argument('-l', '--listfilename', default='list.html')
+parser.add_argument('-i', '--indexfilename', default='index.json')
 parser.add_argument('-f', '--fast', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
@@ -66,40 +67,67 @@ def get_unique_words(bigstring):
     bs = list(set([x for x in bs if len(x)>1]))
     return ' '.join(bs)
 
-def add_pdf_to_search(thisfile):
+def add_pdf_to_search(thisfile, thisbasedir):
     if not args.fast:
-        searchlist.append({
-            'href': os.path.relpath(thisfile, args.basedir),
+        return {
+            'href': os.path.relpath(thisfile, thisbasedir),
             'title': fixname(os.path.split(thisfile)[1]),
             'content': get_unique_words(readpdf(thisfile)), # this is the slow bit
-            })
+            }
 
-def accept(file_or_dir_name):
+def accept(thispath, file_or_dir_name):
     if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline') or file_or_dir_name.startswith('_'):
         return False
     if file_or_dir_name.strip() in excluded:
         return False
+    dirpath = os.path.join(thispath, file_or_dir_name)
+    if os.path.isdir(dirpath):
+        acceptable = [x for x in os.listdir(dirpath) if accept(dirpath, x)]
+        print (dirpath, acceptable)
+        if len(acceptable) == 0:
+            return False
     return True
 
 def eclass(filename):
-    if "Emergency" in filename or "emergency" in filename or "Emergencies" in filename:
-        return "emergency"
-    else:
-        return ""
+    emlabels = ["_em.", "_em_", "Emergency", "emergency", "Emergencies"]
+    for x in emlabels:
+        if x in filename:
+            return "emergency"
+    return ""
+
+def is_public(filepath):
+    thispath, filename = os.path.split(filepath)
+    if not(accept(thispath, filename)):
+        return False
+    if os.path.isdir(filepath):
+        return True
+    emlabels = ["_pub.", "_pub_"]
+    for x in emlabels:
+        if x in filename:
+            return True
+    return False
+
+def ignore_files(folder, files):
+    ''' for shutils copytree '''
+    return [f for f in files if not is_public(os.path.join(folder, f))]
 
 def fixname(thisname):
-    return thisname.replace("_"," ").split('.')[0]
+    labels = ["_em","_pub"]
+    for x in labels:
+        thisname = thisname.replace(x+".", ".")
+        thisname = thisname.replace(x+"_", "_")
+    thisname = thisname.replace("_"," ").split('.')[0]
+    return thisname
 
 def makeid(thisname):
     return ''.join(thisname.split())
 
-def formatdir(thisdir, depth=0):
+def formatdir(thisdir, basedir, sl, depth=0):
     text = ''
     for entry in sorted(os.listdir(thisdir)):
-        if not accept(entry):
+        if not accept(thisdir, entry):
             continue
         if os.path.isdir(os.path.join(thisdir, entry)):
-            #text+=("<h5 style='margin-left:{}em;'>{}:</h5><ul class='list-group'>\n{}\n</ul>\n".format(depth+1, fixname(entry), formatdir(os.path.join(thisdir, entry), depth+1)))
             text+=('''
                 <div class='panel-group' id='{}'>
                     <div class='panel'>
@@ -121,11 +149,11 @@ def formatdir(thisdir, depth=0):
                         makeid(entry),
                         fixname(entry),
                         makeid(entry),
-                        formatdir(os.path.join(thisdir, entry), depth+1))
+                        formatdir(os.path.join(thisdir, entry), basedir, sl, depth+1)
                         )
-
+                    )
         else:
-            if accept(entry):
+            if accept(thisdir, entry):
                 if entry.endswith('.txt'):
                     print ("h:", entry)
                     with open(os.path.join(thisdir,entry)) as f:
@@ -147,7 +175,7 @@ def formatdir(thisdir, depth=0):
                         </a>
                         '''.format(
                             eclass(entry),
-                            os.path.relpath(os.path.join(thisdir, entry), args.basedir),
+                            os.path.relpath(os.path.join(thisdir, entry), basedir),
                             depth,
                             fixname(entry))
                             )
@@ -158,22 +186,78 @@ def formatdir(thisdir, depth=0):
                         </a>
                         '''.format(
                             eclass(entry),
-                            os.path.relpath(os.path.join(thisdir, entry), args.basedir),
+                            os.path.relpath(os.path.join(thisdir, entry), basedir),
                             depth,
                             fixname(entry))
                             )
-                add_pdf_to_search(os.path.join(thisdir, entry))
+                sl.append(add_pdf_to_search(os.path.join(thisdir, entry), basedir))
     return text
+
+
+def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexfilename):
+    i=0
+    basedir = os.path.abspath(os.path.join(fromdir,"..")) # always one level up, by definition because of the links
+    searchlist = []
+    uncategorised = []
+    listfiletext = ""
+    listfiletext += ('<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">\n')
+    topdirlist = [x for x in sorted(os.listdir(fromdir)) if x not in pin_to_top]
+    topdirlist = pin_to_top + topdirlist
+    for d in topdirlist:
+        if not(accept(fromdir, d)):
+            continue
+        if os.path.isdir(os.path.join(fromdir, d)):
+            listfiletext += ('''
+                <div class="panel panel-default">
+                    <a role="button" class="{}" data-toggle="collapse" data-parent="#accordion" href="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
+                        <div class="panel-heading" role="tab" id="heading{}" style="background: #f5f5f5;">
+                            <h4 class="panel-title">
+                              {}
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapse{}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{}">
+                            {}
+                    </div>
+                </div>
+              '''.format(
+                    eclass(d),
+                    i,
+                    i,
+                    i,
+                    fixname(d),
+                    i,
+                    i,
+                    formatdir(os.path.join(fromdir, d), basedir, searchlist)
+                    ))
+            i+=1
+        else:
+            if accept(fromdir, d):
+                uncategorised.append(d)
+                searchlist.append(add_pdf_to_search(os.path.join(fromdir, d), basedir))
+    listfiletext += ('</div>\n')
+
+    if len(uncategorised)>0:
+        print (uncategorised)
+        o.write("<div class='panel panel-default' style='margin-top:1em;'><ul class='list-group'>\n")
+        for entry in uncategorised:
+            if accept(fromdir, entry):
+                o.write(("\t<a class='{}' href='{}'><li class='list-group-item'>{}</li></a>\n".format(eclass(entry), os.path.relpath(os.path.join(fromdir, entry), basedir), fixname(entry))))
+                searchlist.append(add_pdf_to_search(os.path.join(fromdir, entry), basedir))
+        o.write('</ul></div>\n')
+
+    with open(os.path.join(basedir,listfile),'w') as o:
+        o.write(listfiletext)
+
+    if not args.fast:
+        with open(os.path.join(basedir,indexfile),'w') as o:
+            json.dump(searchlist, o, indent=4)
+
+    print ('list made in {}'.format(basedir))
+
 #-----------------------------
 
 # https://codepen.io/marklsanders/pen/OPZXXv
-
-
-searchlist = []
-outfiletext = ""
-outfiletext += ('<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">\n')
-i=0
-uncategorised = []
 
 edir = os.path.join(args.dir, "Emergencies")
 # clear emergencies
@@ -181,7 +265,6 @@ for filename in os.listdir(edir):
     cmd = 'rm "{}"'.format(os.path.join(edir,filename))
     print (cmd)
     subprocess.call(cmd, shell=True)
-
 # copy emergencies
 if os.path.exists(edir):
     for root, dirs, files in os.walk(args.dir):
@@ -193,60 +276,16 @@ if os.path.exists(edir):
                     )
                 print (cmd)
                 subprocess.call(cmd, shell=True)
+makelist()
 
-topdirlist = [x for x in sorted(os.listdir(args.dir)) if x not in pin_to_top]
-topdirlist = pin_to_top + topdirlist
-for d in topdirlist:
-    if not(accept(d)):
-        continue
-    if os.path.isdir(os.path.join(args.dir, d)):
-        outfiletext += ('''
-            <div class="panel panel-default">
-                <a role="button" class="{}" data-toggle="collapse" data-parent="#accordion" href="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
-                    <div class="panel-heading" role="tab" id="heading{}" style="background: #f5f5f5;">
-                        <h4 class="panel-title">
-                          {}
-                        </h4>
-                    </div>
-                </a>
-                <div id="collapse{}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{}">
-                        {}
-                </div>
-            </div>
-          '''.format(
-                eclass(d),
-                i,
-                i,
-                i,
-                fixname(d),
-                i,
-                i,
-                formatdir(os.path.join(args.dir, d))
-                ))
-        i+=1
-    else:
-        if os.path.exists(os.path.join(args.dir, d)) and accept(d):
-            uncategorised.append(d)
-            add_pdf_to_search(os.path.join(args.dir, d))
-outfiletext += ('</div>\n')
-
-if len(uncategorised)>0:
-    print (uncategorised)
-    o.write("<div class='panel panel-default' style='margin-top:1em;'><ul class='list-group'>\n")
-    for entry in uncategorised:
-        if accept(entry):
-            o.write(("\t<a class='{}' href='{}'><li class='list-group-item'>{}</li></a>\n".format(eclass(entry), os.path.relpath(os.path.join(args.dir, entry), args.basedir), fixname(entry))))
-            add_pdf_to_search(os.path.join(args.dir, entry))
-    o.write('</ul></div>\n')
-
-
-with open(args.outputfile,'w') as o:
-    o.write(outfiletext)
-
-if not args.fast:
-    with open(args.indexfile,'w') as o:
-        json.dump(searchlist, o, indent=4)
-
-print ('list made')
+# clear public folder
+for folder in os.listdir(args.publicdir):
+    cmd = 'rm -r "{}"'.format(os.path.join(args.publicdir,folder))
+    print (cmd)
+    subprocess.call(cmd, shell=True)
+# copy publicfiles
+if os.path.exists(args.publicdir):
+    shutil.copytree(args.dir, args.publicdir, symlinks=False, ignore=ignore_files, ignore_dangling_symlinks=False, dirs_exist_ok=True)
+    makelist(fromdir=args.publicdir)
 
 

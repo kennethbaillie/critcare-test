@@ -17,4 +17,4 @@ markdown_extensions:
 
 # nav tree
 nav:
-  - Home: index.md
+  - Home: index.html
