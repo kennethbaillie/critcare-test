@@ -45,6 +45,9 @@ disable_toc: true
 }
 </style>
 
+<p>
+  These are our public guidelines. If you are working in the unit please visit the <a href="https://critcare.net">full guidelines set here</a>.
+</p>
 
 <p>Search: <input id="search" type="text" placeholder="enter search term"></p>
 
@@ -55,9 +58,6 @@ disable_toc: true
 </div>
 
 <div class="col-xs-12 col-md-6 col-lg-8">
-  <p>
-    All of these guidelines can be found on the <a href="http://intranet.lothian.scot.nhs.uk/Directory/CriticalCare/Pages"> NHS Lothian intranet.
-  </p>
 </div>
 
 <script src="search.js"></script>

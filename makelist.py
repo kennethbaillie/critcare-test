@@ -37,7 +37,7 @@ def convert_pdf_to_txt(thisfile):
     retstr = StringIO()
     codec = 'utf-8'  # 'utf16','utf-8'
     laparams = LAParams()
-    device = TextConverter(rsrcmgr, retstr, codec=codec, laparams=laparams)
+    device = TextConverter(rsrcmgr, retstr, laparams=laparams)
     fp = open(thisfile, 'rb')
     interpreter = PDFPageInterpreter(rsrcmgr, device)
     password = ""
@@ -53,13 +53,18 @@ def convert_pdf_to_txt(thisfile):
     return str
 
 def readpdf(thisfile):
+    if not thisfile.endswith(".pdf"):
+        return ""
     try:
         return convert_pdf_to_txt(thisfile)
-    except:
+    except Exception as e:
+        print ("failed to convert to pdf:", thisfile)
+        print(e)
         return ""
 
 def get_unique_words(bigstring):
-    for char in ['\ufb01','\u00e2','\u2021','\u2013','\ufb02','\ufb02','\ufb00','-']:
+    deletelist = ['\ufb01','\u00e2','\u2021','\u2013','\ufb02','\ufb02','\ufb00','-','\u201c','\u201d']
+    for char in deletelist:
         bigstring = bigstring.replace(char,'')
     for char in ['\t','.','[',']','(',')','{','}','"',"'"]:
         bigstring = bigstring.replace(char,' ')
@@ -67,11 +72,19 @@ def get_unique_words(bigstring):
     bs = list(set([x for x in bs if len(x)>1]))
     return ' '.join(bs)
 
-def add_pdf_to_search(thisfile, thisbasedir):
+def add_pdf_to_search(thisfile, thisbasedir, already):
     if not args.fast:
+        thistitle = fixname(os.path.split(thisfile)[1])
+        alreadydic={}
+        for x in already:
+            try:
+                if x['title'] == thistitle:
+                    return
+            except:
+                continue
         return {
             'href': os.path.relpath(thisfile, thisbasedir),
-            'title': fixname(os.path.split(thisfile)[1]),
+            'title': thistitle,
             'content': get_unique_words(readpdf(thisfile)), # this is the slow bit
             }
 
@@ -83,7 +96,6 @@ def accept(thispath, file_or_dir_name):
     dirpath = os.path.join(thispath, file_or_dir_name)
     if os.path.isdir(dirpath):
         acceptable = [x for x in os.listdir(dirpath) if accept(dirpath, x)]
-        print (dirpath, acceptable)
         if len(acceptable) == 0:
             return False
     return True
@@ -190,7 +202,7 @@ def formatdir(thisdir, basedir, sl, depth=0):
                             depth,
                             fixname(entry))
                             )
-                sl.append(add_pdf_to_search(os.path.join(thisdir, entry), basedir))
+                sl.append(add_pdf_to_search(os.path.join(thisdir, entry), basedir, sl))
     return text
 
 
@@ -234,7 +246,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
         else:
             if accept(fromdir, d):
                 uncategorised.append(d)
-                searchlist.append(add_pdf_to_search(os.path.join(fromdir, d), basedir))
+                searchlist.append(add_pdf_to_search(os.path.join(fromdir, d), basedir, searchlist))
     listfiletext += ('</div>\n')
 
     if len(uncategorised)>0:
@@ -243,7 +255,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
         for entry in uncategorised:
             if accept(fromdir, entry):
                 o.write(("\t<a class='{}' href='{}'><li class='list-group-item'>{}</li></a>\n".format(eclass(entry), os.path.relpath(os.path.join(fromdir, entry), basedir), fixname(entry))))
-                searchlist.append(add_pdf_to_search(os.path.join(fromdir, entry), basedir))
+                searchlist.append(add_pdf_to_search(os.path.join(fromdir, entry), basedir, searchlist))
         o.write('</ul></div>\n')
 
     with open(os.path.join(basedir,listfile),'w') as o:
@@ -254,6 +266,21 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
             json.dump(searchlist, o, indent=4)
 
     print ('list made in {}'.format(basedir))
+    # check for duplicate filenames:
+    allfiles={}
+    for root, dirs, files in os.walk(fromdir):
+        for name in files:
+            if accept(root,name):
+                if "Emergencies" not in root:
+                    try:
+                        allfiles[name]
+                        print ("\n******\nDuplicate filename found:\n\t{}\n\t{}\n".format(
+                                os.path.join(root, name),
+                                allfiles[name]
+                            ))
+                    except:
+                        pass
+                    allfiles[name]=os.path.join(root,name)
 
 #-----------------------------
 
