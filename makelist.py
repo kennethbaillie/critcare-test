@@ -288,13 +288,13 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
 # https://codepen.io/marklsanders/pen/OPZXXv
 
 edir = os.path.join(args.dir, emergencydir)
-# clear emergencies
-for filename in os.listdir(edir):
-    cmd = 'rm "{}"'.format(os.path.join(edir,filename))
-    print (cmd)
-    subprocess.call(cmd, shell=True)
-# copy emergencies
 if os.path.exists(edir):
+    # clear emergencies
+    for filename in os.listdir(edir):
+        cmd = 'rm "{}"'.format(os.path.join(edir,filename))
+        print (cmd)
+        subprocess.call(cmd, shell=True)
+    # copy emergencies
     for root, dirs, files in os.walk(args.dir):
        for name in files:
             if eclass(name)=="emergency":
