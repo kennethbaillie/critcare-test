@@ -265,7 +265,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
         with open(os.path.join(basedir,indexfile),'w') as o:
             json.dump(searchlist, o, indent=4)
 
-    print ('list made in {}'.format(basedir))
+    print ('list made in {}'.format(os.path.join(basedir,listfile)))
     # check for duplicate filenames:
     allfiles={}
     for root, dirs, files in os.walk(fromdir):
