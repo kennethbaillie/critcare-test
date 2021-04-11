@@ -20,16 +20,17 @@ scriptpath = os.path.dirname(os.path.realpath(__file__))
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/'))
-parser.add_argument('-p', '--publicdir', default=os.path.join(scriptpath,'docs/critcare_pub/criticalcare/'))
+parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'docs/test_secret/criticalcare/'))
+parser.add_argument('-p', '--publicdir', default=os.path.join(scriptpath,'docs/test_pub/criticalcare/'))
 parser.add_argument('-l', '--listfilename', default='list.html')
 parser.add_argument('-i', '--indexfilename', default='index.json')
 parser.add_argument('-f', '--fast', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
 use_viewerjs = False
+emergencydir = "Emergencies" # this will be pinned to the top and copies of emergency protocols uploaded to it
 excluded = ['Icon']
-pin_to_top = ['Emergencies']
+pin_to_top = [emergencydir]
 #-----------------------------
 
 def convert_pdf_to_txt(thisfile):
@@ -271,7 +272,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
     for root, dirs, files in os.walk(fromdir):
         for name in files:
             if accept(root,name):
-                if "Emergencies" not in root:
+                if emergencydir not in root:
                     try:
                         allfiles[name]
                         print ("\n******\nDuplicate filename found:\n\t{}\n\t{}\n".format(
@@ -286,7 +287,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
 
 # https://codepen.io/marklsanders/pen/OPZXXv
 
-edir = os.path.join(args.dir, "Emergencies")
+edir = os.path.join(args.dir, emergencydir)
 # clear emergencies
 for filename in os.listdir(edir):
     cmd = 'rm "{}"'.format(os.path.join(edir,filename))
