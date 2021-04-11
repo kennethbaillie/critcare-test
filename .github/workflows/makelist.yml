@@ -3,7 +3,7 @@ name: make list
 # Controls when the action will run.
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '*/10 * * * *'
 
   push:
 
@@ -54,3 +54,10 @@ jobs:
 
       - name: Run mkdocs
         run: mkdocs gh-deploy --force
+
+
+
+
+
+
+
