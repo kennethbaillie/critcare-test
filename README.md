@@ -1,6 +1,9 @@
 # critcare.github.io
 NHS Lothian Critical Care Guidelines
 
+### Contributors
+- Kenneth Baillie - mkdocs site, accordion html and search indexing script, dropbox download and parsing.
+
 ## Website updates
 
 These steps occur to update the website. They are specified in yml file in the github "actions" tab:
