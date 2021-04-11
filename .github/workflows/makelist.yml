@@ -34,8 +34,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add docs/list.html
-          git add docs/index.json
+          git add docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/list.html
+          git add docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/index.json
           git diff-index --quiet HEAD || git commit -m "Automatically re-generate list and index"
 
       - name: Push pages
