@@ -58,7 +58,7 @@ div.vertical {
 	<div class="horizontal">
 		<div class="vertical">
 			<div class="box">
-				<input style="margin: 16px; text-align: center;" id="username" type="password" placeholder="username" /> <br />
+				<input style="margin: 16px; text-align: center;" id="username" type="text" placeholder="username" /> <br />
 				<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
 				<button id="loginbutton" type="button">Enter</button>
 				<p id="wrongPassword" style="display: none">wrong password</p>
