@@ -38,13 +38,20 @@ jobs:
       - name: Make list
         run: python .scripts/makelist.py -d "../docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "../docs/critcare_pub/criticalcare/"
 
+      - name: list files (for debugging)
+        run: |
+          echo "-----"
+          ls docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare
+          echo "-----"
+          ls docs/critcare_pub/criticalcare
+          echo "-----"
+
       - name: Commit pages if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          ls docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/
-          git add docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/.
-          git add docs/critcare_pub/.
+          git add -v --force docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/*
+          git add -v --force docs/critcare_pub/*
           git diff-index --quiet HEAD || git commit -m "Automatically re-generate list and index"
 
       - name: Push pages
