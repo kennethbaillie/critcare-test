@@ -27,6 +27,9 @@ jobs:
           pip install wheel
           pip install pdfminer.six
           pip install requests
+          pip install mkdocs
+          pip install markdown-include
+          pip install mkdocs-cinder
 
       - name: Download files
         run: python download.py -s "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0" -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/"
@@ -48,3 +51,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run mkdocs
+        run: mkdocs gh-deploy --force
