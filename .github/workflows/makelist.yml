@@ -27,6 +27,9 @@ jobs:
           pip install wheel
           pip install pdfminer.six
 
+      - name: Upload files
+        run: python download.py -d "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0"
+
       - name: Make list
         run: python makelist.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "docs/critcare_pub/criticalcare/"
 
