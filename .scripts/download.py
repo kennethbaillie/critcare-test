@@ -18,6 +18,8 @@ args = parser.parse_args()
 def get_document_urls_from_url(folder_url):
     r = requests.get(folder_url)
     html = r.content.decode('utf8')
+    print (folder_url)
+    print (html)
     line = [l for l in html.split("\n") if "prefetch-shared_link_folder_entries-ShmodelFolderEntriesPrefetch-1" in l][0]
     json_data = line.split("responseReceived(")[1].replace(")});", "").replace('\\', '"').replace('""', '"')[1:-1]
     data = json.loads(json_data)
