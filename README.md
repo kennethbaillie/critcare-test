@@ -3,7 +3,7 @@ NHS Lothian Critical Care Guidelines
 
 ## Website updates
 
-These steps occur to update the website. They are specified in yml files in the github "actions" tab:
+These steps occur to update the website. They are specified in yml file in the github "actions" tab:
 - update files from dropbox
 - makelist - this makes a directory tree into an html menu, and makes a search index for pdfs
 - mkdocs - this runs mkdocs to create the live online branch
