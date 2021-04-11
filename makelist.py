@@ -252,12 +252,12 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
 
     if len(uncategorised)>0:
         print (uncategorised)
-        o.write("<div class='panel panel-default' style='margin-top:1em;'><ul class='list-group'>\n")
+        listfiletext += ("<div class='panel panel-default' style='margin-top:1em;'><ul class='list-group'>\n")
         for entry in uncategorised:
             if accept(fromdir, entry):
-                o.write(("\t<a class='{}' href='{}'><li class='list-group-item'>{}</li></a>\n".format(eclass(entry), os.path.relpath(os.path.join(fromdir, entry), basedir), fixname(entry))))
+                listfiletext += (("\t<a class='{}' href='{}'><li class='list-group-item'>{}</li></a>\n".format(eclass(entry), os.path.relpath(os.path.join(fromdir, entry), basedir), fixname(entry))))
                 searchlist.append(add_pdf_to_search(os.path.join(fromdir, entry), basedir, searchlist))
-        o.write('</ul></div>\n')
+        listfiletext += ('</ul></div>\n')
 
     with open(os.path.join(basedir,listfile),'w') as o:
         o.write(listfiletext)
