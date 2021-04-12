@@ -106,7 +106,7 @@ $("#password").keypress(function(e) {
 		loadPage($("#username").val()+$("#password").val());
 	}
 });
-$("#password").focus();
+$("#username").focus();
 
 </script>
 

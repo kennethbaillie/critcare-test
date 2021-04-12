@@ -300,8 +300,8 @@ for root, dirs, files in os.walk(args.dir):
    for name in files:
         if eclass(name)=="emergency":
             cmd = 'cp "{}" "{}"'.format(
-                os.path.join(root, name),
-                edir
+                    os.path.join(root, name),
+                    edir
                 )
             print (cmd)
             subprocess.call(cmd, shell=True)
