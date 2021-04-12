@@ -58,11 +58,14 @@ Examples:
 
 ## Adding videos or links
 
-You can add links to videos by copying the text files like this one:
-COVID19/videos/COVID Intubation Simulation Video.txt
-These files must end in .txt
+You can add links to videos by copying the text files like this one: `COVID19/videos/COVID Intubation Simulation Video.txt`
+
+These filenames must end in .txt
+
 The file name becomes the menu item.
+
 The contents of the file become the link target, so the only thing that should appear there is the plain text link, e.g.
+
 https://youtu.be/HDyKJ4FOX9o
 
 
