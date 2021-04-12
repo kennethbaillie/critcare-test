@@ -300,8 +300,8 @@ for root, dirs, files in os.walk(args.dir):
    for name in files:
         if eclass(name)=="emergency":
             cmd = 'cp "{}" "{}"'.format(
-                    os.path.join(root, name),
-                    edir
+                os.path.join(root, name),
+                edir
                 )
             print (cmd)
             subprocess.call(cmd, shell=True)
@@ -313,8 +313,14 @@ if os.path.exists(args.publicdir):
         cmd = 'rm -r "{}"'.format(os.path.join(args.publicdir,folder))
         print (cmd)
         subprocess.call(cmd, shell=True)
-    # copy publicfiles
-    shutil.copytree(args.dir, args.publicdir, symlinks=False, ignore=ignore_files, ignore_dangling_symlinks=False, dirs_exist_ok=True)
-    makelist(fromdir=args.publicdir)
+else:
+    os.mkdir(args.publicdir)
+# copy publicfiles
+shutil.copytree(args.dir, args.publicdir, symlinks=False, ignore=ignore_files, ignore_dangling_symlinks=False, dirs_exist_ok=True)
+makelist(fromdir=args.publicdir)
+
+
+
+
 
 
