@@ -29,3 +29,4 @@ The directory name has to change in the following places:
 - tidy up css on home screen to make it easier to enter on mobile
 - speed up file copying by checking for identical files/more recently updated files and avoiding copying them
 - speed up search indexing by storing extracted data from pdfs somewhere and only updating if file is changed/added/deleted
+- change webmanifest so that "add to home screen" directs straight to the guidelines, not thw password
