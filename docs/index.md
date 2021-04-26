@@ -85,7 +85,7 @@ function loadPage(pwd) {
 			
 			console.log(url)
 			location.protocol = "https:"
-			//window.location= url;
+			window.location= url;
 
 		},
 		error : function(xhr, ajaxOptions, thrownError) {
