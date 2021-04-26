@@ -68,7 +68,7 @@ div.vertical {
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+<script type="text/javascript" src="js/sha1.js"></script>
 <script type="text/javascript">
 "use strict";
 
@@ -82,8 +82,10 @@ function loadPage(pwd) {
 		url : url,
 		dataType : "html",
 		success : function(data) {
-
-			window.location= url;
+			
+			console.log(url)
+			location.protocol = "https:"
+			//window.location= url;
 
 		},
 		error : function(xhr, ajaxOptions, thrownError) {
@@ -106,7 +108,18 @@ $("#password").keypress(function(e) {
 		loadPage($("#username").val()+$("#password").val());
 	}
 });
-$("#username").focus();
+//$("#username").focus();
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
 
