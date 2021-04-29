@@ -1,82 +1,49 @@
----
-title: Local guidelines access system
-author: Kenneth Baillie
----
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Dropbox - 5xx</title>
+<link href="https://cfl.dropboxstatic.com/static/css/error.css" rel="stylesheet" type="text/css"/>
+<link rel="shortcut icon" href="https://cfl.dropboxstatic.com/static/images/favicon.ico"/>
 
-# Summary
+</head>
+<body>
+<div class="figure">
+<img src="https://cfl.dropboxstatic.com/static/images/illustration_catalog/sickbox-illo_m1.png" srcset="https://cfl.dropboxstatic.com/static/images/illustration_catalog/sickbox-illo_m1@2x.png 2x" alt="Error: 5xx"/>
+</div>
+<div id="errorbox">
+<h1>Error (5xx)</h1>Something went wrong. Don't worry, your files are still safe and the Dropboxers have been notified. Check out our <a href="https://www.dropbox.com/help">Help Center</a> and <a href="https://forums.dropbox.com">forums</a> for help, or head back to <a href="https://www.dropbox.com/home">home</a>.
+</div>
 
-This system is designed to make local guidelines easily accessible through a web browser on a mobile phone or other personal device. It can be accessed at:
-[critcare.net](https://critcare.net).
-```
-username: crit
-password: care
-```
+<script>
+message = {"ru": "\u003ch1\u003e\u041e\u0448\u0438\u0431\u043a\u0430 (5xx)\u003c/h1\u003e\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u0430\u044f \u043e\u0448\u0438\u0431\u043a\u0430. \u041d\u0435 \u0431\u0435\u0441\u043f\u043e\u043a\u043e\u0439\u0442\u0435\u0441\u044c, \u0432\u0430\u0448\u0438 \u0444\u0430\u0439\u043b\u044b \u043d\u0435 \u043f\u043e\u0441\u0442\u0440\u0430\u0434\u0430\u043b\u0438, \u0430 \u0441\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a\u0438 Dropbox \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u0438 \u0443\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u0435. \u041f\u0435\u0440\u0435\u0439\u0434\u0438\u0442\u0435 \u0432 \u003ca href=\"https://www.dropbox.com/help\"\u003e\u0441\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u044b\u0439 \u0446\u0435\u043d\u0442\u0440\u003c/a\u003e \u0438\u043b\u0438 \u043d\u0430 \u003ca href=\"https://forums.dropbox.com\"\u003e\u0444\u043e\u0440\u0443\u043c\u044b\u003c/a\u003e \u0434\u043b\u044f \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u043f\u043e\u043c\u043e\u0449\u0438 \u0438\u043b\u0438 \u0432\u0435\u0440\u043d\u0438\u0442\u0435\u0441\u044c \u043d\u0430 \u003ca href=\"https://www.dropbox.com/home\"\u003e\u0434\u043e\u043c\u0430\u0448\u043d\u044e\u044e \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443\u003c/a\u003e.", "fr": "\u003ch1\u003eErreur (5xx)\u003c/h1\u003eUn probl\u00e8me est survenu. Ne vous inqui\u00e9tez pas, vos fichiers sont toujours en s\u00e9curit\u00e9 et les Dropboxeurs ont \u00e9t\u00e9 avertis. Consultez notre \u003ca href=\"https://www.dropbox.com/help\"\u003ecentre d'assistance\u003c/a\u003e et nos \u003ca href=\"https://forums.dropbox.com\"\u003eforums\u003c/a\u003e pour obtenir de l'aide, ou retournez sur la \u003ca href=\"https://www.dropbox.com/home\"\u003epage d'accueil\u003c/a\u003e.", "zh_TW": "\u003ch1\u003e\u932f\u8aa4 (5xx)\u003c/h1\u003e\u767c\u751f\u932f\u8aa4\u3002\u5225\u64d4\u5fc3\uff0c\u60a8\u7684\u6a94\u6848\u5b89\u5168\u7121\u865e\uff0c\u5df2\u901a\u77e5 Dropbox \u54e1\u5de5\u3002\u8acb\u5230\u6211\u5011\u7684\u003ca href=\"https://www.dropbox.com/help\"\u003e\u8aaa\u660e\u4e2d\u5fc3\u003c/a\u003e\u548c\u003ca href=\"https://forums.dropbox.com\"\u003e\u8a0e\u8ad6\u5340\u003c/a\u003e\u53d6\u5f97\u5354\u52a9\uff0c\u6216\u662f\u56de\u5230\u003ca href=\"https://www.dropbox.com/home\"\u003e\u9996\u9801\u003c/a\u003e\u3002", "th_TH": "\u003ch1\u003e\u0e02\u0e49\u0e2d\u0e1c\u0e34\u0e14\u0e1e\u0e25\u0e32\u0e14 5xx\u003c/h1\u003e\u0e21\u0e35\u0e1a\u0e32\u0e07\u0e2d\u0e22\u0e48\u0e32\u0e07\u0e17\u0e35\u0e48\u0e44\u0e21\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07 \u0e44\u0e21\u0e48\u0e15\u0e49\u0e2d\u0e07\u0e40\u0e1b\u0e47\u0e19\u0e2b\u0e48\u0e27\u0e07 \u0e44\u0e1f\u0e25\u0e4c\u0e02\u0e2d\u0e07\u0e04\u0e38\u0e13\u0e22\u0e31\u0e07\u0e1b\u0e25\u0e2d\u0e14\u0e20\u0e31\u0e22\u0e41\u0e25\u0e30 Dropboxer \u0e44\u0e14\u0e49\u0e23\u0e31\u0e1a\u0e01\u0e32\u0e23\u0e41\u0e08\u0e49\u0e07\u0e40\u0e15\u0e37\u0e2d\u0e19\u0e41\u0e25\u0e49\u0e27 \u0e42\u0e1b\u0e23\u0e14\u0e14\u0e39\u0e23\u0e32\u0e22\u0e25\u0e30\u0e40\u0e2d\u0e35\u0e22\u0e14\u0e17\u0e35\u0e48 \u003ca href=\"https://www.dropbox.com/help\"\u003e\u0e28\u0e39\u0e19\u0e22\u0e4c\u0e04\u0e27\u0e32\u0e21\u0e0a\u0e48\u0e27\u0e22\u0e40\u0e2b\u0e25\u0e37\u0e2d\u003c/a\u003e \u0e41\u0e25\u0e30 \u003ca href=\"https://forums.dropbox.com\"\u003e\u0e1f\u0e2d\u0e23\u0e31\u0e21\u003c/a\u003e \u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e02\u0e2d\u0e04\u0e27\u0e32\u0e21\u0e0a\u0e48\u0e27\u0e22\u0e40\u0e2b\u0e25\u0e37\u0e2d \u0e2b\u0e23\u0e37\u0e2d\u0e01\u0e25\u0e31\u0e1a\u0e44\u0e1b\u0e17\u0e35\u0e48 \u003ca href=\"https://www.dropbox.com/home\"\u003e\u0e2b\u0e19\u0e49\u0e32\u0e41\u0e23\u0e01\u003c/a\u003e", "pt_BR": "\u003ch1\u003eErro ( 5xx ).\u003c/h1\u003eDeu algo errado, mas n\u00e3o se preocupe. Os seus arquivos permanecem em seguran\u00e7a, e a equipe do Dropbox j\u00e1 foi notificada. Confira nossa \u003ca href=\"https://www.dropbox.com/help\"\u003eCentral de ajuda\u003c/a\u003e e \u003ca href=\"https://forums.dropbox.com\"\u003enossos f\u00f3runs\u003c/a\u003e para obter ajuda ou volte para a \u003ca href=\"https://www.dropbox.com/home\"\u003ep\u00e1gina inicial\u003c/a\u003e.", "zh_CN": "\u003ch1\u003e\u9519\u8bef (5xx)\u003c/h1\u003e \u51fa\u73b0\u95ee\u9898\u3002\u522b\u62c5\u5fc3\uff0c\u60a8\u7684\u6587\u4ef6\u4ecd\u5b89\u5168\uff0c\u800c\u4e14 Dropbox \u5458\u5de5\u5df2\u6536\u5230\u901a\u77e5\u3002\u8bf7\u67e5\u9605\u6211\u4eec\u7684\u003ca href=\"https://www.dropbox.com/help\"\u003e\u5e2e\u52a9\u4e2d\u5fc3\u003c/a\u003e\u548c \u003ca href=\"https://forums.dropbox.com\"\u003e\u8bba\u575b\u003c/a\u003e\u83b7\u53d6\u5e2e\u52a9\uff0c\u6216\u8fd4\u56de \u003ca href=\"https://www.dropbox.com/home\"\u003e\u4e3b\u9875\u003c/a\u003e\u3002", "da_DK": "\u003ch1\u003eFejl (5xx)\u003c/h1\u003e Noget gik galt. Men ingen grund til bekymring, dine filer er sikre, og Dropboxerne har f\u00e5et besked. Tjek vores \u003ca href=\"https://www.dropbox.com/help\"\u003eHj\u00e6lpecenter\u003c/a\u003e og \u003ca href=\"https://forums.dropbox.com\"\u003eforummer\u003c/a\u003e for hj\u00e6lp, eller g\u00e5 tilbage til \u003ca href=\"https://www.dropbox.com/home\"\u003estart\u003c/a\u003e.", "de": "\u003ch1\u003eFehler (5xx)\u003c/h1\u003eEtwas ist schiefgelaufen. Ihre Dateien sind aber immer noch sicher und Dropbox wurde benachrichtigt. Schauen Sie sich im \u003ca href=\"https://www.dropbox.com/help\"\u003eHilfecenter\u003c/a\u003e und in den \u003ca href=\"https://forums.dropbox.com\"\u003eForen\u003c/a\u003e um, wenn Sie Hilfe ben\u00f6tigen, oder kehren Sie zur\u00fcck auf die \u003ca href=\"https://www.dropbox.com/home\"\u003eStartseite\u003c/a\u003e.", "ko": "\u003ch1\u003e\uc624\ub958(5xx)\u003c/h1\u003e\ubb38\uc81c\uac00 \ubc1c\uc0dd\ud588\uc2b5\ub2c8\ub2e4. \ud30c\uc77c\uc740 \uc548\uc804\ud558\uac8c \ubcf4\uad00\ub418\uc5b4 \uc788\uc73c\ub2c8 \uc548\uc2ec\ud558\uc138\uc694. \uc774 \ubb38\uc81c\ub294 Dropbox \ub2f4\ub2f9\uc790\uc5d0\uac8c \uc804\ub2ec\ub418\uc5c8\uc73c\uba70, \ub3c4\uc6c0\uc774 \ud544\uc694\ud55c \uacbd\uc6b0 Dropbox\uc758 \u003ca href=\"https://www.dropbox.com/help\"\u003e\ub3c4\uc6c0\ub9d0 \uc13c\ud130\u003c/a\u003e \ubc0f \u003ca href=\"https://forums.dropbox.com\"\u003e\ud3ec\ub7fc\u003c/a\u003e\uc744 \ucc38\uc870\ud558\uac70\ub098 \u003ca href=\"https://www.dropbox.com/home\"\u003e\ud648\u003c/a\u003e\uc73c\ub85c \ub3cc\uc544\uac00\uc138\uc694.", "it": "\u003ch1\u003eErrore (5xx)\u003c/h1\u003eQualcosa \u00e8 andato storto. Non ti preoccupare i tuoi file sono comunque al sicuro e i Dropboxer sono stati notificati. Consulta il \u003ca href=\"https://www.dropbox.com/help\"\u003eCentro assistenza\u003c/a\u003e e \u003ca href=\"https://forums.dropbox.com\"\u003ei forum\u003c/a\u003e per assistenza oppure torna alla \u003ca href=\"https://www.dropbox.com/home\"\u003ehomepage\u003c/a\u003e.", "ja": "\u003ch1\u003e\u30a8\u30e9\u30fc\uff085xx\uff09\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\u003c/h1\u003e\u30d5\u30a1\u30a4\u30eb\u306f\u5b89\u5168\u3067\u3059\u306e\u3067\u3054\u5b89\u5fc3\u304f\u3060\u3055\u3044\u3002Dropbox \u306b\u306f\u65e2\u306b\u901a\u77e5\u3055\u308c\u3066\u3044\u307e\u3059\u3002\u003ca href=\"https://www.dropbox.com/help\"\u003e\u30d8\u30eb\u30d7\u30bb\u30f3\u30bf\u30fc\u003c/a\u003e\u3084\u003ca href=\"https://forums.dropbox.com\"\u003e\u30d5\u30a9\u30fc\u30e9\u30e0\u003c/a\u003e\u3092\u53c2\u7167\u3059\u308b\u304b\u3001[\u003ca href=\"https://www.dropbox.com/home\"\u003e\u30db\u30fc\u30e0\u003c/a\u003e] \u30da\u30fc\u30b8\u306b\u623b\u3063\u3066\u304f\u3060\u3055\u3044\u3002", "uk_UA": "\u003ch1\u003e\u041f\u043e\u043c\u0438\u043b\u043a\u0430 (5xx)\u003c/h1\u003e\u0429\u043e\u0441\u044c \u043f\u0456\u0448\u043b\u043e \u043d\u0435 \u0442\u0430\u043a. \u041d\u0435 \u0445\u0432\u0438\u043b\u044e\u0439\u0442\u0435\u0441\u044f, \u0432\u0430\u0448\u0456 \u0444\u0430\u0439\u043b\u0438 \u0432 \u0431\u0435\u0437\u043f\u0435\u0446\u0456, \u0430 \u043f\u0440\u0430\u0446\u0456\u0432\u043d\u0438\u043a\u0438 Dropbox \u0443\u0436\u0435 \u0432 \u043a\u0443\u0440\u0441\u0456 \u043f\u043e\u0434\u0456\u0439. \u041f\u0435\u0440\u0435\u0433\u043b\u044f\u043d\u044c\u0442\u0435 \u003ca href=\"https://www.dropbox.com/help\"\u003e\u0426\u0435\u043d\u0442\u0440 \u0434\u043e\u0432\u0456\u0434\u043a\u0438\u003c/a\u003e \u0442\u0430 \u003ca href=\"https://forums.dropbox.com\"\u003e\u0444\u043e\u0440\u0443\u043c\u0438\u003c/a\u003e \u0430\u0431\u043e \u043f\u043e\u0432\u0435\u0440\u043d\u0456\u0442\u044c\u0441\u044f \u043d\u0430 \u003ca href=\"https://www.dropbox.com/home\"\u003e\u0433\u043e\u043b\u043e\u0432\u043d\u0443 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0443\u003c/a\u003e.", "nl_NL": "\u003ch1\u003eFout (5xx).\u003c/h1\u003eEr is iets misgegaan. Maak je geen zorgen, je bestanden zijn veilig en de Dropboxers zijn op de hoogte gesteld. Kijk in ons \u003ca href=\"https://www.dropbox.com/help\"\u003eHelpcentrum\u003c/a\u003e en de \u003ca href=\"https://forums.dropbox.com\"\u003eforums\u003c/a\u003e voor hulp of ga terug naar de \u003ca href=\"https://www.dropbox.com/home\"\u003estartpagina\u003c/a\u003e.", "pl": "\u003ch1\u003eB\u0142\u0105d (5xx)\u003c/h1\u003eWyst\u0105pi\u0142y problemy. Nie martw si\u0119, Twoje pliki s\u0105 nadal bezpieczne, a\u00a0pracownicy us\u0142ugi Dropbox zostali powiadomieni. Odwied\u017a \u003ca href=\"https://www.dropbox.com/help\"\u003eCentrum pomocy\u003c/a\u003e i\u00a0\u003ca href=\"https://forums.dropbox.com\"\u003efora\u003c/a\u003e, aby uzyska\u0107 pomoc, lub przejd\u017a do \u003ca href=\"https://www.dropbox.com/home\"\u003estrony g\u0142\u00f3wnej\u003c/a\u003e.", "sv_SE": "\u003ch1\u003eFel (5xx)\u003c/h1\u003e N\u00e5got gick fel. Oroa dig inte. Dina filer \u00e4r fortfarande s\u00e4kra och Dropboxare har meddelats. Kolla in v\u00e5rt \u003ca href=\"https://www.dropbox.com/help\"\u003eHj\u00e4lpcenter\u003c/a\u003e och \u003ca href=\"https://forums.dropbox.com\"\u003ev\u00e5ra forum\u003c/a\u003e f\u00f6r att f\u00e5 hj\u00e4lp eller g\u00e5 tillbaka till \u003ca href=\"https://www.dropbox.com/home\"\u003estartsidan.\u003c/a\u003e", "en_GB": "\u003ch1\u003eError (5xx)\u003c/h1\u003eSomething went wrong. Don't worry, your files are still safe and the Dropboxers have been notified. Check out our \u003ca href=\"https://www.dropbox.com/help\"\u003eHelp Centre\u003c/a\u003e and \u003ca href=\"https://forums.dropbox.com\"\u003eforums\u003c/a\u003e for help, or head back \u003ca href=\"https://www.dropbox.com/home\"\u003ehome\u003c/a\u003e.", "ms": "\u003ch1\u003eRalat (5xx)\u003c/h1\u003eAda sesuatu yang tidak kena. Jangan risau, fail masih selamat dan Dropboxer telah dimaklumkan. Lihat \u003ca href=\"https://www.dropbox.com/help\"\u003ePusat Bantuan\u003c/a\u003e dan \u003ca href=\"https://forums.dropbox.com\"\u003eforum\u003c/a\u003e kami untuk bantuan, atau kembali ke \u003ca href=\"https://www.dropbox.com/home\"\u003eutama\u003c/a\u003e.", "es_ES": "\u003ch1\u003eError (5xx)\u003c/h1\u003eSe ha producido un error. No te preocupes, los archivos est\u00e1n a salvo y los Dropboxers est\u00e1n al tanto. Visita nuestro \u003ca href=\"https://www.dropbox.com/help\"\u003eCentro de ayuda\u003c/a\u003e y los \u003ca href=\"https://forums.dropbox.com\"\u003eforos\u003c/a\u003e si necesitas que te echen una mano, o bien vuelve a la \u003ca href=\"https://www.dropbox.com/home\"\u003ep\u00e1gina principal\u003c/a\u003e.", "nb_NO": "\u003ch1\u003eFeilmelding (5xx)\u003c/h1\u003eNoe gikk galt. Ikke bekymre deg, filene dine er trygge og Dropbox er varslet. Sjekk ut v\u00e5rt \u003ca href=\"https://www.dropbox.com/help\"\u003ehjelpesenter\u003c/a\u003e og \u003ca href=\"https://forums.dropbox.com\"\u003efora\u003c/a\u003e for hjelp, eller g\u00e5 tilbake til \u003ca href=\"https://www.dropbox.com/home\"\u003ehjemmesiden\u003c/a\u003e.", "id": "\u003ch1\u003eKesalahan(5xx)\u003c/h1\u003eAda yang salah. Jangan cemas, file Anda tetap aman dan Dropboxer sudah diberi tahu. Kunjungi \u003ca href=\"https://www.dropbox.com/help\"\u003ePusat Bantuan\u003c/a\u003e dan \u003ca href=\"https://forums.dropbox.com\"\u003eforum\u003c/a\u003e kami untuk mendapatkan bantuan, atau kembalilah ke \u003ca href=\"https://www.dropbox.com/home\"\u003ehalaman awal\u003c/a\u003e.", "es": "\u003ch1\u003eError (5xx)\u003c/h1\u003eSe ha producido un error. No te preocupes, los archivos est\u00e1n a salvo y los Dropboxers est\u00e1n al tanto. Visita nuestro \u003ca href=\"https://www.dropbox.com/help\"\u003eCentro de ayuda\u003c/a\u003e y los \u003ca href=\"https://forums.dropbox.com\"\u003eforos\u003c/a\u003e si necesitas que te echen una mano, o bien vuelve a la \u003ca href=\"https://www.dropbox.com/home\"\u003ep\u00e1gina principal\u003c/a\u003e."};
+function read_cookie (name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1, c.length);
+            }
+            if (c.indexOf(nameEQ) === 0) {
+                return c.substring(nameEQ.length, c.length);
+            }
+        }
+        return null;
+}
+function localize() {
+    var locale = read_cookie('locale');
+    if (locale) {
+       var msg = message[locale];
+       if (msg) {
+           var elem = document.getElementById('errorbox');
+           if (elem) {
+               elem.innerHTML = msg;
+           }
+       }
+    }
+}
+localize();
+</script>
 
-Uploading and maintaining the guidelines is very easy - all that the editors and administrators need to do is maintain a dropbox folder containing the guidelines in each category. The folder names and file names are automatically converted into menu links and uploaded every 10 minutes.
-
-# Instructions for using Dropbox
-
-## Rules
-
-- Each folder has *one* editor. If it is you, arrange the contents of the folder as you want the files to appear online
-- Each guideline should appear only *once* in the dropbox. This is mitigate the chance of confusion/error
-- You can add subfolders but don't go crazy
-- Folder/Filenames will become the links
-
-## Getting started
-
-- The best way to do this is to install Dropbox on your own non-NHS computer or mobile phone. That way you can keep a local copy of all the documents in your folder, and make changes in seconds
-- if you already use dropbox, get access using the same email address and this folder will appear in you dropbox
-- Any changes you make to this dropbox will appear on critcare.net within 10mins but the search index is only updated once an hour, on the hour
-username: crit
-password: care
-(you may need to refresh your browser, or use incognito mode, to see these changes straight away)
-
-## Adding files
-
-- Put your pdf files into the right directory. They will be published online within 5 minutes. The search will be updated within 1 hour.
-- Your filename will become the menu title for your guideline. Do not include version numbers, dates, and try to avoid redundant words such as "guideline" or "protocol" unless they are necessary.
-- Send a copy of every new guideline for upload to the intranet: this is the master copy
-- Each guideline should appear *only once* in this site. Put it where you'd expect to find it.
-
-## Advanced use
-
-- any file with a name beginning with the word "offline" or an underscore "_" will be ignored by the app.
-- label emergency protocols by adding "_em" will be duplicated in the "Emergencies" folder and highlighted in red.
-- when you are ready to make a protocol public, add "_pub" to the end of the filename.
-
-Examples:
-- `Emergency Caesarean Section Action Cards_em.pdf` is flagged for the emergency section
-- `C-spine clearance flowchart and guidance_pub.pdf` is public
-- `Air_Embolism_em_pub.pdf` is both public and flagged as an emergency protocol
-
-
-## offline_DRAFTS folders
-
-- you have an `offline_DRAFTS` folder in every dropbox folder that you edit
-- use this to keep the editable (e.g. microsoft word) versions of every guideline that you are responsible for
-
-## Adding videos or links
-
-You can add links to videos by copying the text files like this one: `COVID19/videos/COVID Intubation Simulation Video.txt`
-
-These filenames must end in .txt
-
-The file name becomes the menu item.
-
-The contents of the file become the link target, so the only thing that should appear there is the plain text link, e.g.
-
-https://youtu.be/HDyKJ4FOX9o
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
