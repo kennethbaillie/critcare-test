@@ -10,17 +10,19 @@
     {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
     <!--<link rel="{{ 'img/favicon.ico'|url }}">-->
 
-    {% if "1a74f8f7b8b7e871b413c4697f68b4401fbacdf0" in page.canonical_url %}
-    <link rel="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/site.webmanifest" crossorigin="use-credentials">
-    <link rel="mask-icon" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    {% if page.canonical_url %}
+        {% if "1a74f8f7b8b7e871b413c4697f68b4401fbacdf0" in page.canonical_url %}
+            <link rel="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon.ico">
+            <link rel="apple-touch-icon" sizes="180x180" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon-16x16.png">
+            <link rel="manifest" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/site.webmanifest" crossorigin="use-credentials">
+            <link rel="mask-icon" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+            <link rel="shortcut icon" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon.ico">
+            <meta name="msapplication-TileColor" content="#da532c">
+            <meta name="msapplication-config" content="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/browserconfig.xml">
+            <meta name="theme-color" content="#ffffff">
+        {% endif %}
     {% endif %}
 
     {% block htmltitle %}
