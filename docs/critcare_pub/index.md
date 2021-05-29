@@ -1,6 +1,6 @@
 ---
 Title: protocols access system
-canonical_url: critcare.net
+canonical_url: critcare.net/critcare_pub
 disable_toc: true
 ---
 
