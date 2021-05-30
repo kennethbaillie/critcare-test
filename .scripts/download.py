@@ -29,40 +29,44 @@ def getfilenamefromdropbox(url):
     url = url.split('?')[0]
     return urllib.parse.unquote(url).split('/')[-1]
 
+def try_remove(thisfile):
+    try:
+        os.remove(thisfile)
+    except:
+        print ("Unable to remove this file ({}): {}".format(sys.exc_info()[0],thisfile))
+
 def download_files_from_dir(folder_url, dir_name, td):
     urls = get_document_urls_from_url(folder_url)
     if not os.path.exists(dir_name):
         os.makedirs(dir_name, exist_ok=True)
     deleted_files = [x for x in os.listdir(dir_name) if x not in [getfilenamefromdropbox(y) for y in urls] and not x.startswith(".")]
     for d in deleted_files:
-        try:
-            os.remove(os.path.join(dir_name, d))
-        except:
-            print ("Unable to remove this file ({}): {}".format(sys.exc_info()[0],os.path.join(dir_name, d)))
+        try_remove(os.path.join(dir_name, d))
         changes["deleted"][d] = 1
     for url in urls:
         filename = getfilenamefromdropbox(url)
-        print ("filename: ", filename)
+        tempfile = os.path.join(td, filename)
         destinationfile = os.path.join(dir_name, filename)
         if "." in filename:
-            tempfile = os.path.join(td, filename)
-            print("Downloading file:{}\nto location:{}".format(url, tempfile))
-            r = requests.get(url)
+            dl_url = url.split('?')[0] + '?dl=1' # changes dl=0 to dl=1 so that dropbox allows download
+            print("Downloading file:{}\nto location:{}".format(dl_url, tempfile))
+            r = requests.get(dl_url)
             with open(tempfile, 'wb') as f:
                 f.write(r.content)
+            # now check if the file exists or has changed
             if os.path.exists(destinationfile):
                 print (filecmp.cmp(tempfile, destinationfile))
                 if filecmp.cmp(tempfile, destinationfile):
                     print ("files identical")
                 else:
-                    print ("files not identical")
+                    print ("files modified")
                     shutil.copy2(tempfile, destinationfile)
-                    changes["changed"][destinationfile] = 1
+                    changes["modified"][destinationfile] = 1
             else:
                 print ("new file")
                 shutil.copy2(tempfile, destinationfile)
                 changes["new"][destinationfile] = 1
-            os.remove(tempfile)
+            try_remove(tempfile)
         else:
             # then this is a directory. Download the whole shebang
             destinationdir = os.path.join(dir_name, filename)
@@ -70,25 +74,27 @@ def download_files_from_dir(folder_url, dir_name, td):
             download_files_from_dir(url, destinationdir, td)
 #-----------------------------
 
-tempdir = os.path.join(args.destinationdir, "temp")
+tempdir = os.path.join(args.destinationdir, ".temp")
 if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
 
+changes = {
+    "deleted":{},
+    "modified":{},
+    "new":{},
+}
 changelog = os.path.join(args.destinationdir,".changes.json")
 if os.path.exists(changelog):
-    with open(changelog) as f:
-        changes = json.load(f)
-else:
-    changes = {
-        "deleted":{},
-        "changed":{},
-        "new":{},
-    }
+    try:   
+        with open(changelog) as f:
+            changes = json.load(f)
+    except:
+        pass
 
 download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
 
 with open(changelog,"w") as o:
-    changes = json.dump(o, indent=4)
+    json.dump(changes, o, indent=4)
 
 
 
