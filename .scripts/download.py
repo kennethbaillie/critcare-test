@@ -41,8 +41,9 @@ def download_files_from_dir(folder_url, dir_name, td):
         os.makedirs(dir_name, exist_ok=True)
     deleted_files = [x for x in os.listdir(dir_name) if x not in [getfilenamefromdropbox(y) for y in urls] and not x.startswith(".")]
     for d in deleted_files:
-        try_remove(os.path.join(dir_name, d))
-        changes["deleted"][d] = 1
+        dpath = os.path.join(dir_name, d)
+        try_remove(dpath)
+        changes["deleted"][dpath] = 1
     for url in urls:
         filename = getfilenamefromdropbox(url)
         tempfile = os.path.join(td, filename)
