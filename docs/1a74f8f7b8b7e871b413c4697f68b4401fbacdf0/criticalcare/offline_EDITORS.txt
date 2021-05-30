@@ -1,29 +1,30 @@
-Chief editor: Ross Paterson ross.paterson1@nhs.net
-
 Section editors:
+
+[online now]
+
 - Airway: Rosie Baruah
-- [Bedside Care: Michelle Jack]
-- [Burns: Murray Geddes]
-- COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
 - Cardiovascular: Stuart Gillon sgillon@me.com
+- COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
 - Delirium: Alastair Hay
-- Diabetes and Glucose: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
-- Drugs: Tom Craven Thomas.Craven@ed.ac.uk
+- Diabetes and Glucose: Gregor McNeill  Gregor.McNeill@nhslothian.scot.nhs.uk
 - ECLS: Grant Price
 - Emergencies: Kenny Baillie j.k.baillie@ed.ac.uk
 - End of life care: Murray Blackstock murrayblackstock@nhs.net
-- Ethics and Law: Monika Beatty
 - GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk
-- Infection and sepsis: ???
 - Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
 - Obstetrics: Jen Service jennifer.service@nhs.net
+
+[planned]
+
+- Post op care: Ally Gibson Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson82@gmail.com
 - Organ donation: Olly Robinson oliverrobinson@doctors.org.uk
-- Post op care: Ally Gibson Gibson, Alistair Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson82@gmail.com
 - Renal and urology: Olly Robinson oliverrobinson@doctors.org.uk
 - Respiratory: Neil Young neil.h.young@gmail.com
 - Transfer: Mark Dunn mjgdunn@googlemail.com
+- [Bedside Care: Michelle Jack]
+- [Burns: Murray Geddes]
+- Drugs: Tom Craven Thomas.Craven@ed.ac.uk
+- Ethics and Law: Monika Beatty
+- Infection and sepsis: ???
 
 Web app administration: Kenny Baillie j.k.baillie@ed.ac.uk
-
-
-
