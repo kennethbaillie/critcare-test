@@ -2,7 +2,7 @@
 NHS Lothian Critical Care Guidelines
 
 ### Contributors
-- Kenneth Baillie - mkdocs site, accordion html and search indexing script, dropbox download and parsing, automation on github.
+- Kenneth Baillie - mkdocs site, accordion html and search indexing script, dropbox download and parsing, automation on github, document comparison check.
 
 ## Website updates
 

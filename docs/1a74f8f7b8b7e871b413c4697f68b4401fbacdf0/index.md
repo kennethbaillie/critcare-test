@@ -69,8 +69,16 @@ disable_toc: true
 <script src="search.js"></script>
 
 <script>
-  // Code to handle install prompt on desktop
 
+if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('./sw.js').then(function(reg) {
+    console.log('Successfully registered service worker', reg);
+}).catch(function(err) {
+    console.warn('Error whilst registering service worker', err);
+});
+}
+
+// Code to handle install prompt on desktop
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
 addBtn.style.display = 'none';

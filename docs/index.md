@@ -105,7 +105,7 @@ $("#loginbutton").on("click", function() {
 $("#password").keypress(function(e) {
 	if (e.which == 13) {
 		//loadPage($("#password").val());
-		loadPage($("#username").val()+$("#password").val());
+		loadPage($.trim($("#username").val())+$.trim($("#password").val()));
 	}
 });
 //$("#username").focus();
