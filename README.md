@@ -2,7 +2,7 @@
 NHS Lothian Critical Care Guidelines
 
 ### Contributors
-- Kenneth Baillie - mkdocs site, accordion html and search indexing script, dropbox download and parsing, automation on github, document comparison check.
+- Kenneth Baillie - mkdocs site, accordion html and search indexing script, dropbox download and parsing, automation on github, document comparison check, web app installation.
 
 ## Website updates
 
@@ -13,9 +13,9 @@ These steps occur to update the website. They are specified in yml file in the g
 
 ## To change password
 The directory name has to change in the following places:
-- .github/workflows/makelist.yml
 - the actual dir itself
-- the /docs/index.md file
+- .github/workflows/makelist.yml
+- /docs/index.md
 - /themes/mods/base.html
 
 ## TODO
@@ -25,9 +25,5 @@ The directory name has to change in the following places:
 	- file size optimisation
 	- automatically read update dates from pdfs
 - improve search - maybe solr rather than lunr?
-- add "add to home screen" button
-- make downloadable
+- make downloadable using PWA & Service Worker
 - tidy up css on home screen to make it easier to enter on mobile
-- speed up file copying by checking for identical files/more recently updated files and avoiding copying them
-- speed up search indexing by storing extracted data from pdfs somewhere and only updating if file is changed/added/deleted
-- change webmanifest so that "add to home screen" directs straight to the guidelines, not thw password

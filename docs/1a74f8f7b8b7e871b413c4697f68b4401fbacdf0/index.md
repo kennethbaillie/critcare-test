@@ -62,6 +62,9 @@ disable_toc: true
 <div class="col-xs-12 col-md-6 col-lg-8">
   <button class="add-button">Add to home screen</button>
   <p>
+    For use by appropriately-trained critical care staff in NHS Lothian only.
+  </p>
+  <p>
     All of these guidelines can be found on the <a href="http://intranet.lothian.scot.nhs.uk/Directory/CriticalCare/Pages"> NHS Lothian intranet.
   </p>
 </div>
