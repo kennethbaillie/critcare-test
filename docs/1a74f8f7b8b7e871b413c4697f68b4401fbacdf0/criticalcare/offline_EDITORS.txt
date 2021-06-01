@@ -13,13 +13,13 @@ Section editors:
 - GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk
 - Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
 - Obstetrics: Jen Service jennifer.service@nhs.net
+- Respiratory: Neil Young neil.h.young@gmail.com
 
 [planned]
 
 - Post op care: Ally Gibson Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson82@gmail.com
 - Organ donation: Olly Robinson oliverrobinson@doctors.org.uk
 - Renal and urology: Olly Robinson oliverrobinson@doctors.org.uk
-- Respiratory: Neil Young neil.h.young@gmail.com
 - Transfer: Mark Dunn mjgdunn@googlemail.com
 - [Bedside Care: Michelle Jack]
 - [Burns: Murray Geddes]
