@@ -67,7 +67,10 @@ def action_diffs(dcmp):
     for name in dcmp.right_only:
         target = os.path.join(dcmp.left, name)
         print("new file {}".format(target))
-        shutil.copy2(os.path.join(dcmp.right, name), target)
+        if os.path.isdir(os.path.join(dcmp.right, name)):
+            shutil.copytree(os.path.join(dcmp.right, name), target)
+        else:
+            shutil.copy2(os.path.join(dcmp.right, name), target)
         changes["new"][target.split("/criticalcare/")[1]] = makelink(target)
     for name in dcmp.diff_files:
         target = os.path.join(dcmp.left, name)

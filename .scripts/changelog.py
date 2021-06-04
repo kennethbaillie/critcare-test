@@ -27,7 +27,7 @@ now = datetime.now()
 newtext = "\n<hr><h3>{}</h3><br>\n".format(now.strftime("%d/%m/%Y %H:%M:%S"))
 for thistype in changes:
     if len(changes[thistype]) > 0:
-        newtext += "<h5>{}</h5>\n".format(thistype)
+        newtext += "<h4>{}</h4>\n".format(thistype)
         for file in changes[thistype]:
             newtext += "<p>{}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
 
