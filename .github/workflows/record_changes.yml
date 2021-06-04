@@ -21,6 +21,16 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: Install dependencies
+        run: |
+          pip install setuptools
+          pip install wheel
+          pip install pdfminer.six
+          pip install requests
+          pip install mkdocs
+          pip install markdown-include
+          pip install mkdocs-cinder
+
       - name: Get changes
         run: python .scripts/changelog.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/"
 
