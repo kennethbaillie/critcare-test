@@ -15,6 +15,7 @@ These steps occur to update the website. They are specified in yml file in the g
 The directory name has to change in the following places:
 - the actual dir itself
 - .github/workflows/makelist.yml
+- .github/workflows/record_changes.yml
 - /docs/index.md
 - /themes/mods/base.html
 
