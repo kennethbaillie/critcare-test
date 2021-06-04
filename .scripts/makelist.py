@@ -272,7 +272,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
     for root, dirs, files in os.walk(fromdir):
         for name in files:
             if accept(root,name):
-                if emergencydir not in root:
+                if emergencydir not in root and ".temp" not in root:
                     try:
                         allfiles[name]
                         print ("\n******\nDuplicate filename found:\n\t{}\n\t{}\n".format(
