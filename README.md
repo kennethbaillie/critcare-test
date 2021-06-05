@@ -1,5 +1,5 @@
 # critcare.github.io
-Critical Care Guidelines - for use by appropriatel-trained staff only.
+Critical Care Guidelines - for use by appropriately-trained staff only.
 
 ### Contributors
 - Kenneth Baillie - mkdocs site, accordion html and search indexing script, dropbox download and parsing, automation on github, document comparison check, web app installation.
