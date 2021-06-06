@@ -91,23 +91,24 @@ tempdir = os.path.join(args.destinationdir, ".temp")
 if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
 
-changes = {
-    "deleted":{},
-    "modified":{},
-    "new":{},
-}
-
-if os.path.exists(changelog):
-    try:   
-        with open(changelog) as f:
-            changes = json.load(f)
-    except:
-        pass
-
+changes = {"deleted":{},"modified":{},"new":{}}
 download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
 
+try:   
+    with open(changelog) as f:
+        stored_changes = json.load(f)
+except:
+    stored_changes = {}
+
+c={}
+for d in changes:
+    if d in stored_changes:
+        c[d] = changes[d] | stored_changes[d] #Python 3.9 merging dictionaries
+    else:
+        c[d] = changes[d]
+
 with open(changelog,"w") as o:
-    json.dump(changes, o, indent=4)
+    json.dump(c, o, indent=4)
 
 
 

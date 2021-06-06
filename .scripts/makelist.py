@@ -284,9 +284,39 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
                     allfiles[name]=os.path.join(root,name)
 
 #-----------------------------
+# DETECT CHANGES AND STOP IF NOTHING HAS CHANGED
 
+changelog = os.path.join(args.destinationdir,".changes.json")
+outputfile = os.path.join(args.destinationdir,"../changes.html")
+
+if not os.path.exists(changelog):
+    print ("no changelog file found at: {}\n Aborting makelist.\n".format(changelog))
+    sys.exit()
+new_changes_present=False
+with open(changelog) as f:
+    changes = json.load(f)
+newtext = "\n<hr><h3>{:%d/%m/%Y %H:%M:%S}</h3><br>\n".format(datetime.now())
+for thistype in changes:
+    if len(changes[thistype]) > 0:
+        new_changes_present = True
+        newtext += "<h4>{}</h4>\n".format(thistype)
+        for file in changes[thistype]:
+            newtext += "<p>{}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
+oldtext = ""
+if os.path.exists(outputfile):
+    with open(outputfile) as f:
+        oldtext = f.read()
+with open(outputfile,"w") as o:
+    o.write(newtext + oldtext)
+with open(changelog,"w") as o:
+    o.write("")
+if new_changes_present == False:
+    print ("No new changes found in {}\n Aborting makelist.\n".format(changelog))
+    sys.exit()
+
+#-----------------------------
+# Make and populate emergency folder
 # https://codepen.io/marklsanders/pen/OPZXXv
-
 edir = os.path.join(args.dir, emergencydir)
 if not os.path.exists(edir):
     os.mkdir(edir)
@@ -305,8 +335,11 @@ for root, dirs, files in os.walk(args.dir):
                 )
             print (cmd)
             subprocess.call(cmd, shell=True)
+
+# Make html accordion menu and search index
 makelist()
 
+# Make and populate public folder
 if os.path.exists(args.publicdir):
     # clear public folder
     for folder in os.listdir(args.publicdir):
