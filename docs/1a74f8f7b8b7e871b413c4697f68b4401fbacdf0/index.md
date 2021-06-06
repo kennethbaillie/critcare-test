@@ -60,7 +60,7 @@ disable_toc: true
 </div>
 
 <div class="col-xs-12 col-md-6 col-lg-8">
-  <button class="add-button">Add to home screen</button>
+  <button class="add-button">Install webapp</button>
   <p>
     For use by appropriately-trained critical care staff in NHS Lothian only.
   </p>

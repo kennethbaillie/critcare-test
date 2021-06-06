@@ -11,6 +11,7 @@ import json
 import shutil
 import subprocess
 from io import StringIO
+from datetime import datetime
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
@@ -286,8 +287,8 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
 #-----------------------------
 # DETECT CHANGES AND STOP IF NOTHING HAS CHANGED
 
-changelog = os.path.join(args.destinationdir,".changes.json")
-outputfile = os.path.join(args.destinationdir,"../changes.html")
+changelog = os.path.join(args.dir,".changes.json")
+outputfile = os.path.join(args.dir,"../changes.html")
 
 if not os.path.exists(changelog):
     print ("no changelog file found at: {}\n Aborting makelist.\n".format(changelog))
@@ -309,11 +310,12 @@ if os.path.exists(outputfile):
 with open(outputfile,"w") as o:
     o.write(newtext + oldtext)
 with open(changelog,"w") as o:
-    o.write("")
+    json.dump({},o)
 if new_changes_present == False:
     print ("No new changes found in {}\n Aborting makelist.\n".format(changelog))
     sys.exit()
-
+else:
+    print ("New changes found. Making new search index.")
 #-----------------------------
 # Make and populate emergency folder
 # https://codepen.io/marklsanders/pen/OPZXXv
