@@ -26,13 +26,15 @@ def runcmd(cmd):
 	subprocess.call(cmd, shell=True)
 
 def replacepdf(thispdf, cr=1.2):
+	if thispdf.endswith("_bak.pdf"):
+		return 0
 	cfile = os.path.join(os.path.split(thispdf)[0], os.path.split(thispdf)[1].replace(".pdf","_bak.pdf"))
 	runcmd('cp "{}" "{}"'.format(thispdf, cfile))
 	runcmd('gs -sDEVICE=pdfwrite -dpatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile="{}" "{}"'.format(thispdf, cfile))
 	oldsize = os.path.getsize(cfile)
 	newsize = os.path.getsize(thispdf)
 	if oldsize < newsize*float(cr) or newsize==0:
-		print ("Nothing gained from compression. Leaving alone: {}".format(thispdf))
+		#print ("Nothing gained from compression. Leaving alone: {}".format(thispdf))
 		runcmd('rm "{}"'.format(thispdf))
 		runcmd('mv "{}" "{}"'.format(cfile, thispdf))
 	else:

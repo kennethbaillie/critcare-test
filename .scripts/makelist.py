@@ -91,7 +91,7 @@ def add_pdf_to_search(thisfile, thisbasedir, already):
             }
 
 def accept(thispath, file_or_dir_name):
-    if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline') or file_or_dir_name.startswith('_'):
+    if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline') or file_or_dir_name.startswith('_') or "_bak." in file_or_dir_name:
         return False
     if file_or_dir_name.strip() in excluded:
         return False
