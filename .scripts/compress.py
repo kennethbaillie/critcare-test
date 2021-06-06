@@ -22,20 +22,21 @@ parser.add_argument('-b', '--backup_path', default=os.path.expanduser('~/temp'))
 args = parser.parse_args()
 #-----------------------------
 def runcmd(cmd):
-	print (cmd)
+	#print (cmd)
 	subprocess.call(cmd, shell=True)
 
 def replacepdf(thispdf, cr=1.2):
 	cfile = os.path.join(os.path.split(thispdf)[0], os.path.split(thispdf)[1].replace(".pdf","_bak.pdf"))
 	runcmd('cp "{}" "{}"'.format(thispdf, cfile))
-	runcmd('gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile="{}" "{}"'.format(thispdf, cfile))
+	runcmd('gs -sDEVICE=pdfwrite -dpatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile="{}" "{}"'.format(thispdf, cfile))
 	oldsize = os.path.getsize(cfile)
 	newsize = os.path.getsize(thispdf)
-	print (oldsize, newsize)
 	if oldsize < newsize*float(cr) or newsize==0:
 		print ("Nothing gained from compression. Leaving alone: {}".format(thispdf))
 		runcmd('rm "{}"'.format(thispdf))
 		runcmd('mv "{}" "{}"'.format(cfile, thispdf))
+	else:
+		print ("Compressed from {} to {}: {}".format(oldsize, newsize, thispdf))
 
 #-----------------------------
 
