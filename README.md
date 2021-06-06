@@ -31,6 +31,4 @@ The directory name has to change in the following places:
 	- file size optimisation
 	- automatically read update dates from pdfs
 - improve search - maybe solr rather than lunr?
-- make downloadable using PWA & Service Worker
-- tidy up css on home screen to make it easier to enter on mobile
 

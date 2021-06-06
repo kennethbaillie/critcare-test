@@ -1,30 +1,29 @@
-Section editors:
-
-[online now]
-
-- Airway: Rosie Baruah
+- Acute Pulmonary Embolism and DVT: ?
+- Airway: Rosie Baruah rosaleen.baruah@nhslothian.scot.nhs.uk
+- Bed-Side Care: Michelle Jack Michelle.Jack@nhslothian.scot.nhs.uk, Gail Renwick Gail.Renwick@nhslothian.scot.nhs.uk
+- Burns: Murray Geddes
 - Cardiovascular: Stuart Gillon sgillon@me.com
 - COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
-- Delirium: Alastair Hay
+- Recovery after ICU: Charlene Richardson charlene.richardson@nhslothian.scot.nhs.uk
+- Delirium: ?
 - Diabetes and Glucose: Gregor McNeill  Gregor.McNeill@nhslothian.scot.nhs.uk
+- Drugs: Tom Craven Thomas.Craven@ed.ac.uk
 - ECLS: Grant Price
 - Emergencies: Kenny Baillie j.k.baillie@ed.ac.uk
 - End of life care: Murray Blackstock murrayblackstock@nhs.net
+- Ethics and Law: Monika Beatty
 - GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk
+- Infection and sepsis: ?
+- Information for Trainees: ?
+- Lothian Long-Term Ventilation Service: ?
 - Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
 - Obstetrics: Jen Service jennifer.service@nhs.net
-- Respiratory: Neil Young neil.h.young@gmail.com
-
-[planned]
-
-- Post op care: Ally Gibson Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson82@gmail.com
 - Organ donation: Olly Robinson oliverrobinson@doctors.org.uk
+- Post op care: Ally Gibson Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson82@gmail.com
 - Renal and urology: Olly Robinson oliverrobinson@doctors.org.uk
+- Respiratory: Neil Young neil.h.young@gmail.com
 - Transfer: Mark Dunn mjgdunn@googlemail.com
-- [Bedside Care: Michelle Jack]
-- [Burns: Murray Geddes]
-- Drugs: Tom Craven Thomas.Craven@ed.ac.uk
-- Ethics and Law: Monika Beatty
-- Infection and sepsis: ???
-
-Web app administration: Kenny Baillie j.k.baillie@ed.ac.uk
+- Trauma: ?
+- Video communication: ?
+- VTE Prevention: ?
+- Web app administration: Kenny Baillie j.k.baillie@ed.ac.uk

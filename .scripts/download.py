@@ -51,11 +51,17 @@ def download_dropbox_folder(folder_url, dest):
     with ZipFile(zf, 'r') as zipObj:
         zipObj.extractall(dest)
 
-def try_remove(thisfile):
-    try:
-        os.remove(thisfile)
-    except:
-        print ("Unable to remove this file ({}): {}".format(sys.exc_info()[0],thisfile))
+def try_remove(thistarget):
+    if os.path.isdir(thistarget):
+        try:
+            shutil.rmtree(thistarget)
+        except:
+            print ("Unable to remove this directory ({}): {}".format(sys.exc_info()[0],thistarget))
+    else:
+        try:
+            os.remove(thistarget)
+        except:
+            print ("Unable to remove this file ({}): {}".format(sys.exc_info()[0],thistarget))
 
 def action_diffs(dcmp):
     global changes
@@ -87,26 +93,26 @@ def download_files_from_dir(folder_url, dir_name, td):
 
 #-----------------------------
 
+# create temp dir, download all to it, parse and then remove
 tempdir = os.path.join(args.destinationdir, ".temp")
 if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
-
 changes = {"deleted":{},"modified":{},"new":{}}
 download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
+try_remove(tempdir)
 
+# record changes by adding them to existing json file
 try:   
     with open(changelog) as f:
         stored_changes = json.load(f)
 except:
     stored_changes = {}
-
 c={}
 for d in changes:
     if d in stored_changes:
         c[d] = changes[d] | stored_changes[d] #Python 3.9 merging dictionaries
     else:
         c[d] = changes[d]
-
 with open(changelog,"w") as o:
     json.dump(c, o, indent=4)
 
