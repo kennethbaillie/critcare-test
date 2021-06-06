@@ -14,6 +14,7 @@ Section editors:
 - Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
 - Obstetrics: Jen Service jennifer.service@nhs.net
 - Respiratory: Neil Young neil.h.young@gmail.com
+- Drugs: Tom Craven Thomas.Craven@ed.ac.uk
 
 [planned]
 
@@ -23,7 +24,6 @@ Section editors:
 - Transfer: Mark Dunn mjgdunn@googlemail.com
 - [Bedside Care: Michelle Jack]
 - [Burns: Murray Geddes]
-- Drugs: Tom Craven Thomas.Craven@ed.ac.uk
 - Ethics and Law: Monika Beatty
 - Infection and sepsis: ???
 
