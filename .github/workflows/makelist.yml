@@ -43,7 +43,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -v docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/*
           git add -v docs/critcare_pub/*
-          git diff-index --quiet HEAD || git commit -m "Automatically re-generate list and index"
+          git diff-index --quiet HEAD || git commit -m "Automatically re-generate list and index" --force
 
       - name: Push pages
         uses: ad-m/github-push-action@master
