@@ -19,6 +19,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-d', '--dir', default='not_specified')
 parser.add_argument('-c', '--min_comp_ratio', default=1.2, help="Any compression less than this will be ignored")
 parser.add_argument('-b', '--backup_path', default=os.path.expanduser('~/temp'))
+parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 args = parser.parse_args()
 #-----------------------------
 def runcmd(cmd):
@@ -34,7 +35,8 @@ def replacepdf(thispdf, cr=1.2):
 	oldsize = os.path.getsize(cfile)
 	newsize = os.path.getsize(thispdf)
 	if oldsize < newsize*float(cr) or newsize==0:
-		#print ("Nothing gained from compression. Leaving alone: {}".format(thispdf))
+		if args.verbose:
+			print ("Nothing gained from compression. Leaving alone: {}".format(thispdf))
 		runcmd('rm "{}"'.format(thispdf))
 		runcmd('mv "{}" "{}"'.format(cfile, thispdf))
 	else:

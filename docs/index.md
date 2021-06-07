@@ -72,6 +72,17 @@ div.vertical {
 <script type="text/javascript">
 "use strict";
 
+//code to catch error in IE because it doesn't have a console
+try {
+ console //does the console exist?
+}
+catch(e) { //if not...
+ console = {}; //create a console object for IE
+ console.log = function() {}; //add a log method to the new console object
+ //add other console methods here if you need them
+}
+
+
 function loadPage(pwd) {
 
 	var hash= pwd;
