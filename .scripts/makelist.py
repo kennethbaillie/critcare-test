@@ -303,8 +303,10 @@ for thistype in changes:
         newtext += "<h4>{}</h4>\n".format(thistype)
         for file in changes[thistype]:
             thispath = os.path.join(args.dir, file)
-            if accept(thispath, file):
-                if os.path.isdir(thispath) or thistype=="deleted":
+            if accept(thispath, os.path.split(file)[-1]):
+                if thistype=="deleted":
+                    newtext += "<p>{}</p>\n".format(file)
+                if os.path.isdir(thispath):
                     newtext += "<p>{} [folder]</p>\n".format(file)
                 else:
                     newtext += "<p>{}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
