@@ -65,6 +65,7 @@ def try_remove(thistarget):
 
 def action_diffs(dcmp):
     global changes
+    print (dcmp.report_full_closure())
     for name in dcmp.left_only:
         target = os.path.join(dcmp.left, name)
         print("deleted file {}".format(target))

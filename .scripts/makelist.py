@@ -302,7 +302,11 @@ for thistype in changes:
         new_changes_present = True
         newtext += "<h4>{}</h4>\n".format(thistype)
         for file in changes[thistype]:
-            newtext += "<p>{}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
+            if accept(file):
+                if os.path.isdir(os.path.join(args.dir, file)):
+                    newtext += "<p>{} [folder]</p>\n".format(file)
+                else:
+                    newtext += "<p>{}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
 oldtext = ""
 if os.path.exists(outputfile):
     with open(outputfile) as f:

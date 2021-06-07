@@ -1,30 +1,29 @@
-Section editors:
-
-[online now]
-
-- Airway: Rosie Baruah
-- Cardiovascular: Stuart Gillon sgillon@me.com
-- COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
-- Delirium: Alastair Hay
-- Diabetes and Glucose: Gregor McNeill  Gregor.McNeill@nhslothian.scot.nhs.uk
-- ECLS: Grant Price
-- Emergencies: Kenny Baillie j.k.baillie@ed.ac.uk
-- End of life care: Murray Blackstock murrayblackstock@nhs.net
-- GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk
-- Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
-- Obstetrics: Jen Service jennifer.service@nhs.net
-- Respiratory: Neil Young neil.h.young@gmail.com
-
-[planned]
-
-- Post op care: Ally Gibson Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson82@gmail.com
-- Organ donation: Olly Robinson oliverrobinson@doctors.org.uk
-- Renal and urology: Olly Robinson oliverrobinson@doctors.org.uk
-- Transfer: Mark Dunn mjgdunn@googlemail.com
-- [Bedside Care: Michelle Jack]
-- [Burns: Murray Geddes]
-- Drugs: Tom Craven Thomas.Craven@ed.ac.uk
-- Ethics and Law: Monika Beatty
-- Infection and sepsis: ???
-
+Acute_Pulmonary_Embolism_and_DVT: ?
+Airway: Rosie Baruah
+Bedside care: Michelle Jack Michelle.Jack@nhslothian.scot.nhs.uk and Gail Renwick Gail.Renwick@nhslothian.scot.nhs.uk
+Burns: Murray Geddes
+Cardiovascular: Stuart Gillon sgillon@me.com
+COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
+Delirium: ?
+Diabetes and Glucose: Gregor McNeill  Gregor.McNeill@nhslothian.scot.nhs.uk
+Drugs: Tom Craven Thomas.Craven@ed.ac.uk
+ECLS: Grant Price
+Emergencies: Kenny Baillie j.k.baillie@ed.ac.uk
+End of life care: Murray Blackstock murray.blackstock@nhslothian.scot.nhs.uk
+Ethics and Law: Monika Beatty
+GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk
+Infection and sepsis: ?
+Information_for_trainees: ?
+Lothian_Long-Term_Ventilation_Service: ?
+Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
+Obstetrics: Jen Service jennifer.service@nhs.net
+Organ donation: Olly Robinson oliverrobinson@doctors.org.uk
+Post op care: Ally Gibson Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson82@gmail.com
+Recovery_after_ICU: Charlene Richardson charlene.richardson@nhslothian.scot.nhs.uk
+Renal and urology: Olly Robinson oliverrobinson@doctors.org.uk
+Respiratory: Neil Young neil.h.young@gmail.com
+Transfer: Mark Dunn mjgdunn@googlemail.com
+Trauma: ?
+Video_communication: ?
+VTE_Prevention: ?
 Web app administration: Kenny Baillie j.k.baillie@ed.ac.uk
