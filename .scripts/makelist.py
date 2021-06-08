@@ -169,7 +169,7 @@ def formatdir(thisdir, basedir, sl, depth=0):
         else:
             if accept(thisdir, entry):
                 if entry.endswith('.txt'):
-                    print ("h:", entry)
+                    print ("hyperlink (.txt):", entry)
                     with open(os.path.join(thisdir,entry)) as f:
                         filecontents = f.read()
                     text+=('''
@@ -179,6 +179,18 @@ def formatdir(thisdir, basedir, sl, depth=0):
                         '''.format(
                             eclass(entry),
                             filecontents,
+                            depth,
+                            fixname(entry))
+                            )
+                elif entry.endswith('.md'):
+                    print (thisdir, entry, basedir)
+                    text+=('''
+                        <a class='{}' href='{}'>
+                            <li class='list-group-item' style='margin-left:{}em;'>{}</li>
+                        </a>
+                        '''.format(
+                            eclass(entry),
+                            os.path.relpath(os.path.join(thisdir, entry.replace(".md","")), basedir),
                             depth,
                             fixname(entry))
                             )
