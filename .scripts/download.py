@@ -32,6 +32,7 @@ ignorelist = [
         ".changes.json",
         "changes.html",
         "__MACOSX",
+        "Emergencies",
     ]
 
 def makelink(target):

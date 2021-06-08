@@ -316,8 +316,10 @@ if os.path.exists(outputfile):
         oldtext = f.read()
 with open(outputfile,"w") as o:
     o.write(newtext + oldtext)
+'''
 with open(changelog,"w") as o:
     json.dump({},o)
+'''
 if new_changes_present == False:
     print ("No new changes found in {}\n Aborting makelist.\n".format(changelog))
     sys.exit()
