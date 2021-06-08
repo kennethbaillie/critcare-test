@@ -23,15 +23,16 @@ if args.sourcedir == "no_dir_specified":
 #-----------------------------
 changelog = os.path.join(args.destinationdir,".changes.json")
 #-----------------------------
+# files to ignore in comparison
 ignorelist = [
         "temp.zip",
-        "offline_DRAFTS",
         ".DS_Store",
         ".temp",
         "temp",
         ".changes.json",
         "changes.html",
         "__MACOSX",
+        "offline_DRAFTS",
         "Emergencies",
     ]
 
@@ -87,10 +88,10 @@ def action_diffs(dcmp):
         changes["modified"][target.split("/criticalcare/")[1]] = makelink(target)
     for sub_dcmp in dcmp.subdirs.values():
         action_diffs(sub_dcmp)
-
+filecmp.dircmp
 def download_files_from_dir(folder_url, dir_name, td):
     download_dropbox_folder(folder_url, td)
-    comparison = filecmp.dircmp(dir_name, td, ignore=ignorelist)
+    comparison = filecmp.dircmp(dir_name, td, ignore=ignorelist, hide=ignorelist)
     action_diffs(comparison)
 
 #-----------------------------

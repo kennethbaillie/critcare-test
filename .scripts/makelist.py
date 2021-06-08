@@ -298,33 +298,30 @@ with open(changelog) as f:
     changes = json.load(f)
 newtext = "\n<hr><h3>{:%d/%m/%Y %H:%M:%S}</h3><br>\n".format(datetime.now())
 for thistype in changes:
-    if len(changes[thistype]) > 0:
+    typechanges = [x for x in changes[thistype] if accept(os.path.join(args.dir, x), os.path.split(x)[-1])]
+    if len(typechanges) > 0:
         new_changes_present = True
         newtext += "<h4>{}</h4>\n".format(thistype)
-        for file in changes[thistype]:
-            thispath = os.path.join(args.dir, file)
-            if accept(thispath, os.path.split(file)[-1]):
-                if thistype=="deleted":
-                    newtext += "<p>{}</p>\n".format(file)
-                if os.path.isdir(thispath):
-                    newtext += "<p>{} [folder]</p>\n".format(file)
-                else:
-                    newtext += "<p>{}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
+        for file in typechanges:
+            if thistype=="deleted":
+                newtext += "<p>- {}</p>\n".format(file)
+            elif os.path.isdir(os.path.join(args.dir, file)):
+                newtext += "<p>- {} [folder]</p>\n".format(file)
+            else:
+                newtext += "<p>- {}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
 oldtext = ""
-if os.path.exists(outputfile):
-    with open(outputfile) as f:
-        oldtext = f.read()
-with open(outputfile,"w") as o:
-    o.write(newtext + oldtext)
-'''
-with open(changelog,"w") as o:
-    json.dump({},o)
-'''
-if new_changes_present == False:
+if new_changes_present == True:
+    print ("New changes found. Making new search index.")
+    if os.path.exists(outputfile):
+        with open(outputfile) as f:
+            oldtext = f.read()
+    with open(outputfile,"w") as o:
+        o.write(newtext + oldtext)
+    with open(changelog,"w") as o:
+        json.dump({},o)
+else:
     print ("No new changes found in {}\n Aborting makelist.\n".format(changelog))
     sys.exit()
-else:
-    print ("New changes found. Making new search index.")
 #-----------------------------
 # Make and populate emergency folder
 # https://codepen.io/marklsanders/pen/OPZXXv
