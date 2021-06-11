@@ -5,9 +5,9 @@ author: Kenneth Baillie
 
 # Summary
 
-Guidelines should not be emailed to Judith for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Judith, who will copy them to the intranet weekly.
 
 This system is designed to make local guidelines easy to maintain and easily accessible through a web browser on a mobile phone or other personal device. It can be accessed at: [critcare.net](https://critcare.net).
+
 ```
 username: crit
 password: care
@@ -15,11 +15,11 @@ password: care
 
 Uploading and maintaining the guidelines is very easy - all that the editors and administrators need to do is maintain a dropbox folder containing the guidelines in each category. The folder names and file names are automatically converted into menu links and uploaded every 2 hours. (You may need to refresh your browser, or use incognito mode, to see changes straight away).
 
-Any changes you make are recorded on a web page here and will be picked up and copied onto the NHS Lothian Intranet by Judith: 
+Guidelines should not be emailed to Judith for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Judith, who will copy them to the intranet weekly. Any changes you make are recorded on a web page here:
 
-https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html
+[https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html)
 
-# Instructions for using Dropbox
+# Basic use
 
 ## Rules
 
@@ -36,19 +36,19 @@ https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html
 
 ## Adding files
 
-- Put your pdf files into the right directory. 
-- That's it.
+1. Put your pdf files into the right directory. 
+2. That's it.
 
 ## offline_DRAFTS folders
 
 - you have an `offline_DRAFTS` folder in every dropbox folder that you edit
 - use this to keep the editable (e.g. microsoft word) versions of every guideline that you are responsible for
 
-## Advanced use
+# Advanced use
 
-- any file with a name beginning with the word "offline" or an underscore "_" will be ignored by the app.
-- label emergency protocols by adding "_em" will be duplicated in the "Emergencies" folder and highlighted in red.
-- when you are ready to make a protocol public, add "_pub" to the end of the filename. e.g.:
+- any file with a name beginning with the word `offline` or an underscore `_` will be ignored by the app.
+- label emergency protocols by adding `_em` will be duplicated in the `Emergencies` folder and highlighted in red.
+- when you are ready to make a protocol public, add `_pub` to the end of the filename. e.g.:
 	- `Emergency Caesarean Section Action Cards_em.pdf` is flagged for the emergency section
 	- `C-spine clearance flowchart and guidance_pub.pdf` is public
 	- `Air_Embolism_em_pub.pdf` is both public and flagged as an emergency protocol
@@ -61,7 +61,7 @@ These filenames must end in .txt
 
 The file name becomes the menu item.
 
-The contents of the file become the link target, so the only thing that should appear there is the plain text link, e.g.
+The contents of the file become the link target, so the only thing that should appear in the file is the plain text link, e.g.
 
 https://youtu.be/HDyKJ4FOX9o
 
