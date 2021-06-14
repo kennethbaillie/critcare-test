@@ -1,6 +1,6 @@
 Acute_Pulmonary_Embolism_and_DVT: ?
 Airway: Rosie Baruah
-Bedside care: Michelle Jack Michelle.Jack@nhslothian.scot.nhs.uk and Gail Renwick Gail.Renwick@nhslothian.scot.nhs.uk
+Bedside care: Gregor McNeill, Michelle Jack Michelle.Jack@nhslothian.scot.nhs.uk and Gail Renwick Gail.Renwick@nhslothian.scot.nhs.uk
 Breathing (Respiratory): Neil Young neil.h.young@gmail.com
 Burns: Murray Geddes
 Cardiovascular: Stuart Gillon sgillon@me.com
@@ -13,8 +13,8 @@ Emergencies: Kenny Baillie j.k.baillie@ed.ac.uk
 End of life care: Murray Blackstock murray.blackstock@nhslothian.scot.nhs.uk
 Ethics and Law: Monika Beatty
 GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk
-Infection and sepsis: ?
-Information_for_trainees: ?
+Infection and sepsis: Mark Dunn
+Information_for_trainees: Ally Gibson
 Lothian_Long-Term_Ventilation_Service: ?
 Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
 Obstetrics: Jen Service jennifer.service@nhs.net
