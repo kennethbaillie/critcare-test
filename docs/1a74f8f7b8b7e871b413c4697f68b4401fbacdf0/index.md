@@ -67,6 +67,7 @@ disable_toc: true
   <p>
     All of these guidelines can be found on the <a href="http://intranet.lothian.scot.nhs.uk/Directory/CriticalCare/Pages"> NHS Lothian intranet.
   </p>
+  <p>Guideline editors can find <a href="https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/offline_README/">Instructions here</a></p>
 </div>
 
 <script src="search.js"></script>
