@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page.meta.noindex %}<meta name="robots" content="noindex">{% endif %}
     {% if config.site_description %}<meta name="description" content="{{ config.site_description }}">{% endif %}
     {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
     {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
@@ -88,11 +89,11 @@
 
     <div class="container">
         {% block content %}
-        {% if page.meta.disable_toc %}
-        <div class="col-md-12" role="main">{% include "content.html" %}</div>
-        {% else %}
+        {% if page.meta.enable_toc %}
         <div class="col-md-3">{% include "toc.html" %}</div>
         <div class="col-md-9" role="main">{% include "content.html" %}</div>
+        {% else %}
+        <div class="col-md-12" role="main">{% include "content.html" %}</div>
         {% endif %}
         {% endblock %}
     </div>
