@@ -1,8 +1,8 @@
 ---
-Title: guidelines access system
+title: guidelines access system
 canonical_url: critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0
-disable_toc: true
-noindex: true
+allowindex: True
+enable_toc: false
 ---
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
