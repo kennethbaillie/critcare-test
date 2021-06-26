@@ -65,14 +65,15 @@ def try_remove(thistarget):
         except:
             print ("Unable to remove this file ({}): {}".format(sys.exc_info()[0],thistarget))
 
-def action_diffs(dcmp):
+def action_diffs(dcmp, targetdirname):
     global changes
+    targetdirname = targetdirname.replace("/","")
     print (dcmp.report_full_closure())
     for name in dcmp.left_only:
         target = os.path.join(dcmp.left, name)
         print("deleted file {}".format(target))
         try_remove(target)
-        changes["deleted"][target.split("/criticalcare/")[1]] = makelink(target)
+        changes["deleted"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
     for name in dcmp.right_only:
         target = os.path.join(dcmp.left, name)
         print("new file {}".format(target))
@@ -80,19 +81,20 @@ def action_diffs(dcmp):
             shutil.copytree(os.path.join(dcmp.right, name), target)
         else:
             shutil.copy2(os.path.join(dcmp.right, name), target)
-        changes["new"][target.split("/criticalcare/")[1]] = makelink(target)
+        changes["new"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
     for name in dcmp.diff_files:
         target = os.path.join(dcmp.left, name)
         print("changed file {}".format(target))
         shutil.copy2(os.path.join(dcmp.right, name), target)
-        changes["modified"][target.split("/criticalcare/")[1]] = makelink(target)
+        changes["modified"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
     for sub_dcmp in dcmp.subdirs.values():
-        action_diffs(sub_dcmp)
+        action_diffs(sub_dcmp, targetdirname)
+
 filecmp.dircmp
 def download_files_from_dir(folder_url, dir_name, td):
     download_dropbox_folder(folder_url, td)
     comparison = filecmp.dircmp(dir_name, td, ignore=ignorelist, hide=ignorelist)
-    action_diffs(comparison)
+    action_diffs(comparison, os.path.split(dir_name)[1])
 
 #-----------------------------
 

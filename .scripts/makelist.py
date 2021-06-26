@@ -22,16 +22,19 @@ scriptpath = os.path.dirname(os.path.realpath(__file__))
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../docs/test_secret/criticalcare/'))
-parser.add_argument('-p', '--publicdir', default=os.path.join(scriptpath,'../docs/test_pub/criticalcare/'))
+parser.add_argument('-p', '--publicdir', default="public")
+parser.add_argument('-e', '--do_emergency', default=False, action="store_true")
 parser.add_argument('-l', '--listfilename', default='list.html')
 parser.add_argument('-i', '--indexfilename', default='index.json')
 parser.add_argument('-f', '--fast', default=False, action="store_true")
+parser.add_argument('-o', '--override_changes', default=False, action="store_true")
+parser.add_argument('-b', '--backgroundcolor', default="#f5f5f5") #bdfcec
 args = parser.parse_args()
 #-----------------------------
 use_viewerjs = False
-emergencydir = "Emergencies" # this will be pinned to the top and copies of emergency protocols uploaded to it
 excluded = ['Icon']
-pin_to_top = [emergencydir]
+emergencydir = "Emergencies" # this will be pinned to the top and copies of emergency protocols uploaded to it
+pin_to_top = []
 #-----------------------------
 
 def convert_pdf_to_txt(thisfile):
@@ -236,7 +239,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
             listfiletext += ('''
                 <div class="panel panel-default">
                     <a role="button" class="{}" data-toggle="collapse" data-parent="#accordion" href="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
-                        <div class="panel-heading" role="tab" id="heading{}" style="background: #f5f5f5;">
+                        <div class="panel-heading" role="tab" id="heading{}" style="background: {};">
                             <h4 class="panel-title">
                               {}
                             </h4>
@@ -251,6 +254,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
                     i,
                     i,
                     i,
+                    args.backgroundcolor,
                     fixname(d),
                     i,
                     i,
@@ -322,7 +326,7 @@ for thistype in changes:
             else:
                 newtext += "<p>- {}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
 oldtext = ""
-if new_changes_present == True:
+if new_changes_present == True or args.override_changes:
     print ("New changes found. Making new search index.")
     if os.path.exists(outputfile):
         with open(outputfile) as f:
@@ -335,26 +339,28 @@ else:
     print ("No new changes found in {}\n Aborting makelist.\n".format(changelog))
     sys.exit()
 #-----------------------------
-# Make and populate emergency folder
-# https://codepen.io/marklsanders/pen/OPZXXv
-edir = os.path.join(args.dir, emergencydir)
-if not os.path.exists(edir):
-    os.mkdir(edir)
-# clear emergencies
-for filename in os.listdir(edir):
-    cmd = 'rm "{}"'.format(os.path.join(edir,filename))
-    print (cmd)
-    subprocess.call(cmd, shell=True)
-# copy emergencies
-for root, dirs, files in os.walk(args.dir):
-   for name in files:
-        if eclass(name)=="emergency":
-            cmd = 'cp "{}" "{}"'.format(
-                os.path.join(root, name),
-                edir
-                )
-            print (cmd)
-            subprocess.call(cmd, shell=True)
+if args.do_emergency:
+    pin_to_top.append(emergencydir)
+    # Make and populate emergency folder
+    # https://codepen.io/marklsanders/pen/OPZXXv
+    edir = os.path.join(args.dir, emergencydir)
+    if not os.path.exists(edir):
+        os.mkdir(edir)
+    # clear emergencies
+    for filename in os.listdir(edir):
+        cmd = 'rm "{}"'.format(os.path.join(edir,filename))
+        print (cmd)
+        subprocess.call(cmd, shell=True)
+    # copy emergencies
+    for root, dirs, files in os.walk(args.dir):
+       for name in files:
+            if eclass(name)=="emergency":
+                cmd = 'cp "{}" "{}"'.format(
+                    os.path.join(root, name),
+                    edir
+                    )
+                print (cmd)
+                subprocess.call(cmd, shell=True)
 
 # Make html accordion menu and search index
 makelist()
