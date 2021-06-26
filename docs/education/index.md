@@ -52,6 +52,9 @@ enable_toc: false
 </style>
 
 
+<h3>PULSE ICU Education materials</h3>
+<p>Edited & run by Lesley Gracie</p>
+
 <p>Search: <input id="search" type="text" placeholder="enter search term"></p>
 
 <div id="results"></div>

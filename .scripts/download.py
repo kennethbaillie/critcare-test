@@ -94,7 +94,9 @@ filecmp.dircmp
 def download_files_from_dir(folder_url, dir_name, td):
     download_dropbox_folder(folder_url, td)
     comparison = filecmp.dircmp(dir_name, td, ignore=ignorelist, hide=ignorelist)
-    action_diffs(comparison, os.path.split(dir_name)[1])
+    td = os.path.basename(os.path.normpath(dir_name))
+    print ("td", td)
+    action_diffs(comparison, td)
 
 #-----------------------------
 
