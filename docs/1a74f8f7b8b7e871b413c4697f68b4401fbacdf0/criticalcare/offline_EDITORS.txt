@@ -23,6 +23,7 @@ Post op care: Ally Gibson Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson8
 Procedures: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
 Recovery_after_ICU: Charlene Richardson charlene.richardson@nhslothian.scot.nhs.uk
 Renal and urology: Olly Robinson oliverrobinson@doctors.org.uk
+Research: David Griffiths
 Transfer: Mark Dunn mjgdunn@googlemail.com
 Trauma: ?
 Video_communication: ?
