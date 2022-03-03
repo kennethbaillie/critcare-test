@@ -2,10 +2,10 @@ Acute_Pulmonary_Embolism_and_DVT: ?
 Airway: Rosie Baruah
 Bedside care: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk, Michelle Jack Michelle.Jack@nhslothian.scot.nhs.uk and Gail Renwick Gail.Renwick@nhslothian.scot.nhs.uk
 to include: 
-	- Video_communication: ?
-	- VTE_Prevention: ?
+	- Video_communication
+	- VTE_Prevention
 	- Recovery_after_ICU: Charlene Richardson charlene.richardson@nhslothian.scot.nhs.uk
-	- Lothian_Long-Term_Ventilation_Service: ?
+	- Lothian_Long-Term_Ventilation_Service
 Breathing (Respiratory): Neil Young neil.h.young@gmail.com
 Cardiovascular: Stuart Gillon sgillon@me.com
 COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
