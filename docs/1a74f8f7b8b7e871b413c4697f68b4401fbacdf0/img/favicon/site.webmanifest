@@ -3,7 +3,7 @@
     "short_name": "Guidelines",
     "description": "NHS Lothian Critical Care Guidelines.",
     "display": "fullscreen",
-    "start_url": "https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/",
+    "start_url": "../../",
     "icons": [
         {
             "src": "/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/android-chrome-192x192.png",
