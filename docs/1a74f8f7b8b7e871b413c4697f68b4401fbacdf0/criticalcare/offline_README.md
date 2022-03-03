@@ -15,9 +15,7 @@ password: care
 
 Uploading and maintaining the guidelines is very easy - all that the editors and administrators need to do is maintain a dropbox folder containing the guidelines in each category. The folder names and file names are automatically converted into menu links and uploaded every 2 hours. (You may need to refresh your browser, or use incognito mode, to see changes straight away).
 
-Guidelines should not be emailed to Judith for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Judith, who will copy them to the intranet weekly. Any changes you make are recorded on a web page here:
-
-[https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html)
+Guidelines should not be emailed to Judith for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Judith, who will copy them to the intranet weekly. Any changes you make are recorded on this [web page](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html).
 
 # Basic use
 
