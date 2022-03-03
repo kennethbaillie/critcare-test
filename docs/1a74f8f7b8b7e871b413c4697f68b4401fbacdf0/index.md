@@ -62,7 +62,7 @@ enable_toc: false
 <div class="col-xs-12 col-md-6 col-lg-8">
   <button class="add-button">Install webapp</button>
   <p>
-    For use by appropriately-trained critical care staff in NHS Lothian only.
+    For use by appropriately-trained critical care staff in NHS Lothian only. <br>Use your phone's "add to home screen" function to install webapp.
   </p>
   <p>
     All of these guidelines can be found on the <a href="http://intranet.lothian.scot.nhs.uk/Directory/CriticalCare/Pages"> NHS Lothian intranet</a>.
