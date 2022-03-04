@@ -116,7 +116,7 @@ $("#loginbutton").on("click", function() {
 $("#password").keypress(function(e) {
 	if (e.which == 13) {
 		//loadPage($("#password").val());
-		loadPage($.trim($("#username").val())+$.trim($("#password").val()));
+		loadPage($.trim($("#username").val()).toLowerCase()+$.trim($("#password").val()).toLowerCase());
 	}
 });
 //$("#username").focus();
