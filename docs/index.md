@@ -104,7 +104,7 @@ function loadPage(pwd) {
 						parent.location.hash= hash;
 
 			//$("#wrongPassword").show();
-			$("#password").attr("placeholder","wrong password");
+			$("#password").attr("placeholder","wrong username/password");
 			$("#password").val("");
 		}
 	});

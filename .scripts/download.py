@@ -37,7 +37,10 @@ ignorelist = [
     ]
 
 def makelink(target):
+    print ("T:", target)
+    print (os.path.exists(target))
     p = pathlib.PurePosixPath(target)
+    print ("p:", p)
     link = "https://critcare.net/{}".format(p.relative_to('docs'))
     return link
 
@@ -68,7 +71,6 @@ def try_remove(thistarget):
 def action_diffs(dcmp, targetdirname):
     global changes
     targetdirname = targetdirname.replace("/","")
-    print (dcmp.report_full_closure())
     for name in dcmp.left_only:
         target = os.path.join(dcmp.left, name)
         print("deleted file {}".format(target))
@@ -106,7 +108,8 @@ if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
 changes = {"deleted":{},"modified":{},"new":{}}
 download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
-try_remove(tempdir)
+##### commented out
+#try_remove(tempdir)
 
 # record changes by adding them to existing json file
 try:   
