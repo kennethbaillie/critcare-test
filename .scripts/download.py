@@ -13,8 +13,8 @@ from zipfile import ZipFile
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='no_dir_specified')
-parser.add_argument('-d', '--destinationdir', default='no_dir_specified')
+parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/otczbgim2zkeub8/AACru2-Xv6w2qFAwsz6fSi0Ja?dl=0') # default edu folder only
+parser.add_argument('-d', '--destinationdir', default='docs/test_secret/criticalcare/')
 args = parser.parse_args()
 #-----------------------------
 if args.sourcedir == "no_dir_specified":
@@ -37,10 +37,7 @@ ignorelist = [
     ]
 
 def makelink(target):
-    print ("T:", target)
-    print (os.path.exists(target))
     p = pathlib.PurePosixPath(target)
-    print ("p:", p)
     link = "https://critcare.net/{}".format(p.relative_to('docs'))
     return link
 
@@ -89,6 +86,14 @@ def action_diffs(dcmp, targetdirname):
         print("changed file {}".format(target))
         shutil.copy2(os.path.join(dcmp.right, name), target)
         changes["modified"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
+    # search for renamed files, which will appear to be both deleted and new
+    print ("Renamed search underway now")
+    for dfile in changes["deleted"]:
+        print (dfile)
+        for nfile in changes["new"]:
+            print (dfile, nfile, filecmp.cmp(dfile, nfile))
+
+
     for sub_dcmp in dcmp.subdirs.values():
         action_diffs(sub_dcmp, targetdirname)
 
@@ -108,7 +113,7 @@ if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
 changes = {"deleted":{},"modified":{},"new":{}}
 download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
-##### commented out
+##### commented out 
 #try_remove(tempdir)
 
 # record changes by adding them to existing json file
