@@ -1,5 +1,12 @@
 {
-    "deleted": {},
+    "deleted": {
+        "newdir/wooong.pdf": "https://critcare.net/test_secret/criticalcare/newdir/wooong.pdf",
+        "newdir/wooonga.pdf": "https://critcare.net/test_secret/criticalcare/newdir/wooonga.pdf"
+    },
     "modified": {},
-    "new": {}
+    "new": {
+        "newdir/wong.pdf": "https://critcare.net/test_secret/criticalcare/newdir/wong.pdf",
+        "newdir": "https://critcare.net/test_secret/criticalcare/newdir",
+        "End_of_life_care": "https://critcare.net/test_secret/criticalcare/End_of_life_care"
+    }
 }

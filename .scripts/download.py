@@ -13,7 +13,7 @@ from zipfile import ZipFile
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/otczbgim2zkeub8/AACru2-Xv6w2qFAwsz6fSi0Ja?dl=0') # default edu folder only
+parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/7m3txr3zwy2nrf7/AADmjUlNgm78GD60FMT9PNNQa?dl=0') # default test dir
 parser.add_argument('-d', '--destinationdir', default='docs/test_secret/criticalcare/')
 args = parser.parse_args()
 #-----------------------------
@@ -65,45 +65,45 @@ def try_remove(thistarget):
         except:
             print ("Unable to remove this file ({}): {}".format(sys.exc_info()[0],thistarget))
 
-def action_diffs(dcmp, targetdirname):
+def action_diffs(dcmp):
     global changes
-    targetdirname = targetdirname.replace("/","")
     for name in dcmp.left_only:
-        target = os.path.join(dcmp.left, name)
-        print("deleted file {}".format(target))
-        try_remove(target)
-        changes["deleted"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
+        dfile = os.path.join(dcmp.left, name)
+        print("deleted file {}".format(dfile))
+        changes["deleted"][dfile] = makelink(dfile)
     for name in dcmp.right_only:
-        target = os.path.join(dcmp.left, name)
-        print("new file {}".format(target))
+        nfile = os.path.join(dcmp.left, name)
+        print("new file {}".format(name))
         if os.path.isdir(os.path.join(dcmp.right, name)):
-            shutil.copytree(os.path.join(dcmp.right, name), target)
+            shutil.copytree(os.path.join(dcmp.right, name), nfile)
         else:
-            shutil.copy2(os.path.join(dcmp.right, name), target)
-        changes["new"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
+            shutil.copy2(os.path.join(dcmp.right, nfile), nfile)
+        changes["new"][target.split("/{}/".forma))[1]] = makelink(target)
     for name in dcmp.diff_files:
         target = os.path.join(dcmp.left, name)
         print("changed file {}".format(target))
         shutil.copy2(os.path.join(dcmp.right, name), target)
-        changes["modified"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
+        changes["modified"][target.split("/{}/".forma))[1]] = makelink(target)
     # search for renamed files, which will appear to be both deleted and new
-    print ("Renamed search underway now")
+    print ("Renamed search underway now", dcmp.left_only, dcmp.right_only)
     for dfile in changes["deleted"]:
-        print (dfile)
         for nfile in changes["new"]:
             print (dfile, nfile, filecmp.cmp(dfile, nfile))
+        try_remove(dfile)
 
 
-    for sub_dcmp in dcmp.subdirs.values():
-        action_diffs(sub_dcmp, targetdirname)
+    for i, sub_dcmp in enumerate(dcmp.subdirs.values()):
+        print ("iterating over subdirectory: ", list(dcmp.subdirs.keys())[i])
+        action_diffs(sub_dcmp)
 
-filecmp.dircmp
-def download_files_from_dir(folder_url, dir_name, td):
-    download_dropbox_folder(folder_url, td)
-    comparison = filecmp.dircmp(dir_name, td, ignore=ignorelist, hide=ignorelist)
-    td = os.path.basename(os.path.normpath(dir_name))
-    print ("td", td)
-    action_diffs(comparison, td)
+#filecmp.dircmp
+def download_files_from_dir(folder_url, dir_name, temp):
+    download_dropbox_folder(folder_url, temp)
+    comparison = filecmp.dircmp(dir_name, temp, ignore=ignorelist, hide=ignorelist)
+    target = os.path.basename(os.path.normpath(dir_name))
+    print ("temp", temp)
+    print ("target", target)
+    action_diffs(comparison, target)
 
 #-----------------------------
 
@@ -113,8 +113,10 @@ if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
 changes = {"deleted":{},"modified":{},"new":{}}
 download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
-##### commented out 
 #try_remove(tempdir)
+
+
+changes["deleted"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
 
 # record changes by adding them to existing json file
 try:   

@@ -4,6 +4,11 @@ Critical Care Guidelines - for use by appropriately-trained staff only.
 ### Contributors
 - Kenneth Baillie - mkdocs site, accordion html and search indexing script, dropbox download and parsing, automation on github, document comparison check, web app installation.
 
+## Creating a new directory
+
+Edit the custom_text.html file
+Find/replace the directory name in index.md
+
 ## Website updates
 
 These steps occur to update the website. They are specified in yml file in the github "actions" tab:
