@@ -312,19 +312,14 @@ if not os.path.exists(changelog):
 new_changes_present=False
 with open(changelog) as f:
     changes = json.load(f)
-newtext = "\n<hr><h3>{:%d/%m/%Y %H:%M:%S}</h3><br>\n".format(datetime.now())
+newtext = "\n<hr><h3>{:%d/%m/%Y %H:%M:%S}</h3>".format(datetime.now())
 for thistype in changes:
     typechanges = [x for x in changes[thistype] if accept(os.path.join(args.dir, x), os.path.split(x)[-1])]
     if len(typechanges) > 0:
         new_changes_present = True
-        newtext += "<h4>{}</h4>\n".format(thistype)
+        newtext += "<br>\n<h4>{}</h4>\n".format(thistype)
         for file in typechanges:
-            if thistype=="deleted":
-                newtext += "<p>- {}</p>\n".format(file)
-            elif os.path.isdir(os.path.join(args.dir, file)):
-                newtext += "<p>- {} [folder]</p>\n".format(file)
-            else:
-                newtext += "<p>- {}: <a href='{}'>link</a></p>\n".format(file, changes[thistype][file])
+            newtext += "<p>{}</p>".format(changes[thistype][file].replace('\\',''))
 oldtext = ""
 if new_changes_present == True or args.override_changes:
     print ("New changes found. Making new search index.")
@@ -336,6 +331,7 @@ if new_changes_present == True or args.override_changes:
     with open(changelog,"w") as o:
         json.dump({},o)
 else:
+    newtext += "<p> No new changes found.</p><br>\n"
     print ("No new changes found in {}\n Aborting makelist.\n".format(changelog))
     sys.exit()
 #-----------------------------

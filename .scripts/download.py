@@ -3,9 +3,10 @@
 import os
 import sys
 import json
+import copy
 import shutil
-import filecmp
 import pathlib
+import filecmp
 import requests
 import urllib.parse
 from zipfile import ZipFile
@@ -15,6 +16,8 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/7m3txr3zwy2nrf7/AADmjUlNgm78GD60FMT9PNNQa?dl=0') # default test dir
 parser.add_argument('-d', '--destinationdir', default='docs/test_secret/criticalcare/')
+parser.add_argument('-w', '--webstem', default='https://critcare.net/')
+parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 args = parser.parse_args()
 #-----------------------------
 if args.sourcedir == "no_dir_specified":
@@ -36,10 +39,21 @@ ignorelist = [
         "Emergencies",
     ]
 
-def makelink(target):
+def printablepath(target, link=False):
+    target = target.replace("/.temp/","/")
     p = pathlib.PurePosixPath(target)
-    link = "https://critcare.net/{}".format(p.relative_to('docs'))
-    return link
+    if link:
+        if os.path.isdir(p):
+            out = '{}: [folder]'.format(p.relative_to(args.destinationdir))
+        else:
+            out = '{}: <a href="{}{}">Link</a>'.format(
+                                    p.relative_to(args.destinationdir), 
+                                    args.webstem,
+                                    p.relative_to('docs'),
+                                    )
+    else:
+        out = '{}'.format(p.relative_to(args.destinationdir))
+    return out
 
 def download_dropbox_folder(folder_url, dest):
     # download whole dropbox folder as zip file
@@ -54,6 +68,7 @@ def download_dropbox_folder(folder_url, dest):
         zipObj.extractall(dest)
 
 def try_remove(thistarget):
+    if args.verbose: print ("==> Trying to remove:", thistarget)
     if os.path.isdir(thistarget):
         try:
             shutil.rmtree(thistarget)
@@ -65,35 +80,49 @@ def try_remove(thistarget):
         except:
             print ("Unable to remove this file ({}): {}".format(sys.exc_info()[0],thistarget))
 
-def action_diffs(dcmp):
+def record_diffs(dcmp):
     global changes
+    # RECORD changes
     for name in dcmp.left_only:
         dfile = os.path.join(dcmp.left, name)
-        print("deleted file {}".format(dfile))
-        changes["deleted"][dfile] = makelink(dfile)
+        if args.verbose: print ("==> deleted file {}".format(dfile))
+        changes["deleted"][dfile]=dfile
     for name in dcmp.right_only:
-        nfile = os.path.join(dcmp.left, name)
-        print("new file {}".format(name))
-        if os.path.isdir(os.path.join(dcmp.right, name)):
-            shutil.copytree(os.path.join(dcmp.right, name), nfile)
-        else:
-            shutil.copy2(os.path.join(dcmp.right, nfile), nfile)
-        changes["new"][target.split("/{}/".forma))[1]] = makelink(target)
+        nfile = os.path.join(dcmp.right, name)
+        if args.verbose: print ("==> new file {}".format(nfile))
+        changes["new"][nfile]=nfile
     for name in dcmp.diff_files:
-        target = os.path.join(dcmp.left, name)
-        print("changed file {}".format(target))
-        shutil.copy2(os.path.join(dcmp.right, name), target)
-        changes["modified"][target.split("/{}/".forma))[1]] = makelink(target)
-    # search for renamed files, which will appear to be both deleted and new
-    print ("Renamed search underway now", dcmp.left_only, dcmp.right_only)
-    for dfile in changes["deleted"]:
-        for nfile in changes["new"]:
-            print (dfile, nfile, filecmp.cmp(dfile, nfile))
-        try_remove(dfile)
-
-
+        cfile = os.path.join(dcmp.right, name)
+        if args.verbose: print ("==> changed file {}".format(cfile))
+        changes["modified"][cfile]=cfile
+    if args.verbose: print ("==> Renamed search underway now", dcmp.left_only, dcmp.right_only)
+    for dfile in copy.copy(list(changes["deleted"].keys())):
+        for nfile in copy.copy(list(changes["new"].keys())):
+            if args.verbose: print ("==> ", dfile, nfile, filecmp.cmp(dfile, nfile))
+            if filecmp.cmp(dfile, nfile):
+                changes["renamed"][dfile] = nfile
+                if dfile in changes["deleted"].keys():
+                    del changes["deleted"][dfile]
+                if nfile in changes["new"].keys():
+                    del changes["new"][nfile]
     for i, sub_dcmp in enumerate(dcmp.subdirs.values()):
-        print ("iterating over subdirectory: ", list(dcmp.subdirs.keys())[i])
+        if args.verbose: print ("==> Iterating over subdirectory: ", list(dcmp.subdirs.keys())[i])
+        record_diffs(sub_dcmp)
+
+def action_diffs(dcmp):
+    # ENACT changes
+    for name in dcmp.left_only: # remove deleted files from online (left) folder
+        try_remove(os.path.join(dcmp.left, name))
+    for name in dcmp.right_only:# add new directories or files from right to online (left) folder
+        if os.path.isdir(os.path.join(dcmp.right, name)):
+            shutil.copytree(os.path.join(dcmp.right, name), os.path.join(dcmp.left, name))
+        else:
+            shutil.copy2(os.path.join(dcmp.right, name), os.path.join(dcmp.left, name))
+    for name in dcmp.diff_files: # copy changed files from right to left folder
+        shutil.copy2(os.path.join(dcmp.right, name), os.path.join(dcmp.left, name))
+    # look in subdirectories
+    for i, sub_dcmp in enumerate(dcmp.subdirs.values()):
+        if args.verbose: print ("==> Iterating over subdirectory: ", list(dcmp.subdirs.keys())[i])
         action_diffs(sub_dcmp)
 
 #filecmp.dircmp
@@ -101,9 +130,8 @@ def download_files_from_dir(folder_url, dir_name, temp):
     download_dropbox_folder(folder_url, temp)
     comparison = filecmp.dircmp(dir_name, temp, ignore=ignorelist, hide=ignorelist)
     target = os.path.basename(os.path.normpath(dir_name))
-    print ("temp", temp)
-    print ("target", target)
-    action_diffs(comparison, target)
+    record_diffs(comparison)
+    action_diffs(comparison)
 
 #-----------------------------
 
@@ -111,28 +139,40 @@ def download_files_from_dir(folder_url, dir_name, temp):
 tempdir = os.path.join(args.destinationdir, ".temp")
 if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
-changes = {"deleted":{},"modified":{},"new":{}}
+changes = {"deleted":{},"modified":{},"new":{},"renamed":{}}
+outputc = {"deleted":{},"modified":{},"new":{},"renamed":{}}
 download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
-#try_remove(tempdir)
+try_remove(tempdir)
 
-
-changes["deleted"][target.split("/{}/".format(targetdirname))[1]] = makelink(target)
-
+outputc = {}
+for category in changes:
+    outputc[category]={}
+    if args.verbose: print("\n==> Changes:", category)
+    for targetfile in changes[category]:
+        if args.verbose: print("\t-", targetfile)
+        if category =="deleted":
+            outputc[category][targetfile.replace("/.temp/","/")] = printablepath(changes[category][targetfile]) 
+        elif category == "new" or category == "modified":
+            outputc[category][targetfile.replace("/.temp/","/")] = printablepath(changes[category][targetfile],link=True) # switch new/changed filepaths to online directory
+        elif category == "renamed":
+            outputc[category][targetfile.replace("/.temp/","/")] = "{} ==> {}".format(
+                                                                        printablepath(targetfile),
+                                                                        printablepath(changes[category][targetfile])
+                                                                    )
 # record changes by adding them to existing json file
 try:   
     with open(changelog) as f:
         stored_changes = json.load(f)
 except:
     stored_changes = {}
-c={}
-for d in changes:
-    if d in stored_changes:
-        c[d] = changes[d] | stored_changes[d] #Python 3.9 merging dictionaries
-    else:
-        c[d] = changes[d]
+for category in outputc:
+    try:
+        outputc[category] = outputc[category] | stored_changes[category]
+    except:
+        pass
+print (outputc)
 with open(changelog,"w") as o:
-    json.dump(c, o, indent=4)
-
+    json.dump(outputc, o, indent=4)
 
 
 
