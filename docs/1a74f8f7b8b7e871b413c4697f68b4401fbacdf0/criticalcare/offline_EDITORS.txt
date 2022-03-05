@@ -1,15 +1,9 @@
 Acute_Pulmonary_Embolism_and_DVT: ?
 Airway: Rosie Baruah
-Bedside care: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk, Michelle Jack Michelle.Jack@nhslothian.scot.nhs.uk and Gail Renwick Gail.Renwick@nhslothian.scot.nhs.uk
-to include: 
-	- Video_communication: ?
-	- VTE_Prevention: ?
-	- Recovery_after_ICU: Charlene Richardson charlene.richardson@nhslothian.scot.nhs.uk
-	- Lothian_Long-Term_Ventilation_Service: ?
 Breathing (Respiratory): Neil Young neil.h.young@gmail.com
 Cardiovascular: Stuart Gillon sgillon@me.com
 COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
-Delirium: ? 
+Delirium: Alasdair Hurry 
 Diabetes and Glucose: Gregor McNeill  Gregor.McNeill@nhslothian.scot.nhs.uk
 Drugs: Tom Craven Thomas.Craven@ed.ac.uk
 ECLS: Grant Price
@@ -18,16 +12,15 @@ End of life care: Murray Blackstock murray.blackstock@nhslothian.scot.nhs.uk
 Ethics and Law: Monika Beatty
 GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk
 Infection and sepsis: David Hall david.p.hall@gmail.com
-Policies_and_admin: ?
-	- Trainees: Ally Gibson
 Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
 Obstetrics: Jen Service jennifer.service@nhs.net
 Organ donation: Olly Robinson oliverrobinson@doctors.org.uk
+Policies_and_admin: Kallirroi Kefala
 Post op care: Ally Gibson Alistair.Gibson@nhslothian.scot.nhs.uk alistairgibson82@gmail.com
 Procedures: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
 Renal and urology: Olly Robinson oliverrobinson@doctors.org.uk
 Research: David Griffiths dmgriffith@gmail.com
+Routine care: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk, Michelle Jack Michelle.Jack@nhslothian.scot.nhs.uk and Gail Renwick Gail.Renwick@nhslothian.scot.nhs.uk [includes: Lothian_Long-Term_Ventilation_Service; Recovery_after_ICU: Charlene Richardson charlene.richardson@nhslothian.scot.nhs.uk; Trainees: Ally Gibson; Video_communication; VTE_Prevention]
 Transfer: Mark Dunn mjgdunn@googlemail.com
 Trauma and Burns: Murray Geddes
-
 Web app administration: Kenny Baillie j.k.baillie@ed.ac.uk
