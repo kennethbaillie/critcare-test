@@ -6,8 +6,9 @@ Critical Care Guidelines - for use by appropriately-trained staff only.
 
 ## Creating a new directory
 
-Edit the custom_text.html file
-Find/replace the directory name in index.md
+- copy the full contents of the guidelines_browser directory
+- customise `index.md`
+- create an actions file to automatically update your new browser
 
 ## Website updates
 
