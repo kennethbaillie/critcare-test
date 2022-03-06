@@ -1,17 +1,17 @@
 {
-    "name": "Guidelines App",
-    "short_name": "Guidelines",
-    "description": "NHS Lothian Critical Care Guidelines.",
+    "name": "PULSE App",
+    "short_name": "PULSE",
+    "description": "NHS Lothian Critical Care PULSE.",
     "display": "fullscreen",
     "start_url": "../../",
     "icons": [
         {
-            "src": "/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/android-chrome-192x192.png",
+            "src": "/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/android-chrome-256x256.png",
+            "src": "/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/android-chrome-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         }

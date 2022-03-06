@@ -14,11 +14,14 @@ Critical Care Guidelines - for use by appropriately-trained staff only.
 
 ### To change password
 The directory name has to change in the following places:
-- the actual dir itself
+- the actual dir itself, and within it:
+	- index.md
+	- img/favicon/site.webmanifest 
 - .github/workflows/makelist.yml
 - .github/workflows/record_changes.yml
 - /docs/index.md
-- /themes/mods/base.html [this should change at some point]
+
+
 
 ## Website updates
 
