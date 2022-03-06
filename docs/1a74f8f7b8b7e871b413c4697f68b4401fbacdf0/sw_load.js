@@ -9,7 +9,7 @@ navigator.serviceWorker.register('./sw.js').then(function(reg) {
 // Code to handle install prompt on desktop
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
-addBtn.style.display = 'none';
+addBtn.style.display = 'block';
 
 window.addEventListener('beforeinstallprompt', (e) => {
   console.log("beforeinstallprompt activated")

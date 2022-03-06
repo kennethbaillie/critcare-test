@@ -1,7 +1,7 @@
 {
     "name": "PULSE App",
     "short_name": "PULSE",
-    "description": "NHS Lothian Critical Care PULSE.",
+    "description": "PULSE education app - NHS Lothian Critical Care",
     "display": "fullscreen",
     "start_url": "../../",
     "icons": [

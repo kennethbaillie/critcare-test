@@ -33,7 +33,7 @@ enable_toc: false
 </div>
 
 <div class="col-xs-12 col-md-6 col-lg-8">
-  <button class="add-button">Install webapp</button>
+  <button class="add-button">app</button>
 </div>
 
 <div>
