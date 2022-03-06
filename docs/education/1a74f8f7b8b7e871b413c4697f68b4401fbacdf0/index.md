@@ -25,7 +25,9 @@ enable_toc: false
 
 
 <h3>PULSE ICU Education materials</h3>
-<p>Edited & run by Lesley Gracie</p>
+<p>
+  Edited & run by Lesley Gracie. Click here to see <a href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/">Unit Guidelines</a>.
+</p>
 
 <p>Search: <input id="search" type="text" placeholder="enter search term"></p>
 

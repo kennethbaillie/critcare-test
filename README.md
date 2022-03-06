@@ -20,7 +20,7 @@ The directory name has to change in the following places:
 - .github/workflows/makelist.yml
 - .github/workflows/record_changes.yml
 - /docs/index.md
-
+- themes/mods/base.html
 
 
 ## Website updates
