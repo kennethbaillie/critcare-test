@@ -170,7 +170,6 @@ for category in outputc:
         outputc[category] = outputc[category] | stored_changes[category]
     except:
         pass
-print (outputc)
 with open(changelog,"w") as o:
     json.dump(outputc, o, indent=4)
 

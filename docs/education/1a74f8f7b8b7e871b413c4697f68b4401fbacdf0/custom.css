@@ -1,3 +1,4 @@
+
 .emergency{
   color: red;
 }
@@ -14,7 +15,7 @@
 .searchresult{
   margin: 0 0 0 5px;
   font-size: smaller;
-  color: cornflowerblue;
+  color: #20c10b;
   display:list-item;
   list-style-type: square;
 }
@@ -36,4 +37,12 @@
 .add-button {
   margin-top: 10px;
   margin-left: 1px;
+}
+
+.panel-title{
+color: green;  
+}
+
+.list-group-item{
+  color: green;
 }

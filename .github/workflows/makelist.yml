@@ -36,12 +36,12 @@ jobs:
       - name: Download files
         run: |
           python .scripts/download.py -s "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0" -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/"
-          python .scripts/download.py -s "https://www.dropbox.com/sh/otczbgim2zkeub8/AACru2-Xv6w2qFAwsz6fSi0Ja?dl=0" -d "docs/education/education_files/"
+          python .scripts/download.py -s "https://www.dropbox.com/sh/otczbgim2zkeub8/AACru2-Xv6w2qFAwsz6fSi0Ja?dl=0" -d "docs/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/education/"
 
       - name: Make list
         run: |
           python .scripts/makelist.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "docs/critcare_pub/criticalcare/" -e
-          python .scripts/makelist.py -d "docs/education/education_files/" 
+          python .scripts/makelist.py -d "docs/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/education/" -p "docs/education/public/" -e
 
       - name: Commit pages if changed
         run: |
