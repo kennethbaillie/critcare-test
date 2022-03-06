@@ -3,6 +3,7 @@ title: guidelines access system
 canonical_url: critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0
 allowindex: false
 enable_toc: false
+app: true
 ---
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
@@ -20,7 +21,7 @@ enable_toc: false
 </div>
 
 <div class="col-xs-12 col-md-6 col-lg-8">
-  <button class="add-button">app</button>
+  <button class="add-button">Install Webapp</button>
 </div>
 
 <div>
