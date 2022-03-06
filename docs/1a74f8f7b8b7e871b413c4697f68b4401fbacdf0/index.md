@@ -5,11 +5,11 @@ allowindex: false
 enable_toc: false
 ---
 
+<link rel="manifest" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/site.webmanifest" crossorigin="use-credentials">
 <link rel="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon-16x16.png">
-<link rel="manifest" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/site.webmanifest" crossorigin="use-credentials">
 <link rel="mask-icon" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="shortcut icon" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon.ico">
 <meta name="msapplication-TileColor" content="#da532c">
@@ -51,48 +51,7 @@ enable_toc: false
 </div>
 
 <script src="search.js"></script>
-<script >
-  if ('serviceWorker' in navigator) {
-navigator.serviceWorker.register('./sw.js').then(function(reg) {
-    console.log('Successfully registered service worker', reg);
-}).catch(function(err) {
-    console.warn('Error whilst registering service worker', err);
-});
-}
-
-// Code to handle install prompt on desktop
-let deferredPrompt;
-const addBtn = document.querySelector('.add-button');
-addBtn.style.display = 'block';
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  console.log("beforeinstallprompt activated")
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI to notify the user they can add to home screen
-  addBtn.style.display = 'block';
-
-  addBtn.addEventListener('click', () => {
-    console.log("addBtn button activated")
-    // hide our user interface that shows our A2HS button
-    addBtn.style.display = 'none';
-    // Show the prompt
-    deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
-      } else {
-        console.log('User dismissed the A2HS prompt');
-      }
-      deferredPrompt = null;
-    });
-  });
-});
-
-</script>
+<script src="sw_load.js"></script>
 
 
 

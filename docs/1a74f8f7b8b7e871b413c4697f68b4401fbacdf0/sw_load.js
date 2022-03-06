@@ -11,6 +11,7 @@ let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
 addBtn.style.display = 'block';
 
+/*
 window.addEventListener('beforeinstallprompt', (e) => {
   console.log("beforeinstallprompt activated")
   // Prevent Chrome 67 and earlier from automatically showing the prompt
@@ -37,3 +38,15 @@ window.addEventListener('beforeinstallprompt', (e) => {
     });
   });
 });
+*/
+
+window.addEventListener("beforeinstallprompt", function(e) {
+  // log the platforms provided as options in an install prompt
+  console.log(e.platforms); // e.g., ["web", "android", "windows"]
+  e.userChoice.then(function(choiceResult) {
+    console.log(choiceResult.outcome); // either "accepted" or "dismissed"
+  }, handleError);
+});
+
+
+
