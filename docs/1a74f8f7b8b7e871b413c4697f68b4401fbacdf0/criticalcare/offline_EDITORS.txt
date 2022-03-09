@@ -3,7 +3,7 @@ Airway: Rosie Baruah
 Breathing (Respiratory): Neil Young neil.h.young@gmail.com
 Cardiovascular: Stuart Gillon sgillon@me.com
 COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
-Delirium: Alasdair Hurry 
+Delirium: Alasdair Hurry ahurry@doctors.org.uk 
 Diabetes and Glucose: Gregor McNeill  Gregor.McNeill@nhslothian.scot.nhs.uk
 Drugs: Tom Craven Thomas.Craven@ed.ac.uk
 ECLS: Grant Price
