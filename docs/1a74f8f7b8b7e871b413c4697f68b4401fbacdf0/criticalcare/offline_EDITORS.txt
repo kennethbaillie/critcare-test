@@ -11,6 +11,7 @@ Emergencies: Kenny Baillie j.k.baillie@ed.ac.uk
 End of life care: Murray Blackstock murray.blackstock@nhslothian.scot.nhs.uk
 Ethics and Law: Monika Beatty
 GI Liver and transplant: Olly Robinson oliverrobinson@doctors.org.uk
+Haematology_CAR-T: Rosie Baruah
 Infection and sepsis: David Hall david.p.hall@gmail.com
 Neurological: Jonathan Rhodes jrhodes1@exseed.ed.ac.uk
 Obstetrics: Jen Service jennifer.service@nhs.net
