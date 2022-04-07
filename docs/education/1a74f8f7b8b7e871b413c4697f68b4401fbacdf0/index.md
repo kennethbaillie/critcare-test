@@ -15,7 +15,7 @@ enable_toc: false
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="cache-control" content="Private" />
 <meta http-equiv="Expires" content="600" />
 <script src="https://unpkg.com/lunr/lunr.js"></script>
