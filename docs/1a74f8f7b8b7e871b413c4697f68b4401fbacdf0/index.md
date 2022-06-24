@@ -26,7 +26,7 @@ app: true
 
 <div>
   <p>
-    For use by appropriately-trained critical care staff in NHS Lothian only. <br>Use your phone's "add to home screen" function to install webapp.
+    For use by appropriately trained critical care staff in NHS Lothian only. <br>Use your phone's "add to home screen" function to install webapp.
   </p>
     
   <p>
