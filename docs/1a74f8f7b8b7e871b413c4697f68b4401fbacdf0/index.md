@@ -22,6 +22,7 @@ app: true
 
 <div class="col-xs-12 col-md-6 col-lg-8">
   <button class="add-button">Install Webapp</button>
+  <img id="install_btn" alt="📲" src="/phone.png" style="width: 2em; height: 2em; margin: 9px 2em 9px 1em; vertical-align: -0.1em; float: right;">
 </div>
 
 <div>
