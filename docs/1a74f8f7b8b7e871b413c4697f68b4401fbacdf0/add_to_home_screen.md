@@ -5,6 +5,8 @@ allowindex: false
 enable_toc: false
 ---
 
+[<-- Back to guidelines](../)
+
 # iPad or iPhone
 
 - Launch “Safari” app.  (This does not work from the “Chrome” app.)
