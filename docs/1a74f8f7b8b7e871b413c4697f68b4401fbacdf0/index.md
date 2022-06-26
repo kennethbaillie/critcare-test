@@ -29,7 +29,8 @@ app: true
 
 <div>
   <p>
-    For use by appropriately trained critical care staff in NHS Lothian only. <br>Use your phone's "add to home screen" function to install webapp.
+    For use by appropriately trained critical care staff in NHS Lothian only. 
+    <br>Use your phone's "add to home screen" function to install webapp.
   </p>
 
 <!--
@@ -39,7 +40,7 @@ app: true
 -->
 
   <p>
-    Guideline editors can find <a href="https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/offline_README/">Instructions here</a> 
+    Guideline editors can find <a href="https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/offline_README/">Instructions here</a>.
   </p>
 </div>
 
