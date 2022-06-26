@@ -12,30 +12,26 @@ app: true
 
 <link rel="stylesheet" href="custom.css">
 
-<div class="col-xs-12 col-md-6 col-lg-4">
-
-Search: <input id="search" type="text" placeholder="enter search term" style="width:150px; margin-bottom: 3px;">
-
-<button class="applink add-button">
-<img class="installpic" alt="📲" src="/img/phone.png">
-Install
+Search: <input id="search" type="text" placeholder="enter search term">
+<button class="add-button" style="float:right;">
+<img id="install_btn" alt="📲" src="/img/phone.png" style="
+    width: 1em;
+    height: 1em;
+    margin: 3px 3px 0px 0px;
+    vertical-align: -0.1em;
+    ">
+Install Webapp
 </button>
 
-<button class="applink home-button" onclick="window.location.href='add_to_home_screen/'">
-<img class="installpic" alt="📲" src="/img/phone.png">
-Add app
-</button>
 
 <div id="results"></div>
 
+<div class="col-xs-12 col-md-6 col-lg-4">
+  {!test_secret/list.html!}
 </div>
 
-<div class="col-xs-12 col-md-6 col-lg-4">
-  {!1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/list.html!}
-</div>
 
-
-<div class="col-xs-12 col-md-6 col-lg-4">
+<div>
   <p>
     For use by appropriately trained critical care staff in NHS Lothian only. 
   </p>

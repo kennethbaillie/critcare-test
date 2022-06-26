@@ -22,7 +22,7 @@ scriptpath = os.path.dirname(os.path.realpath(__file__))
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../docs/test_secret/criticalcare/'))
-parser.add_argument('-p', '--publicdir', default="public")
+parser.add_argument('-p', '--publicdir', default="../docs/test_secret/public")
 parser.add_argument('-e', '--do_emergency', default=False, action="store_true")
 parser.add_argument('-l', '--listfilename', default='list.html')
 parser.add_argument('-i', '--indexfilename', default='index.json')
@@ -186,14 +186,15 @@ def formatdir(thisdir, basedir, sl, depth=0):
                             fixname(entry))
                             )
                 elif entry.endswith('.md'):
-                    print (thisdir, entry, basedir)
+                    print ("md", thisdir, entry, basedir)
+                    entry = entry.replace(".md","")
                     text+=('''
                         <a class='{}' href='{}'>
                             <li class='list-group-item' style='margin-left:{}em;'>{}</li>
                         </a>
                         '''.format(
                             eclass(entry),
-                            os.path.relpath(os.path.join(thisdir, entry.replace(".md","")), basedir),
+                            os.path.relpath(os.path.join(thisdir, entry), basedir),
                             depth,
                             fixname(entry))
                             )
