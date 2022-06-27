@@ -45,6 +45,8 @@
             {%- endblock %}
 
             <ul class="nav navbar-nav navbar-right">
+                <li>Test</li>
+
                 {%- block search_button %}
                     {%- if 'search' in config['plugins'] %}
                     <li>
@@ -54,6 +56,16 @@
                     </li>
                     {%- endif %}
                 {%- endblock %}
+
+                {% if page.canonical_url %}
+                    {% if "1a74f8f7b8b7e871b413c4697f68b4401fbacdf0" in page.canonical_url %}
+                        <li>
+                            <a href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/">
+                                Home
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endif %}
 
                 {%- block next_prev %}
                     {%- if page and (page.next_page or page.previous_page) %}
