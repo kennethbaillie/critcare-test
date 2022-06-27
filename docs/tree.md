@@ -1,64 +1,104 @@
-criticalcare/├── Airway/
+criticalcare/├── .DS_Store
+├── Airway/
+│   ├── Anticipated difficult airway tool.pdf
 │   ├── Cook Staged Extubation Set.pdf
 │   ├── Critical care extubation checklist.pdf
-│   ├── Disposable_bronchoscopes_AMBU_Ascope.pdf
-│   ├── Emergency intubation checklist_em.pdf
-│   ├── Hospital_in-patients_with_a_Tracheostomy.pdf
-│   ├── ICU anticipated difficult airway form.pdf
-│   ├── McGrath Mac Guidelines for Use.pdf
-│   └── Tracheostomy.pdf
+│   ├── Emergency intubation checklist_em_pub.pdf
+│   ├── McGrath Mac.pdf
+│   ├── Percutaneous tracheostomy checklist.pdf
+│   ├── SACETT.pdf
+│   ├── Tracheal tube displacement algorithm for non-anaesthetistsintensivists.pdf
+│   └── Tracheostomy_Laryngectomy/
+│       ├── Hospital_in-patients_with_a_Tracheostomy.pdf
+│       ├── Laryngectomy_poster_em.pdf
+│       ├── Tracheostomy change in Critical Care.pdf
+│       ├── Tracheostomy guideline.pdf
+│       ├── Tracheostomy safety box contents.pdf
+│       ├── Tracheostomy suctioning cleaning guideline.pdf
+│       └── Tracheostomy_poster_em.pdf
+├── Breathing(Respiratory)/
+│   ├── APRV guideline.pdf
+│   ├── ARDS Strategy.pdf
+│   ├── AScope by AMBU.pdf
+│   ├── Bipap V60 Guidelines.pdf
+│   ├── Blue Rocket Intercostal Drainage Set-up.pdf
+│   ├── Chest_drain_poster.pdf
+│   ├── CPAP Guidelines.pdf
+│   ├── HFNC - High Flow through ventilator.pdf
+│   ├── High Flow Nasal Oxygen Set Up.pdf
+│   ├── High Flow Nasal Oxygen.pdf
+│   ├── Inhaled Nitrous Oxide.pdf
+│   ├── IPPB using an ICU Ventilator.pdf
+│   ├── Low pressure intercostal suction.pdf
+│   ├── offline_SARI/
+│   │   ├── H1N1 Influenza Safe Removal of Personal Protective Equipment.pdf
+│   │   ├── H1N1 Virology Sampling and Oseltamivir Dose.pdf
+│   │   ├── Management of patients with SARI-additional Information.pdf
+│   │   ├── Management of Patients with severe acute respiratory infection SARI.pdf
+│   │   ├── MERS-CoV Guideline.pdf
+│   │   ├── Obstetric Patients in Ward 118 with H1N1.pdf
+│   │   ├── Setup Guide for Jupiter Hoods.pdf
+│   │   ├── Suspected Influeza A, Avian influenza, H5N1 and SARS.pdf
+│   │   └── Suspected Influeza A-H7N9 Guideline.pdf
+│   ├── Passy Muir Valve.pdf
+│   ├── Proning checklist.pdf
+│   ├── Proning guideline.pdf
+│   ├── salbutamol and ipratroprium MDI.pdf
+│   ├── T piece Y piece guideline.pdf
+│   └── Ventilators Circuits, Filters and Closed Suction - Set up and Maintenance.pdf
 ├── Cardiovascular/
-│   ├── Administration of Inotropes in Critical Care.pdf
+│   ├── Acute Type B Aortic Dissection.pdf
 │   ├── Adult Advanced Life Support Algorithm_em.pdf
 │   ├── Air Embolism_em.pdf
 │   ├── Cardiac Output Monitor HemoSphere Setup_pub.pdf
 │   ├── Cardiac Output Monitor Normal Values.pdf
 │   ├── Cardiac Output Monitor VolumeView Setup.pdf
+│   ├── Cardiogenic Shock.pdf
 │   ├── Central Venous Catheters - Guideline for Management of Misplacement.pdf
-│   ├── Central Venous Catheters - Guideline for Placement by ACCPs.pdf
-│   ├── Central Venous Vatheter - Removal Guideline.pdf
 │   ├── Cerebral Oximetry Foresight _ Set Up Guide_pub.pdf
 │   ├── EZ-IO Intraosseus Access Device Guide_pub_em.pdf
 │   ├── GJNH Acute Heart Failure Referral Form.pdf
 │   ├── GJNH Acute Heart Failure Referral pathway.pdf
-│   ├── Intra-aortic Balloon Pump Guideline_pub.pdf
-│   ├── Intra-aortic Balloon Pump Safety Checklist.pdf
-│   ├── Management of Acute Type B Aortic Dissection.pdf
-│   ├── Management of Hypertension within Critical Care_pub.pdf
+│   ├── Intra Aortic Balloon Pump Bedside Checks_pub.pdf
+│   ├── Intra Aortic Balloon Pump Guideline_pub.pdf
+│   ├── Management of hypertension within Critical Care vers 2.0.pdf
 │   ├── Out of Hospital Cardiac Arrest_pub.pdf
+│   ├── Pulmonary_Embolism_and_DVT/
+│   │   ├── Acute pulmonary embolism risk stratification and management plan.pdf
+│   │   ├── alteplase for massive PE.pdf
+│   │   ├── Care pathway for Catheter Directed Thrombolysis (CDT) of Iliofemoral deep vein thrombosis (DVT).pdf
+│   │   └── Catheter directed thrombolysis of iliofemoral DVT alteplase.pdf
 │   └── Steroids for Septic Shock.pdf
-├── COVID19/
-│   ├── 20201113 PPE Guidance for Sterile Procedures in C19.docx
-│   ├── COVID 19 ICM guidance basic goals_Mar_2021.pdf
+├── Covid-19/
+│   ├── Covid 19 Death Certification Guideline.pdf
+│   ├── COVID 19 Haematology/
+│   │   ├── Dalteparin_thromboprophylaxis.docx
+│   │   ├── Guidance on Heparin assays (anti-factor Xa).pdf
+│   │   ├── heparin infusion chart COVID-19 in critical care.pdf
+│   │   └── Treatment of venous thromboembolism in COVID-19 patients.pdf
+│   ├── COVID 19 ICM guidance basic goals_June_2022.pdf
+│   ├── COVID 19 Procedures/
+│   │   ├── COVID Extubation Checklist.pdf
+│   │   ├── COVID Tracheostomy checklist.pdf
+│   │   └── COVID19 Critical Care Intubation Action Card.pdf
 │   ├── COVID 19 Referral for ECMO.pdf
-│   ├── COVID Extubation Checklist.pdf
-│   ├── COVID Tracheostomy checklist.pdf
-│   ├── COVID19 Critical Care Intubation Action Card Surge 2.pdf
-│   ├── Critical Care COVID-19 Death Certification.pdf
-│   ├── Dalteparin_thromboprophylaxis.docx
-│   ├── Management of fluid balance and renal replacement therapy inCOVID-19 ARDS patients.pdf
+│   ├── NHS Scotland Critical Care PPE FAQs.pdf
 │   ├── Provision of End of Life Care in Critical Care with COVID19.pdf
 │   ├── RIE/
-│   │   ├── ACCESS TO COVID Handover.pdf
 │   │   ├── Aisys CS2 use as an ICU ventilator.pdf
-│   │   ├── COVID 2019 Critical Care Referral Pathway.pdf
+│   │   ├── COVID Critical Care Referral Pathway.pdf
 │   │   ├── COVID RIE Critical Care Admission Action Card.pdf
-│   │   ├── COVID RIE Inter hospital transfer action card.pdf
 │   │   ├── CoVid RIE Intubation Checklist.pdf
-│   │   ├── COVID-19 RIE Level 3 Intra-hospital CT Transfer Action Card Surge 2.pdf
-│   │   ├── Covid_extubation.pdf
-│   │   ├── Flow of patients in RIE Critical Care during C19.pdf
 │   │   └── RIE Near Me Guidance.pdf
+│   ├── RRT in COVID+ve or suspected patients.pdf
 │   ├── SJH/
 │   │   ├── Covid_extubation.pdf
-│   │   ├── SJH COVID-19_PPE_Donning_poster.pdf
-│   │   ├── SJH COVID19 ED Intubation Action Card March 2020.docx
-│   │   ├── SJH COVID19 ITU Intubation Action Card March 2020.docx
-│   │   └── SJH PHE_COVID-19_Doffing_poster.pdf
+│   │   ├── SJH COVID19 ED Intubation Action Card.pdf
+│   │   └── SJH COVID19 ITU Intubation Action Card.pdf
 │   ├── videos/
 │   │   ├── COVID Intubation Simulation Video.txt
 │   │   ├── COVID Proning Video.txt
-│   │   └── Donning and Doffing Video.doc
+│   │   └── Donning and Doffing Video.pdf
 │   └── WGH/
 │       ├── CoVid intubation checklist WGH.pdf
 │       ├── COVID WGH Ward 20 Intubation Kit list.pdf
@@ -72,111 +112,317 @@ criticalcare/├── Airway/
 │       │   └── WGH COVID Ventilation using GE Aisys CS2.pdf
 │       └── WGH_CT_Transfer_May.pdf
 ├── Delirium/
-│   ├── Assessment of the agitated patient.pdf
-│   ├── Boxing Gloves PosiMit_risk_assessment.pdf
-│   ├── Clonidine Sedation.pdf
+│   ├── Delirium Tool.pdf
+│   ├── Drugs Causing Delirium and Agitiation.pdf
+│   ├── FAQs AWI.pdf
 │   ├── Management of agitated patient.pdf
-│   └── Managing a Potentially Violent Patient in Critical Care.pdf
+│   ├── Managing a Potentially Violent Patient.pdf
+│   ├── RASS and CAM ICU assessment.pdf
+│   └── Risk assessment posi mit.pdf
 ├── Diabetes_and_Glucose/
-│   ├── DKA Pathway.pdf
-│   ├── HHS.pdf
-│   └── IV Insulin in Critical Care.pdf
+│   ├── Diabetic Ketoacidosis.pdf
+│   ├── Hyperosmolar Hyperglycaemic State.pdf
+│   ├── Intravenous Insulin Therapy (not for DKA or HHS).pdf
+│   └── Ketone Guideline (not for DKA or HHS).pdf
 ├── Drugs/
-│   └── BNF/
-│       └── BNF_online.txt
+│   ├── .DS_Store
+│   ├── .temp/
+│   │   ├── adrenaline.pdf
+│   │   ├── alfentanil.pdf
+│   │   ├── all IV drug infusion information.pdf
+│   │   ├── Alteplase for massive PE.pdf
+│   │   ├── aminophylline.pdf
+│   │   ├── amiodarone.pdf
+│   │   ├── anidulafungin.pdf
+│   │   ├── Antibiotic doses in CVVHD.pdf
+│   │   ├── atracurium.pdf
+│   │   ├── BNF/
+│   │   │   └── BNF_online.txt
+│   │   ├── calcium.pdf
+│   │   ├── clonidine.pdf
+│   │   ├── dexmedetomidine.pdf
+│   │   ├── dexmedetomidine_dosing_card.pdf
+│   │   ├── diazepam_diazemuls.pdf
+│   │   ├── dobutamine.pdf
+│   │   ├── Dosing in extremes of body weight.pdf
+│   │   ├── epoprostenol.pdf
+│   │   ├── fentanylv1 0.pdf
+│   │   ├── glyceryl_trinitrate.pdf
+│   │   ├── heparin dosing in CVVHD.pdf
+│   │   ├── heparin for Haemofiltration.pdf
+│   │   ├── heparin_critical_care_only.pdf
+│   │   ├── hydralazine.pdf
+│   │   ├── insulin.pdf
+│   │   ├── ketamine for status epilepticus.pdf
+│   │   ├── ketamine in asthma.pdf
+│   │   ├── ketamine.pdf
+│   │   ├── labetalol.pdf
+│   │   ├── magnesium.pdf
+│   │   ├── metaraminol.pdf
+│   │   ├── midazolam and thiopental levels.pdf
+│   │   ├── midazolam.pdf
+│   │   ├── morphine.pdf
+│   │   ├── nicardipine.pdf
+│   │   ├── nimodipine.pdf
+│   │   ├── noradrenaline.pdf
+│   │   ├── pancuromium.pdf
+│   │   ├── paracetamol.pdf
+│   │   ├── phenobarbitone.pdf
+│   │   ├── phenylephrine.pdf
+│   │   ├── phenytoin.pdf
+│   │   ├── phosphate.pdf
+│   │   ├── potassium.pdf
+│   │   ├── rocuronium.pdf
+│   │   ├── salbutamol.pdf
+│   │   ├── sodium_bicarbonate.pdf
+│   │   ├── sodium_valproate.pdf
+│   │   ├── temp.zip
+│   │   ├── thiopentone.pdf
+│   │   ├── vancomycin.pdf
+│   │   ├── vancomycin_fluid_restricted.pdf
+│   │   ├── vasopressin_organ_donors.pdf
+│   │   ├── vasopressin_sepsis.pdf
+│   │   └── zanamivir.pdf
+│   ├── adrenaline.pdf
+│   ├── alfentanil.pdf
+│   ├── all IV drug infusion information.pdf
+│   ├── alteplase for massive PE.pdf
+│   ├── aminophylline.pdf
+│   ├── amiodarone.pdf
+│   ├── anidulafungin.pdf
+│   ├── Antibiotic doses in CVVHD.pdf
+│   ├── atracurium.pdf
+│   ├── BNF/
+│   │   └── BNF_online.txt
+│   ├── calcium.pdf
+│   ├── clonidine.pdf
+│   ├── dexmedetomidine.pdf
+│   ├── dexmedetomidine_dosing_card.pdf
+│   ├── diazepam_diazemuls.pdf
+│   ├── dobutamine.pdf
+│   ├── Dosing in extremes of body weight.pdf
+│   ├── epoprostenol.pdf
+│   ├── fentanylv1 0.pdf
+│   ├── glyceryl_trinitrate.pdf
+│   ├── heparin dosing in CVVHD.pdf
+│   ├── heparin for Haemofiltration.pdf
+│   ├── heparin_critical_care_only.pdf
+│   ├── hydralazine.pdf
+│   ├── insulin.pdf
+│   ├── ketamin for status epilepticus.pdf
+│   ├── ketamine_in_asthma.pdf
+│   ├── labetalol.pdf
+│   ├── magnesium.pdf
+│   ├── metaraminol.pdf
+│   ├── midazolam and thiopental levels.pdf
+│   ├── midazolam.pdf
+│   ├── morphine.pdf
+│   ├── nicardipine.pdf
+│   ├── nimodipine.pdf
+│   ├── noradrenaline.pdf
+│   ├── pancuronium.pdf
+│   ├── paracetamol.pdf
+│   ├── phenobarbitone.pdf
+│   ├── phenylephrine.pdf
+│   ├── Phenytoin.pdf
+│   ├── Phosphate.pdf
+│   ├── potassium.pdf
+│   ├── Rocuronium.pdf
+│   ├── salbutamol.pdf
+│   ├── sodium_bicarbonate.pdf
+│   ├── thiopentone.pdf
+│   ├── valproate.pdf
+│   ├── vancomycin.pdf
+│   ├── vancomycin_fluid_restricted.pdf
+│   ├── vasopressin organ donation.pdf
+│   ├── vasopressin_sepsis.pdf
+│   └── zanamivir.pdf
 ├── ECLS/
+│   ├── Argatroban for ECLS.pdf
 │   ├── Contraindications to ECLS therapy.pdf
 │   ├── ECLS Nursing shift checks and observations.pdf
-│   ├── ECMO Anti Xa Protocol.pdf
 │   ├── Edinburgh ECPR pathway_em.pdf
 │   ├── Extra Corporeal Carbon Dioxide Removal.pdf
-│   ├── Indications for VA ecls.pdf
+│   ├── Indications for VA ECLS.pdf
 │   ├── Indications for VV ECLS.pdf
 │   ├── Patient preparation for ECLS.pdf
-│   ├── RIE ECMO manual.pdf
+│   ├── RIE ECLS Anti Xa Protocol.pdf
+│   ├── RIE ECLS manual.pdf
+│   ├── RIE ECPR.pdf
+│   ├── RIE ECPR_bak.pdf
 │   ├── Schedule of ECLS Nursing duties.pdf
-│   ├── Sedation, Analgesia, Antibiotic, Paralysis Management of the ECLS Patient.pdf
-│   └── Weaning guide VA ECLS.pdf
+│   ├── Sedation, Analgesia, Antibiotic and Paralysis Management of the ECLS Patient.pdf
+│   └── VA ECLS weaning guide.pdf
 ├── Emergencies/
 │   ├── Adult Advanced Life Support Algorithm_em.pdf
 │   ├── Air Embolism_em.pdf
+│   ├── bBraun Spaceplus Failure EMERGENCY ACTION CARD_em.pdf
+│   ├── Caesarean Section Action Cards_em.pdf
 │   ├── Edinburgh ECPR pathway_em.pdf
-│   ├── Emergency Caesarean Section Action Cards_em.pdf
-│   ├── Emergency intubation checklist_em.pdf
-│   └── EZ-IO Intraosseus Access Device Guide_pub_em.pdf
+│   ├── Emergency intubation checklist_em_pub.pdf
+│   ├── EZ-IO Intraosseus Access Device Guide_pub_em.pdf
+│   ├── Laryngectomy_poster_em.pdf
+│   └── Tracheostomy_poster_em.pdf
 ├── End_of_life_care/
-│   ├── Anatomy Dept Donation.pdf
-│   ├── Guideline for end of life care in critical care.pdf
-│   └── Reporting Deaths to the Procurator Fiscal.pdf
+│   ├── blank pf form.doc
+│   ├── Documentation following death.pdf
+│   ├── End of life care in critical care.pdf
+│   ├── Postmortem.md
+│   └── Provision of End of Life Care in Critical Care with COVID19.pdf
+├── Ethics_and_Law/
+│   └── Disagreements regarding the treatment of patients who lack capacity Scotland.pdf
 ├── GI_Liver_and_Transplant/
+│   ├── Abdominal pressure measurement.pdf
+│   ├── Confirmation of Nasogastric Tube Position.pdf
 │   ├── Fulminant Liver Failure.pdf
+│   ├── Jejunostomy feeding protocol.pdf
+│   ├── Ketone.pdf
 │   ├── Liver Transplant Post-operative care.pdf
-│   └── Simultaneous Kidney and Pancreas (SKP) Transplant Post-Op care.pdf
+│   ├── Nasal bridle.pdf
+│   ├── Nasogastric feeding protocol.pdf
+│   ├── Nasojejunal feeding protocol.pdf
+│   ├── Pancreatic Irrigation.pdf
+│   ├── Sengstaken Protocol (Variceal Bleeding).pdf
+│   ├── Simultaneous Kidney and Pancreas (SKP) Transplant Post-Op care.pdf
+│   ├── Stoma Care Basics.pdf
+│   ├── stress ulcer prophylaxis.pdf
+│   ├── Treatment of constipation.pdf
+│   └── Upper GI Bleeding Urgent Endoscopy and Patient Monitoring.pdf
+├── Haematology_CAR-T/
+│   ├── CRS.pdf
+│   ├── Haem_ICU_transfer.pdf
+│   └── ICANS.pdf
+├── Infection_and_sepsis/
+│   ├── admin/
+│   │   ├── Infection Group Terms of Reference.pdf
+│   │   └── Infection Group Terms of Reference_bak.pdf
+│   ├── Antibiotic doses in CVVHD.pdf
+│   ├── BAL and MiniBAL standardised procedure.pdf
+│   ├── Clorhexidine Guide.pdf
+│   ├── Ebola/
+│   │   ├── Ebola.pdf
+│   │   ├── Ebola_bak.pdf
+│   │   ├── VHF Doctor Action Card Critical Care.pdf
+│   │   ├── VHF Doctor Action Card Critical Care_bak.pdf
+│   │   ├── VHF NIC Action Card Critical Care.pdf
+│   │   ├── VHF NIC Action Card Critical Care_bak.pdf
+│   │   ├── VHF RN Action Card Critical Care.pdf
+│   │   └── VHF RN Action Card Critical Care_bak.pdf
+│   ├── Infection indications for IVIG.pdf
+│   ├── Initial investigation and management in unidentified Infections.pdf
+│   ├── Nursing handout.pdf
+│   ├── Sampling for CAP.pdf
+│   ├── Sampling for VAP and HAP.pdf
+│   ├── SARI/
+│   │   ├── H1N1 Influenza Safe Removal of Personal Protective Equipment.pdf
+│   │   ├── Influenza A and B Virology Sampling and Oseltamivir Dose.pdf
+│   │   ├── Management of patients with SARI-additional Information.pdf
+│   │   ├── Management of Patients with severe acute respiratory infection SARI.pdf
+│   │   ├── MERS-CoV Guideline.pdf
+│   │   ├── Obstetric Patients in Ward 118 with H1N1.pdf
+│   │   ├── Reporting influenza deaths.pdf
+│   │   ├── Setup Guide for Jupiter Hoods.pdf
+│   │   ├── Suspected Influeza A, Avian influenza, H5N1 and SARS.pdf
+│   │   └── Suspected Influeza A-H7N9 Guideline.pdf
+│   ├── SOP Ultrasound Cleaning.pdf
+│   ├── Trainee Infection Prevention Handout.pdf
+│   └── Ventriculitis.pdf
 ├── Neurological/
-│   ├── Brain Stem Death Test Form.pdf
-│   ├── C-spine clearance flowchart and guidance.pdf
-│   ├── Femoral artery sheath management in crit care.pdf
+│   ├── C-spine clearance flowchart.pdf
+│   ├── Critical Care MRI Procedure_pub.pdf
+│   ├── Intrathecal Administration Guidance.pdf
 │   ├── Intrathecal policy.pdf
 │   ├── Licox Algorithm.pdf
-│   ├── Status epilepticus treatment.pdf
-│   ├── Subarachnoid haemorrhage management.pdf
-│   ├── TBI management in adults.pdf
-│   └── Thiopentone levels.pdf
+│   ├── Management of traumatic brain injury.pdf
+│   ├── Managementl of femoral artery sheath.pdf
+│   ├── Neurological MRI under GA DCN - SOP for Critical Care.pdf
+│   ├── SOP -  Femoral site care.pdf
+│   ├── Sub arachnoid haemorrhage management.pdf
+│   ├── Thiopentone levels.pdf
+│   ├── Traumatic Brain Injury Flow Chart.pdf
+│   ├── Treatment of status epilepticus.pdf
+│   └── Ventriculitis Guideline.pdf
 ├── Obstetrics/
-│   ├── Care of Pregnant or recently pregnant women in non-obstetric area.pdf
-│   ├── Emergency Caesarean Section Action Cards_em.pdf
+│   ├── Caesarean Section Action Cards_em.pdf
+│   ├── Handover Sheet for Obstetric patients being discharged from Critical Care.pdf
 │   ├── Handover Sheet for Obstetric patients requiring admission to Critical Care.pdf
 │   └── Management of the Pregnant Patient in Critical Care.pdf
 ├── offline_EDITORS.txt
-├── offline_Infection_and_sepsis/
-│   ├── Antifungals.pdf
-│   ├── Ebola/
-│   │   ├── Ebola Guideline Critical Care.pdf
-│   │   ├── VHF Doctor Action Card Critical Care.pdf
-│   │   ├── VHF NIC Action Card Critical Care.pdf
-│   │   └── VHF RN Action Card Critical Care.pdf
-│   ├── Infection Prevention, Surveillance and Care Bundles.pdf
-│   ├── RIE and SJH empirical antibiotic guideline.pdf
-│   ├── Severe Sepsis - managing the first 24 hours.pdf
-│   └── Unidentified Infection - Diagnostic Guidelines.pdf
-├── offline_Organ_donation/
-│   └── Adult tissue donation in Lothian.pdf
-├── offline_Post_op_care/
-│   ├── Abdominal Aortic Aneurysm (AAA) Post-Op Care.pdf
-│   ├── Adult Scoliosis Spinal Surgery Post-Op Care review.pdf
+├── offline_Information_for_trainees/
+├── offline_README.md
+├── offline_README.pdf
+├── Organ_donation/
+│   ├── Adult tissue donation.pdf
+│   ├── BSD Long version form for the diagnosis of death using neurological criteria.pdf
+│   ├── BSD Short version form for the diagnosis of death using neurological criteria.pdf
+│   ├── Donation after brainstem death care bundle.pdf
+│   ├── Donation after circulatory death.pdf
+│   ├── GUIDELINES FOR DONOR CARE DURING MULTI-ORGAN RETRIEVAL.pdf
+│   ├── Organ Retrieval Booking Form.pdf
+│   └── Organ Retrieval SOP.pdf
+├── Policies_and_admin/
+│   ├── General Critical Care Interaction with HEPMA_pub.pdf
+│   ├── General Critical Care SOP_pub.pdf
+│   ├── NHSL Critical Care Admission  Escalation Guideline_pub.pdf
+│   ├── RIE Critical Care Grand Round.pdf
+│   └── Trainees/
+│       └── ACCS curriculum guidance for ICM.pdf
+├── Post_op_care/
+│   ├── Adult Scoliosis Spinal Surgery Post-Op Care.pdf
 │   ├── Anticoagulation antiplatelet agents and epidural analgesia.pdf
 │   ├── Bodyguard Epidural Pump.pdf
+│   ├── Endovascular Aortic Procedures - Post Op Guideline V1.4.pdf
 │   ├── Epidural Haematoma.pdf
-│   ├── Epidural hypotension.pdf
-│   ├── Epidural hypotension_bak.pdf
+│   ├── Epidural hypotension 2022 update.pdf
 │   ├── Guideline on epidural top-up.pdf
-│   ├── Major OMFS Free Flap Guideline.pdf
-│   ├── Management_of_Acute_Type_B_Aortic_Dissection.pdf
+│   ├── Major OMFS Free Flap.pdf
+│   ├── Metaraminol for hypotension.docx
 │   ├── Oesophagectomy Post-operative Management.pdf
-│   ├── Phenylephrine for Epidural Hypotension.pdf
-│   ├── Prevention and treatment of paraplegia after major vascular surgery.pdf
-│   └── Updated Post op care pharyngo-laryngo-oesphagectomy PLOG.pdf
-├── offline_README.pdf
-├── offline_README.txt
-├── offline_Renal_and_Urology/
-├── offline_Respiratory/
-│   ├── ARDS Strategy.pdf
-│   ├── CAP investigations.pdf
-│   ├── High Flow Nasal Oxygen.pdf
-│   ├── Pneumonia screen.pdf
-│   └── SARI/
-│       ├── H1N1 Influenza Safe Removal of Personal Protective Equipment.pdf
-│       ├── H1N1 Influenza Safe Removal of Personal Protective Equipment_bak.pdf
-│       ├── H1N1 Virology Sampling and Oseltamivir Dose.pdf
-│       ├── Management of patients with SARI-additional Information.pdf
-│       ├── Management of Patients with severe acute respiratory infection SARI.pdf
-│       ├── MERS-CoV Guideline.pdf
-│       ├── Obstetric Patients in Ward 118 with H1N1.pdf
-│       ├── Setup Guide for Jupiter Hoods.pdf
-│       ├── Suspected Influeza A, Avian influenza, H5N1 and SARS.pdf
-│       └── Suspected Influeza A-H7N9 Guideline.pdf
-├── offline_Transfer/
-│   └── DKA Pathway.pdf
-└── VTE_Prevention/
-    ├── Critical Care VTE Prophylaxis April 2020.pdf
-    └── HELPFUL TABLES FROM NHS LOTHIAN ANTITHROMBOTIC GUIDE DURING COVID.pdf
+│   ├── Open Infra And Juxta-Renal Aortic Surgery - Post Op Guideline V1.4.pdf
+│   ├── Open TAAA Surgery - Post Op Guideline V1.4.pdf
+│   ├── Post op care pharyngo-laryngo-oesphagectomy PLOG.pdf
+│   └── Prevention and treatment of paraplegia after major aortic procedures.pdf
+├── Procedures/
+│   ├── ACCP CVC placement following completion of initial competencies.pdf
+│   ├── ACCPs acquiring initial CVC competencies.pdf
+│   ├── Arterial Line insertion for ACCPs.pdf
+│   └── Securing CVCs in Critical Care.pdf
+├── Recovery_after_ICU/
+├── Renal_and_Urology/
+│   ├── Antibiotic doses in CVVHD.pdf
+│   ├── Citrate anticoagulation quick reference guide.pdf
+│   ├── Citrate monitoring chart.pdf
+│   ├── Heparin dosing in CVVHD.pdf
+│   ├── RRT guideline including citrate.pdf
+│   ├── RRT in COVID+ve or suspected patients.pdf
+│   └── Urology.pdf
+├── Research/
+│   └── current_research_studies.pdf
+├── Routine_Care/
+│   ├── Administration of Inotropes.pdf
+│   ├── bBraun Spaceplus Failure EMERGENCY ACTION CARD_em.pdf
+│   ├── Central venous catheter removal.pdf
+│   ├── Faecal  incontinence skin care.pdf
+│   ├── ICU Eye Care Guideline.pdf
+│   ├── Invasive Flush Systems.pdf
+│   ├── LLTV referral form.pdf
+│   ├── Nurse led swallow observations flowchart.pdf
+│   ├── Nursing for Arterial and Central Venous Lines.pdf
+│   ├── post-ICU_recovery.pdf
+│   ├── Sedation Weaning Guideline.pdf
+│   ├── Tracheostomy_nursing_care.pdf
+│   ├── Video Communication.pdf
+│   └── VTE_Prevention/
+│       ├── Dalteparin_thromboprophylaxis.pdf
+│       ├── HELPFUL TABLES FROM NHS LOTHIAN ANTITHROMBOTIC GUIDE DURING COVID.pdf
+│       └── TED Stocking Sizing.pdf
+├── Transfer/
+│   ├── ACCP Transfers.pdf
+│   ├── Intra and inter-hospital transport of critically ill patients.pdf
+│   ├── Intra hospital transfer checklist.pdf
+│   └── Transfer Outdoors to Garden Guideline.pdf
+└── Trauma and Burns/
+    ├── All_Major_Trauma_Centre_Guidelines.txt
+    ├── Aspen Vista Collar Care.pdf
+    ├── Mangement of burns.pdf
+    └── Tertiary Survey.pdf
