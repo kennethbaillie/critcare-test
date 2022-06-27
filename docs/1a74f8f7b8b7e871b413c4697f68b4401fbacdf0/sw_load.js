@@ -13,14 +13,9 @@ addBtn.style.display = 'none';
 const homeBtn = document.querySelector('.home-button'); 
 homeBtn.style.display = 'inline';
 
-
 // JKB addition to hide home button if loaded from bookmark
 if (window.matchMedia('(display-mode: standalone)').matches) {
   console.log("App loaded from bookmark (android)");
-  homeBtn.style.display = 'none';
-}
-if(!window.navigator.standalone){
-  console.log("App loaded from bookmark (iphone)");
   homeBtn.style.display = 'none';
 }
 
