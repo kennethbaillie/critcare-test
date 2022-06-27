@@ -3,6 +3,7 @@
 body {
 	background-attachment: fixed;
 	color: #333;
+	background: rgba(10, 10, 10, 0.8);
 }
 
 .box {
@@ -17,7 +18,6 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
 	text-align: center;
 	margin: auto;
 }
@@ -33,6 +33,10 @@ div.vertical {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
+}
+
+input{
+	text-align: center;
 }
 
 ::-webkit-input-placeholder {
@@ -52,18 +56,16 @@ div.vertical {
 
 </style>
 
-<div id="loginbox" class="lightbox" >
-	<div class="horizontal">
-		<div class="vertical">
-			<div class="box">
-				<input style="margin: 16px; text-align: center;" id="username" type="text" placeholder="username" /> <br />
-				<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-				<button id="loginbutton" type="button">Access</button>
-				<p id="wrongPassword" style="display: none">wrong password</p>
-			</div>
-		</div>
-	</div>
+<div class="col-xs-12 col-md-6 col-lg-4"></div>
+<div class="col-xs-12 col-md-6 col-lg-4">
+<div class="horizontal vertical">
+<input id="username" type="text" placeholder="username" /> <br />
+<input id="password" type="password" placeholder="password" /> <br />
+<button id="loginbutton" type="button">Access</button>
+<p id="wrongPassword" style="display: none">wrong password</p>
 </div>
+</div>
+<div class="col-xs-12 col-md-6 col-lg-4"></div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 

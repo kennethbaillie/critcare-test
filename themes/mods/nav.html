@@ -14,13 +14,21 @@
             {% endif %}
 
             <!-- Main title -->
-
-            <a class="navbar-brand" href="{{ config.site_url }}">{{ config.site_name }}</a>
+            {%- if page.canonical_url %}
+                {%- if "1a74f8f7b8b7e871b413c4697f68b4401fbacdf0" in page.canonical_url %}
+                    <a class="navbar-brand" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/">{{ config.site_name }}</a>
+                {% else %}
+                    <a class="navbar-brand" href="{{ config.site_url }}">{{ config.site_name }}</a>
+                {%- endif %}
+            {% else %}
+                <a class="navbar-brand" href="{{ config.site_url }}">{{ config.site_name }}</a>    
+            {%- endif %}
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
             {%- block site_nav %}
+
             {%- if nav|length>1 %}
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
@@ -56,16 +64,6 @@
                     </li>
                     {%- endif %}
                 {%- endblock %}
-
-                {% if page.canonical_url %}
-                    {% if "1a74f8f7b8b7e871b413c4697f68b4401fbacdf0" in page.canonical_url %}
-                        <li>
-                            <a href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/">
-                                Home
-                            </a>
-                        </li>
-                    {% endif %}
-                {% endif %}
 
                 {%- block next_prev %}
                     {%- if page and (page.next_page or page.previous_page) %}
