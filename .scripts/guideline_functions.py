@@ -9,7 +9,7 @@ import filecmp
 from zipfile import ZipFile
 
 #-----------------------------
-# files to ignore in comparison
+# files to ignore
 ignorelist = [
         "temp.zip",
         ".DS_Store",
@@ -20,9 +20,13 @@ ignorelist = [
         "changes.html",
         "__MACOSX",
         "offline_DRAFTS",
-        "Emergencies",
         'Icon'
     ]
+
+exclude_from_comparisons = [
+    "Emergencies",
+]
+
 
 class cd:
     """Context manager for changing the current working directory"""

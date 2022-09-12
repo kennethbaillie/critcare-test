@@ -30,6 +30,8 @@ def reportable_duplicate(thispath, verbose=True):
     for name in dir_and_file_names:
         if not gl.accept("", name):
             return False
+        if name in gl.ignorelist+gl.exclude_from_comparisons:
+            return False
     return True
 
 dupout = os.path.join(args.sourcedir,"../duplicates.md")
