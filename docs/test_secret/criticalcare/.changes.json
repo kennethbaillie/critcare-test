@@ -1,1 +1,10 @@
-{}
+{
+    "deleted": {
+        "docs/test_secret/criticalcare/pomdir": "pomdir"
+    },
+    "modified": {},
+    "new": {
+        "docs/test_secret/criticalcare/squaaaab": "squaaaab: [folder]"
+    },
+    "renamed": {}
+}

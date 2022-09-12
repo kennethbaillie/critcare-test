@@ -106,7 +106,7 @@ def accept(thispath, file_or_dir_name):
     return True
 
 def eclass(filename):
-    emlabels = ["_em.", "_em_", "Emergency", "emergency", "Emergencies"]
+    emlabels = ["_em.", "_em_"]
     for x in emlabels:
         if x in filename:
             return "emergency"

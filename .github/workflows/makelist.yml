@@ -32,6 +32,7 @@ jobs:
           pip install mkdocs
           pip install markdown-include
           pip install mkdocs-cinder
+          pip install find-duplicate-files
 
       - name: Download files
         run: |
@@ -42,6 +43,11 @@ jobs:
         run: |
           python .scripts/makelist.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "docs/critcare_pub/criticalcare/" -e
           python .scripts/makelist.py -d "docs/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/education/" -p "docs/education/public/" -e
+
+      - name: Find duplicates
+        run: |
+          python .scripts/find_duplicates.py -s "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
+          python .scripts/find_duplicates.py -s "docs/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/education/" 
 
       - name: Commit pages if changed
         run: |

@@ -10,11 +10,12 @@ import filecmp
 import requests
 import urllib.parse
 from zipfile import ZipFile
-
+#-----------------------------
+import guidelines as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/7m3txr3zwy2nrf7/AADmjUlNgm78GD60FMT9PNNQa?dl=0') # default test dir
+parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/3jornh1s315cxzj/AAC_2OF49UbxYMo-gEHN0liWa?dl=0') # default test dir
 parser.add_argument('-d', '--destinationdir', default='docs/test_secret/criticalcare/')
 parser.add_argument('-w', '--webstem', default='https://critcare.net/')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
@@ -26,18 +27,17 @@ if args.sourcedir == "no_dir_specified":
 #-----------------------------
 changelog = os.path.join(args.destinationdir,".changes.json")
 #-----------------------------
-# files to ignore in comparison
-ignorelist = [
-        "temp.zip",
-        ".DS_Store",
-        ".temp",
-        "temp",
-        ".changes.json",
-        "changes.html",
-        "__MACOSX",
-        "offline_DRAFTS",
-        "Emergencies",
-    ]
+def download_dropbox_folder(folder_url, dest):
+    # download whole dropbox folder as zip file
+    zf = os.path.join(dest,"temp.zip")
+    folder_url = folder_url.replace("?dl=0","?dl=1")
+    r = requests.get(folder_url, stream=True)
+    with open(zf, 'wb') as f:
+        for chunk in r.iter_content(chunk_size=1024): 
+            if chunk:
+                f.write(chunk)
+    with ZipFile(zf, 'r') as zipObj:
+        zipObj.extractall(dest)
 
 def printablepath(target, link=False):
     target = target.replace("/.temp/","/")
@@ -54,18 +54,6 @@ def printablepath(target, link=False):
     else:
         out = '{}'.format(p.relative_to(args.destinationdir))
     return out
-
-def download_dropbox_folder(folder_url, dest):
-    # download whole dropbox folder as zip file
-    zf = os.path.join(dest,"temp.zip")
-    folder_url = folder_url.replace("?dl=0","?dl=1")
-    r = requests.get(folder_url, stream=True)
-    with open(zf, 'wb') as f:
-        for chunk in r.iter_content(chunk_size=1024): 
-            if chunk:
-                f.write(chunk)
-    with ZipFile(zf, 'r') as zipObj:
-        zipObj.extractall(dest)
 
 def try_remove(thistarget):
     if args.verbose: print ("==> Trying to remove:", thistarget)
@@ -128,7 +116,7 @@ def action_diffs(dcmp):
 #filecmp.dircmp
 def download_files_from_dir(folder_url, dir_name, temp):
     download_dropbox_folder(folder_url, temp)
-    comparison = filecmp.dircmp(dir_name, temp, ignore=ignorelist, hide=ignorelist)
+    comparison = filecmp.dircmp(dir_name, temp, ignore=gl.ignorelist, hide=gl.ignorelist)
     target = os.path.basename(os.path.normpath(dir_name))
     record_diffs(comparison)
     action_diffs(comparison)
