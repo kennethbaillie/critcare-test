@@ -39,14 +39,14 @@ with gl.cd(args.sourcedir):
     dups = [x for x in dups if reportable_duplicate(x[0]) and reportable_duplicate(x[1])]
     print (dups)
 
-now = datetime.date.today().strftime('%Y-%m-%d %H:%M:%S')
+now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 with open(dupout,"w") as o:
     o.write("---\ntitle:Duplicates\n---\n\n# Duplicates\n\n")
     if len(dups)==0:
         o.write("No duplicate files found on {}".format(now))
     else:
         o.write("Duplicates found ({}):\n\n".format(now))
-        o.write("\n".join(["{} == {}".format(x[0][2:],x[1][:2]) for x in dups]))
+        o.write("\n".join(["{} == {}".format(x[0],x[1]) for x in dups]))
 
 
 

@@ -63,7 +63,6 @@ The contents of the file become the link target, so the only thing that should a
 
 https://youtu.be/HDyKJ4FOX9o
 
-
 ## Adding a web page
 
 A couple of files in the app are simple web pages written in markdown. If you want to do this, simply end your filename in .md and it will be handled as markdown and made into a web page. If this doesn't make any sense to you, just ignore it.
