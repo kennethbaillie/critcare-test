@@ -4,7 +4,7 @@ import os
 import datetime
 import find_duplicate_files
 #-----------------------------
-import guidelines as gl
+import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
@@ -15,13 +15,29 @@ args = parser.parse_args()
 if args.sourcedir == "no_dir_specified":
     print ("no_dir_specified")
     sys.exit()
+#-----------------------------
 
-dupout = os.path.join(args.sourcedir,"duplicates.md")
+def recursive_split(s):
+    stem, name = list(os.path.split(s))
+    if stem in ['', os.path.sep]:
+        return [name]
+    return recursive_split(stem) + [name]
+
+def reportable_duplicate(thispath, verbose=True):
+    dir_and_file_names = recursive_split(thispath)
+    if "." in dir_and_file_names:
+        dir_and_file_names.remove('.')
+    for name in dir_and_file_names:
+        if not gl.accept("", name):
+            return False
+    return True
+
+dupout = os.path.join(args.sourcedir,"../duplicates.md")
 
 with gl.cd(args.sourcedir):
     dups = find_duplicate_files.find_duplicate_files("./")
-    for ignorefile in gl.ignorelist:
-        dups = [x for x in dups if ignorefile not in [os.path.split(y)[1] for y in x]]
+    dups = [x for x in dups if reportable_duplicate(x[0]) and reportable_duplicate(x[1])]
+    print (dups)
 
 now = datetime.date.today().strftime('%Y-%m-%d %H:%M:%S')
 with open(dupout,"w") as o:
@@ -30,7 +46,7 @@ with open(dupout,"w") as o:
         o.write("No duplicate files found on {}".format(now))
     else:
         o.write("Duplicates found ({}):\n\n".format(now))
-        o.write("\n".join(["{} : {}".format(x[0],x[1]) for x in dups]))
+        o.write("\n".join(["{} == {}".format(x[0][2:],x[1][:2]) for x in dups]))
 
 
 

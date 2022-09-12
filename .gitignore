@@ -1,2 +1,3 @@
 .DS*
 Icon*
+__pycache__

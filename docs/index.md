@@ -57,7 +57,7 @@ input{
 </style>
 
 <div class="col-xs-12 col-md-6 col-lg-4"></div>
-<div class="col-xs-12 col-md-6 col-lg-4">
+<div class="col-xs-6 col-md-6 col-lg-4">
 <div class="horizontal vertical">
 <input id="username" type="text" placeholder="username" /> <br />
 <input id="password" type="password" placeholder="password" /> <br />

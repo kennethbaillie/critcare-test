@@ -16,10 +16,12 @@ ignorelist = [
         ".temp",
         "temp",
         ".changes.json",
+        "duplicates.md",
         "changes.html",
         "__MACOSX",
         "offline_DRAFTS",
         "Emergencies",
+        'Icon'
     ]
 
 class cd:
@@ -36,3 +38,18 @@ class cd:
         os.chdir(self.savedPath)
 
 
+def accept(thispath, file_or_dir_name):
+    if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline') or file_or_dir_name.startswith('_') or "_bak." in file_or_dir_name:
+        return False
+    if file_or_dir_name.strip() in ignorelist:
+        return False
+    dirpath = os.path.join(thispath, file_or_dir_name)
+    if os.path.isdir(dirpath):
+        acceptable = [x for x in os.listdir(dirpath) if accept(dirpath, x)]
+        if len(acceptable) == 0:
+            return False
+    return True
+
+
+
+    

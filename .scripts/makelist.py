@@ -17,6 +17,8 @@ from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 #-----------------------------
+import guideline_functions as gl
+#-----------------------------
 scriptpath = os.path.dirname(os.path.realpath(__file__))
 #-----------------------------
 import argparse
@@ -32,7 +34,6 @@ parser.add_argument('-b', '--backgroundcolor', default="#f5f5f5") #bdfcec
 args = parser.parse_args()
 #-----------------------------
 use_viewerjs = False
-excluded = ['Icon']
 emergencydir = "Emergencies" # this will be pinned to the top and copies of emergency protocols uploaded to it
 pin_to_top = []
 #-----------------------------
@@ -93,18 +94,6 @@ def add_pdf_to_search(thisfile, thisbasedir, already):
             'content': get_unique_words(readpdf(thisfile)), # this is the slow bit
             }
 
-def accept(thispath, file_or_dir_name):
-    if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline') or file_or_dir_name.startswith('_') or "_bak." in file_or_dir_name:
-        return False
-    if file_or_dir_name.strip() in excluded:
-        return False
-    dirpath = os.path.join(thispath, file_or_dir_name)
-    if os.path.isdir(dirpath):
-        acceptable = [x for x in os.listdir(dirpath) if accept(dirpath, x)]
-        if len(acceptable) == 0:
-            return False
-    return True
-
 def eclass(filename):
     emlabels = ["_em.", "_em_"]
     for x in emlabels:
@@ -114,7 +103,7 @@ def eclass(filename):
 
 def is_public(filepath):
     thispath, filename = os.path.split(filepath)
-    if not(accept(thispath, filename)):
+    if not(gl.accept(thispath, filename)):
         return False
     if os.path.isdir(filepath):
         return True
@@ -142,7 +131,7 @@ def makeid(thisname):
 def formatdir(thisdir, basedir, sl, depth=0):
     text = ''
     for entry in sorted(os.listdir(thisdir)):
-        if not accept(thisdir, entry):
+        if not gl.accept(thisdir, entry):
             continue
         if os.path.isdir(os.path.join(thisdir, entry)):
             text+=('''
@@ -170,7 +159,7 @@ def formatdir(thisdir, basedir, sl, depth=0):
                         )
                     )
         else:
-            if accept(thisdir, entry):
+            if gl.accept(thisdir, entry):
                 if entry.endswith('.txt'):
                     print ("hyperlink (.txt):", entry)
                     with open(os.path.join(thisdir,entry)) as f:
@@ -234,7 +223,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
     topdirlist = [x for x in sorted(os.listdir(fromdir)) if x not in pin_to_top]
     topdirlist = pin_to_top + topdirlist
     for d in topdirlist:
-        if not(accept(fromdir, d)):
+        if not(gl.accept(fromdir, d)):
             continue
         if os.path.isdir(os.path.join(fromdir, d)):
             listfiletext += ('''
@@ -263,7 +252,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
                     ))
             i+=1
         else:
-            if accept(fromdir, d):
+            if gl.accept(fromdir, d):
                 uncategorised.append(d)
                 searchlist.append(add_pdf_to_search(os.path.join(fromdir, d), basedir, searchlist))
     listfiletext += ('</div>\n')
@@ -272,7 +261,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
         print (uncategorised)
         listfiletext += ("<div class='panel panel-default' style='margin-top:1em;'><ul class='list-group'>\n")
         for entry in uncategorised:
-            if accept(fromdir, entry):
+            if gl.accept(fromdir, entry):
                 listfiletext += (("\t<a class='{}' href='{}'><li class='list-group-item'>{}</li></a>\n".format(eclass(entry), os.path.relpath(os.path.join(fromdir, entry), basedir), fixname(entry))))
                 searchlist.append(add_pdf_to_search(os.path.join(fromdir, entry), basedir, searchlist))
         listfiletext += ('</ul></div>\n')
@@ -289,7 +278,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
     allfiles={}
     for root, dirs, files in os.walk(fromdir):
         for name in files:
-            if accept(root,name):
+            if gl.accept(root,name):
                 if emergencydir not in root and ".temp" not in root:
                     try:
                         allfiles[name]
@@ -315,7 +304,7 @@ with open(changelog) as f:
     changes = json.load(f)
 newtext = "\n<hr><h3>{:%d/%m/%Y %H:%M:%S}</h3>".format(datetime.now())
 for thistype in changes:
-    typechanges = [x for x in changes[thistype] if accept(os.path.join(args.dir, x), os.path.split(x)[-1])]
+    typechanges = [x for x in changes[thistype] if gl.accept(os.path.join(args.dir, x), os.path.split(x)[-1])]
     if len(typechanges) > 0:
         new_changes_present = True
         newtext += "<br>\n<h4>{}</h4>\n".format(thistype)
