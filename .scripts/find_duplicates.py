@@ -41,7 +41,7 @@ with gl.cd(args.sourcedir):
 
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 with open(dupout,"w") as o:
-    o.write("---\ntitle:Duplicates\n---\n\n# Duplicates\n\n")
+    o.write("---\ntitle: Duplicates\n---\n\n# Duplicates\n\n")
     if len(dups)==0:
         o.write("No duplicate files found on {}".format(now))
     else:

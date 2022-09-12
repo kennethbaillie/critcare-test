@@ -1,5 +1,5 @@
 ---
-title:Duplicates
+title: Duplicates
 ---
 
 # Duplicates
