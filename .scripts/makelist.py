@@ -99,6 +99,8 @@ def eclass(filename):
     for x in emlabels:
         if x in filename:
             return "emergency"
+        elif x == emergencydir:
+            return "emergency"
     return ""
 
 def is_public(filepath):
@@ -274,21 +276,6 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
             json.dump(searchlist, o, indent=4)
 
     print ('list made in {}'.format(os.path.join(basedir,listfile)))
-    # check for duplicate filenames:
-    allfiles={}
-    for root, dirs, files in os.walk(fromdir):
-        for name in files:
-            if gl.accept(root,name):
-                if emergencydir not in root and ".temp" not in root:
-                    try:
-                        allfiles[name]
-                        print ("\n******\nDuplicate filename found:\n\t{}\n\t{}\n".format(
-                                os.path.join(root, name),
-                                allfiles[name]
-                            ))
-                    except:
-                        pass
-                    allfiles[name]=os.path.join(root,name)
 
 #-----------------------------
 # DETECT CHANGES AND STOP IF NOTHING HAS CHANGED
