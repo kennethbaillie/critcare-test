@@ -11,7 +11,7 @@ import requests
 import urllib.parse
 from zipfile import ZipFile
 #-----------------------------
-import guidelines_functions as gl
+import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
