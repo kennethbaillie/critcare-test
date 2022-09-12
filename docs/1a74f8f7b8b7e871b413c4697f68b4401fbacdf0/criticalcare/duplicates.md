@@ -4,6 +4,8 @@ title:Duplicates
 
 # Duplicates
 
+Duplicates found (2022-09-12 00:00:00):
+
 ./Breathing(Respiratory)/offline_SARI/MERS-CoV Guideline.pdf : ./Infection_and_sepsis/SARI/MERS-CoV Guideline.pdf
 ./Breathing(Respiratory)/offline_SARI/Management of Patients with severe acute respiratory infection SARI.pdf : ./Infection_and_sepsis/SARI/Management of Patients with severe acute respiratory infection SARI.pdf
 ./Breathing(Respiratory)/offline_SARI/Management of patients with SARI-additional Information.pdf : ./Infection_and_sepsis/SARI/Management of patients with SARI-additional Information.pdf
@@ -26,4 +28,3 @@ title:Duplicates
 ./Emergencies/EZ-IO Intraosseus Access Device Guide_pub_em.pdf : ./Cardiovascular/EZ-IO Intraosseus Access Device Guide_pub_em.pdf
 ./Emergencies/Emergency intubation checklist_em_pub.pdf : ./Airway/Emergency intubation checklist_em_pub.pdf
 ./Emergencies/bBraun Spaceplus Failure EMERGENCY ACTION CARD_em.pdf : ./Routine_Care/bBraun Spaceplus Failure EMERGENCY ACTION CARD_em.pdf
-./Ethics_and_Law/Refusal of emergency life saving treatment FICM Midnight Law (Scotland).pdf : ./Emergencies/Refusal of emergency life saving treatment FICM Midnight Law (Scotland).pdf
