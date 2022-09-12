@@ -23,11 +23,13 @@ with gl.cd(args.sourcedir):
     for ignorefile in gl.ignorelist:
         dups = [x for x in dups if ignorefile not in [os.path.split(y)[1] for y in x]]
 
+now = datetime.date.today().strftime('%Y-%m-%d %H:%M:%S')
 with open(dupout,"w") as o:
     o.write("---\ntitle:Duplicates\n---\n\n# Duplicates\n\n")
     if len(dups)==0:
-        o.write("No duplicate files found on {}".format(datetime.today().strftime('%Y-%m-%d %H:%M:%S')))
+        o.write("No duplicate files found on {}".format(now))
     else:
+        o.write("Duplicates found ({}):\n\n".format(now))
         o.write("\n".join(["{} : {}".format(x[0],x[1]) for x in dups]))
 
 
