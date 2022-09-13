@@ -95,7 +95,7 @@ def add_pdf_to_search(thisfile, thisbasedir, already):
             }
 
 def eclass(filename):
-    if filename == emergencydir:
+    if filename.strip().lower() == emergencydir.strip().lower():
         return "emergency"
     emlabels = ["_em.", "_em_"]
     for x in emlabels:
