@@ -1,7 +1,7 @@
-Acute_Pulmonary_Embolism_and_DVT: ?
 Airway: Rosie Baruah rosiebaruah@icloud.com
 Breathing (Respiratory): Neil Young neil.h.young@gmail.com
 Cardiovascular: Stuart Gillon sgillon@me.com
+Cardiovascular-->Acute_Pulmonary_Embolism_and_DVT: K Kefala
 COVID: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk
 Delirium: Alasdair Hurry ahurry@doctors.org.uk 
 Diabetes and Glucose: Gregor McNeill  Gregor.McNeill@nhslothian.scot.nhs.uk
@@ -25,8 +25,8 @@ Routine care: Gregor McNeill Gregor.McNeill@nhslothian.scot.nhs.uk, Michelle Jac
 Routine care-->Lothian_Long-Term_Ventilation_Service ?
 Routine care-->Recovery_after_ICU: Charlene Richardson charlene.richardson@nhslothian.scot.nhs.uk
 Routine care-->Trainees: Ally Gibson
-Routine care-->Video_communication ?
-Routine care-->VTE_Prevention ?
+Routine care-->Video_communication L Wilson
+Routine care-->VTE_Prevention K Kefala
 Transfer: Mark Dunn mjgdunn@googlemail.com
 Trauma and Burns: Murray Geddes
 Web app administration: Kenny Baillie j.k.baillie@ed.ac.uk
