@@ -49,6 +49,10 @@ jobs:
           python .scripts/find_duplicates.py -s "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
           python .scripts/find_duplicates.py -s "docs/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/education/" 
 
+      - name: Get editors
+        run: |
+          python .scripts/get_editors.py -s "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
+
       - name: Commit pages if changed
         run: |
           git config --local user.email "action@github.com"
