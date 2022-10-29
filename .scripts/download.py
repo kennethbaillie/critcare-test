@@ -16,7 +16,7 @@ import guideline_functions as gl
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/3jornh1s315cxzj/AAC_2OF49UbxYMo-gEHN0liWa?dl=0') # default test dir
-parser.add_argument('-d', '--destinationdir', default='docs/test_secret/criticalcare/')
+parser.add_argument('-d', '--destinationdir', default='../docs/test_secret/criticalcare/')
 parser.add_argument('-w', '--webstem', default='https://critcare.net/')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 args = parser.parse_args()
@@ -24,6 +24,10 @@ args = parser.parse_args()
 if args.sourcedir == "no_dir_specified":
     print ("no_dir_specified")
     sys.exit()
+#-----------------------------
+changestoignore = [
+        "editors.md",
+    ]
 #-----------------------------
 changelog = os.path.join(args.destinationdir,".changes.json")
 #-----------------------------
@@ -44,15 +48,15 @@ def printablepath(target, link=False):
     p = pathlib.PurePosixPath(target)
     if link:
         if os.path.isdir(p):
-            out = '{}: [folder]'.format(p.relative_to(args.destinationdir))
+            out = '{}: [folder]'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
         else:
             out = '{}: <a href="{}{}">Link</a>'.format(
-                                    p.relative_to(args.destinationdir), 
+                                    p.relative_to(pathlib.PurePosixPath(args.destinationdir)), 
                                     args.webstem,
-                                    p.relative_to('docs'),
+                                    p.relative_to(pathlib.PurePosixPath('docs')),
                                     )
     else:
-        out = '{}'.format(p.relative_to(args.destinationdir))
+        out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
     return out
 
 def try_remove(thistarget):
@@ -72,17 +76,20 @@ def record_diffs(dcmp):
     global changes
     # RECORD changes
     for name in dcmp.left_only:
-        dfile = os.path.join(dcmp.left, name)
-        if args.verbose: print ("==> deleted file {}".format(dfile))
-        changes["deleted"][dfile]=dfile
+        if name not in changestoignore:
+            dfile = os.path.join(dcmp.left, name)
+            if args.verbose: print ("==> deleted file {}".format(dfile))
+            changes["deleted"][dfile]=dfile
     for name in dcmp.right_only:
-        nfile = os.path.join(dcmp.right, name)
-        if args.verbose: print ("==> new file {}".format(nfile))
-        changes["new"][nfile]=nfile
+        if name not in changestoignore:
+            nfile = os.path.join(dcmp.right, name)
+            if args.verbose: print ("==> new file {}".format(nfile))
+            changes["new"][nfile]=nfile
     for name in dcmp.diff_files:
-        cfile = os.path.join(dcmp.right, name)
-        if args.verbose: print ("==> changed file {}".format(cfile))
-        changes["modified"][cfile]=cfile
+        if name not in changestoignore:
+            cfile = os.path.join(dcmp.right, name)
+            if args.verbose: print ("==> changed file {}".format(cfile))
+            changes["modified"][cfile]=cfile
     if args.verbose: print ("==> Renamed search underway now", dcmp.left_only, dcmp.right_only)
     for dfile in copy.copy(list(changes["deleted"].keys())):
         for nfile in copy.copy(list(changes["new"].keys())):
@@ -122,7 +129,6 @@ def download_files_from_dir(folder_url, dir_name, temp):
     action_diffs(comparison)
 
 #-----------------------------
-
 # create temp dir, download all to it, parse and then remove
 tempdir = os.path.join(args.destinationdir, ".temp")
 if not os.path.exists(tempdir):
