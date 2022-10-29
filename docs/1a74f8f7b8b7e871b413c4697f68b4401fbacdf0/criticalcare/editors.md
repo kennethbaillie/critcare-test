@@ -4,7 +4,7 @@ title: Editors
 
 # Editors
 
-Last updated 2022-10-29 16:46:22
+Last updated 2022-10-29 18:05:08
 
 - Airway: Rosie Baruah 
 - Breathing (Respiratory): Neil Young 
@@ -36,5 +36,5 @@ Last updated 2022-10-29 16:46:22
 - Routine care-->Video_communication Helen
 - Routine care-->VTE_Prevention K Kefala
 - Transfer: Mark Dunn 
-- Trauma and Burns: Murray Geddes
+- Trauma and Burns: Murray Geddes/Jen Service?
 - Web app administration: Kenny Baillie 
