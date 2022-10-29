@@ -15,13 +15,13 @@ password: care
 
 Uploading and maintaining the guidelines is very easy - all that the editors and administrators need to do is maintain a dropbox folder containing the guidelines in each category. The folder names and file names are automatically converted into menu links and uploaded every 2 hours. (You may need to refresh your browser, or use incognito mode, to see changes straight away).
 
-Guidelines should not be emailed to Judith for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Judith, who will copy them to the intranet weekly. Any changes you make are recorded on this [web page](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html).
+Guidelines should not be emailed to Heather for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Heather, who will copy them to the intranet weekly. Any changes you make are recorded on this [web page](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html).
 
 # Basic use
 
 ## Rules
 
-- Each folder has *one* editor. If it is you, arrange the contents of the folder as you want the files to appear online
+- Each folder has *one* editor. If it is you, arrange the contents of the folder as you want the files to appear online. The master list of editors is in the dropbox and you can see the list (without email addresses) online [here](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/editors/).
 - Each guideline should appear only *once* in the dropbox. This is mitigate the chance of confusion/error
 - You can add subfolders but don't go crazy
 - Folder/Filenames will become the links - make them simple and comprehensible. Do not include version numbers, dates, and try to avoid redundant words such as "guideline" or "protocol" or "in critical care" unless they are useful to users.
