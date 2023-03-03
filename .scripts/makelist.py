@@ -78,6 +78,15 @@ def get_unique_words(bigstring):
     bs = list(set([x for x in bs if len(x)>1]))
     return ' '.join(bs)
 
+
+dupout = os.path.join(args.dir,"../duplicate_titles.md")
+with open(dupout,"w") as o:
+    o.write("")
+def record_duplicate(thistitle):
+    if "em" not in thistitle.split("_"):
+        with open(dupout,"a") as o:
+            o.write("{}\n".format(thistitle))
+
 def add_pdf_to_search(thisfile, thisbasedir, already):
     if not args.fast:
         thistitle = fixname(os.path.split(thisfile)[1])
@@ -85,6 +94,7 @@ def add_pdf_to_search(thisfile, thisbasedir, already):
         for x in already:
             try:
                 if x['title'] == thistitle:
+                    record_duplicate(thisfile)
                     return
             except:
                 continue
