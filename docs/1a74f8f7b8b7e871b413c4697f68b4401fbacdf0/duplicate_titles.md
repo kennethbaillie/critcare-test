@@ -1,0 +1,13 @@
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Airway/Emergency intubation checklist_em_pub.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Adult Advanced Life Support Algorithm_em.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Air Embolism_em.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/EZ-IO Intraosseus Access Device Guide_pub_em.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/WGH/Covid_extubation.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/ECLS/Edinburgh ECPR pathway_em.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Provision of End of Life Care in Critical Care with COVID19.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Antibiotic doses in CVVHD.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Obstetrics/Caesarean Section Action Cards_em.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Renal_and_Urology/Antibiotic doses in CVVHD.pdf
+docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/bBraun Spaceplus Failure EMERGENCY ACTION CARD_em.pdf
+docs/critcare_pub/criticalcare/Airway/Emergency intubation checklist_em_pub.pdf
+docs/critcare_pub/criticalcare/Cardiovascular/EZ-IO Intraosseus Access Device Guide_pub_em.pdf
