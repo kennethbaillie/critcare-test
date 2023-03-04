@@ -75,13 +75,37 @@ def readpdf(thisfile):
 
 def get_unique_words(bigstring):
     global gsyn
-    deletelist = ['\ufb01','\u00e2','\u2021','\u2013','\ufb02','\ufb02','\ufb00','-','\u201c','\u201d']
+    deletelist = [
+        '\ufb01',
+        '\u00e2',
+        '\u2021',
+        '\u2013',
+        '\ufb02',
+        '\ufb02',
+        '\ufb00',
+        '\u201c',
+        '\u201d',
+        '\u2018',
+        '\u2019',
+        '\u2265',
+        '\u2191',
+        '\u2022',
+        '\u00a3',
+        '\u00fc',
+        '\u00a0',
+        '\u00e1',
+        '\uf0a3',
+        '\u00f8',
+        '\u2026',
+        '\ufffd',
+        '\u00ef',
+        ]
     for char in deletelist:
         bigstring = bigstring.replace(char,'')
-    for char in ['\t','.','[',']','(',')','{','}','"',"'"]:
+    for char in ['\t','.','[',']','(',')','{','}','"',"'","/","\\",'-',':','!','_']:
         bigstring = bigstring.replace(char,' ')
     bs = [x.strip() for x in re.split(';| |,|\n|\r',bigstring)]
-    bs = list(set([x for x in bs if len(x)>1]))
+    bs = list(set([x.lower() for x in bs if len(x)>1]))
     for synonymlist in gsyn:
         bs = [" ".join(synonymlist) if x in synonymlist else x for x in bs]
     return ' '.join(bs)
