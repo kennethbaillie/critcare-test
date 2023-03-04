@@ -40,7 +40,7 @@ pin_to_top = []
 changelog = os.path.join(args.dir,".changes.json")
 outputfile = os.path.join(args.dir,"../changes.html")
 dupout = os.path.join(args.dir,"../duplicate_titles.md")
-globalsynonyms = os.path.join(args.dir,"../synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
+globalsynonymsfile = os.path.join(args.dir,"../synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
 
 def convert_pdf_to_txt(thisfile):
@@ -350,9 +350,12 @@ if args.do_emergency:
 
 # load manually-set synonyms
 gsyn = []
-if os.path.exists(globalsynonyms):
-    with open(globalsynonyms) as f:
-        gsyn = json.load(f)
+if os.path.exists(globalsynonymsfile):
+    with open(globalsynonymsfile) as f:
+        try:
+            gsyn = json.load(f)
+        except:
+            print ("\n\n****Misformatted json file***: {}\nIgnoring...\n\n".format(globalsynonymsfile))
 
 # Make html accordion menu and search index
 makelist()
