@@ -37,6 +37,11 @@ use_viewerjs = False
 emergencydir = "Emergencies" # this will be pinned to the top and copies of emergency protocols uploaded to it
 pin_to_top = []
 #-----------------------------
+changelog = os.path.join(args.dir,".changes.json")
+outputfile = os.path.join(args.dir,"../changes.html")
+dupout = os.path.join(args.dir,"../duplicate_titles.md")
+globalsynonyms = os.path.join(args.dir,"../synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
+#-----------------------------
 
 def convert_pdf_to_txt(thisfile):
     rsrcmgr = PDFResourceManager()
@@ -69,6 +74,7 @@ def readpdf(thisfile):
         return ""
 
 def get_unique_words(bigstring):
+    global gsyn
     deletelist = ['\ufb01','\u00e2','\u2021','\u2013','\ufb02','\ufb02','\ufb00','-','\u201c','\u201d']
     for char in deletelist:
         bigstring = bigstring.replace(char,'')
@@ -76,10 +82,10 @@ def get_unique_words(bigstring):
         bigstring = bigstring.replace(char,' ')
     bs = [x.strip() for x in re.split(';| |,|\n|\r',bigstring)]
     bs = list(set([x for x in bs if len(x)>1]))
+    for synonymlist in gsyn:
+        bs = [" ".join(synonymlist) if x in synonymlist else x for x in bs]
     return ' '.join(bs)
 
-
-dupout = os.path.join(args.dir,"../duplicate_titles.md")
 with open(dupout,"w") as o:
     o.write("")
 def record_duplicate(thistitle):
@@ -290,9 +296,6 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
 #-----------------------------
 # DETECT CHANGES AND STOP IF NOTHING HAS CHANGED
 
-changelog = os.path.join(args.dir,".changes.json")
-outputfile = os.path.join(args.dir,"../changes.html")
-
 if not os.path.exists(changelog):
     print ("no changelog file found at: {}\n Aborting makelist.\n".format(changelog))
     sys.exit()
@@ -344,6 +347,12 @@ if args.do_emergency:
                     )
                 print (cmd)
                 subprocess.call(cmd, shell=True)
+
+# load manually-set synonyms
+gsyn = []
+if os.path.exists(globalsynonyms):
+    with open(globalsynonyms) as f:
+        gsyn = json.load(f)
 
 # Make html accordion menu and search index
 makelist()
