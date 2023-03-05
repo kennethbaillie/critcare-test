@@ -202,6 +202,7 @@ def formatdir(thisdir, basedir, sl, depth=0):
                     )
         else:
             if gl.accept(thisdir, entry):
+                print("=temp=", entry)
                 if entry.endswith('.txt'):
                     print ("hyperlink (.txt):", entry)
                     with open(os.path.join(thisdir,entry)) as f:
@@ -300,7 +301,7 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
     listfiletext += ('</div>\n')
 
     if len(uncategorised)>0:
-        print (uncategorised)
+        print ("uncategorised:", uncategorised)
         listfiletext += ("<div class='panel panel-default' style='margin-top:1em;'><ul class='list-group'>\n")
         for entry in uncategorised:
             if gl.accept(fromdir, entry):
@@ -379,7 +380,7 @@ if os.path.exists(globalsynonymsfile):
         try:
             gsyn = json.load(f)
         except:
-            print ("\n\n****Misformatted json file***: {}\nIgnoring...\n\n".format(globalsynonymsfile))
+            print ("\n\n****Misformatted GLOBAL SYNONYMS json file***: {}\nIgnoring...\n\n".format(globalsynonymsfile))
 
 # Make html accordion menu and search index
 makelist()
