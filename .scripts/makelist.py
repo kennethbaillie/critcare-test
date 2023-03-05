@@ -33,7 +33,6 @@ parser.add_argument('-o', '--override_changes', default=False, action="store_tru
 parser.add_argument('-b', '--backgroundcolor', default="#f5f5f5") #bdfcec
 args = parser.parse_args()
 #-----------------------------
-use_viewerjs = False
 emergencydir = "Emergencies" # this will be pinned to the top and copies of emergency protocols uploaded to it
 pin_to_top = []
 #-----------------------------
@@ -63,15 +62,23 @@ def convert_pdf_to_txt(thisfile):
     retstr.close()
     return str
 
-def readpdf(thisfile):
-    if not thisfile.endswith(".pdf"):
-        return ""
-    try:
-        return convert_pdf_to_txt(thisfile)
-    except Exception as e:
-        print ("failed to convert to pdf:", thisfile)
-        print(e)
-        return ""
+def readfilecontents(thisfile):
+    if thisfile.endswith(".pdf"):
+        try:
+            return convert_pdf_to_txt(thisfile)
+        except Exception as e:
+            print ("failed to convert to pdf:", thisfile)
+            print(e)
+            return ""
+    else:
+        try:
+            with open(thisfile) as f:
+                text = f.read()
+                return get_unique_words(text)
+        except Exception as e:
+            print ("failed to read file:", thisfile)
+            print(e)
+            return ""
 
 def get_unique_words(bigstring):
     global gsyn
@@ -110,29 +117,24 @@ def get_unique_words(bigstring):
         bs = [" ".join(synonymlist) if x in synonymlist else x for x in bs]
     return ' '.join(bs)
 
-with open(dupout,"w") as o:
-    o.write("")
-def record_duplicate(thistitle):
-    if "em" not in thistitle.split("_"):
-        with open(dupout,"a") as o:
-            o.write("{}\n".format(thistitle))
-
-def add_pdf_to_search(thisfile, thisbasedir, already):
-    if not args.fast:
-        thistitle = fixname(os.path.split(thisfile)[1])
-        alreadydic={}
-        for x in already:
-            try:
-                if x['title'] == thistitle:
-                    record_duplicate(thisfile)
-                    return
-            except:
-                continue
-        return {
-            'href': os.path.relpath(thisfile, thisbasedir),
-            'title': thistitle,
-            'content': get_unique_words(readpdf(thisfile)), # this is the slow bit
-            }
+def make_search_entry(thisfile, thisbasedir, indexfilename=args.indexfilename):
+    if args.fast:
+        return
+    thistitle = fixname(os.path.split(thisfile)[1])
+    linktarget = thisfile
+    if thisfile.endswith(".md"):
+        linktarget = thisfile[:-3]
+    new_entry = {
+        'href': os.path.relpath(linktarget, thisbasedir),
+        'title': thistitle,
+        'content': get_unique_words(readfilecontents(thisfile)), # this is the slow bit
+        }
+    jsonpath = os.path.join(thisbasedir, indexfilename)
+    with open(jsonpath) as f:
+        sl = json.load(f)
+    sl.append(new_entry)
+    with open(jsonpath,"w") as o:
+        json.dump(sl, o, indent=4)
 
 def eclass(filename):
     if filename.strip().lower() == emergencydir.strip().lower():
@@ -170,7 +172,52 @@ def fixname(thisname):
 def makeid(thisname):
     return ''.join(thisname.split())
 
-def formatdir(thisdir, basedir, sl, depth=0):
+def formatfilelink(thisdir, entry, basedir, depth=0):
+    linktext = ""
+    if gl.accept(thisdir, entry):
+        #print("filename for link:", entry)
+        if entry.endswith('.txt'):
+            print ("hyperlink (.txt):", entry)
+            with open(os.path.join(thisdir,entry)) as f:
+                filecontents = f.read()
+            linktext+=('''
+                <a class='{}' href='{}'>
+                    <li class='list-group-item' style='margin-left:{}em;'>{}</li>
+                </a>
+                '''.format(
+                    eclass(entry),
+                    filecontents,
+                    depth,
+                    fixname(entry))
+                    )
+        elif entry.endswith('.md'):
+            linktarget = entry.replace(".md","") # md files automatically converted by mkdocs
+            print ("md", thisdir, entry, linktarget)
+            linktext+=('''
+                <a class='{}' href='{}'>
+                    <li class='list-group-item' style='margin-left:{}em;'>{}</li>
+                </a>
+                '''.format(
+                    eclass(entry),
+                    os.path.relpath(os.path.join(thisdir, linktarget), basedir),
+                    depth,
+                    fixname(entry))
+                    )
+        else:
+            linktext+=('''
+                <a class='{}' href='{}'>
+                    <li class='list-group-item' style='margin-left:{}em;'>{}</li>
+                </a>
+                '''.format(
+                    eclass(entry),
+                    os.path.relpath(os.path.join(thisdir, entry), basedir),
+                    depth,
+                    fixname(entry))
+                    )
+        make_search_entry(os.path.join(thisdir, entry), basedir)
+        return linktext
+
+def formatdir(thisdir, basedir, depth=0):
     text = ''
     for entry in sorted(os.listdir(thisdir)):
         if not gl.accept(thisdir, entry):
@@ -197,69 +244,21 @@ def formatdir(thisdir, basedir, sl, depth=0):
                         makeid(entry),
                         fixname(entry),
                         makeid(entry),
-                        formatdir(os.path.join(thisdir, entry), basedir, sl, depth+1)
+                        formatdir(os.path.join(thisdir, entry), basedir, depth+1)
                         )
                     )
         else:
-            if gl.accept(thisdir, entry):
-                print("=temp=", entry)
-                if entry.endswith('.txt'):
-                    print ("hyperlink (.txt):", entry)
-                    with open(os.path.join(thisdir,entry)) as f:
-                        filecontents = f.read()
-                    text+=('''
-                        <a class='{}' href='{}'>
-                            <li class='list-group-item' style='margin-left:{}em;'>{}</li>
-                        </a>
-                        '''.format(
-                            eclass(entry),
-                            filecontents,
-                            depth,
-                            fixname(entry))
-                            )
-                elif entry.endswith('.md'):
-                    print ("md", thisdir, entry, basedir)
-                    entry = entry.replace(".md","")
-                    text+=('''
-                        <a class='{}' href='{}'>
-                            <li class='list-group-item' style='margin-left:{}em;'>{}</li>
-                        </a>
-                        '''.format(
-                            eclass(entry),
-                            os.path.relpath(os.path.join(thisdir, entry), basedir),
-                            depth,
-                            fixname(entry))
-                            )
-                elif use_viewerjs:
-                    text+=('''
-                        <a class='{}' href='ViewerJS/#../{}'>
-                            <li class='list-group-item' style='margin-left:{}em;'>{}</li>
-                        </a>
-                        '''.format(
-                            eclass(entry),
-                            os.path.relpath(os.path.join(thisdir, entry), basedir),
-                            depth,
-                            fixname(entry))
-                            )
-                else:
-                    text+=('''
-                        <a class='{}' href='{}'>
-                            <li class='list-group-item' style='margin-left:{}em;'>{}</li>
-                        </a>
-                        '''.format(
-                            eclass(entry),
-                            os.path.relpath(os.path.join(thisdir, entry), basedir),
-                            depth,
-                            fixname(entry))
-                            )
-                sl.append(add_pdf_to_search(os.path.join(thisdir, entry), basedir, sl))
+            text += formatfilelink(thisdir, entry, basedir, depth)
     return text
-
 
 def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexfilename):
     i=0
     basedir = os.path.abspath(os.path.join(fromdir,"..")) # always one level up, by definition because of the links
-    searchlist = []
+    searchindexfile = os.path.join(basedir, indexfile)
+    # clear old search
+    if not args.fast:
+        with open(searchindexfile,"w") as o:
+            json.dump([],o,indent=4)
     uncategorised = []
     listfiletext = ""
     listfiletext += ('<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">\n')
@@ -291,31 +290,22 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
                     fixname(d),
                     i,
                     i,
-                    formatdir(os.path.join(fromdir, d), basedir, searchlist)
+                    formatdir(os.path.join(fromdir, d), basedir)
                     ))
             i+=1
         else:
             if gl.accept(fromdir, d):
                 uncategorised.append(d)
-                searchlist.append(add_pdf_to_search(os.path.join(fromdir, d), basedir, searchlist))
+                make_search_entry(os.path.join(fromdir, d), basedir)
     listfiletext += ('</div>\n')
 
     if len(uncategorised)>0:
         print ("uncategorised:", uncategorised)
-        listfiletext += ("<div class='panel panel-default' style='margin-top:1em;'><ul class='list-group'>\n")
         for entry in uncategorised:
-            if gl.accept(fromdir, entry):
-                listfiletext += (("\t<a class='{}' href='{}'><li class='list-group-item'>{}</li></a>\n".format(eclass(entry), os.path.relpath(os.path.join(fromdir, entry), basedir), fixname(entry))))
-                searchlist.append(add_pdf_to_search(os.path.join(fromdir, entry), basedir, searchlist))
-        listfiletext += ('</ul></div>\n')
+            listfiletext += formatfilelink(fromdir, entry, basedir, 0)
 
     with open(os.path.join(basedir,listfile),'w') as o:
         o.write(listfiletext)
-
-    if not args.fast:
-        with open(os.path.join(basedir,indexfile),'w') as o:
-            json.dump(searchlist, o, indent=4)
-
     print ('list made in {}'.format(os.path.join(basedir,listfile)))
 
 #-----------------------------
@@ -382,8 +372,8 @@ if os.path.exists(globalsynonymsfile):
         except:
             print ("\n\n****Misformatted GLOBAL SYNONYMS json file***: {}\nIgnoring...\n\n".format(globalsynonymsfile))
 
-# Make html accordion menu and search index
-makelist()
+# Make html accordion menu and new search index
+makelist(fromdir=args.dir)
 
 # Make and populate public folder
 if os.path.exists(args.publicdir):
