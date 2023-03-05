@@ -33,7 +33,7 @@ parser.add_argument('-o', '--override_changes', default=False, action="store_tru
 parser.add_argument('-b', '--backgroundcolor', default="#f5f5f5") #bdfcec
 args = parser.parse_args()
 #-----------------------------
-use_viewerjs = False
+use_viewerjs = True
 emergencydir = "Emergencies" # this will be pinned to the top and copies of emergency protocols uploaded to it
 pin_to_top = []
 #-----------------------------
