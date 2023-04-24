@@ -143,7 +143,7 @@ for category in changes:
     outputc[category]={}
     if args.verbose: print("\n==> Changes:", category)
     for targetfile in changes[category]:
-        if args.verbose: print("\t-", targetfile)
+        if args.verbose: print("\t- (category) ", targetfile)
         if category =="deleted":
             outputc[category][targetfile.replace("/.temp/","/")] = printablepath(changes[category][targetfile]) 
         elif category == "new" or category == "modified":
@@ -166,6 +166,12 @@ for category in outputc:
         pass
 with open(changelog,"w") as o:
     json.dump(outputc, o, indent=4)
+    if args.verbose: 
+        print("The following changelog:")
+        print(changelog)
+        print("successfully written to {outputc}")
+
+
 
 
 
