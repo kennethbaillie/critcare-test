@@ -3,6 +3,9 @@
 '''
 Makes an html list of pdf files in a directory
 Also makes a lunr search index
+
+
+TODO: make the formatting of search links use the same function as the formatting of list links so that e.g. videos work
 '''
 import re
 import os
