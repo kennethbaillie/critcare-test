@@ -36,8 +36,8 @@ jobs:
 
       - name: Download files
         run: |
-          python .scripts/download.py -s "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0" -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/"
-          ls "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/" -v
+          python .scripts/download.py -s -v "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0" -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/"
+          ls "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/"
 
       - name: Make list
         run: |
