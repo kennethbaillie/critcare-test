@@ -168,8 +168,8 @@ with open(changelog,"w") as o:
     json.dump(outputc, o, indent=4)
     if args.verbose: 
         print("The following changelog:")
-        print(changelog)
-        print("successfully written to {outputc}")
+        print(outputc)
+        print("successfully written to {}".format(changelog))
 
 
 
