@@ -25,6 +25,7 @@ rs = [x.lower() for x in args.reviewdatestrings]
 revout = os.path.join(args.sourcedir,"../","reviewdates.csv")
 revoutx = os.path.join(args.sourcedir,"../","reviewdates.xlsx")
 revout_big = os.path.join(args.sourcedir,"../","reviewdates_full.csv")
+changes_record_file = os.path.join(args.sourcedir,"../changes.html")
 
 def old_extract_date(text, reviewstrings=rs):
     while "  " in text:
@@ -93,6 +94,10 @@ def extract_date(s):
         return(max(dates))
     else:
         return None
+
+if not gl.newchanges(changes_record_file):
+    print ("Stopping because {} hasn't changed.".format(changes_record_file))
+    sys.exit()
 
 revs = {}
 for dirpath, _, filenames in os.walk(args.sourcedir):

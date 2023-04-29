@@ -3,6 +3,7 @@
 import os
 import sys
 import json
+import time
 import shutil
 import pathlib
 import filecmp
@@ -33,6 +34,8 @@ exclude_from_reports = [
     "Emergencies",
 ]
 
+def newchanges(recordfile, interval=300):
+    return (time.time() - os.path.getmtime(newchanges)) < interval
 
 class cd:
     """Context manager for changing the current working directory"""

@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python3
 
 import os
+import time
 import datetime
-import os
 import hashlib
 #-----------------------------
 import guideline_functions as gl
@@ -42,6 +42,11 @@ def printdups(dups):
         print (dup)
 
 dupout = os.path.join(args.sourcedir,"../duplicates.md")
+changes_record_file = os.path.join(args.sourcedir,"../changes.html")
+
+if not gl.newchanges(changes_record_file):
+    print ("Stopping because {} hasn't changed.".format(changes_record_file))
+    sys.exit()
 
 with gl.cd(args.sourcedir):
     dups = find_duplicate_pdfs("./")
