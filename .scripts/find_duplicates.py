@@ -1,6 +1,7 @@
 ﻿#!/usr/bin/env python3
 
 import os
+import sys
 import time
 import datetime
 import hashlib
@@ -11,6 +12,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--sourcedir', default='docs/test_secret') # default test dir
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
+parser.add_argument('-o', '--override_changes', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
 if args.sourcedir == "no_dir_specified":
@@ -44,8 +46,8 @@ def printdups(dups):
 dupout = os.path.join(args.sourcedir,"../duplicates.md")
 changes_record_file = os.path.join(args.sourcedir,"../changes.html")
 
-if not gl.newchanges(changes_record_file):
-    print ("Stopping because {} hasn't changed.".format(changes_record_file))
+if not (gl.newchanges(changes_record_file) or args.override_changes):
+    print ("Stopping because {} hasn't changed.".format(os.path.abspath(changes_record_file)))
     sys.exit()
 
 with gl.cd(args.sourcedir):

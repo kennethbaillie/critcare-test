@@ -35,7 +35,7 @@ exclude_from_reports = [
 ]
 
 def newchanges(recordfile, interval=300):
-    return (time.time() - os.path.getmtime(newchanges)) < interval
+    return (time.time() - os.path.getmtime(recordfile)) < interval
 
 class cd:
     """Context manager for changing the current working directory"""

@@ -1,6 +1,7 @@
 ﻿#!/usr/bin/env python3
 
 import os
+import sys
 import timeit
 import pandas as pd
 import re
@@ -14,6 +15,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--sourcedir', default='docs/test_secret') # default test dir
 parser.add_argument('-r', '--reviewdatestrings',    action='append', default=['Next review', 'Review date', 'Review '], help='use this to append as many values as you want')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
+parser.add_argument('-o', '--override_changes', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
 if args.sourcedir == "no_dir_specified":
@@ -95,8 +97,8 @@ def extract_date(s):
     else:
         return None
 
-if not gl.newchanges(changes_record_file):
-    print ("Stopping because {} hasn't changed.".format(changes_record_file))
+if not (gl.newchanges(changes_record_file) or args.override_changes):
+    print ("Stopping because {} hasn't changed.".format(os.path.abspath(changes_record_file)))
     sys.exit()
 
 revs = {}
