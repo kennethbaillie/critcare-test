@@ -68,6 +68,10 @@ https://youtu.be/HDyKJ4FOX9o
 
 A couple of files in the app are simple web pages written in markdown. If you want to do this, simply end your filename in .md and it will be handled as markdown and made into a web page. If this doesn't make any sense to you, just ignore it.
 
+## Automatic searching
+
+You can trigger an automatic search directly from the URL by adding a query string to specify the `searchterm`. For example, to search for `deep vein thromobosis`, us this URL:
+`https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/?searchterm=deep%20vein%20thrombosis`
 
 
 
