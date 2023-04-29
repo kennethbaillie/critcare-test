@@ -12,9 +12,9 @@ app: true
 <style>
     table {
         border-collapse: collapse;
-        width: 100%;
+        width: 90%;
         max-width:800px;
-        margin:2em;
+        margin:1em;
     }
     th, td {
         border: 1px solid black;
