@@ -3,7 +3,7 @@ name: make list
 # Controls when the action will run.
 on:
   schedule:
-    - cron: '0 7-22 * * *'
+    - cron: '0 9-18 * * *'
 
   push:
 

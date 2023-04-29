@@ -130,7 +130,7 @@ def readfilecontents(thisfile):
             text = ''
             for sheet_name, sheet_data in data_frames.items():
                 text += sheet_name + '\n'
-                text += sheet_data.to_csv(index=False, line_terminator='\n')
+                text += sheet_data.to_csv(index=False)
             return text
         except Exception as e:
             print ("failed to convert to txt:", thisfile)
