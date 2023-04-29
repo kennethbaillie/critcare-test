@@ -71,5 +71,33 @@ function initUI() {
   });
 }
 
+// parse the URL query string and return the search term
+function getSearchTermFromQueryString() {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const searchTerm = urlParams.get('searchterm');
+
+  if (searchTerm) {
+    return decodeURIComponent(searchTerm);
+  }
+  return '';
+}
+
+// Call this function on page load to read the URL query string and run the search
+function initSearchFromQueryString() {
+  const searchTerm = getSearchTermFromQueryString();
+  
+  if (searchTerm) {
+    const searchInput = $("#search");
+    searchInput.val(searchTerm);
+    const results = search(searchTerm);
+    renderResults(results);
+  }
+}
+
 initLunr();
 initUI();
+
+$(document).ready(initSearchFromQueryString);
+
+

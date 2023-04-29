@@ -1,7 +1,6 @@
 site_name: NHS Lothian Critical Care
 site_url: https://critcare.github.io/
 site_dir: /tmp/rieapp_site
-google_analytics: ['UA-31433459-6', '']
 # bootstrap4 mkdocs readthedocs cinder
 theme:
   name: cinder
