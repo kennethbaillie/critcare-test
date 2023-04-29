@@ -1,5 +1,5 @@
-site_name: NHS Lothian Critical Care
-site_url: https://critcare.github.io/
+site_name: Critical Care Guidelines
+site_url: https://critcare.net
 site_dir: /tmp/rieapp_site
 # bootstrap4 mkdocs readthedocs cinder
 theme:

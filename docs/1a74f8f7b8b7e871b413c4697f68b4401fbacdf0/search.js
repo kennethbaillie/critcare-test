@@ -1,6 +1,8 @@
 // https://lunrjs.com/guides/getting_started.html
 
 var lunrIndex, $results, documents;
+var indexReady = false; // Add a flag to indicate if the index is ready
+
 
 /*
 function initLunr() {
@@ -28,6 +30,23 @@ function initLunr() {
         console.error("Error getting Lunr index file:", err);
     });
 }
+
+function initLunr() {
+  return new Promise((resolve, reject) => {
+    $.getJSON("index.json")
+      .done(function (index) {
+        // ... Your existing index processing code
+
+        indexReady = true; // Set the indexReady flag to true
+        resolve(); // Resolve the promise when the index is loaded
+      })
+      .fail(function (jqxhr, textStatus, error) {
+        var err = textStatus + ", " + error;
+        console.error("Error getting Lunr index file:", err);
+        reject(err); // Reject the promise in case of error
+      });
+  });
+}
 */
 
 function initLunr() {
@@ -49,7 +68,7 @@ function initLunr() {
             } catch (e) {}
           }, this)
         })
-
+        indexReady = true; // Set the indexReady flag to true
         resolve(); // Resolve the promise when the index is loaded
       })
       .fail(function (jqxhr, textStatus, error) {
@@ -61,6 +80,9 @@ function initLunr() {
 }
 
 function search(query) {
+  if (!indexReady) { // Check if the index is ready before running the search
+    return [];
+  }
   return lunrIndex.search(query).map(function(result) {
     return documents.filter(function(page) {
       try {
@@ -116,20 +138,24 @@ function getSearchTermFromQueryString() {
 }
 
 // Call this function on page load to read the URL query string and run the search
-function initSearchFromQueryString() {
-  const searchTerm = getSearchTermFromQueryString();
-  
-  if (searchTerm) {
-    const searchInput = $("#search");
-    searchInput.val(searchTerm);
-    const results = search(searchTerm);
-    renderResults(results);
-  }
+function initSearchFromQueryString(lunrIndexPromise) {
+  lunrIndexPromise
+    .then(() => {
+      const searchTerm = getSearchTermFromQueryString();
+
+      if (searchTerm) {
+        const searchInput = $("#search");
+        searchInput.val(searchTerm);
+        const results = search(searchTerm);
+        renderResults(results);
+      }
+    })
+    .catch((error) => {
+      console.error("Error initializing search from query string:", error);
+    });
 }
 
-initLunr();
 initUI();
-
-$(document).ready(initSearchFromQueryString);
-
+const lunrIndexPromise = initLunr();
+$(document).ready(() => initSearchFromQueryString(lunrIndexPromise));
 
