@@ -35,6 +35,7 @@ exclude_from_reports = [
 ]
 
 def newchanges(recordfile, interval=300):
+    print (time.time() - os.path.getmtime(recordfile), (time.time() - os.path.getmtime(recordfile)) < interval)
     return (time.time() - os.path.getmtime(recordfile)) < interval
 
 class cd:

@@ -28,6 +28,7 @@ def find_duplicate_pdfs(root_dir):
     duplicates = []
     for dirpath, _, filenames in os.walk(root_dir):
         for filename in filenames:
+            print (filename)
             if filename.lower().endswith('.pdf'):
                 file_path = os.path.join(dirpath, filename)
                 pdf_text = gl.get_pdf_text(file_path)
