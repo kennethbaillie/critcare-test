@@ -50,6 +50,13 @@ Guidelines should not be emailed to Heather for update any longer. They are uplo
 	- `Emergency Caesarean Section Action Cards_em.pdf` is flagged for the emergency section
 	- `C-spine clearance flowchart and guidance_pub.pdf` is public
 	- `Air_Embolism_em_pub.pdf` is both public and flagged as an emergency protocol
+	
+## Automatic checks
+
+The app produces some automatic checks, which aren't perfect, but can help keep the guidelines in good shape:
+
+- a list of [duplicate files](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/duplicates/)
+- a list of [estimated review dates](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/reviewdates/)
 
 ## Adding videos or links
 
