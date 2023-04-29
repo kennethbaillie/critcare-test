@@ -122,8 +122,7 @@ for dirpath, _, filenames in os.walk(args.sourcedir):
 data_list = [{'File': key, 'Review date': val[0], 'Source string': val[1]} for key, val in revs.items()]
 df = pd.DataFrame(data_list)
 #df = pd.DataFrame(list(revs.items()), columns=["File", "Review date"])
-print (df)
-df = df.append({'File': '==TODAY==', 'Review date': datetime.today()}, ignore_index=True)
+df = pd.concat([df, pd.DataFrame([{'File': '==TODAY==', 'Review date': datetime.today()}])], ignore_index=True)
 df['Review date'] = pd.to_datetime(df['Review date'], errors='coerce')
 df.dropna(subset=['Review date'], inplace=True)
 df.sort_values('Review date', ascending=True, inplace=True)
