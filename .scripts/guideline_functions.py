@@ -104,16 +104,13 @@ def readfilecontents(thisfile):
             return ""
 
 def get_pdf_text(file_path):
-    try:
-        with open(file_path, 'rb') as f:
-            pdf_reader = PyPDF2.PdfFileReader(f, strict=False)
-            text = ''
-            for page_num in range(pdf_reader.numPages):
-                text += pdf_reader.getPage(page_num).extractText()
-            return text
-    except Exception as e:
-        #print(f"Error processing {file_path}: {e}")
-        return None
+    with open(file_path, 'rb') as f:
+        pdf_reader = PyPDF2.PdfFileReader(f, strict=False)
+        text = ''
+        for page_num in range(pdf_reader.numPages):
+            text += pdf_reader.getPage(page_num).extractText()
+        return text
+
 
 def recursive_split(s):
     stem, name = list(os.path.split(s))
