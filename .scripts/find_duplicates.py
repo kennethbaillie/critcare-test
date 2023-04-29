@@ -2,7 +2,6 @@
 
 import os
 import datetime
-import find_duplicate_files
 import os
 import hashlib
 import PyPDF2
