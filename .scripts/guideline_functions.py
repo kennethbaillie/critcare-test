@@ -102,7 +102,7 @@ def readfilecontents(thisfile):
 def get_pdf_text(file_path):
     try:
         with open(file_path, 'rb') as f:
-            pdf_reader = PyPDF2.PdfFileReader(f)
+            pdf_reader = PyPDF2.PdfFileReader(f, strict=False)
             text = ''
             for page_num in range(pdf_reader.numPages):
                 text += pdf_reader.getPage(page_num).extractText()

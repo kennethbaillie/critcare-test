@@ -4,4 +4,10 @@ title: Duplicates
 
 # Duplicates
 
-No duplicate files found on 2023-04-29 14:04:30
+Duplicates found (2023-04-29 15:56:41):
+
+- ./Drugs/Antibiotic doses in CVVHD.pdf == ./Renal_and_Urology/Antibiotic doses in CVVHD.pdf
+- ./Covid-19/COVID 19 Procedures/COVID Extubation Checklist.pdf == ./Covid-19/WGH/Covid_extubation.pdf
+- ./Covid-19/SJH/Covid_extubation.pdf == ./Covid-19/WGH/Covid_extubation.pdf
+- ./Infection_and_sepsis/Antibiotic doses in CVVHD.pdf == ./Renal_and_Urology/Antibiotic doses in CVVHD.pdf
+- ./Neurological/Ventriculitis Guideline.pdf == ./Infection_and_sepsis/Ventriculitis.pdf

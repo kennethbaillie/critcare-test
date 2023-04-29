@@ -77,7 +77,7 @@ with open(dupout,"w") as o:
         o.write("No duplicate files found on {}".format(now))
     else:
         o.write("Duplicates found ({}):\n\n".format(now))
-        o.write("\n".join(["{} == {}".format(x[0],x[1]) for x in dups]))
+        o.write("\n".join(["- {} == {}".format(x[0],x[1]) for x in dups]))
 
 
 
