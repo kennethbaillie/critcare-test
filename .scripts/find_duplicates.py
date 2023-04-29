@@ -3,6 +3,9 @@
 import os
 import datetime
 import find_duplicate_files
+import os
+import hashlib
+import PyPDF2
 #-----------------------------
 import guideline_functions as gl
 #-----------------------------
@@ -34,12 +37,52 @@ def reportable_duplicate(thispath, verbose=True):
             return False
     return True
 
+def get_pdf_text(file_path):
+    try:
+        with open(file_path, 'rb') as f:
+            pdf_reader = PyPDF2.PdfFileReader(f)
+            text = ''
+            for page_num in range(pdf_reader.numPages):
+                text += pdf_reader.getPage(page_num).extractText()
+            return text
+    except Exception as e:
+        #print(f"Error processing {file_path}: {e}")
+        return None
+
+def get_file_hash(text):
+    return hashlib.md5(text.encode('utf-8')).hexdigest()
+
+def find_duplicate_pdfs(root_dir):
+    file_hashes = {}
+    duplicates = []
+    for dirpath, _, filenames in os.walk(root_dir):
+        for filename in filenames:
+            if filename.lower().endswith('.pdf'):
+                file_path = os.path.join(dirpath, filename)
+                pdf_text = get_pdf_text(file_path)
+                if pdf_text:
+                    file_hash = get_file_hash(pdf_text)
+                    if file_hash in file_hashes:
+                        duplicates.append([file_path, file_hashes[file_hash]])
+                    else:
+                        file_hashes[file_hash] = file_path
+    return duplicates
+
+def printdups(dups):
+    for dup in dups:
+        print (dup)
+
 dupout = os.path.join(args.sourcedir,"../duplicates.md")
 
 with gl.cd(args.sourcedir):
-    dups = find_duplicate_files.find_duplicate_files("./")
+    dups = find_duplicate_pdfs("./")
+    print ("Unfiltered duplicates:")
+    printdups(dups)
     dups = [x for x in dups if reportable_duplicate(x[0]) and reportable_duplicate(x[1])]
-    print (dups)
+    for dirnamestartstring in ["Emergencies", ".", ".temp"]:
+        filtered_duplicates = [(path1, path2) for path1, path2 in dups if not any(dir_name.startswith(dirnamestartstring) for dir_name in path1.split(os.path.sep) + path2.split(os.path.sep))]
+    print ("\nFinal duplicates:")
+    printdups(dups)
 
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 with open(dupout,"w") as o:
