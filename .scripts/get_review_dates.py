@@ -40,7 +40,6 @@ def old_extract_date(text, reviewstrings=rs):
             time_related_words = ['hours', 'minutes', 'seconds']
             pattern = re.compile(r'\b(?:{})\b'.format('|'.join(time_related_words)), re.IGNORECASE)
             date_str = pattern.sub('', date_str)
-            print (date_str)
             date_match = re.search(r'\d{1,2}[/-]\d{1,2}[/-]\d{2,4}', date_str)
             if date_match:
                 return parse(date_match.group(0), dayfirst=True)
@@ -108,7 +107,7 @@ for dirpath, _, filenames in os.walk(args.sourcedir):
             file_path = os.path.join(dirpath, filename)
             if not gl.is_reportable(file_path):
                 continue
-            text = gl.get_pdf_text(file_path)
+            text = gl.readfilecontents(file_path)
             if text:
                 text = text.replace("\r","\n")
                 lines = text.lower().split("\n")+["."]
@@ -119,12 +118,12 @@ for dirpath, _, filenames in os.walk(args.sourcedir):
                 for x in reviewlines:
                     d = extract_date(x)
                     if d:
-                        print("{:<20}\t<==\t{}".format(d.strftime('%Y-%m-%d %H:%M:%S'),x))
+                        if args.verbose:
+                            print("{:<20}\t<==\t{}".format(d.strftime('%Y-%m-%d %H:%M:%S'),x))
                         reviewdates.append(d)
 
                 if len(reviewdates)>0:
                     revs[gl.shorten_filepath(file_path).replace(",","")] = [max(reviewdates), " | ".join(reviewlines)]
-
 
 data_list = [{'File': key, 'Review date': val[0], 'Source string': val[1]} for key, val in revs.items()]
 df = pd.DataFrame(data_list)
