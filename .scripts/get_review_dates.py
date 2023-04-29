@@ -12,7 +12,7 @@ import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='docs/test_secret') # default test dir
+parser.add_argument('-s', '--sourcedir', default='../docs/test_secret/criticalcare/') # default test dir
 parser.add_argument('-r', '--reviewdatestrings',    action='append', default=['Next review', 'Review date', 'Review '], help='use this to append as many values as you want')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
@@ -97,8 +97,8 @@ def extract_date(s):
     else:
         return None
 
-if not (gl.newchanges(changes_record_file) or args.override_changes):
-    print ("Stopping because {} hasn't changed.".format(os.path.abspath(changes_record_file)))
+if not (gl.newchanges(args.sourcedir) or args.override_changes):
+    print ("Stopping because go file is no-go.")
     sys.exit()
 
 revs = {}
@@ -128,7 +128,6 @@ for dirpath, _, filenames in os.walk(args.sourcedir):
 
 data_list = [{'File': key, 'Review date': val[0], 'Source string': val[1]} for key, val in revs.items()]
 df = pd.DataFrame(data_list)
-#df = pd.DataFrame(list(revs.items()), columns=["File", "Review date"])
 df = pd.concat([df, pd.DataFrame([{'File': '==TODAY==', 'Review date': datetime.today()}])], ignore_index=True)
 df['Review date'] = pd.to_datetime(df['Review date'], errors='coerce')
 df.dropna(subset=['Review date'], inplace=True)

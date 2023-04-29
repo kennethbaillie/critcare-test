@@ -10,7 +10,7 @@ import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='docs/test_secret') # default test dir
+parser.add_argument('-s', '--sourcedir', default='../docs/test_secret/criticalcare/') # default test dir
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
 args = parser.parse_args()
@@ -30,10 +30,8 @@ def find_duplicate_pdfs(root_dir):
         for filename in filenames:
             if filename.lower().endswith('.pdf'):
                 file_path = os.path.join(dirpath, filename)
-                pdf_text = gl.get_pdf_text(file_path)
-                print (filename)
+                pdf_text = gl.readfilecontents(file_path)
                 if pdf_text:
-                    print ("text acquired")
                     file_hash = get_file_hash(pdf_text)
                     if file_hash in file_hashes:
                         duplicates.append([file_path, file_hashes[file_hash]])
@@ -46,10 +44,9 @@ def printdups(dups):
         print (dup)
 
 dupout = os.path.join(args.sourcedir,"../duplicates.md")
-changes_record_file = os.path.join(args.sourcedir,"../changes.html")
 
-if not (gl.newchanges(changes_record_file) or args.override_changes):
-    print ("Stopping because {} hasn't changed.".format(os.path.abspath(changes_record_file)))
+if not (gl.newchanges(args.sourcedir) or args.override_changes):
+    print ("Stopping because go file is no-go.")
     sys.exit()
 
 with gl.cd(args.sourcedir):

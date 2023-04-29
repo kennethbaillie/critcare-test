@@ -35,7 +35,7 @@ emergencydir = "Emergencies" # this will be pinned to the top and copies of emer
 pin_to_top = []
 #-----------------------------
 changelog = os.path.join(args.dir,".changes.json")
-outputfile = os.path.join(args.dir,"../changes.html")
+changes_record_file = os.path.join(args.dir,"../changes.html")
 dupout = os.path.join(args.dir,"../duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"../synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
@@ -87,8 +87,7 @@ def make_search_entry(thisfile, thisbasedir, indexfilename=args.indexfilename):
     new_entry = {
         'href': os.path.relpath(linktarget, thisbasedir),
         'title': thistitle,
-        #'content': get_unique_words(guideline_functions.readfilecontents(thisfile)), # this is the slow bit
-        'content': get_unique_words(guideline_functions.get_pdf_text(thisfile)), # this is the slow bit
+        'content': get_unique_words(gl.readfilecontents(thisfile)), # this is the slow bit
         }
     jsonpath = os.path.join(thisbasedir, indexfilename)
     with open(jsonpath) as f:
@@ -289,16 +288,19 @@ for thistype in changes:
 oldtext = ""
 if new_changes_present == True or args.override_changes:
     print ("New changes found. Making new search index.")
-    if os.path.exists(outputfile):
-        with open(outputfile) as f:
+    with open(os.path.join(args.dir, gl.gofilename),"w") as o:
+        o.write("go")
+    if os.path.exists(changes_record_file):
+        with open(changes_record_file) as f:
             oldtext = f.read()
-    with open(outputfile,"w") as o:
+    with open(changes_record_file,"w") as o:
         o.write(newtext + oldtext)
     with open(changelog,"w") as o:
         json.dump({},o)
 else:
-    newtext += "<p> No new changes found.</p><br>\n"
     print ("No new changes found in {}\n Aborting makelist.\n".format(changelog))
+    with open(os.path.join(args.dir, gl.gofilename),"w") as o:
+        o.write("no go")
     sys.exit()
 #-----------------------------
 if args.do_emergency:

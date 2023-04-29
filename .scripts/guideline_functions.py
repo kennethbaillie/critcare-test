@@ -4,6 +4,7 @@ import os
 import sys
 import json
 import time
+import timeit
 import shutil
 import pathlib
 import filecmp
@@ -13,6 +14,7 @@ from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
+from pypdf import PdfReader
 
 #-----------------------------
 # files to ignore
@@ -33,9 +35,16 @@ exclude_from_reports = [
     "Emergencies",
 ]
 
-def newchanges(recordfile, interval=300):
-    print (time.time() - os.path.getmtime(recordfile), (time.time() - os.path.getmtime(recordfile)) < interval)
-    return (time.time() - os.path.getmtime(recordfile)) < interval
+gofilename = "../go.txt"
+
+def newchanges(sourcedir, interval=300):
+    gofile = os.path.join(sourcedir, gofilename)
+    if os.path.exists(gofile):
+        with open(gofile) as f:
+            text = f.read()
+        return (text == "go")
+    else:
+        return True
 
 class cd:
     """Context manager for changing the current working directory"""
@@ -50,7 +59,6 @@ class cd:
     def __exit__(self, etype, value, traceback):
         os.chdir(self.savedPath)
 
-
 def accept(thispath, file_or_dir_name):
     if file_or_dir_name.startswith('.') or file_or_dir_name.startswith('offline') or file_or_dir_name.startswith('_') or "_bak." in file_or_dir_name:
         return False
@@ -62,7 +70,6 @@ def accept(thispath, file_or_dir_name):
         if len(acceptable) == 0:
             return False
     return True
-
 
 def convert_pdf_to_txt(thisfile):
     rsrcmgr = PDFResourceManager()
@@ -84,10 +91,17 @@ def convert_pdf_to_txt(thisfile):
     retstr.close()
     return str
 
+def convert_pdf_to_txt2(thisfile):
+    reader = PdfReader(thisfile)
+    text = ""
+    for page in reader.pages:
+        text += page.extract_text()
+    return text
+
 def readfilecontents(thisfile):
     if thisfile.endswith(".pdf"):
         try:
-            return convert_pdf_to_txt(thisfile)
+            return convert_pdf_to_txt2(thisfile)
         except Exception as e:
             print ("failed to convert to txt:", thisfile)
             print(e)
@@ -101,18 +115,6 @@ def readfilecontents(thisfile):
             print ("failed to read file:", thisfile)
             print(e)
             return ""
-
-def get_pdf_text(file_path):
-    return readfilecontents(file_path)
-    '''
-    with open(file_path, 'rb') as f:
-        pdf_reader = PyPDF2.PdfFileReader(f, strict=False)
-        text = ''
-        for page_num in range(pdf_reader.numPages):
-            text += pdf_reader.getPage(page_num).extractText()
-        return text
-    '''
-
 
 def recursive_split(s):
     stem, name = list(os.path.split(s))
