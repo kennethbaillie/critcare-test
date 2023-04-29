@@ -34,6 +34,7 @@ jobs:
           pip install mkdocs-cinder
           pip install PyPDF2
           pip install pandas
+          pip install openpyxl
 
       - name: Download files
         run: |
