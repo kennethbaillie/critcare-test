@@ -4,6 +4,8 @@ import os
 import sys
 import json
 import time
+import docx
+import textract
 import timeit
 import shutil
 import pathlib
@@ -109,14 +111,14 @@ def readfilecontents(thisfile):
             return ""
     elif thisfile.endswith(".doc"):
         try:
-            return textract.process(file_path).decode('utf-8')
+            return textract.process(thisfile).decode('utf-8')
         except Exception as e:
             print ("failed to convert to txt:", thisfile)
             print(e)
             return ""
     elif thisfile.endswith(".docx"):
         try:
-            doc = docx.Document(file_path)
+            doc = docx.Document(thisfile)
             return ' '.join([paragraph.text for paragraph in doc.paragraphs])
         except Exception as e:
             print ("failed to convert to txt:", thisfile)
@@ -124,7 +126,7 @@ def readfilecontents(thisfile):
             return ""
     elif thisfile.endswith(".xls") or thisfile.endswith(".xlsx"):
         try:
-            data_frames = pd.read_excel(file_path, sheet_name=None)
+            data_frames = pd.read_excel(thisfile, sheet_name=None)
             text = ''
             for sheet_name, sheet_data in data_frames.items():
                 text += sheet_name + '\n'
