@@ -29,7 +29,7 @@ ignorelist = [
         'Icon'
     ]
 
-exclude_from_comparisons = [
+exclude_from_reports = [
     "Emergencies",
 ]
 
@@ -110,5 +110,28 @@ def get_pdf_text(file_path):
     except Exception as e:
         #print(f"Error processing {file_path}: {e}")
         return None
+
+def recursive_split(s):
+    stem, name = list(os.path.split(s))
+    if stem in ['', os.path.sep]:
+        return [name]
+    return recursive_split(stem) + [name]
+
+def is_reportable(thispath, verbose=True):
+    dir_and_file_names = recursive_split(thispath)
+    if "." in dir_and_file_names:
+        dir_and_file_names.remove('.')
+    for name in dir_and_file_names:
+        if not accept("", name):
+            return False
+        if name in ignorelist+exclude_from_reports:
+            return False
+    return True
+
+def shorten_filepath(thispath, dirs_to_remove=3):
+    dirs = thispath.split(os.path.sep)
+    new_dirs = dirs[dirs_to_remove:]
+    return os.path.join(*new_dirs)
+
 
 

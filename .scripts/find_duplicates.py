@@ -18,23 +18,6 @@ if args.sourcedir == "no_dir_specified":
     sys.exit()
 #-----------------------------
 
-def recursive_split(s):
-    stem, name = list(os.path.split(s))
-    if stem in ['', os.path.sep]:
-        return [name]
-    return recursive_split(stem) + [name]
-
-def reportable_duplicate(thispath, verbose=True):
-    dir_and_file_names = recursive_split(thispath)
-    if "." in dir_and_file_names:
-        dir_and_file_names.remove('.')
-    for name in dir_and_file_names:
-        if not gl.accept("", name):
-            return False
-        if name in gl.ignorelist+gl.exclude_from_comparisons:
-            return False
-    return True
-
 def get_file_hash(text):
     return hashlib.md5(text.encode('utf-8')).hexdigest()
 
@@ -64,7 +47,7 @@ with gl.cd(args.sourcedir):
     dups = find_duplicate_pdfs("./")
     print ("Unfiltered duplicates:")
     printdups(dups)
-    dups = [x for x in dups if reportable_duplicate(x[0]) and reportable_duplicate(x[1])]
+    dups = [x for x in dups if gl.is_reportable(x[0]) and gl.is_reportable(x[1])]
     for dirnamestartstring in ["Emergencies", ".", ".temp"]:
         filtered_duplicates = [(path1, path2) for path1, path2 in dups if not any(dir_name.startswith(dirnamestartstring) for dir_name in path1.split(os.path.sep) + path2.split(os.path.sep))]
     print ("\nFinal duplicates:")
