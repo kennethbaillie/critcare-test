@@ -54,7 +54,7 @@ app: true
                 let cellElement = (index === 0) ? $('<th></th>') : $('<td></td>');
                 cellElement.text(cell);
 
-                if (index !== 0 && cellIndex === 2) { // Assuming "Review date" is the 3rd column (index 2)
+                if (index !== 0 && cellIndex === 1) { 
                     let date = new Date(cell);
                     if (date < today) {
                         row.addClass('highlight');

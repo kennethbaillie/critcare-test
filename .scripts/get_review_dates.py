@@ -127,11 +127,11 @@ for dirpath, _, filenames in os.walk(args.dir):
 
 data_list = [{'File': key, 'Review date': val[0], 'Source string': val[1]} for key, val in revs.items()]
 df = pd.DataFrame(data_list)
-df = pd.concat([df, pd.DataFrame([{'File': '==TODAY==', 'Review date': datetime.today()}])], ignore_index=True)
 df['Review date'] = pd.to_datetime(df['Review date'], errors='coerce')
 df.dropna(subset=['Review date'], inplace=True)
 df.sort_values('Review date', ascending=True, inplace=True)
 df['Review date'] = df['Review date'].dt.strftime('%Y-%m-%d')
+df = df.dropna(how='all')
 df[["File", "Review date"]].to_csv(revout, index=False)
 df[["File", "Review date"]].to_excel(revoutx, index=False)
 df.to_csv(revout_big, index=False)
