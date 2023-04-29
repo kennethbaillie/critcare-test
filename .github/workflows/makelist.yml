@@ -32,7 +32,7 @@ jobs:
           pip install mkdocs
           pip install markdown-include
           pip install mkdocs-cinder
-          pip install find-duplicate-files
+          pip install PyPDF2
 
       - name: Download files
         run: |
