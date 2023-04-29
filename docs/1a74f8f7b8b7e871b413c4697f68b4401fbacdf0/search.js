@@ -2,6 +2,7 @@
 
 var lunrIndex, $results, documents;
 
+/*
 function initLunr() {
   // retrieve the index file
   $.getJSON("index.json")
@@ -27,6 +28,7 @@ function initLunr() {
         console.error("Error getting Lunr index file:", err);
     });
 }
+*/
 
 function initLunr() {
   return new Promise((resolve, reject) => {
