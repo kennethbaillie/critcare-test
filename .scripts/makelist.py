@@ -40,8 +40,6 @@ dupout = os.path.join(args.dir,"../duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"../synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
 
-
-
 def get_unique_words(bigstring):
     global gsyn
     deletelist = [
