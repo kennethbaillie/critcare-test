@@ -10,6 +10,7 @@ import filecmp
 import requests
 import urllib.parse
 from zipfile import ZipFile
+from msal import ConfidentialClientApplication
 #-----------------------------
 import guideline_functions as gl
 #-----------------------------
@@ -17,6 +18,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/3jornh1s315cxzj/AAC_2OF49UbxYMo-gEHN0liWa?dl=0') # default test dir
 parser.add_argument('-d', '--destinationdir', default='../docs/test_secret/criticalcare/')
+parser.add_argument('-c', '--cloud', default='dropbox')
 parser.add_argument('-w', '--webstem', default='https://critcare.net/')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 args = parser.parse_args()
@@ -30,6 +32,44 @@ changestoignore = [
     ]
 #-----------------------------
 changelog = os.path.join(args.destinationdir,".changes.json")
+#-----------------------------
+
+# UNTESTED CODE FOR ONE DRIVE 
+
+def get_access_token(client_id, client_secret, tenant_id):
+    authority = f"https://login.microsoftonline.com/{tenant_id}"
+    app = ConfidentialClientApplication(client_id, client_secret=client_secret, authority=authority)
+    scopes = ["https://graph.microsoft.com/.default"]
+    result = app.acquire_token_for_client(scopes)
+    if "access_token" in result:
+        return result["access_token"]
+    else:
+        raise ValueError("Error obtaining access token: ", result.get("error_description"))
+
+def download_file(url, local_path):
+    response = requests.get(url, stream=True)
+    response.raise_for_status()
+    with open(local_path, "wb") as local_file:
+        for chunk in response.iter_content(chunk_size=8192):
+            local_file.write(chunk)
+
+def download_onedrive_contents(shared_link, local_folder, client_id, client_secret, tenant_id):
+    access_token = get_access_token(client_id, client_secret, tenant_id)
+    headers = {"Authorization": f"Bearer {access_token}"}
+    # Resolve shared link and get driveId and itemId
+    shared_link_info = requests.get(f"https://graph.microsoft.com/v1.0/shares/{shared_link}/driveItem", headers=headers).json()
+    drive_id = shared_link_info["parentReference"]["driveId"]
+    item_id = shared_link_info["id"]
+    # Get the directory contents
+    directory_contents = requests.get(f"https://graph.microsoft.com/v1.0/drives/{drive_id}/items/{item_id}/children", headers=headers).json()
+    # Download the files
+    for item in directory_contents["value"]:
+        if item["file"]:
+            download_url = item["@microsoft.graph.downloadUrl"]
+            local_path = os.path.join(local_folder, item["name"])
+            print(f"Downloading {item['name']} to {local_path}")
+            download_file(download_url, local_path)
+
 #-----------------------------
 def download_dropbox_folder(folder_url, dest):
     # download whole dropbox folder as zip file
@@ -121,8 +161,14 @@ def action_diffs(dcmp):
         action_diffs(sub_dcmp)
 
 #filecmp.dircmp
-def download_files_from_dir(folder_url, dir_name, temp):
-    download_dropbox_folder(folder_url, temp)
+def download_files_from_dir(folder_url, dir_name, temp, cloud=args.cloud):
+    if cloud == "dropbox":
+        download_dropbox_folder(folder_url, temp)
+    elif cloud == "onedrive":
+        client_id = os.environ["ONEDRIVE_CLIENT_ID"] # register these with github 
+        client_secret = os.environ["ONEDRIVE_CLIENT_SECRET"]
+        tenant_id = os.environ["ONEDRIVE_TENANT_ID"]
+        download_onedrive_contents(folder_url, temp, client_id, client_secret, tenant_id)
     comparison = filecmp.dircmp(dir_name, temp, ignore=gl.ignorelist+gl.exclude_from_reports, hide=gl.ignorelist+gl.exclude_from_reports)
     target = os.path.basename(os.path.normpath(dir_name))
     record_diffs(comparison)
