@@ -35,6 +35,8 @@ jobs:
           pip install pandas
           pip install openpyxl
           pip install pypdf
+          pip install python-docx 
+          pip install textract
 
       - name: Download files
         run: |

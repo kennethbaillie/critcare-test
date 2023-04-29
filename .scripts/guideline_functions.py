@@ -8,6 +8,7 @@ import timeit
 import shutil
 import pathlib
 import filecmp
+import pandas as pd
 from zipfile import ZipFile
 from io import StringIO
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -106,11 +107,38 @@ def readfilecontents(thisfile):
             print ("failed to convert to txt:", thisfile)
             print(e)
             return ""
+    elif thisfile.endswith(".doc"):
+        try:
+            return textract.process(file_path).decode('utf-8')
+        except Exception as e:
+            print ("failed to convert to txt:", thisfile)
+            print(e)
+            return ""
+    elif thisfile.endswith(".docx"):
+        try:
+            doc = docx.Document(file_path)
+            return ' '.join([paragraph.text for paragraph in doc.paragraphs])
+        except Exception as e:
+            print ("failed to convert to txt:", thisfile)
+            print(e)
+            return ""
+    elif thisfile.endswith(".xls") or thisfile.endswith(".xlsx"):
+        try:
+            data_frames = pd.read_excel(file_path, sheet_name=None)
+            text = ''
+            for sheet_name, sheet_data in data_frames.items():
+                text += sheet_name + '\n'
+                text += sheet_data.to_csv(index=False, line_terminator='\n')
+            return text
+        except Exception as e:
+            print ("failed to convert to txt:", thisfile)
+            print(e)
+            return ""
     else:
         try:
             with open(thisfile) as f:
                 text = f.read()
-                return get_unique_words(text)
+                return text
         except Exception as e:
             print ("failed to read file:", thisfile)
             print(e)
