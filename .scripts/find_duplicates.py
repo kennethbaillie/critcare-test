@@ -4,7 +4,6 @@ import os
 import datetime
 import os
 import hashlib
-import PyPDF2
 #-----------------------------
 import guideline_functions as gl
 #-----------------------------
@@ -36,18 +35,6 @@ def reportable_duplicate(thispath, verbose=True):
             return False
     return True
 
-def get_pdf_text(file_path):
-    try:
-        with open(file_path, 'rb') as f:
-            pdf_reader = PyPDF2.PdfFileReader(f)
-            text = ''
-            for page_num in range(pdf_reader.numPages):
-                text += pdf_reader.getPage(page_num).extractText()
-            return text
-    except Exception as e:
-        #print(f"Error processing {file_path}: {e}")
-        return None
-
 def get_file_hash(text):
     return hashlib.md5(text.encode('utf-8')).hexdigest()
 
@@ -58,7 +45,7 @@ def find_duplicate_pdfs(root_dir):
         for filename in filenames:
             if filename.lower().endswith('.pdf'):
                 file_path = os.path.join(dirpath, filename)
-                pdf_text = get_pdf_text(file_path)
+                pdf_text = gl.get_pdf_text(file_path)
                 if pdf_text:
                     file_hash = get_file_hash(pdf_text)
                     if file_hash in file_hashes:

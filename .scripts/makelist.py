@@ -13,12 +13,7 @@ import sys
 import json
 import shutil
 import subprocess
-from io import StringIO
 from datetime import datetime
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.converter import TextConverter
-from pdfminer.layout import LAParams
-from pdfminer.pdfpage import PDFPage
 #-----------------------------
 import guideline_functions as gl
 #-----------------------------
@@ -45,43 +40,7 @@ dupout = os.path.join(args.dir,"../duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"../synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
 
-def convert_pdf_to_txt(thisfile):
-    rsrcmgr = PDFResourceManager()
-    retstr = StringIO()
-    codec = 'utf-8'  # 'utf16','utf-8'
-    laparams = LAParams()
-    device = TextConverter(rsrcmgr, retstr, laparams=laparams)
-    fp = open(thisfile, 'rb')
-    interpreter = PDFPageInterpreter(rsrcmgr, device)
-    password = ""
-    maxpages = 0
-    caching = True
-    pagenos = set()
-    for page in PDFPage.get_pages(fp, pagenos, maxpages=maxpages, password=password, caching=caching, check_extractable=True):
-        interpreter.process_page(page)
-    fp.close()
-    device.close()
-    str = retstr.getvalue()
-    retstr.close()
-    return str
 
-def readfilecontents(thisfile):
-    if thisfile.endswith(".pdf"):
-        try:
-            return convert_pdf_to_txt(thisfile)
-        except Exception as e:
-            print ("failed to convert to pdf:", thisfile)
-            print(e)
-            return ""
-    else:
-        try:
-            with open(thisfile) as f:
-                text = f.read()
-                return get_unique_words(text)
-        except Exception as e:
-            print ("failed to read file:", thisfile)
-            print(e)
-            return ""
 
 def get_unique_words(bigstring):
     global gsyn
@@ -130,7 +89,8 @@ def make_search_entry(thisfile, thisbasedir, indexfilename=args.indexfilename):
     new_entry = {
         'href': os.path.relpath(linktarget, thisbasedir),
         'title': thistitle,
-        'content': get_unique_words(readfilecontents(thisfile)), # this is the slow bit
+        #'content': get_unique_words(guideline_functions.readfilecontents(thisfile)), # this is the slow bit
+        'content': get_unique_words(guideline_functions.get_pdf_text(thisfile)), # this is the slow bit
         }
     jsonpath = os.path.join(thisbasedir, indexfilename)
     with open(jsonpath) as f:

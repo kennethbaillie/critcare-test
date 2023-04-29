@@ -7,6 +7,12 @@ import shutil
 import pathlib
 import filecmp
 from zipfile import ZipFile
+from io import StringIO
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.converter import TextConverter
+from pdfminer.layout import LAParams
+from pdfminer.pdfpage import PDFPage
+import PyPDF2
 
 #-----------------------------
 # files to ignore
@@ -55,5 +61,54 @@ def accept(thispath, file_or_dir_name):
     return True
 
 
+def convert_pdf_to_txt(thisfile):
+    rsrcmgr = PDFResourceManager()
+    retstr = StringIO()
+    codec = 'utf-8'  # 'utf16','utf-8'
+    laparams = LAParams()
+    device = TextConverter(rsrcmgr, retstr, laparams=laparams)
+    fp = open(thisfile, 'rb')
+    interpreter = PDFPageInterpreter(rsrcmgr, device)
+    password = ""
+    maxpages = 0
+    caching = True
+    pagenos = set()
+    for page in PDFPage.get_pages(fp, pagenos, maxpages=maxpages, password=password, caching=caching, check_extractable=True):
+        interpreter.process_page(page)
+    fp.close()
+    device.close()
+    str = retstr.getvalue()
+    retstr.close()
+    return str
 
-    
+def readfilecontents(thisfile):
+    if thisfile.endswith(".pdf"):
+        try:
+            return convert_pdf_to_txt(thisfile)
+        except Exception as e:
+            print ("failed to convert to txt:", thisfile)
+            print(e)
+            return ""
+    else:
+        try:
+            with open(thisfile) as f:
+                text = f.read()
+                return get_unique_words(text)
+        except Exception as e:
+            print ("failed to read file:", thisfile)
+            print(e)
+            return ""
+
+def get_pdf_text(file_path):
+    try:
+        with open(file_path, 'rb') as f:
+            pdf_reader = PyPDF2.PdfFileReader(f)
+            text = ''
+            for page_num in range(pdf_reader.numPages):
+                text += pdf_reader.getPage(page_num).extractText()
+            return text
+    except Exception as e:
+        #print(f"Error processing {file_path}: {e}")
+        return None
+
+
