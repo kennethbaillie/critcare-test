@@ -33,6 +33,7 @@ jobs:
           pip install markdown-include
           pip install mkdocs-cinder
           pip install PyPDF2
+          pip install pandas
 
       - name: Download files
         run: |
