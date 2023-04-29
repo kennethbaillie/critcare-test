@@ -10,12 +10,12 @@ import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='../docs/test_secret/criticalcare/') # default test dir
+parser.add_argument('-d', '--dir', default='../docs/test_secret/criticalcare/') # default test dir
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
-if args.sourcedir == "no_dir_specified":
+if args.dir == "no_dir_specified":
     print ("no_dir_specified")
     sys.exit()
 #-----------------------------
@@ -43,13 +43,13 @@ def printdups(dups):
     for dup in dups:
         print (dup)
 
-dupout = os.path.join(args.sourcedir,"../duplicates.md")
+dupout = os.path.join(args.dir,"../duplicates.md")
 
-if not (gl.newchanges(args.sourcedir) or args.override_changes):
+if not (gl.newchanges(args.dir) or args.override_changes):
     print ("Stopping because go file is no-go.")
     sys.exit()
 
-with gl.cd(args.sourcedir):
+with gl.cd(args.dir):
     dups = find_duplicate_pdfs("./")
     print ("Unfiltered duplicates:")
     printdups(dups)

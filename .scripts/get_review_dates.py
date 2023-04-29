@@ -12,22 +12,22 @@ import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='../docs/test_secret/criticalcare/') # default test dir
+parser.add_argument('-d', '--dir', default='../docs/test_secret/criticalcare/') # default test dir
 parser.add_argument('-r', '--reviewdatestrings',    action='append', default=['Next review', 'Review date', 'Review '], help='use this to append as many values as you want')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
-if args.sourcedir == "no_dir_specified":
+if args.dir == "no_dir_specified":
     print ("no_dir_specified")
     sys.exit()
 #-----------------------------
 
 rs = [x.lower() for x in args.reviewdatestrings]
-revout = os.path.join(args.sourcedir,"../","reviewdates.csv")
-revoutx = os.path.join(args.sourcedir,"../","reviewdates.xlsx")
-revout_big = os.path.join(args.sourcedir,"../","reviewdates_full.csv")
-changes_record_file = os.path.join(args.sourcedir,"../changes.html")
+revout = os.path.join(args.dir,"../","reviewdates.csv")
+revoutx = os.path.join(args.dir,"../","reviewdates.xlsx")
+revout_big = os.path.join(args.dir,"../","reviewdates_full.csv")
+changes_record_file = os.path.join(args.dir,"../changes.html")
 
 def old_extract_date(text, reviewstrings=rs):
     while "  " in text:
@@ -96,12 +96,12 @@ def extract_date(s):
     else:
         return None
 
-if not (gl.newchanges(args.sourcedir) or args.override_changes):
+if not (gl.newchanges(args.dir) or args.override_changes):
     print ("Stopping because go file is no-go.")
     sys.exit()
 
 revs = {}
-for dirpath, _, filenames in os.walk(args.sourcedir):
+for dirpath, _, filenames in os.walk(args.dir):
     for filename in filenames:
         if filename.lower().endswith('.pdf'):
             file_path = os.path.join(dirpath, filename)
