@@ -28,6 +28,36 @@ function initLunr() {
     });
 }
 
+function initLunr() {
+  return new Promise((resolve, reject) => {
+    $.getJSON("index.json")
+      .done(function (index) {
+        documents = index;
+
+        lunrIndex = lunr(function(){
+          this.ref('href')
+          this.field('content')
+          this.field("title", {
+              boost: 10
+          });
+
+          documents.forEach(function(doc) {
+            try {
+              this.add(doc)
+            } catch (e) {}
+          }, this)
+        })
+
+        resolve(); // Resolve the promise when the index is loaded
+      })
+      .fail(function (jqxhr, textStatus, error) {
+        var err = textStatus + ", " + error;
+        console.error("Error getting Lunr index file:", err);
+        reject(err); // Reject the promise in case of error
+      });
+  });
+}
+
 function search(query) {
   return lunrIndex.search(query).map(function(result) {
     return documents.filter(function(page) {
