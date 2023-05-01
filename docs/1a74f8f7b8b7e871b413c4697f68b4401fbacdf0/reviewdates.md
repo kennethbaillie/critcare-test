@@ -98,4 +98,5 @@ app: true
 
 <h4>Guideline review dates</h4>
 <p>Download an excel version of this table: <a href="../reviewdates.xlsx">reviewdates.xlsx</a></p>
+<p>Click on column headers below to sort the table.</p>
 
