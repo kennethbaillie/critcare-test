@@ -40,6 +40,12 @@ exclude_from_reports = [
 
 gofilename = "../go.txt"
 
+configfilename = "../config.json"
+
+def loadconfig(sourcedir):
+    with open(os.path.join(sourcedir, configfilename)) as f:
+        return json.load(f)
+
 def newchanges(sourcedir, interval=300):
     gofile = os.path.join(sourcedir, gofilename)
     if os.path.exists(gofile):
