@@ -38,7 +38,7 @@ jobs:
           pip install python-docx 
           pip install textract
           pip install msal
-          pip install fitz
+          pip install PyMuPDF
 
       - name: Download files
         env:
