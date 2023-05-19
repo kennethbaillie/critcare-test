@@ -193,11 +193,12 @@ for category in changes:
         if category =="deleted":
             outputc[category][targetfile.replace("/.temp/","/")] = printablepath(changes[category][targetfile]) 
         elif category == "new" or category == "modified":
-            outputc[category][targetfile.replace("/.temp/","/")] = printablepath(changes[category][targetfile],link=True) # switch new/changed filepaths to online directory
+            outputc[category][targetfile.replace("/.temp/","/")] = printablepath(changes[category][targetfile], link=True) # switch new/changed filepaths to online directory
         elif category == "renamed":
             outputc[category][targetfile.replace("/.temp/","/")] = "{} ==> {}".format(
                                                                         printablepath(targetfile),
-                                                                        printablepath(changes[category][targetfile])
+                                                                        printablepath(changes[category][targetfile]),
+                                                                        link=True
                                                                     )
 # record changes by adding them to existing json file
 try:   
