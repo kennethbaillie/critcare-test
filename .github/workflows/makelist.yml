@@ -38,6 +38,7 @@ jobs:
           pip install python-docx 
           pip install textract
           pip install msal
+          pip install fitz
 
       - name: Download files
         env:
