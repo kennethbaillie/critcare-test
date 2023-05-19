@@ -50,7 +50,7 @@ jobs:
 
       - name: Make list
         run: |
-          python .scripts/makelist.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "docs/critcare_pub/criticalcare/" -e
+          python .scripts/makelist.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "docs/critcare_pub/criticalcare/" -e 
 
       - name: Find duplicates
         run: |
