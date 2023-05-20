@@ -197,8 +197,7 @@ for category in changes:
         elif category == "renamed":
             outputc[category][targetfile.replace("/.temp/","/")] = "{} ==> {}".format(
                                                                         printablepath(targetfile),
-                                                                        printablepath(changes[category][targetfile]),
-                                                                        link=True
+                                                                        printablepath(changes[category][targetfile], link=True)
                                                                     )
 # record changes by adding them to existing json file
 try:   
