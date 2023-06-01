@@ -4,7 +4,7 @@ title: Editors
 
 # Editors
 
-Last updated 2023-06-01 12:14:35
+Last updated 2023-06-01 13:22:05
 
 - Airway: Rosie Baruah 
 - Breathing (Respiratory): Neil Young 
@@ -13,14 +13,14 @@ Last updated 2023-06-01 12:14:35
 - COVID: Gregor McNeill 
 - Delirium: Alasdair Hurry 
 - Diabetes and Glucose: Gregor McNeill  
-- Drugs: Tom Craven 
+- Drugs: David Hall 
 - ECLS: Grant Price
 - Emergencies: Kenny Baillie 
 - End of life care: Murray Blackstock 
 - Ethics and Law: Monika Beatty 
 - GI Liver and transplant: Olly Robinson 
 - Haematology_CAR-T: Rosie Baruah 
-- Infection and sepsis: David Hall 
+- Infection and sepsis: Tom Craven 
 - Neurological: Jonathan Rhodes 
 - Obstetrics: Jen Service 
 - Organ donation: Olly Robinson 
