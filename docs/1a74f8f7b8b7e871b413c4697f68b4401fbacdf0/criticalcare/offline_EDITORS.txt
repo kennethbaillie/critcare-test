@@ -23,7 +23,7 @@ Renal and urology: Olly Robinson (oliverrobinson@doctors.org.uk)
 Research: David Griffiths (dmgriffith@gmail.com)
 Routine care: Gregor McNeill, Michelle Jack  and Gail Renwick or subdirectory editors (Gregor.McNeill@nhslothian.scot.nhs.uk, Michelle.Jack@nhslothian.scot.nhs.uk, Gail.Renwick@nhslothian.scot.nhs.uk)
 Routine care-->Lothian_Long-Term_Ventilation_Service ?
-Routine care-->Recovery_after_ICU: Charlene Richardson (charlene.richardson@nhslothian.scot.nhs.uk)
+Routine care-->Recovery_after_ICU: Joanne Thompson (jothompsonis@gmail.com)
 Routine care-->Trainees: Ally Gibson
 Routine care-->Video_communication Helen
 Routine care-->VTE_Prevention K Kefala

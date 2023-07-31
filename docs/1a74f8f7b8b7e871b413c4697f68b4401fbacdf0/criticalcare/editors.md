@@ -4,7 +4,7 @@ title: Editors
 
 # Editors
 
-Last updated 2023-07-31 11:02:45
+Last updated 2023-07-31 12:04:45
 
 - Airway: Rosie Baruah 
 - Breathing (Respiratory): Neil Young 
@@ -31,7 +31,7 @@ Last updated 2023-07-31 11:02:45
 - Research: David Griffiths 
 - Routine care: Gregor McNeill, Michelle Jack  and Gail Renwick or subdirectory editors 
 - Routine care-->Lothian_Long-Term_Ventilation_Service ?
-- Routine care-->Recovery_after_ICU: Charlene Richardson 
+- Routine care-->Recovery_after_ICU: Joanne Thompson 
 - Routine care-->Trainees: Ally Gibson
 - Routine care-->Video_communication Helen
 - Routine care-->VTE_Prevention K Kefala
