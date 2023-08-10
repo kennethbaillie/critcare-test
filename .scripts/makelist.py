@@ -135,19 +135,6 @@ def makeid(thisname):
 def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
-        #print("filename for link:", entry)
-        '''
-        if entry.endswith('.txt'):
-            print ("hyperlink (.txt):", entry)
-            with open(os.path.join(thisdir,entry)) as f:
-                filecontents = f.read()
-            linktext+=('<a class='{}' href='{}'><li class='list-group-item' style='margin-left:{}em;'>{}</li></a>'.format(
-                    eclass(entry),
-                    filecontents,
-                    depth,
-                    fixname(entry))
-                    )
-        '''
         if entry.endswith('.md'):
             linktarget = entry.replace(".md","") # md files automatically converted by mkdocs
             print ("md", thisdir, entry, linktarget)
