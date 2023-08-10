@@ -4,7 +4,7 @@ title: Editors
 
 # Editors
 
-Last updated 2023-05-20 09:07:10
+Last updated 2023-08-10 09:03:57
 
 - Airway: Rosie Baruah 
 - Breathing (Respiratory): Neil Young 
@@ -13,14 +13,14 @@ Last updated 2023-05-20 09:07:10
 - COVID: Gregor McNeill 
 - Delirium: Alasdair Hurry 
 - Diabetes and Glucose: Gregor McNeill  
-- Drugs: Tom Craven 
+- Drugs: David Hall 
 - ECLS: Grant Price
 - Emergencies: Kenny Baillie 
 - End of life care: Murray Blackstock 
 - Ethics and Law: Monika Beatty 
 - GI Liver and transplant: Olly Robinson 
 - Haematology_CAR-T: Rosie Baruah 
-- Infection and sepsis: David Hall 
+- Infection and sepsis: Tom Craven 
 - Neurological: Jonathan Rhodes 
 - Obstetrics: Jen Service 
 - Organ donation: Olly Robinson 
@@ -31,10 +31,10 @@ Last updated 2023-05-20 09:07:10
 - Research: David Griffiths 
 - Routine care: Gregor McNeill, Michelle Jack  and Gail Renwick or subdirectory editors 
 - Routine care-->Lothian_Long-Term_Ventilation_Service ?
-- Routine care-->Recovery_after_ICU: Charlene Richardson 
+- Routine care-->Recovery_after_ICU: Joanne Thompson 
 - Routine care-->Trainees: Ally Gibson
 - Routine care-->Video_communication Helen
 - Routine care-->VTE_Prevention K Kefala
-- Transfer: Mark Dunn 
+- Transfer: ?
 - Trauma and Burns: Murray Geddes/Jen Service?
 - Web app administration: Kenny Baillie 
