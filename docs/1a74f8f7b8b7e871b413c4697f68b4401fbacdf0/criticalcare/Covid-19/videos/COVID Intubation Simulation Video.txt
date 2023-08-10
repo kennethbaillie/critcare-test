@@ -1,1 +1,3 @@
-https://youtu.be/HDyKJ4FOX9o
+---
+redirect: https://youtu.be/HDyKJ4FOX9o
+---
