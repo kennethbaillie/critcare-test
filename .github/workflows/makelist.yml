@@ -3,7 +3,7 @@ name: make list
 # Controls when the action will run.
 on:
   schedule:
-    - cron: '0 7-22 * * *'
+    - cron: '0 9-18 * * *'
 
   push:
 
@@ -32,26 +32,37 @@ jobs:
           pip install mkdocs
           pip install markdown-include
           pip install mkdocs-cinder
-          pip install find-duplicate-files
+          pip install pandas
+          pip install openpyxl
+          pip install pypdf
+          pip install python-docx 
+          pip install textract
+          pip install msal
+          pip install PyMuPDF
 
       - name: Download files
+        env:
+          ONEDRIVE_CLIENT_ID: ${{ secrets.ONEDRIVE_CLIENT_ID }}
+          ONEDRIVE_CLIENT_SECRET: ${{ secrets.ONEDRIVE_CLIENT_SECRET }}
+          ONEDRIVE_TENANT_ID: ${{ secrets.ONEDRIVE_TENANT_ID }}
         run: |
-          python .scripts/download.py -s "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0" -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/"
-          python .scripts/download.py -s "https://www.dropbox.com/sh/otczbgim2zkeub8/AACru2-Xv6w2qFAwsz6fSi0Ja?dl=0" -d "docs/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/education/"
+          python .scripts/download.py -s "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0" -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
 
       - name: Make list
         run: |
-          python .scripts/makelist.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "docs/critcare_pub/criticalcare/" -e
-          python .scripts/makelist.py -d "docs/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/education/" -p "docs/education/public/" -e
+          python .scripts/makelist.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "docs/critcare_pub/criticalcare/" -e 
 
       - name: Find duplicates
         run: |
-          python .scripts/find_duplicates.py -s "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
-          python .scripts/find_duplicates.py -s "docs/education/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/education/" 
+          python .scripts/get_duplicates.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
+
+      - name: Get review dates
+        run: |
+          python .scripts/get_review_dates.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
 
       - name: Get editors
         run: |
-          python .scripts/get_editors.py -s "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
+          python .scripts/get_editors.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
 
       - name: Commit pages if changed
         run: |
@@ -59,7 +70,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -v docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/*
           git add -v docs/critcare_pub/*
-          git add -v docs/education/*
           git diff-index --quiet HEAD || git commit -m "Automatically re-generate list and index"
 
       - name: Push pages

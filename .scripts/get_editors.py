@@ -8,16 +8,16 @@ import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='docs/test_secret') # default test dir
+parser.add_argument('-d', '--dir', default='../docs/test_secret/criticalcare/') # default test dir
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 args = parser.parse_args()
 #-----------------------------
-if args.sourcedir == "no_dir_specified":
+if args.dir == "no_dir_specified":
     print ("no_dir_specified")
     sys.exit()
 #-----------------------------
-edin = os.path.join(args.sourcedir,"offline_EDITORS.txt")
-edout = os.path.join(args.sourcedir,"editors.md")
+edin = os.path.join(args.dir,"offline_EDITORS.txt")
+edout = os.path.join(args.dir,"editors.md")
 if os.path.exists(edin):
     with open(edin) as f:
         lines=f.readlines()

@@ -15,6 +15,7 @@
     {% if config.site_description %}<meta name="description" content="{{ config.site_description }}">{% endif %}
     {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
     {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    {% if page.redirect %}<meta http-equiv="refresh" content="2; url='{{ page.canonical_url }}'" />{% endif %}
     <!--<link rel="{{ 'img/favicon.ico'|url }}">-->
 
     {% if page.canonical_url %}

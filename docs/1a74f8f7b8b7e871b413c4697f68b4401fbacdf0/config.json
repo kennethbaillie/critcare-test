@@ -1,0 +1,10 @@
+{
+	"base_url" : "https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/",
+	
+	"ignore_urls":[
+		"https://www.thelancet.com",
+		"https://www.medicines.org.uk/",
+		"https://dailymed.nlm.nih.gov",
+		"https://www.eucast.org"
+	]
+}

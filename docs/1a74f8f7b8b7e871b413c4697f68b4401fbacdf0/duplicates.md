@@ -4,4 +4,7 @@ title: Duplicates
 
 # Duplicates
 
-No duplicate files found on 2023-03-04 10:23:04
+Duplicates found (2023-08-10 09:28:10):
+
+- ./Covid-19/SJH/Covid_extubation.pdf == ./Covid-19/COVID 19 Procedures/COVID Extubation Checklist.pdf
+- ./Covid-19/WGH/Covid_extubation_checklist.pdf == ./Covid-19/COVID 19 Procedures/COVID Extubation Checklist.pdf

@@ -3,6 +3,9 @@
 '''
 Makes an html list of pdf files in a directory
 Also makes a lunr search index
+
+
+TODO: make the formatting of search links use the same function as the formatting of list links so that e.g. videos work
 '''
 import re
 import os
@@ -10,12 +13,7 @@ import sys
 import json
 import shutil
 import subprocess
-from io import StringIO
 from datetime import datetime
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.converter import TextConverter
-from pdfminer.layout import LAParams
-from pdfminer.pdfpage import PDFPage
 #-----------------------------
 import guideline_functions as gl
 #-----------------------------
@@ -37,48 +35,10 @@ emergencydir = "Emergencies" # this will be pinned to the top and copies of emer
 pin_to_top = []
 #-----------------------------
 changelog = os.path.join(args.dir,".changes.json")
-outputfile = os.path.join(args.dir,"../changes.html")
+changes_record_file = os.path.join(args.dir,"../changes.html")
 dupout = os.path.join(args.dir,"../duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"../synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
-
-def convert_pdf_to_txt(thisfile):
-    rsrcmgr = PDFResourceManager()
-    retstr = StringIO()
-    codec = 'utf-8'  # 'utf16','utf-8'
-    laparams = LAParams()
-    device = TextConverter(rsrcmgr, retstr, laparams=laparams)
-    fp = open(thisfile, 'rb')
-    interpreter = PDFPageInterpreter(rsrcmgr, device)
-    password = ""
-    maxpages = 0
-    caching = True
-    pagenos = set()
-    for page in PDFPage.get_pages(fp, pagenos, maxpages=maxpages, password=password, caching=caching, check_extractable=True):
-        interpreter.process_page(page)
-    fp.close()
-    device.close()
-    str = retstr.getvalue()
-    retstr.close()
-    return str
-
-def readfilecontents(thisfile):
-    if thisfile.endswith(".pdf"):
-        try:
-            return convert_pdf_to_txt(thisfile)
-        except Exception as e:
-            print ("failed to convert to pdf:", thisfile)
-            print(e)
-            return ""
-    else:
-        try:
-            with open(thisfile) as f:
-                text = f.read()
-                return get_unique_words(text)
-        except Exception as e:
-            print ("failed to read file:", thisfile)
-            print(e)
-            return ""
 
 def get_unique_words(bigstring):
     global gsyn
@@ -127,7 +87,7 @@ def make_search_entry(thisfile, thisbasedir, indexfilename=args.indexfilename):
     new_entry = {
         'href': os.path.relpath(linktarget, thisbasedir),
         'title': thistitle,
-        'content': get_unique_words(readfilecontents(thisfile)), # this is the slow bit
+        'content': get_unique_words(gl.readfilecontents(thisfile)), # this is the slow bit
         }
     jsonpath = os.path.join(thisbasedir, indexfilename)
     with open(jsonpath) as f:
@@ -175,22 +135,7 @@ def makeid(thisname):
 def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
-        #print("filename for link:", entry)
-        if entry.endswith('.txt'):
-            print ("hyperlink (.txt):", entry)
-            with open(os.path.join(thisdir,entry)) as f:
-                filecontents = f.read()
-            linktext+=('''
-                <a class='{}' href='{}'>
-                    <li class='list-group-item' style='margin-left:{}em;'>{}</li>
-                </a>
-                '''.format(
-                    eclass(entry),
-                    filecontents,
-                    depth,
-                    fixname(entry))
-                    )
-        elif entry.endswith('.md'):
+        if entry.endswith('.md'):
             linktarget = entry.replace(".md","") # md files automatically converted by mkdocs
             print ("md", thisdir, entry, linktarget)
             linktext+=('''
@@ -328,16 +273,19 @@ for thistype in changes:
 oldtext = ""
 if new_changes_present == True or args.override_changes:
     print ("New changes found. Making new search index.")
-    if os.path.exists(outputfile):
-        with open(outputfile) as f:
+    with open(os.path.join(args.dir, gl.gofilename),"w") as o:
+        o.write("go")
+    if os.path.exists(changes_record_file):
+        with open(changes_record_file) as f:
             oldtext = f.read()
-    with open(outputfile,"w") as o:
+    with open(changes_record_file,"w") as o:
         o.write(newtext + oldtext)
     with open(changelog,"w") as o:
         json.dump({},o)
 else:
-    newtext += "<p> No new changes found.</p><br>\n"
     print ("No new changes found in {}\n Aborting makelist.\n".format(changelog))
+    with open(os.path.join(args.dir, gl.gofilename),"w") as o:
+        o.write("no go")
     sys.exit()
 #-----------------------------
 if args.do_emergency:

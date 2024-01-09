@@ -59,3 +59,6 @@ for root, dirs, files in os.walk(args.dir):
    for name in files:
         if name.endswith(".pdf"):
         	replacepdf(os.path.join(root, name), cr=args.min_comp_ratio)
+
+
+

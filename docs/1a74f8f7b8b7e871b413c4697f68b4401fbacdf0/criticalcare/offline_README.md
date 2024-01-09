@@ -50,6 +50,14 @@ Guidelines should not be emailed to Heather for update any longer. They are uplo
 	- `Emergency Caesarean Section Action Cards_em.pdf` is flagged for the emergency section
 	- `C-spine clearance flowchart and guidance_pub.pdf` is public
 	- `Air_Embolism_em_pub.pdf` is both public and flagged as an emergency protocol
+	
+## Automatic checks
+
+The app produces some automatic checks, which aren't perfect, but can help keep the guidelines in good shape:
+<!--
+- a list of [duplicate files](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/duplicates/)
+-->
+- a list of [estimated review dates](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/reviewdates/)
 
 ## Adding videos or links
 
@@ -68,6 +76,10 @@ https://youtu.be/HDyKJ4FOX9o
 
 A couple of files in the app are simple web pages written in markdown. If you want to do this, simply end your filename in .md and it will be handled as markdown and made into a web page. If this doesn't make any sense to you, just ignore it.
 
+## Automatic searching
+
+You can trigger an automatic search directly from the URL by adding a query string to specify the `searchterm`. For example, to search for `deep vein thromobosis`, us this URL:
+`https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/?searchterm=deep%20vein%20thrombosis`
 
 
 
