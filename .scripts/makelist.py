@@ -256,7 +256,7 @@ if not os.path.exists(changelog):
 new_changes_present=False
 with open(changelog) as f:
     changes = json.load(f)
-newtext = "\n<hr>\n### {:%d/%m/%Y %H:%M:%S}".format(datetime.now())
+newtext = "\n------------------------------------------------------------------------\n### {:%d/%m/%Y %H:%M:%S}".format(datetime.now())
 for thistype in changes:
     typechanges = [x for x in changes[thistype] if gl.accept(os.path.join(args.dir, x), os.path.split(x)[-1])]
     if len(typechanges) > 0:
