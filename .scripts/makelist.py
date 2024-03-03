@@ -13,6 +13,7 @@ import sys
 import json
 import shutil
 import subprocess
+import oyaml as yaml
 from datetime import datetime
 #-----------------------------
 import guideline_functions as gl
@@ -37,7 +38,7 @@ guidelinesdir = os.path.join(args.dir, args.guidelinesdirname)
 publicdir = os.path.join(args.dir, "..", args.publicdirname)
 #-----------------------------
 changelog = os.path.abspath(os.path.join(args.dir,".changes.json"))
-changes_record_file = os.path.join(args.dir,"changes.html")
+changes_record_file = os.path.join(args.dir,"changes.md")
 dupout = os.path.join(args.dir,"duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
@@ -140,8 +141,8 @@ def formatfilelink(thisdir, entry, basedir, depth=0):
         linktarget = entry.replace(".md", "") if entry.endswith('.md') else entry
         print("File:", thisdir, entry, "->", linktarget)
         linktext += ('''
-            <a href='{href}' class='{eclass}'>
-                <li class='list-group-item' style='margin-left:{depth}em;'>{name}</li>
+            <a href='{href}'>
+                <li class='list-group-item {eclass}' style='margin-left:{depth}em;'>{name}</li>
             </a>
             '''.format(
                 href=os.path.relpath(os.path.join(thisdir, linktarget), basedir),
@@ -164,7 +165,7 @@ def formatdir(thisdir, basedir, depth=0, parent_id="accordion"):
             text += ('''
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="heading{unique_id}">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{unique_id}" aria-expanded="true" aria-controls="collapse{unique_id}" style='margin-left:{depth}em;'>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{unique_id}" aria-expanded="true" aria-controls="collapse{unique_id}" style='margin-left:{depth}em;'>
                             {fixed_name}
                         </button>
                     </h2>
@@ -176,7 +177,11 @@ def formatdir(thisdir, basedir, depth=0, parent_id="accordion"):
                         </div>
                     </div>
                 </div>
-                '''.format(unique_id=unique_id, depth=depth, fixed_name=fixed_name, formatted_dir=formatdir(os.path.join(thisdir, entry), basedir, depth+1, new_parent_id))
+                '''.format(unique_id=unique_id,
+                    depth=depth,
+                    fixed_name=fixed_name,
+                    formatted_dir=formatdir(os.path.join(thisdir,entry),basedir, depth+1, new_parent_id)
+                    )
                 )
         else:
             text += formatfilelink(thisdir, entry, basedir, depth)
@@ -201,7 +206,7 @@ def makelist(fromdir=guidelinesdir, listfile=args.listfilename, indexfile=args.i
             listfiletext += ('''
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="heading{}">
-                        <button class="accordion-button {}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
+                        <button class="accordion-button collapsed {}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
                             <div class="accordion-body">
                                 {}
                             </div>
@@ -251,14 +256,14 @@ if not os.path.exists(changelog):
 new_changes_present=False
 with open(changelog) as f:
     changes = json.load(f)
-newtext = "\n<hr><h3>{:%d/%m/%Y %H:%M:%S}</h3>".format(datetime.now())
+newtext = "\n<hr>\n### {:%d/%m/%Y %H:%M:%S}".format(datetime.now())
 for thistype in changes:
     typechanges = [x for x in changes[thistype] if gl.accept(os.path.join(args.dir, x), os.path.split(x)[-1])]
     if len(typechanges) > 0:
         new_changes_present = True
-        newtext += "<br>\n<h4>{}</h4>\n".format(thistype)
+        newtext += "\n\n#### {}\n".format(thistype)
         for file in typechanges:
-            newtext += "<p>{}</p>".format(changes[thistype][file].replace('\\',''))
+            newtext += "\n{}".format(changes[thistype][file].replace('\\',''))
 oldtext = ""
 if new_changes_present == True or args.override_changes:
     print ("New changes found. Making new search index.")
@@ -267,8 +272,11 @@ if new_changes_present == True or args.override_changes:
     if os.path.exists(changes_record_file):
         with open(changes_record_file) as f:
             oldtext = f.read()
+    h, r = gl.readheader(oldtext)
+    y = gl.getyaml(oldtext)
+    y = gl.mergeyaml({"layout":"page"},y)
     with open(changes_record_file,"w") as o:
-        o.write(newtext + oldtext)
+        o.write("---\n" + yaml.dump(y) + "\n---\n\n" + newtext + r)
     with open(changelog,"w") as o:
         json.dump({},o)
 else:

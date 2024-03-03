@@ -40,12 +40,6 @@
     height: auto;
 }
 
-/* make all list items fit within page */
-.container ul, 
-.container ol {
-    padding-left: 3em;
-}
-
 .container {
   /*
     redefine bootstrap container
@@ -62,23 +56,20 @@
 
 
 .emergency{
-  color: red;
+  color: red !important; 
 }
 .emergency:hover{
-  color: red;
+  color: red !important;
 }
 .emergency:visited{
-  color: red;
+  color: red !important;
 }
 .emergency:focus{
-  color: red;
+  color: red !important;
 }
 
 .searchresult{
-  margin: 0 0 0 5px;
-  font-size: smaller;
   color: cornflowerblue;
-  display:list-item;
   list-style-type: square;
 }
 
@@ -95,10 +86,23 @@
 }
 
 .navbar-brand {
-    padding-left: 20px;
+    padding-left: 2px;
 }
 
+.row {
+    --bs-gutter-x: 0rem;
+}
 
+.searchbox{
+    float:left; 
+    padding:3px;
+}
 
+.accordion-button {
+    padding: 0.2rem 0.6rem;
+    background-color: #e7f1ff !important; 
+}
 
-
+a {
+    text-decoration: none !important;
+}
