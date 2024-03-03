@@ -21,7 +21,7 @@ scriptpath = os.path.dirname(os.path.realpath(__file__))
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401df0/'))
+parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/'))
 parser.add_argument('-f', '--fast', default=False, action="store_true")
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
 parser.add_argument('-e', '--do_emergency', default=False, action="store_true")
@@ -36,7 +36,7 @@ args = parser.parse_args()
 guidelinesdir = os.path.join(args.dir, args.guidelinesdirname)
 publicdir = os.path.join(args.dir, "..", args.publicdirname)
 #-----------------------------
-changelog = os.path.join(args.dir,".changes.json")
+changelog = os.path.abspath(os.path.join(args.dir,".changes.json"))
 changes_record_file = os.path.join(args.dir,"changes.html")
 dupout = os.path.join(args.dir,"duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
@@ -137,67 +137,51 @@ def makeid(thisname):
 def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
-        if entry.endswith('.md'):
-            linktarget = entry.replace(".md","")
-            print ("md", thisdir, entry, linktarget)
-            linktext += ('''
-                <a class='{}' href='{}'>
-                    <li class='list-group-item' style='margin-left:{}em;'>{}</li>
-                </a>
-                '''.format(
-                    eclass(entry),
-                    os.path.relpath(os.path.join(thisdir, linktarget), basedir),
-                    depth,
-                    fixname(entry))
-                    )
-        else:
-            linktext += ('''
-                <a class='{}' href='{}'>
-                    <li class='list-group-item' style='margin-left:{}em;'>{}</li>
-                </a>
-                '''.format(
-                    eclass(entry),
-                    os.path.relpath(os.path.join(thisdir, entry), basedir),
-                    depth,
-                    fixname(entry))
-                    )
+        linktarget = entry.replace(".md", "") if entry.endswith('.md') else entry
+        print("File:", thisdir, entry, "->", linktarget)
+        linktext += ('''
+            <a href='{href}' class='{eclass}'>
+                <li class='list-group-item' style='margin-left:{depth}em;'>{name}</li>
+            </a>
+            '''.format(
+                href=os.path.relpath(os.path.join(thisdir, linktarget), basedir),
+                eclass=eclass(entry),
+                depth=float(depth)/2,
+                name=fixname(entry))
+            )
         make_search_entry(os.path.join(thisdir, entry), basedir)
-        return linktext
+    return linktext
 
-def formatdir(thisdir, basedir, depth=0):
+def formatdir(thisdir, basedir, depth=0, parent_id="accordion"):
     text = ''
     for entry in sorted(os.listdir(thisdir)):
         if not gl.accept(thisdir, entry):
             continue
+        unique_id = makeid(entry)  # Ensure this generates a unique ID for each entry
+        fixed_name = fixname(entry)  # Calculate fixed name outside the formatting operation
         if os.path.isdir(os.path.join(thisdir, entry)):
+            new_parent_id = f"accordion_{unique_id}"  # Create a new unique ID for nested accordion
             text += ('''
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading{}">
-                        <button class="accordion-button {}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{}" aria-expanded="true" aria-controls="collapse{}" style='margin-left:{}em;'>
-                            {}
+                    <h2 class="accordion-header" id="heading{unique_id}">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{unique_id}" aria-expanded="true" aria-controls="collapse{unique_id}" style='margin-left:{depth}em;'>
+                            {fixed_name}
                         </button>
                     </h2>
-                    <div id="collapse{}" class="accordion-collapse collapse" aria-labelledby="heading{}" data-bs-parent="#accordion">
+                    <div id="collapse{unique_id}" class="accordion-collapse collapse" aria-labelledby="heading{unique_id}">
                         <div class="accordion-body">
-                            <ul class='list-group'>{}</ul>
+                            <ul class='list-group'>
+                                {formatted_dir}
+                            </ul>
                         </div>
                     </div>
                 </div>
-                '''.format(
-                    makeid(entry),
-                    eclass(entry),
-                    makeid(entry),
-                    makeid(entry),
-                    depth,
-                    fixname(entry),
-                    makeid(entry),
-                    makeid(entry),
-                    formatdir(os.path.join(thisdir, entry), basedir, depth+1)
-                    )
+                '''.format(unique_id=unique_id, depth=depth, fixed_name=fixed_name, formatted_dir=formatdir(os.path.join(thisdir, entry), basedir, depth+1, new_parent_id))
                 )
         else:
             text += formatfilelink(thisdir, entry, basedir, depth)
     return text
+
 
 def makelist(fromdir=guidelinesdir, listfile=args.listfilename, indexfile=args.indexfilename):
     i = 0
