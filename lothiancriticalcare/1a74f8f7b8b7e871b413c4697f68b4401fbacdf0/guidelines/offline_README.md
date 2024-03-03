@@ -16,13 +16,13 @@ password: care
 
 Uploading and maintaining the guidelines is very easy - all that the editors and administrators need to do is maintain a dropbox folder containing the guidelines in each category. The folder names and file names are automatically converted into menu links and uploaded every 2 hours. (You may need to refresh your browser, or use incognito mode, to see changes straight away).
 
-Guidelines should not be emailed to Heather for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Heather, who will copy them to the intranet weekly. Any changes you make are recorded on this [web page](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes.html).
+Guidelines should not be emailed to Heather for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Heather, who will copy them to the intranet weekly. Any changes you make are recorded on this [web page](../../changes.html).
 
 # Basic use
 
 ## Rules
 
-- Each folder has *one* editor. If it is you, arrange the contents of the folder as you want the files to appear online. The master list of editors is in the dropbox and you can see the list (without email addresses) online [here](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/editors/).
+- Each folder has *one* editor. If it is you, arrange the contents of the folder as you want the files to appear online. The master list of editors is in the dropbox and you can see the list (without email addresses) online [here](../../editors/).
 - Each guideline should appear only *once* in the dropbox. This is mitigate the chance of confusion/error
 - You can add subfolders but don't go crazy
 - Folder/Filenames will become the links - make them simple and comprehensible. Do not include version numbers, dates, and try to avoid redundant words such as "guideline" or "protocol" or "in critical care" unless they are useful to users.
@@ -55,10 +55,13 @@ Guidelines should not be emailed to Heather for update any longer. They are uplo
 ## Automatic checks
 
 The app produces some automatic checks, which aren't perfect, but can help keep the guidelines in good shape:
+
 <!--
-- a list of [duplicate files](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/duplicates/)
+- a list of [broken weblinks](../../linkchecks/)
 -->
-- a list of [estimated review dates](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/reviewdates/)
+
+- a list of [duplicate files](../../duplicates/)
+- a list of [estimated review dates](../../reviewdates/)
 
 ## Adding videos or links
 
@@ -80,7 +83,7 @@ A couple of files in the app are simple web pages written in markdown. If you wa
 ## Automatic searching
 
 You can trigger an automatic search directly from the URL by adding a query string to specify the `searchterm`. For example, to search for `deep vein thromobosis`, us this URL:
-`https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/?searchterm=deep%20vein%20thrombosis`
+`https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/?searchterm=deep%20vein%20thrombosis`
 
 
 

@@ -1,6 +1,8 @@
 - directory: lothiancriticalcare
   secret: 1a74f8f7b8b7e871b413c4697f68b4401fbacdf0
   title: NHS Lothian Critical Care Guidelines
+  cloudlink: https://www.dropbox.com/sh/3jornh1s315cxzj/AAC_2OF49UbxYMo-gEHN0liWa?dl=0
+  base_url: https://critcare.net/
   disclaimer: For use by appropriately trained critical care staff in NHS Lothian only.
   navigation:
     - text: Home
@@ -10,5 +12,4 @@
       submenu: 
         - text: Instructions
           url: guidelines/offline_README/
-
 

@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import os
@@ -36,6 +36,7 @@ revout_big = os.path.join(args.dir,"reviewdates_full.csv")
 changes_record_file = os.path.join(args.dir,"../changes.html")
 
 linkout = os.path.join(args.dir,"linkchecks.csv")
+config = gl.loadconfig(args.dir)
 
 def old_extract_date(text, reviewstrings=rs):
     while "  " in text:

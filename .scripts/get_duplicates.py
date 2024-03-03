@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -10,7 +10,7 @@ import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--dir', default='../docs/test_secret/criticalcare/') # default test dir
+parser.add_argument('-d', '--dir', default='lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0') # default test dir
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
 args = parser.parse_args()
@@ -43,7 +43,7 @@ def printdups(dups):
     for dup in dups:
         print (dup)
 
-dupout = os.path.join(args.dir,"../duplicates.md")
+dupout = os.path.join(args.dir,"duplicates.md")
 
 if not (gl.newchanges(args.dir) or args.override_changes):
     print ("Stopping because go file is no-go.")
@@ -61,7 +61,7 @@ with gl.cd(args.dir):
 
 now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 with open(dupout,"w") as o:
-    o.write("---\ntitle: Duplicates\n---\n\n# Duplicates\n\n")
+    o.write("---\ntitle: Duplicates\nlayout: page\n---\n\n# Duplicates\n\n")
     if len(dups)==0:
         o.write("No duplicate files found on {}".format(now))
     else:

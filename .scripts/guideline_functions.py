@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -28,6 +28,7 @@ ignorelist = [
         "temp",
         ".changes.json",
         "duplicates.md",
+        "editors.md",
         "changes.html",
         "__MACOSX",
         "offline_DRAFTS",
@@ -39,6 +40,12 @@ exclude_from_reports = [
 ]
 
 gofilename = "go.txt"
+
+configfilename = "config.json"
+
+def loadconfig(sourcedir):
+    with open(os.path.join(sourcedir, configfilename)) as f:
+        return json.load(f)
 
 def newchanges(sourcedir, interval=300):
     gofile = os.path.join(sourcedir, gofilename)

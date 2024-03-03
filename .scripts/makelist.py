@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 '''
 Makes an html list of pdf files in a directory
@@ -21,10 +21,9 @@ scriptpath = os.path.dirname(os.path.realpath(__file__))
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/'))
+parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401df0/'))
 parser.add_argument('-f', '--fast', default=False, action="store_true")
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
-parser.add_argument('-b', '--backgroundcolor', default="#f5f5f5") #bdfcec
 parser.add_argument('-e', '--do_emergency', default=False, action="store_true")
 parser.add_argument('-p', '--pin_to_top',    action='append', default=[], help='use this to append as many values as you want')
 parser.add_argument('-lf', '--listfilename', default='list.html')
@@ -134,11 +133,12 @@ def fixname(thisname):
 
 def makeid(thisname):
     return ''.join(thisname.split())
+
 def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
         if entry.endswith('.md'):
-            linktarget = entry.replace(".md","") # md files automatically converted by mkdocs
+            linktarget = entry.replace(".md","")
             print ("md", thisdir, entry, linktarget)
             linktext += ('''
                 <a class='{}' href='{}'>
@@ -218,7 +218,7 @@ def makelist(fromdir=guidelinesdir, listfile=args.listfilename, indexfile=args.i
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="heading{}">
                         <button class="accordion-button {}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
-                            <div class="accordion-body" style="background: {};">
+                            <div class="accordion-body">
                                 {}
                             </div>
                         </button>
@@ -234,7 +234,6 @@ def makelist(fromdir=guidelinesdir, listfile=args.listfilename, indexfile=args.i
                     eclass(d),
                     i,
                     i,
-                    args.backgroundcolor,
                     fixname(d),
                     i,
                     i,

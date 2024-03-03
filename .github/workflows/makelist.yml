@@ -46,30 +46,30 @@ jobs:
           ONEDRIVE_CLIENT_SECRET: ${{ secrets.ONEDRIVE_CLIENT_SECRET }}
           ONEDRIVE_TENANT_ID: ${{ secrets.ONEDRIVE_TENANT_ID }}
         run: |
-          python .scripts/download.py -s "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0" -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
+          python .scripts/download.py -s "https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0" -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/" 
 
       - name: Make list
         run: |
-          python .scripts/makelist.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" -p "docs/critcare_pub/criticalcare/" -e 
+          python .scripts/makelist.py -d "lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/" -e 
 
       - name: Find duplicates
         run: |
-          python .scripts/get_duplicates.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
+          python .scripts/get_duplicates.py -d "lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/" 
 
       - name: Get review dates
         run: |
-          python .scripts/get_review_dates.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
+          python .scripts/get_review_dates.py -d "lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/" 
 
       - name: Get editors
         run: |
-          python .scripts/get_editors.py -d "docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/" 
+          python .scripts/get_editors.py -d "lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/" 
 
       - name: Commit pages if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -v docs/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/*
-          git add -v docs/critcare_pub/*
+          git add -v lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/*
+          git add -v lothiancriticalcare/public/*
           git diff-index --quiet HEAD || git commit -m "Automatically re-generate list and index"
 
       - name: Push pages

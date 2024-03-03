@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 
 import os
 import sys
@@ -17,9 +17,9 @@ import guideline_functions as gl
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/3jornh1s315cxzj/AAC_2OF49UbxYMo-gEHN0liWa?dl=0') # default test dir
-parser.add_argument('-d', '--destinationdir', default='../docs/test_secret/criticalcare/')
-parser.add_argument('-c', '--cloud', default='dropbox')
+parser.add_argument('-d', '--destinationdir', default='../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/')
 parser.add_argument('-w', '--webstem', default='https://critcare.net/')
+parser.add_argument('-c', '--cloud', default='dropbox')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 args = parser.parse_args()
 #-----------------------------
