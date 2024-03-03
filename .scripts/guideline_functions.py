@@ -40,11 +40,6 @@ exclude_from_reports = [
 
 gofilename = "go.txt"
 
-configfilename = "../_data/guidelinesets.yml"
-
-def loadconfig(sourcedir):
-    print ("yaml reading function needed")
-
 def newchanges(sourcedir, interval=300):
     gofile = os.path.join(sourcedir, gofilename)
     if os.path.exists(gofile):

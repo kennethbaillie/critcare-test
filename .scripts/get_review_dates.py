@@ -18,7 +18,7 @@ import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--dir', default='docs/test_secret/criticalcare/') # default test dir
+parser.add_argument('-d', '--dir', default='lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/') # default test dir
 parser.add_argument('-r', '--reviewdatestrings',    action='append', default=['Next review', 'Review date', 'Review '], help='use this to append as many values as you want')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
@@ -30,13 +30,12 @@ if args.dir == "no_dir_specified":
 #-----------------------------
 
 rs = [x.lower() for x in args.reviewdatestrings]
-revout = os.path.join(args.dir,"../","reviewdates.csv")
-revoutx = os.path.join(args.dir,"../","reviewdates.xlsx")
-revout_big = os.path.join(args.dir,"../","reviewdates_full.csv")
+revout = os.path.join(args.dir,"reviewdates.csv")
+revoutx = os.path.join(args.dir,"reviewdates.xlsx")
+revout_big = os.path.join(args.dir,"reviewdates_full.csv")
 changes_record_file = os.path.join(args.dir,"../changes.html")
 
-linkout = os.path.join(args.dir,"../","linkchecks.csv")
-config = gl.loadconfig(args.dir)
+linkout = os.path.join(args.dir,"linkchecks.csv")
 
 def old_extract_date(text, reviewstrings=rs):
     while "  " in text:
@@ -134,7 +133,7 @@ def get_base_url(url):
 
 def check_url(url):
     # check local files first
-    for stem in [config["base_url"]]:
+    for stem in ["https://critcare.net/"+args.dir]:
         if url.startswith(stem):
             path = url.replace(stem,"")
             path = os.path.join(args.dir, path)
