@@ -49,3 +49,6 @@ In the "Select permissions" search box, type "Files" and select the "Files.Read.
 Click on the "Add permissions" button.
 To grant admin consent for the permissions, click on the "Grant admin consent for [Your Directory Name]" button and confirm the action.
 Now you have registered an app on Azure with the necessary permissions to access OneDrive. Use the "Application (client) ID," "Directory (tenant) ID," and the client secret you generated to authenticate with the Microsoft Graph API in your Python script.
+
+
+

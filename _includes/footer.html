@@ -1,0 +1,21 @@
+{% if page.nofooter %}
+{% else %}
+<footer class="footer mt-auto py-3 bg-light h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="container py-3">
+    <div class="row">
+
+      {% assign url_parts = page.url | split: '/' %}
+      {% comment %}Adjust the index [1] based on your site's URL structure{% endcomment %}
+      {% assign current_directory = url_parts[1] %}
+
+      {% for guidelineset in site.data.guidelinesets %}
+        {% if guidelineset.directory == current_directory %}
+          <p>{{ guidelineset.disclaimer }}</p>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+  </div>
+</footer>
+{% endif %}

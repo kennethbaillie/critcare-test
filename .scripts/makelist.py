@@ -21,23 +21,26 @@ scriptpath = os.path.dirname(os.path.realpath(__file__))
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../docs/test_secret/criticalcare/'))
-parser.add_argument('-p', '--publicdir', default="../docs/test_secret/public")
-parser.add_argument('-e', '--do_emergency', default=False, action="store_true")
-parser.add_argument('-l', '--listfilename', default='list.html')
-parser.add_argument('-i', '--indexfilename', default='index.json')
+parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/'))
 parser.add_argument('-f', '--fast', default=False, action="store_true")
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
 parser.add_argument('-b', '--backgroundcolor', default="#f5f5f5") #bdfcec
+parser.add_argument('-e', '--do_emergency', default=False, action="store_true")
+parser.add_argument('-p', '--pin_to_top',    action='append', default=[], help='use this to append as many values as you want')
+parser.add_argument('-lf', '--listfilename', default='list.html')
+parser.add_argument('-if', '--indexfilename', default='index.json')
+parser.add_argument('-ed', '--emergencydirname', default='Emergencies')
+parser.add_argument('-gd', '--guidelinesdirname', default='guidelines')
+parser.add_argument('-pd', '--publicdirname', default='public')
 args = parser.parse_args()
 #-----------------------------
-emergencydir = "Emergencies" # this will be pinned to the top and copies of emergency protocols uploaded to it
-pin_to_top = []
+guidelinesdir = os.path.join(args.dir, args.guidelinesdirname)
+publicdir = os.path.join(args.dir, "..", args.publicdirname)
 #-----------------------------
 changelog = os.path.join(args.dir,".changes.json")
-changes_record_file = os.path.join(args.dir,"../changes.html")
-dupout = os.path.join(args.dir,"../duplicate_titles.md")
-globalsynonymsfile = os.path.join(args.dir,"../synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
+changes_record_file = os.path.join(args.dir,"changes.html")
+dupout = os.path.join(args.dir,"duplicate_titles.md")
+globalsynonymsfile = os.path.join(args.dir,"synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
 
 def get_unique_words(bigstring):
@@ -97,7 +100,7 @@ def make_search_entry(thisfile, thisbasedir, indexfilename=args.indexfilename):
         json.dump(sl, o, indent=4)
 
 def eclass(filename):
-    if filename.strip().lower() == emergencydir.strip().lower():
+    if filename.strip().lower() == args.emergencydirname.strip().lower():
         return "emergency"
     emlabels = ["_em.", "_em_"]
     for x in emlabels:
@@ -131,14 +134,13 @@ def fixname(thisname):
 
 def makeid(thisname):
     return ''.join(thisname.split())
-
 def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
         if entry.endswith('.md'):
             linktarget = entry.replace(".md","") # md files automatically converted by mkdocs
             print ("md", thisdir, entry, linktarget)
-            linktext+=('''
+            linktext += ('''
                 <a class='{}' href='{}'>
                     <li class='list-group-item' style='margin-left:{}em;'>{}</li>
                 </a>
@@ -149,7 +151,7 @@ def formatfilelink(thisdir, entry, basedir, depth=0):
                     fixname(entry))
                     )
         else:
-            linktext+=('''
+            linktext += ('''
                 <a class='{}' href='{}'>
                     <li class='list-group-item' style='margin-left:{}em;'>{}</li>
                 </a>
@@ -168,67 +170,68 @@ def formatdir(thisdir, basedir, depth=0):
         if not gl.accept(thisdir, entry):
             continue
         if os.path.isdir(os.path.join(thisdir, entry)):
-            text+=('''
-                <div class='panel-group' id='{}'>
-                    <div class='panel'>
-                        <h5 style='margin-left:{}em;'>
-                            <a class='{}' data-toggle='collapse' data-parent='#{}' href='#collapse{}'>
-                                {} &raquo;
-                            </a>
-                        </h5>
-                        <div id="collapse{}" class="panel-collapse collapse">
+            text += ('''
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading{}">
+                        <button class="accordion-button {}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{}" aria-expanded="true" aria-controls="collapse{}" style='margin-left:{}em;'>
+                            {}
+                        </button>
+                    </h2>
+                    <div id="collapse{}" class="accordion-collapse collapse" aria-labelledby="heading{}" data-bs-parent="#accordion">
+                        <div class="accordion-body">
                             <ul class='list-group'>{}</ul>
                         </div>
                     </div>
                 </div>
                 '''.format(
-                        makeid(entry),
-                        depth+1,
-                        eclass(entry),
-                        makeid(entry),
-                        makeid(entry),
-                        fixname(entry),
-                        makeid(entry),
-                        formatdir(os.path.join(thisdir, entry), basedir, depth+1)
-                        )
+                    makeid(entry),
+                    eclass(entry),
+                    makeid(entry),
+                    makeid(entry),
+                    depth,
+                    fixname(entry),
+                    makeid(entry),
+                    makeid(entry),
+                    formatdir(os.path.join(thisdir, entry), basedir, depth+1)
                     )
+                )
         else:
             text += formatfilelink(thisdir, entry, basedir, depth)
     return text
 
-def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexfilename):
-    i=0
-    basedir = os.path.abspath(os.path.join(fromdir,"..")) # always one level up, by definition because of the links
+def makelist(fromdir=guidelinesdir, listfile=args.listfilename, indexfile=args.indexfilename):
+    i = 0
+    basedir = os.path.abspath(os.path.join(fromdir, ".."))
     searchindexfile = os.path.join(basedir, indexfile)
-    # clear old search
     if not args.fast:
-        with open(searchindexfile,"w") as o:
-            json.dump([],o,indent=4)
+        with open(searchindexfile, "w") as o:
+            json.dump([], o, indent=4)
     uncategorised = []
-    listfiletext = ""
-    listfiletext += ('<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">\n')
-    topdirlist = [x for x in sorted(os.listdir(fromdir)) if x not in pin_to_top]
-    topdirlist = pin_to_top + topdirlist
+    listfiletext = '<div class="accordion" id="accordion">\n'
+    topdirlist = [x for x in sorted(os.listdir(fromdir)) if x not in args.pin_to_top]
+    topdirlist = args.pin_to_top + topdirlist
     for d in topdirlist:
         if not(gl.accept(fromdir, d)):
             continue
         if os.path.isdir(os.path.join(fromdir, d)):
             listfiletext += ('''
-                <div class="panel panel-default">
-                    <a role="button" class="{}" data-toggle="collapse" data-parent="#accordion" href="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
-                        <div class="panel-heading" role="tab" id="heading{}" style="background: {};">
-                            <h4 class="panel-title">
-                              {}
-                            </h4>
-                        </div>
-                    </a>
-                    <div id="collapse{}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{}">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading{}">
+                        <button class="accordion-button {}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{}" aria-expanded="true" aria-controls="collapse{}">
+                            <div class="accordion-body" style="background: {};">
+                                {}
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse{}" class="accordion-collapse collapse" aria-labelledby="heading{}" data-bs-parent="#accordion">
+                        <div class="accordion-body">
                             {}
+                        </div>
                     </div>
                 </div>
               '''.format(
-                    eclass(d),
                     i,
+                    eclass(d),
                     i,
                     i,
                     args.backgroundcolor,
@@ -237,28 +240,31 @@ def makelist(fromdir=args.dir, listfile=args.listfilename, indexfile=args.indexf
                     i,
                     formatdir(os.path.join(fromdir, d), basedir)
                     ))
-            i+=1
+            i += 1
         else:
-            if gl.accept(fromdir, d):
-                uncategorised.append(d)
-                make_search_entry(os.path.join(fromdir, d), basedir)
-    listfiletext += ('</div>\n')
+            uncategorised.append(d)
+            make_search_entry(os.path.join(fromdir, d), basedir)
+    listfiletext += '</div>\n'
 
-    if len(uncategorised)>0:
-        print ("uncategorised:", uncategorised)
+    if len(uncategorised) > 0:
+        print("uncategorised:", uncategorised)
         for entry in uncategorised:
             listfiletext += formatfilelink(fromdir, entry, basedir, 0)
 
-    with open(os.path.join(basedir,listfile),'w') as o:
+    with open(os.path.join(basedir, listfile), 'w') as o:
         o.write(listfiletext)
-    print ('list made in {}'.format(os.path.join(basedir,listfile)))
+    print('list made in {}'.format(os.path.join(basedir, listfile)))
 
 #-----------------------------
 # DETECT CHANGES AND STOP IF NOTHING HAS CHANGED
 
 if not os.path.exists(changelog):
-    print ("no changelog file found at: {}\n Aborting makelist.\n".format(changelog))
-    sys.exit()
+    if args.override_changes:
+        with open(changelog,"w") as o:
+            o.write("{}")
+    else:
+        print ("no changelog file found at: {}\n Aborting makelist.\n".format(changelog))
+        sys.exit()
 new_changes_present=False
 with open(changelog) as f:
     changes = json.load(f)
@@ -289,15 +295,15 @@ else:
     sys.exit()
 #-----------------------------
 if args.do_emergency:
-    pin_to_top.append(emergencydir)
+    args.pin_to_top.append(args.emergencydirname)
     # Make and populate emergency folder
     # https://codepen.io/marklsanders/pen/OPZXXv
-    edir = os.path.join(args.dir, emergencydir)
-    if not os.path.exists(edir):
-        os.mkdir(edir)
+    emergencydir = os.path.join(guidelinesdir, args.emergencydirname)
+    if not os.path.exists(emergencydir):
+        os.mkdir(emergencydir)
     # clear emergencies
-    for filename in os.listdir(edir):
-        cmd = 'rm "{}"'.format(os.path.join(edir,filename))
+    for filename in os.listdir(emergencydir):
+        cmd = 'rm "{}"'.format(os.path.join(emergencydir,filename))
         print (cmd)
         subprocess.call(cmd, shell=True)
     # copy emergencies
@@ -306,7 +312,7 @@ if args.do_emergency:
             if eclass(name)=="emergency":
                 cmd = 'cp "{}" "{}"'.format(
                     os.path.join(root, name),
-                    edir
+                    emergencydir
                     )
                 print (cmd)
                 subprocess.call(cmd, shell=True)
@@ -318,23 +324,27 @@ if os.path.exists(globalsynonymsfile):
         try:
             gsyn = json.load(f)
         except:
-            print ("\n\n****Misformatted GLOBAL SYNONYMS json file***: {}\nIgnoring...\n\n".format(globalsynonymsfile))
+            print ("\n\n**** Misformatted GLOBAL SYNONYMS json file ****: {}\nIgnoring...\n\n".format(globalsynonymsfile))
+else:
+    with open(globalsynonymsfile,"w") as o:
+        o.write("{}")
 
 # Make html accordion menu and new search index
-makelist(fromdir=args.dir)
+makelist(fromdir=guidelinesdir)
 
 # Make and populate public folder
-if os.path.exists(args.publicdir):
+if os.path.exists(publicdir):
     # clear public folder
-    for folder in os.listdir(args.publicdir):
-        cmd = 'rm -r "{}"'.format(os.path.join(args.publicdir,folder))
+    for folder in os.listdir(publicdir):
+        cmd = 'rm -r "{}"'.format(os.path.join(publicdir,folder))
         print (cmd)
         subprocess.call(cmd, shell=True)
 else:
-    os.mkdir(args.publicdir)
+    os.mkdir(publicdir)
 # copy publicfiles
-shutil.copytree(args.dir, args.publicdir, symlinks=False, ignore=ignore_files, ignore_dangling_symlinks=False, dirs_exist_ok=True)
-makelist(fromdir=args.publicdir)
+publicguidelinesdir = os.path.join(publicdir, args.guidelinesdirname)
+shutil.copytree(guidelinesdir, publicguidelinesdir, symlinks=False, ignore=ignore_files, ignore_dangling_symlinks=False, dirs_exist_ok=True)
+makelist(fromdir=publicguidelinesdir)
 
 
 

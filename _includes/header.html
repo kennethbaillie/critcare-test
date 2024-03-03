@@ -1,0 +1,61 @@
+{% assign url_parts = page.url | split: '/' %}
+{% assign current_directory = url_parts[1] %}
+{% assign secret_directory = url_parts[2] %}
+
+<header>
+    <nav class="navbar  navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- JKB:change to container to fit all on narrow screen -->
+            <a class="navbar-brand" href="{{ "/" | relative_url }}">
+                  {%- if guidelineset.title -%}
+                    {{ guidelineset.title }}
+                  {%- else -%}
+                    {{site.title}}
+                  {%- endif -%}
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <button class="applink add-button" style="display:none">
+            <img class="installpic" alt="📲" src="/img/phone.png">
+            Install
+          </button>
+          <button class="applink home-button" onclick="window.location.href='add_to_home_screen/'" style="display:none">
+            <img class="installpic" alt="📲" src="/img/phone.png">
+            Add app
+          </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  {% for guidelineset in site.data.guidelinesets %}
+                    {% if guidelineset.directory == current_directory %}
+                    
+                        {% if guidelineset.secret == secret_directory %}
+
+                            {% for link in guidelineset.navigation %}
+                                {% if link.submenu %}
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ link.text }} </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        {% for sublink in link.submenu %}
+                                        <li><a class="dropdown-item" href="/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ sublink.url }}">{{ sublink.text }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                                {% else %}
+                                <li class="nav-item"><a class="nav-link" href="/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ link.url }}"> {{ link.text }} </a></li>
+                                {% endif %}
+                            {% endfor %}
+
+                        {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+</header>
+

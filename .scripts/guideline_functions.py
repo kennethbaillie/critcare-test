@@ -38,13 +38,12 @@ exclude_from_reports = [
     "Emergencies",
 ]
 
-gofilename = "../go.txt"
+gofilename = "go.txt"
 
-configfilename = "../config.json"
+configfilename = "../_data/guidelinesets.yml"
 
 def loadconfig(sourcedir):
-    with open(os.path.join(sourcedir, configfilename)) as f:
-        return json.load(f)
+    print ("yaml reading function needed")
 
 def newchanges(sourcedir, interval=300):
     gofile = os.path.join(sourcedir, gofilename)

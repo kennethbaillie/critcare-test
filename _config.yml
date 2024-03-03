@@ -1,0 +1,27 @@
+title: critcare.net
+description: >- # this means to ignore newlines. Copies to footer, meta description, and feed.xml
+  Clinical Guidelines
+
+theme: minima
+destination: _site
+site.url: https://critcare.net
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+kramdown:
+  auto_ids: true
+
+defaults:
+  -
+    scope:
+      path:            "assets/*"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "img/*"
+    values:
+      sitemap:         false
+
+
+

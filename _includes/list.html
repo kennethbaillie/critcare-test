@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<!--
+Includes a link to the title of every md file in the same directory
+-->
+<ul class="nav nav-tabs">
+    {% assign sortedpages = site.pages | sort: "weight" %}
+    {% for thispage in sortedpages %}
+    {% assign file_extension = thispage.path | split: "." | last %}
+    {% if thispage.dir == page.dir and file_extension == "md" %}
+    <li class="nav-item">
+        <a class="nav-link {% if page.url == thispage.url %}active{% endif %}" href="{{ thispage.url }}">{{ thispage.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        {% include image-iframe.html %}
+    </div>
+    <div class="col-12 col-md-6">
+        {{ page.summary | markdownify }}
+    </div>
+</div>
+<div class="row">
+    {{ content }}
+</div>

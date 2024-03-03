@@ -1,4 +1,5 @@
-.DS*
-Icon*
-__pycache__
-.azure*
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

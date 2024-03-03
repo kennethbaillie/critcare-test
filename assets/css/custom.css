@@ -1,0 +1,104 @@
+/*JKB manually-written custom css. High risk...*/
+
+.container {
+    max-width: 100%  /* desired width for xs screens. Default: 100%  */ !important;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 541 /* desired width for sm screens. Default: 540px */ !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 721px /* desired width for md screens. Default: 720px */ !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 961px /* desired width for lg screens. Default: 960px */ !important;
+    }
+}
+
+@media (min-width: 1200) {
+    .container {
+        max-width: 1021px /* desired width for xl screens. Default: 1140px */ !important;
+    }
+}
+
+@media (min-width: 1400) {
+    .container {
+        max-width: 1141px /* desired width for xxl screens. Default: 1320px */ !important;
+    }
+}
+
+/* make all images fit within page */
+.row img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* make all list items fit within page */
+.container ul, 
+.container ol {
+    padding-left: 3em;
+}
+
+.container {
+  /*
+    redefine bootstrap container
+    to have padding 0
+    in order to make
+    best use of screen space
+  */
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.emergency{
+  color: red;
+}
+.emergency:hover{
+  color: red;
+}
+.emergency:visited{
+  color: red;
+}
+.emergency:focus{
+  color: red;
+}
+
+.searchresult{
+  margin: 0 0 0 5px;
+  font-size: smaller;
+  color: cornflowerblue;
+  display:list-item;
+  list-style-type: square;
+}
+
+.applink {
+  margin: 3px 0px 0px 0px;
+  float: right;
+}
+
+.installpic{
+    width: 1em;
+    height: 1em;
+    margin: 3px 3px 0px 0px;
+    vertical-align: -0.1em;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+
+
+
+
