@@ -2,10 +2,9 @@
 
 '''
 Makes an html list of pdf files in a directory
-Also makes a lunr search index
-
-TODO: make the formatting of search links use the same function as the formatting of list links so that e.g. videos work
-
+Makes any md files into links to the corresponding jekyll page
+Makes any txt files into a link to the contents of the file
+Makes a lunr search index
 '''
 import re
 import os
@@ -142,9 +141,11 @@ def formatfilelink(thisdir, entry, basedir, depth=0):
         linktarget = entry.replace(".md", "") if entry.endswith('.md') else entry
         href = os.path.relpath(os.path.join(thisdir, linktarget), basedir)
         if entry.endswith(".txt"):
-            # then this is an html link
-            with open(os.path.join(thisdir, linktarget)) as o:
-                href = f.read().strip()
+            # then this is probably an html link
+            with open(os.path.join(thisdir, linktarget)) as f:
+                lines = [x.strip() for x in f.readlines() if len(x.strip())>0]
+            if len(lines) < 3: 
+                href = lines[0]
         print("File:", thisdir, entry, "->", linktarget)
         # add target="_blank" to open in new tab
         linktext += ('''
@@ -269,9 +270,9 @@ for thistype in changes:
     typechanges = [x for x in changes[thistype] if gl.accept(os.path.join(args.dir, x), os.path.split(x)[-1])]
     if len(typechanges) > 0:
         new_changes_present = True
-        newtext += "\n\n#### {}\n".format(thistype)
+        newtext += "\n\n#### {}\n\n".format(thistype)
         for file in typechanges:
-            newtext += "\n{}".format(changes[thistype][file].replace('\\',''))
+            newtext += "\n- {}".format(changes[thistype][file].replace('\\',''))
 oldtext = ""
 if new_changes_present == True or args.override_changes:
     print ("New changes found. Making new search index.")
