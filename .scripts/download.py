@@ -90,6 +90,9 @@ def printablepath(target, link=False):
         if os.path.isdir(p):
             out = '{}: [folder]'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
         else:
+            if verbose:
+                print (target)
+                print (p)
             out = '{}: <a href="{}{}">Link</a>'.format(
                                     p.relative_to(pathlib.PurePosixPath(args.destinationdir)), 
                                     args.webstem,
