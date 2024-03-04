@@ -93,7 +93,7 @@ def printablepath(target, link=False):
             out = '{}: <a href="{}{}">Link</a>'.format(
                                     p.relative_to(pathlib.PurePosixPath(args.destinationdir)), 
                                     args.webstem,
-                                    p.relative_to(pathlib.PurePosixPath('docs')),
+                                    p.relative_to(pathlib.PurePosixPath('/')),
                                     )
     else:
         out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))

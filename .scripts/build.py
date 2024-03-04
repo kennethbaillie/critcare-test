@@ -22,7 +22,7 @@ def run_command(command):
     subprocess.run(command, shell=True, check=True)
 
 def run_build(directory, cloudlink):
-    run_command(f"python .scripts/download.py -s '{cloudlink}' -d '{directory}/guidelines/'")
+    run_command(f"python .scripts/download.py -v -s '{cloudlink}' -d '{directory}/guidelines/'")
     run_command(f"python .scripts/makelist.py -d '{directory}/' -e")
     run_command(f"python .scripts/get_duplicates.py -d '{directory}/'")
     run_command(f"python .scripts/get_review_dates.py -d '{directory}/'")
