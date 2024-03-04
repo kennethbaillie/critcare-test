@@ -18,7 +18,6 @@ Clinical Guidelines Browser
 
 
 
-
-
-https://www.edinburghdiabetes.com/managementprotocols
-
+To do:
+- add endocrinology if desirable: https://www.edinburghdiabetes.com/managementprotocols
+- stop duplicates appearing in search for emergencies
