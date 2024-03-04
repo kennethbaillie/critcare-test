@@ -4,8 +4,8 @@
 Makes an html list of pdf files in a directory
 Also makes a lunr search index
 
-
 TODO: make the formatting of search links use the same function as the formatting of list links so that e.g. videos work
+
 '''
 import re
 import os
@@ -152,7 +152,8 @@ def formatfilelink(thisdir, entry, basedir, depth=0):
                 depth=float(depth)/2,
                 name=fixname(entry))
             )
-        make_search_entry(os.path.join(thisdir, entry), basedir)
+        if thisdir != args.emergencydirname:
+            make_search_entry(os.path.join(thisdir, entry), basedir)
     return linktext
 
 def formatdir(thisdir, basedir, depth=0, parent_id="accordion"):
@@ -188,7 +189,6 @@ def formatdir(thisdir, basedir, depth=0, parent_id="accordion"):
         else:
             text += formatfilelink(thisdir, entry, basedir, depth)
     return text
-
 
 def makelist(fromdir=guidelinesdir, listfile=args.listfilename, indexfile=args.indexfilename):
     i = 0
