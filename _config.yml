@@ -4,6 +4,7 @@ description: >- # this means to ignore newlines. Copies to footer, meta descript
 
 theme: minima
 destination: _site
+baseurl: ""
 site.url: https://critcare.net
 plugins:
   - jekyll-sitemap
