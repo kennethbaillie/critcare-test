@@ -39,6 +39,7 @@ jobs:
           pip install textract
           pip install msal
           pip install PyMuPDF
+          pip install oyaml
 
       - name: Download files
         env:
