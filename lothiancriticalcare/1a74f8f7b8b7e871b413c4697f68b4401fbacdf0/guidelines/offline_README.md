@@ -68,19 +68,27 @@ Additional users can be added by any of these people. The compute load is curren
 
 ## Adding videos or links
 
-You can add links to videos by copying the text files like this one: `COVID19/videos/COVID Intubation Simulation Video.txt`
+You can add links to videos by copying the redirect files like this one: `COVID19/videos/COVID Intubation Simulation Video.md`. These filenames must end in .md
 
-These filenames must end in .txt
+The file name becomes the menu item. In the top of the file there is a special syntax called YAML that indicates that this file should redirect to another page, like this: 
 
-The file name becomes the menu item.
-
-The contents of the file become the link target, so the only thing that should appear in the file is the plain text link, e.g.
-
-https://youtu.be/HDyKJ4FOX9o
+```
+---
+redirect-to: https://youtu.be/o08B9es8JVE
+---
+```
 
 ## Adding a web page
 
-A couple of files in the app are simple web pages written in markdown. If you want to do this, simply end your filename in .md and it will be handled as markdown and made into a web page. If this doesn't make any sense to you, just ignore it.
+A couple of files in the app are simple web pages written in markdown. If you want to do this, simply end your filename in .md and it will be handled as markdown and made into a web page. The site is compiled using jekyll, so you have to add some YAML at the top. This is enough: 
+
+```
+---
+layout: page
+---
+```
+
+If this doesn't make any sense to you, just ignore it.
 
 ## Automatic searching
 

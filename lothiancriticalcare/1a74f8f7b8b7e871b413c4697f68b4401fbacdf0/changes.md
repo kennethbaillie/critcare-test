@@ -5,6 +5,30 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 04/03/2024 22:12:36
+
+#### deleted
+
+
+- Covid-19/videos/COVID Intubation Simulation Video.txt
+- Covid-19/videos/COVID Proning Video.txt
+- Drugs/BNF/BNF_link.txt
+
+#### new
+
+
+- Covid-19/videos/COVID Intubation Simulation Video.md: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Covid-19/videos/COVID Intubation Simulation Video.md">Link</a>
+- Covid-19/videos/COVID Proning Video.md: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Covid-19/videos/COVID Proning Video.md">Link</a>
+- Drugs/BNF/BNF_link.md: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/BNF/BNF_link.md">Link</a>
+
+#### renamed
+
+
+- End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD - Sept 22.pdf ==> End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD.pdf">Link</a>
+- End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU v2.pdf ==> End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf">Link</a>
+
+
+------------------------------------------------------------------------
 
 ### 23/02/2024 12:03:27
 #### renamed
