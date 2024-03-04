@@ -104,8 +104,8 @@ function renderResults(results) {
     $result.append($("<a>", {
       href: result.href,
       text: result.title,
-      //target: "_blank", // Open link in a new tab
-      onclick: "onclick=\"logDownload('file.pdf')\"" // Track event on click
+      target: result.target,
+      onclick: result.onclick
     }));
     $results.append($result);
   });

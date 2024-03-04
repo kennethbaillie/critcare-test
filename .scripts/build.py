@@ -38,8 +38,8 @@ def run_command(command, force=False):
 def run_build(directory, secret, cloudlink):
     secretdir = directory + "/" + secret
     publicdir = directory + "/public"
-    run_command(f"python3 .scripts/download.py -v -s '{cloudlink}' -d '{secretdir}/guidelines/'", force=args.force_errors)
-    run_command(f"python3 .scripts/makelist.py -d '{secretdir}/' -e", force=args.force_errors)
+    run_command(f"python3 .scripts/download.py -s '{cloudlink}' -d '{secretdir}/guidelines/'", force=args.force_errors)
+    run_command(f"python3 .scripts/makelist.py -d '{secretdir}/'", force=args.force_errors)
     run_command(f"python3 .scripts/get_duplicates.py -d '{secretdir}/'", force=args.force_errors)
     run_command(f"python3 .scripts/get_review_dates.py -d '{secretdir}/'", force=args.force_errors)
     run_command(f"python3 .scripts/get_editors.py -d '{secretdir}/'", force=args.force_errors)

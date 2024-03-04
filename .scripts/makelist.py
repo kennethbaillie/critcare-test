@@ -42,6 +42,8 @@ changes_record_file = os.path.join(args.dir,"changes.md")
 dupout = os.path.join(args.dir,"duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
+google_analytics_command = "_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);"
+#-----------------------------
 
 def get_unique_words(bigstring):
     global gsyn
@@ -80,16 +82,15 @@ def get_unique_words(bigstring):
         bs = [" ".join(synonymlist) if x in synonymlist else x for x in bs]
     return ' '.join(bs)
 
-def make_search_entry(thisfile, thisbasedir, indexfilename=args.indexfilename):
+def make_search_entry(thisfile, thisbasedir, href, indexfilename=args.indexfilename):
     if args.fast:
         return
     thistitle = fixname(os.path.split(thisfile)[1])
-    linktarget = thisfile
-    if thisfile.endswith(".md"):
-        linktarget = thisfile[:-3]
     new_entry = {
-        'href': os.path.relpath(linktarget, thisbasedir),
+        'href': href,
         'title': thistitle,
+        'target': "_self", # "_blank" to open in a new window
+        'onclick': google_analytics_command,
         'content': get_unique_words(gl.readfilecontents(thisfile)), # this is the slow bit
         }
     jsonpath = os.path.join(thisbasedir, indexfilename)
@@ -139,21 +140,26 @@ def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
         linktarget = entry.replace(".md", "") if entry.endswith('.md') else entry
+        href = os.path.relpath(os.path.join(thisdir, linktarget), basedir)
+        if entry.endswith(".txt"):
+            # then this is an html link
+            with open(os.path.join(thisdir, linktarget)) as o:
+                href = f.read().strip()
         print("File:", thisdir, entry, "->", linktarget)
         # add target="_blank" to open in new tab
-        # onclick="_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);" # google analytics tracking
         linktext += ('''
-            <a href='{href}' target="_blank" onclick="logDownload('{name}')">
+            <a href='{href}' onclick="{goog}">
                 <li class='list-group-item {eclass}' style='margin-left:{depth}em;'>{name}</li>
             </a>
             '''.format(
-                href=os.path.relpath(os.path.join(thisdir, linktarget), basedir),
+                href=href,
                 eclass=eclass(entry),
                 depth=float(depth)/2,
-                name=fixname(entry))
+                name=fixname(entry),
+                goog=google_analytics_command)
             )
         if thisdir != args.emergencydirname:
-            make_search_entry(os.path.join(thisdir, entry), basedir)
+            make_search_entry(os.path.join(thisdir, entry), basedir, href)
     return linktext
 
 def formatdir(thisdir, basedir, depth=0, parent_id="accordion"):
@@ -233,7 +239,7 @@ def makelist(fromdir=guidelinesdir, listfile=args.listfilename, indexfile=args.i
             i += 1
         else:
             uncategorised.append(d)
-            make_search_entry(os.path.join(fromdir, d), basedir)
+            formatfilelink(fromdir, d, basedir)
     listfiletext += '</div>\n'
 
     if len(uncategorised) > 0:

@@ -16,7 +16,7 @@ if args.dir == "no_dir_specified":
     print ("no_dir_specified")
     sys.exit()
 #-----------------------------
-edin = os.path.join(args.dir,"guidelines","offline_EDITORS.txt")
+edin = os.path.join(args.dir,"guidelines","offline_EDITORS.md")
 edout = os.path.join(args.dir,"editors.md")
 if os.path.exists(edin):
     with open(edin) as f:
