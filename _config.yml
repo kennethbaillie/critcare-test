@@ -5,7 +5,8 @@ description: >- # this means to ignore newlines. Copies to footer, meta descript
 theme: minima
 destination: _site
 baseurl: "/critcare-test"
-site.url: https://critcare.net
+url: https://critcare.net
+google_analytics_code: G-573KSGQWF6
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from

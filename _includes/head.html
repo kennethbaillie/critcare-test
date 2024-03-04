@@ -1,38 +1,34 @@
-<!--
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-573KSGQWF6"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_code }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-573KSGQWF6');
+  gtag('js', new Date());xz
+  gtag('config', '{{ site.google_analytics_code }}');
 </script>
-
-    {% if config.site_description %}<meta name="description" content="{{ config.site_description }}">{% endif %}
-    {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
-    {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
-    {% if page.redirect %}<meta http-equiv="refresh" content="2; url='{{ page.canonical_url }}'" />{% endif %}
-
-    {% if page.canonical_url %}
-        {% if "1a74f8f7b8b7e871b413c4697f68b4401fbacdf0" in page.canonical_url %}
-            <link rel="manifest" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/site.webmanifest" crossorigin="use-credentials">
-            <link rel="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon.ico">
-            <link rel="apple-touch-icon" sizes="180x180" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/apple-touch-icon.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon-16x16.png">
-            <link rel="mask-icon" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-            <link rel="shortcut icon" href="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/favicon.ico">
-            <meta name="msapplication-config" content="/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/img/favicon/browserconfig.xml">
-        {% endif %}
-    {% endif %}
-
-
--->
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include geturl.html %}
+    {% for guidelineset in site.data.guidelinesets %}
+        {% if guidelineset.directory == current_directory %}
+            {% if guidelineset.secret == secret_directory %}
+
+            <link rel="manifest" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/img/favicon/site.webmanifest" crossorigin="use-credentials">
+            <link rel="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/img/favicon.ico">
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/img/favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/img/favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/img/favicon/favicon-16x16.png">
+            <link rel="mask-icon" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+            <link rel="shortcut icon" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/img/favicon/favicon.ico">
+            <meta name="msapplication-config" content="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/img/favicon/browserconfig.xml">
+
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ '/assets/css/custom.css' | prepend: site.baseurl }}">
   <noscript><style>fade{opacity:1 !important}</style></noscript>

@@ -1,6 +1,7 @@
 ---
 title: Local guidelines access system
 author: Kenneth Baillie
+layout: page
 ---
 
 # Summary

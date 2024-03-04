@@ -5,6 +5,24 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 04/03/2024 21:14:56
+
+#### deleted
+
+Covid-19/videos/COVID Intubation Simulation Video.md
+Drugs/BNF/BNF_link.md
+
+#### new
+
+Covid-19/videos/COVID Intubation Simulation Video.txt: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Covid-19/videos/COVID Intubation Simulation Video.txt">Link</a>
+Drugs/BNF/BNF_link.txt: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/BNF/BNF_link.txt">Link</a>
+
+#### renamed
+
+Covid-19/videos/COVID Proning Video.md ==> Covid-19/videos/COVID Proning Video.txt: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Covid-19/videos/COVID Proning Video.txt">Link</a>
+
+
+------------------------------------------------------------------------
 ### 04/03/2024 20:58:14
 
 
