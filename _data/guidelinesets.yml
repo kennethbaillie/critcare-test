@@ -11,10 +11,10 @@
       url: ""
       submenu: 
         - text: Instructions
-          url: guidelines/offline_README/
+          url: guidelines/offline_README.html
         - text: Editors
-          url: editors/
+          url: editors.html
         - text: Changes
-          url: changes/
+          url: changes.html
 
 
