@@ -28,7 +28,7 @@ def run_build(directory, cloudlink):
     run_command(f"python .scripts/get_review_dates.py -d '{directory}/'")
     run_command(f"python .scripts/get_editors.py -d '{directory}/'")
     run_command(f"git add -v {directory}/*")
-    run_command(f"git add -v {directory}/public/*")
+    run_command(f"git add -v public/*")
 #-----------------------------
 
 run_command(f"git config --local user.email 'action@github.com'")
