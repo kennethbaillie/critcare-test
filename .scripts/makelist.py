@@ -37,7 +37,7 @@ args = parser.parse_args()
 guidelinesdir = os.path.join(args.dir, args.guidelinesdirname)
 publicdir = os.path.join(args.dir, "..", args.publicdirname)
 #-----------------------------
-changelog = os.path.abspath(os.path.join(args.dir,".changes.json"))
+changelog = os.path.abspath(os.path.join(args.dir,".changes.json")) # same as download.py
 changes_record_file = os.path.join(args.dir,"changes.md")
 dupout = os.path.join(args.dir,"duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.

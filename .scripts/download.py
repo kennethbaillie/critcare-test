@@ -31,7 +31,7 @@ changestoignore = [
         "editors.md",
     ]
 #-----------------------------
-changelog = os.path.join(args.destinationdir,".changes.json")
+changelog = os.path.abspath(os.path.join(args.destinationdir,"../",".changes.json")) # same as makelist.py
 #-----------------------------
 
 # UNTESTED CODE FOR ONE DRIVE 
