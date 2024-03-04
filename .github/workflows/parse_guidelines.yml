@@ -54,14 +54,17 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git diff-index --quiet HEAD || git commit -m "Automatically re-generate list and index"
+          git checkout jekyll
+          git add .
+          git commit -m 'Commit message'
+          git push https://${{ secrets.PAT_FOR_ACTIONS }}@github.com/kennethbaillie/critcare-test.git jekyll
+
 
       - name: Push pages
         uses: ad-m/github-push-action@master
         with:
-          #github_token: ${{ secrets.GITHUB_TOKEN }}
           github_token: ${{ secrets.PAT_FOR_ACTIONS }}
-
-
+          #github_token: ${{ secrets.GITHUB_TOKEN }}
 
 
 
