@@ -1,6 +1,5 @@
-{% assign url_parts = page.url | split: '/' %}
-{% assign current_directory = url_parts[1] %}
-{% assign secret_directory = url_parts[2] %}
+{% include geturl.html %}
+
 {% for guidelineset in site.data.guidelinesets %}
 {% if guidelineset.directory == current_directory %}
 {% if guidelineset.secret == secret_directory %}
@@ -9,7 +8,8 @@
     <nav class="navbar  navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
             <!-- JKB:change to container to fit all on narrow screen -->
-            <a class="navbar-brand" href="/{{ guidelineset.directory }}/{{ guidelineset.secret }}/">
+
+            <a class="navbar-brand" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/">
                   {%- if guidelineset.title -%}
                     {{ guidelineset.title }}
                   {%- else -%}
@@ -29,12 +29,12 @@
                                     <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ link.text }} </a>
                                     <ul class="dropdown-menu dropdown-menu-end">
                                         {% for sublink in link.submenu %}
-                                        <li><a class="dropdown-item" href="/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ sublink.url }}">{{ sublink.text }}</a></li>
+                                        <li><a class="dropdown-item" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ sublink.url }}">{{ sublink.text }}</a></li>
                                         {% endfor %}
                                     </ul>
                                 </li>
                                 {% else %}
-                                <li class="nav-item"><a class="nav-link" href="/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ link.url }}"> {{ link.text }} </a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ link.url }}"> {{ link.text }} </a></li>
                                 {% endif %}
                             {% endfor %}
 
@@ -42,11 +42,11 @@
                         
                 </ul>
                 <button class="applink add-button" style="display:none">
-                <img class="installpic" alt="📲" src="/img/phone.png">
+                <img class="installpic" alt="📲" src="{{ site.baseurl }}/img/phone.png">
                 Install
                 </button>
                 <button class="applink home-button" onclick="window.location.href='add_to_home_screen/'" style="display:none">
-                <img class="installpic" alt="📲" src="/img/phone.png">
+                <img class="installpic" alt="📲" src="{{ site.baseurl }}/img/phone.png">
                 Add app
                 </button>
 

@@ -1,0 +1,16 @@
+{% assign baseurl_parts = site.baseurl | split: '/' %}
+{% assign url_parts = page.url | split: '/' %}
+{% assign base_parts_length = baseurl_parts | size | minus: 1 %}
+
+{% assign current_directory_index = base_parts_length %}
+{% assign current_directory = url_parts[current_directory_index] %}
+{% assign secret_directory_index = current_directory_index | plus: 1 %}
+{% assign secret_directory = url_parts[secret_directory_index] %}
+
+<!--
+<div style="background: red;">
+<p>CURRENT: {{ current_directory }}</p>
+<p>SECRET: {{ secret_directory }}</p>
+</div>
+-->
+

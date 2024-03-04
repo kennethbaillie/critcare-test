@@ -22,7 +22,7 @@ redirect_from:
 
 </div>
 
-<script src="/assets/js/search.js"></script>
+<script src="{{ site.baseurl }}/assets/js/search.js"></script>
 
 <script src="sw_load.js"></script>
 
