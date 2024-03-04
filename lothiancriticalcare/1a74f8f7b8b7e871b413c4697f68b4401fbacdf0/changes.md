@@ -5,6 +5,16 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 04/03/2024 21:18:44
+
+#### renamed
+
+Drugs/alteplase for massive PE.pdf ==> Drugs/Alteplase for massive PE.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Alteplase for massive PE.pdf">Link</a>
+Drugs/phosphate.pdf ==> Drugs/Phosphate.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Phosphate.pdf">Link</a>
+Drugs/thiopentone.pdf ==> Drugs/Thiopentone.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Thiopentone.pdf">Link</a>
+
+
+------------------------------------------------------------------------
 ### 04/03/2024 21:14:56
 
 #### deleted
