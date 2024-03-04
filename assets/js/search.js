@@ -103,7 +103,9 @@ function renderResults(results) {
     var $result = $("<li class='searchresult'>");
     $result.append($("<a>", {
       href: result.href,
-      text: result.title
+      text: result.title,
+      //target: "_blank", // Open link in a new tab
+      onclick: "_gaq.push(['_trackEvent','Download','PDF',this.href]);" // Track event on click
     }));
     $results.append($result);
   });
