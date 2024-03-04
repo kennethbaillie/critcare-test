@@ -16,5 +16,7 @@
           url: editors.html
         - text: Changes
           url: changes.html
+        - text: Duplicates
+          url: duplicates.html
 
 

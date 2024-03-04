@@ -5,58 +5,6 @@ layout: page
 
 
 ------------------------------------------------------------------------
-### 04/03/2024 21:45:05
-
-#### modified
-
-
-- Trauma and Burns/All_Major_Trauma_Centre_Guidelines.md: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Trauma and Burns/All_Major_Trauma_Centre_Guidelines.md">Link</a>
-
-
-------------------------------------------------------------------------
-### 04/03/2024 21:18:44
-
-#### renamed
-
-Drugs/alteplase for massive PE.pdf ==> Drugs/Alteplase for massive PE.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Alteplase for massive PE.pdf">Link</a>
-Drugs/phosphate.pdf ==> Drugs/Phosphate.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Phosphate.pdf">Link</a>
-Drugs/thiopentone.pdf ==> Drugs/Thiopentone.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Thiopentone.pdf">Link</a>
-
-
-------------------------------------------------------------------------
-### 04/03/2024 21:14:56
-
-#### deleted
-
-Covid-19/videos/COVID Intubation Simulation Video.md
-Drugs/BNF/BNF_link.md
-
-#### new
-
-Covid-19/videos/COVID Intubation Simulation Video.txt: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Covid-19/videos/COVID Intubation Simulation Video.txt">Link</a>
-Drugs/BNF/BNF_link.txt: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/BNF/BNF_link.txt">Link</a>
-
-#### renamed
-
-Covid-19/videos/COVID Proning Video.md ==> Covid-19/videos/COVID Proning Video.txt: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Covid-19/videos/COVID Proning Video.txt">Link</a>
-
-
-------------------------------------------------------------------------
-### 04/03/2024 20:58:14
-
-
-------------------------------------------------------------------------
-### 04/03/2024 20:43:32
-
-
-------------------------------------------------------------------------
-### 04/03/2024 20:41:56
-
-
-------------------------------------------------------------------------
-### 04/03/2024 20:26:02
-
-------------------------------------------------------------------------
 
 ### 23/02/2024 12:03:27
 #### renamed
@@ -207,6 +155,7 @@ End_of_life_care/End of Life Care Guideline for Critical Care .pdf:
 Ethics_and_Law/ Police access to critical care patients (FICM midnight
 law).pdf:
 [Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/%20Police%20access%20to%20critical%20care%20patients%20(FICM%20midnight%20law).pdf)
+
 #### renamed
 
 Palliative extubation & withdrawal of invasive ventilatory support

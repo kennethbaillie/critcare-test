@@ -140,12 +140,14 @@ def formatfilelink(thisdir, entry, basedir, depth=0):
     if gl.accept(thisdir, entry):
         linktarget = entry.replace(".md", "") if entry.endswith('.md') else entry
         href = os.path.relpath(os.path.join(thisdir, linktarget), basedir)
+        '''
         if entry.endswith(".txt"):
             # then this is probably an html link
             with open(os.path.join(thisdir, linktarget)) as f:
                 lines = [x.strip() for x in f.readlines() if len(x.strip())>0]
             if len(lines) < 3: 
                 href = lines[0]
+        '''
         print("File:", thisdir, entry, "->", linktarget)
         # add target="_blank" to open in new tab
         linktext += ('''
