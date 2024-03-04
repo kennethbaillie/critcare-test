@@ -17,7 +17,7 @@ import guideline_functions as gl
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0') # default test dir
-parser.add_argument('-d', '--destinationdir', default='../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/')
+parser.add_argument('-d', '--destinationdir', default='lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/', help="relative path from top level directory of jekyll site")
 parser.add_argument('-w', '--webstem', default='https://critcare.net/')
 parser.add_argument('-c', '--cloud', default='dropbox')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
@@ -32,7 +32,6 @@ changestoignore = [
     ]
 #-----------------------------
 changelog = os.path.join(args.destinationdir,".changes.json")
-toplevel = os.path.join("../", args.destinationdir)
 #-----------------------------
 
 # UNTESTED CODE FOR ONE DRIVE 
@@ -95,12 +94,14 @@ def printablepath(target, link=False):
                 print (target)
                 print (p)
             try:
-                out = '{}: <a href="{}{}">Link</a>'.format(
+                out = '{}: <a href="{}{}{}">Link</a>'.format(
                                     p.relative_to(pathlib.PurePosixPath(args.destinationdir)), 
                                     args.webstem,
-                                    p.relative_to(pathlib.PurePosixPath(toplevel)),
+                                    args.destinationdir,
+                                    p.relative_to(pathlib.PurePosixPath(args.destinationdir)),
                                     )
             except:
+                out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
                 print ("Error: unable to get printable path for {}".format(target))
     else:
         out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))

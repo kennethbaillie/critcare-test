@@ -7,7 +7,7 @@
   navigation:
     - text: Guidelines
       url: ""
-    - text: Editors
+    - text: Admin
       url: ""
       submenu: 
         - text: Instructions
