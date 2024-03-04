@@ -105,7 +105,7 @@ function renderResults(results) {
       href: result.href,
       text: result.title,
       //target: "_blank", // Open link in a new tab
-      onclick: "_gaq.push(['_trackEvent','Download','PDF',this.href]);" // Track event on click
+      onclick: "onclick=\"logDownload('file.pdf')\"" // Track event on click
     }));
     $results.append($result);
   });

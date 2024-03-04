@@ -26,8 +26,15 @@ redirect_from:
 
 <script src="sw_load.js"></script>
 
-
-
+<script>
+// log downloads from this page in a google sheet
+function logDownload(fileName) {
+  var scriptUrl = 'https://script.google.com/macros/s/AKfycbxwI1mYSwrfj5XPrCnupYujgjFg91z5Akmo3ju1Q01D7__53snRKM4mrIet8jqv4pIibw/exec';
+  fetch(scriptUrl + '?file=' + encodeURIComponent(fileName))
+    .then(response => console.log('Download logged for', fileName))
+    .catch(error => console.error('Error logging download:', error));
+}
+</script>
 
 
 

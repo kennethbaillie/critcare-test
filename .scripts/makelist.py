@@ -140,9 +140,10 @@ def formatfilelink(thisdir, entry, basedir, depth=0):
     if gl.accept(thisdir, entry):
         linktarget = entry.replace(".md", "") if entry.endswith('.md') else entry
         print("File:", thisdir, entry, "->", linktarget)
-        # add target=”_blank” to open in new tab
+        # add target="_blank" to open in new tab
+        # onclick="_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);" # google analytics tracking
         linktext += ('''
-            <a href='{href}' target=”_blank” onclick=”_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);”>
+            <a href='{href}' target="_blank" onclick="logDownload('{name}')">
                 <li class='list-group-item {eclass}' style='margin-left:{depth}em;'>{name}</li>
             </a>
             '''.format(
