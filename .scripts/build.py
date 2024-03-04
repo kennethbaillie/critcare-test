@@ -35,14 +35,16 @@ def run_command(command, force=False):
             print ("Stopping due to error")
             sys.exit()
 
-def run_build(directory, cloudlink):
-    run_command(f"python .scripts/download.py -v -s '{cloudlink}' -d '{directory}/guidelines/'", force=args.force_errors)
-    run_command(f"python .scripts/makelist.py -d '{directory}/' -e", force=args.force_errors)
-    run_command(f"python .scripts/get_duplicates.py -d '{directory}/'", force=args.force_errors)
-    run_command(f"python .scripts/get_review_dates.py -d '{directory}/'", force=args.force_errors)
-    run_command(f"python .scripts/get_editors.py -d '{directory}/'", force=args.force_errors)
-    run_command(f"git add -v {directory}/*", force=args.force_errors)
-    run_command(f"git add -v public/*", force=True)
+def run_build(directory, secret, cloudlink):
+    secretdir = directory + "/" + secret
+    publicdir = directory + "/public"
+    run_command(f"python3 .scripts/download.py -v -s '{cloudlink}' -d '{secretdir}/guidelines/'", force=args.force_errors)
+    run_command(f"python3 .scripts/makelist.py -d '{secretdir}/' -e", force=args.force_errors)
+    run_command(f"python3 .scripts/get_duplicates.py -d '{secretdir}/'", force=args.force_errors)
+    run_command(f"python3 .scripts/get_review_dates.py -d '{secretdir}/'", force=args.force_errors)
+    run_command(f"python3 .scripts/get_editors.py -d '{secretdir}/'", force=args.force_errors)
+    run_command(f"git add -v {secretdir}/*", force=args.force_errors)
+    run_command(f"git add -v {publicdir}/*", force=True)
 #-----------------------------
 
 run_command(f"git config --local user.email 'action@github.com'", force=args.force_errors)
@@ -53,7 +55,8 @@ with cd(os.path.join(scriptpath, path_to_top_level)):
     yml = yaml.load(text, Loader=yaml.Loader)
     for guidelineset in yml:
         run_build(
-            guidelineset["directory"] + "/" + guidelineset["secret"],
+            guidelineset["directory"],
+            guidelineset["secret"],
             guidelineset["cloudlink"],
             )
 

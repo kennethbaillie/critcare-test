@@ -75,6 +75,7 @@ jobs:
 
   # Build job
   build:
+    needs: makelist
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -100,6 +101,7 @@ jobs:
 
   # Deployment job
   deploy:
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
