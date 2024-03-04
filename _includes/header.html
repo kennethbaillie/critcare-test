@@ -21,26 +21,6 @@
             </button>
 
             <div class="collapse navbar-collapse" id="main_nav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-                            {% for link in guidelineset.navigation %}
-                                {% if link.submenu %}
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ link.text }} </a>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        {% for sublink in link.submenu %}
-                                        <li><a class="dropdown-item" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ sublink.url }}">{{ sublink.text }}</a></li>
-                                        {% endfor %}
-                                    </ul>
-                                </li>
-                                {% else %}
-                                <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ link.url }}"> {{ link.text }} </a></li>
-                                {% endif %}
-                            {% endfor %}
-
-                        {% endif %}
-                        
-                </ul>
                 <button class="applink add-button" style="display:none">
                 <img class="installpic" alt="📲" src="{{ site.baseurl }}/img/phone.png">
                 Install
@@ -50,6 +30,26 @@
                 Add app
                 </button>
 
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    {% for link in guidelineset.navigation %}
+                        {% if link.submenu %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ link.text }} </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                {% for sublink in link.submenu %}
+                                <li><a class="dropdown-item" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ sublink.url }}">{{ sublink.text }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}/{{ guidelineset.directory }}/{{ guidelineset.secret }}/{{ link.url }}"> {{ link.text }} </a></li>
+                        {% endif %}
+                    {% endfor %}
+
+                        
+                </ul>
+
             </div>
 
 
@@ -57,5 +57,6 @@
     </nav>
 </header>
 
+{% endif %}
 {% endif %}
 {% endfor %}

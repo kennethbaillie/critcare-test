@@ -16,7 +16,7 @@ import guideline_functions as gl
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/3jornh1s315cxzj/AAC_2OF49UbxYMo-gEHN0liWa?dl=0') # default test dir
+parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0') # default test dir
 parser.add_argument('-d', '--destinationdir', default='../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/')
 parser.add_argument('-w', '--webstem', default='https://critcare.net/')
 parser.add_argument('-c', '--cloud', default='dropbox')
@@ -32,6 +32,7 @@ changestoignore = [
     ]
 #-----------------------------
 changelog = os.path.join(args.destinationdir,".changes.json")
+toplevel = os.path.join("../", args.destinationdir)
 #-----------------------------
 
 # UNTESTED CODE FOR ONE DRIVE 
@@ -90,14 +91,17 @@ def printablepath(target, link=False):
         if os.path.isdir(p):
             out = '{}: [folder]'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
         else:
-            if verbose:
+            if args.verbose:
                 print (target)
                 print (p)
-            out = '{}: <a href="{}{}">Link</a>'.format(
+            try:
+                out = '{}: <a href="{}{}">Link</a>'.format(
                                     p.relative_to(pathlib.PurePosixPath(args.destinationdir)), 
                                     args.webstem,
-                                    p.relative_to(pathlib.PurePosixPath('/')),
+                                    p.relative_to(pathlib.PurePosixPath(toplevel)),
                                     )
+            except:
+                print ("Error: unable to get printable path for {}".format(target))
     else:
         out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
     return out
@@ -107,11 +111,13 @@ def try_remove(thistarget):
     if os.path.isdir(thistarget):
         try:
             shutil.rmtree(thistarget)
+            if args.verbose: print ("==> successfully removed (shutil):", thistarget)
         except:
             print ("Unable to remove this directory ({}): {}".format(sys.exc_info()[0],thistarget))
     else:
         try:
             os.remove(thistarget)
+            if args.verbose: print ("==> successfully removed (os):", thistarget)
         except:
             print ("Unable to remove this file ({}): {}".format(sys.exc_info()[0],thistarget))
 
@@ -182,6 +188,8 @@ def download_files_from_dir(folder_url, dir_name, temp, cloud=args.cloud):
 tempdir = os.path.join(args.destinationdir, ".temp")
 if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
+    if args.verbose:
+        print ("cloud data downloaded to {}".format(tempdir))
 changes = {"deleted":{},"modified":{},"new":{},"renamed":{}}
 outputc = {"deleted":{},"modified":{},"new":{},"renamed":{}}
 download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
