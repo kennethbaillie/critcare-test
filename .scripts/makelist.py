@@ -138,7 +138,7 @@ def makeid(thisname):
 def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
-        linktarget = entry.replace(".md", "") if entry.endswith('.md') else entry
+        linktarget = entry.replace(".md", ".html") if entry.endswith('.md') else entry
         href = os.path.relpath(os.path.join(thisdir, linktarget), basedir)
         '''
         if entry.endswith(".txt"):
