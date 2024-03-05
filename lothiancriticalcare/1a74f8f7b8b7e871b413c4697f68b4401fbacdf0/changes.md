@@ -5,6 +5,96 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 05/03/2024 09:14:27
+
+#### deleted
+
+
+- Cardiovascular/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf
+- Delirium/Violence and Agression Guidlines.pdf
+- End_of_life_care/Palliative extubation & withdrawal of invasive ventilatory support nursing checklist.docx
+- End_of_life_care/Pet Visitation.pdf
+- GI_Liver_and_Transplant/Plasma exchange in Acute Liver Failure Guideline.pdf
+- Neurological/Intrathecal policy RIE feb 2023.1.pdf
+- Policies_and_admin/Discharge Home from Critical Care .pdf
+- Renal_and_Urology/Citrate anticoagulation quick reference guide.pdf
+
+#### modified
+
+
+- Airway/Tracheostomy_Laryngectomy/Tracheostomy suctioning cleaning guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Airway/Tracheostomy_Laryngectomy/Tracheostomy suctioning cleaning guideline.pdf">Link</a>
+- Breathing(Respiratory)/Bronchoscopy in Critical Care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/Bronchoscopy in Critical Care.pdf">Link</a>
+- Breathing(Respiratory)/Manual Ventilation and MHI.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/Manual Ventilation and MHI.pdf">Link</a>
+- Breathing(Respiratory)/Equipment/NIV through Nihon Kohden  Setup.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/Equipment/NIV through Nihon Kohden  Setup.pdf">Link</a>
+- Breathing(Respiratory)/offline_SARI/MERS-CoV Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/offline_SARI/MERS-CoV Guideline.pdf">Link</a>
+- Breathing(Respiratory)/offline_SARI/Setup Guide for Jupiter Hoods.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/offline_SARI/Setup Guide for Jupiter Hoods.pdf">Link</a>
+- Cardiovascular/Cardiac Output Monitoring_pub .pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Cardiovascular/Cardiac Output Monitoring_pub .pdf">Link</a>
+- Cardiovascular/Management of Acute Type B Aortic Dissection Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Cardiovascular/Management of Acute Type B Aortic Dissection Guideline.pdf">Link</a>
+- Cardiovascular/Management of hypertension within Critical Care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Cardiovascular/Management of hypertension within Critical Care.pdf">Link</a>
+- Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf">Link</a>
+- Delirium/AWI FAQs.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Delirium/AWI FAQs.pdf">Link</a>
+- Delirium/Learning Disabled liaison team leaflet .pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Delirium/Learning Disabled liaison team leaflet .pdf">Link</a>
+- Drugs/Alteplase for massive PE.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Alteplase for massive PE.pdf">Link</a>
+- Drugs/Epoprostenol.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Epoprostenol.pdf">Link</a>
+- Drugs/Octreotide.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Octreotide.pdf">Link</a>
+- Drugs/Phosphate.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Phosphate.pdf">Link</a>
+- Drugs/Thiopentone.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Thiopentone.pdf">Link</a>
+- Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf">Link</a>
+- Drugs/all IV drug infusion information.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/all IV drug infusion information.pdf">Link</a>
+- Drugs/amiodarone.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/amiodarone.pdf">Link</a>
+- Drugs/atracurium.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/atracurium.pdf">Link</a>
+- Drugs/calcium.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/calcium.pdf">Link</a>
+- Drugs/dalteparin_thromboprophylaxis.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/dalteparin_thromboprophylaxis.pdf">Link</a>
+- Drugs/ketamine_for_status epilepticus.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/ketamine_for_status epilepticus.pdf">Link</a>
+- Drugs/midazolam.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/midazolam.pdf">Link</a>
+- Drugs/nicardipine.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/nicardipine.pdf">Link</a>
+- Drugs/nimodipine.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/nimodipine.pdf">Link</a>
+- Drugs/noradrenaline (peripheral).pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/noradrenaline (peripheral).pdf">Link</a>
+- Drugs/phenylephrine.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/phenylephrine.pdf">Link</a>
+- Drugs/potassium.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/potassium.pdf">Link</a>
+- Drugs/salbutamol.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/salbutamol.pdf">Link</a>
+- Drugs/stress ulcer prophylaxis.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/stress ulcer prophylaxis.pdf">Link</a>
+- Drugs/valproate.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/valproate.pdf">Link</a>
+- Drugs/vancomycin.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/vancomycin.pdf">Link</a>
+- ECLS/Aberdeen ECMO Cannulation and Retrieval Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/ECLS/Aberdeen ECMO Cannulation and Retrieval Guideline.pdf">Link</a>
+- End_of_life_care/Child_Bereavement_Boxes.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Child_Bereavement_Boxes.pdf">Link</a>
+- End_of_life_care/End of Life Care Guideline for Critical Care .pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/End of Life Care Guideline for Critical Care .pdf">Link</a>
+- End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf">Link</a>
+- Ethics_and_Law/ Police access to critical care patients (FICM midnight law).pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Ethics_and_Law/ Police access to critical care patients (FICM midnight law).pdf">Link</a>
+- Ethics_and_Law/AWI FAQs.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Ethics_and_Law/AWI FAQs.pdf">Link</a>
+- Ethics_and_Law/Learning Disabled liaison team leaflet .pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Ethics_and_Law/Learning Disabled liaison team leaflet .pdf">Link</a>
+- Ethics_and_Law/ML Pitfalls In the Assessment of Mental Capacity - SCOTLAND.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Ethics_and_Law/ML Pitfalls In the Assessment of Mental Capacity - SCOTLAND.pdf">Link</a>
+- Infection_and_sepsis/Antifungal guidance in critical care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Infection_and_sepsis/Antifungal guidance in critical care.pdf">Link</a>
+- Infection_and_sepsis/Winter Infections Stepdown Guidance.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Infection_and_sepsis/Winter Infections Stepdown Guidance.pdf">Link</a>
+- Infection_and_sepsis/SARI/MERS-CoV Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Infection_and_sepsis/SARI/MERS-CoV Guideline.pdf">Link</a>
+- Organ_donation/Adult Tissue Donation.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Organ_donation/Adult Tissue Donation.pdf">Link</a>
+- Policies_and_admin/AWI FAQs.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/AWI FAQs.pdf">Link</a>
+- Policies_and_admin/Anticipated Post op flow surgical patients.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/Anticipated Post op flow surgical patients.pdf">Link</a>
+- Policies_and_admin/Pet Visitation.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/Pet Visitation.pdf">Link</a>
+- Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf">Link</a>
+- Post_op_care/Care of the Transgender Patient.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Post_op_care/Care of the Transgender Patient.pdf">Link</a>
+- Procedures/CVC Guidance/CVC NHL  April 2023.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Procedures/CVC Guidance/CVC NHL  April 2023.pdf">Link</a>
+- Procedures/CVC Guidance/CVC Troubleshooting guide.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Procedures/CVC Guidance/CVC Troubleshooting guide.pdf">Link</a>
+- Renal_and_Urology/RRT guideline including citrate.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Renal_and_Urology/RRT guideline including citrate.pdf">Link</a>
+- Routine_Care/Critical Care Recovery Service.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Routine_Care/Critical Care Recovery Service.pdf">Link</a>
+- Routine_Care/Immediate Discharge Letter DOCUMENTATION FAQs.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Routine_Care/Immediate Discharge Letter DOCUMENTATION FAQs.pdf">Link</a>
+- Routine_Care/Sedation Weaning Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Routine_Care/Sedation Weaning Guideline.pdf">Link</a>
+- Routine_Care/Trak shortcodes.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Routine_Care/Trak shortcodes.pdf">Link</a>
+- Transfer/Handover_pause.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Transfer/Handover_pause.pdf">Link</a>
+- Trauma and Burns/Mangement of burns.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Trauma and Burns/Mangement of burns.pdf">Link</a>
+
+#### new
+
+
+- Delirium/Violence and Agression.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Delirium/Violence and Agression.pdf">Link</a>
+- End_of_life_care/Palliative extubation & withdrawal of invasive ventilatory support nursing checklist.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Palliative extubation & withdrawal of invasive ventilatory support nursing checklist.pdf">Link</a>
+- GI_Liver_and_Transplant/Plasma exchange in Acute Liver Failure.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/GI_Liver_and_Transplant/Plasma exchange in Acute Liver Failure.pdf">Link</a>
+- Neurological/Intrathecal policy RIE.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Neurological/Intrathecal policy RIE.pdf">Link</a>
+- Policies_and_admin/Discharge Home from Critical Care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/Discharge Home from Critical Care.pdf">Link</a>
+- Renal_and_Urology/Citrate anticoagulation quick reference.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Renal_and_Urology/Citrate anticoagulation quick reference.pdf">Link</a>
+
+
+------------------------------------------------------------------------
 ### 04/03/2024 22:12:36
 
 #### deleted

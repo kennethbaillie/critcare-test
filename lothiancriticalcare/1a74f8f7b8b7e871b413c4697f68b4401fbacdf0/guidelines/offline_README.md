@@ -55,7 +55,7 @@ The code is available here `https://github.com/critcare/critcare.github.io` and 
 - Tom Craven
 - Gregor McNeill
 
-Additional users can be added by any of these people. The compute load is currently beneath the threshold for the github "free" tier so there is no cost to uploading new guidelines.
+Additional users can be added by any of these people and cost $44/year.
 
 # Advanced use
 
