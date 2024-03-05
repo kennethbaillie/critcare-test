@@ -3,6 +3,7 @@ description: >- # this means to ignore newlines. Copies to footer, meta descript
   Clinical Guidelines
 
 theme: minima
+permalink: /:categories/:title/
 destination: _site
 baseurl: "/critcare-test"
 url: https://critcare.net
