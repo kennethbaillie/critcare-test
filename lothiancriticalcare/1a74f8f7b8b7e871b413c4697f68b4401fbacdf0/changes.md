@@ -5,6 +5,17 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 05/03/2024 16:53:45
+
+#### deleted
+
+
+- Covid-19/SJH/Covid_extubation.pdf
+- Covid-19/WGH/Covid_extubation_checklist.pdf
+- Drugs/Prokinetics in ICU.pdf
+
+
+------------------------------------------------------------------------
 ### 05/03/2024 11:14:01
 
 #### deleted
