@@ -1,3 +1,6 @@
+---
+layout: page
+---
 
 # Postmortem intranet links
 
