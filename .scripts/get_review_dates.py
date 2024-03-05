@@ -252,6 +252,11 @@ if (len(df)>0):
     df['Review date'] = df['Review date'].dt.strftime('%Y-%m-%d')
     df = df.dropna(how='all')
     df[["File", "Review date"]].to_csv(revout, index=False)
+    with open(revout, 'r+', encoding='utf-8') as f:
+        content = f.read()
+    if content[-1] == '\n':  
+        with open(revout, 'w') as o:
+            o.write(content[:-1])  # remove the trailing "\n"
     df[["File", "Review date"]].to_excel(revoutx, index=False)
 df.to_csv(revout_big, index=False)
 

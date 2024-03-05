@@ -3,14 +3,20 @@ title: guidelines access system
 layout: page
 ---
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSV Table</title>
+### Guideline review dates
+
+Download an excel version of this table: [reviewdates.xlsx](reviewdates.xlsx)
+
+Click on column headers below to sort the table.
+
+<div id="tableContainer"></div>
+
+
 <style>
     table {
         border-collapse: collapse;
-        width: 90%;
-        max-width:800px;
+        width: 100%;
+        max-width:1200px;
         margin:1em;
     }
     th, td {
@@ -26,11 +32,13 @@ layout: page
         background-color: #fdd;
     }
 </style>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
     $(document).ready(function() {
         $.ajax({
-            url: "../reviewdates.csv",
+            url: "reviewdates.csv",
             dataType: "text",
             success: function(data) {
                 createTable(data);
@@ -63,7 +71,8 @@ layout: page
             table.append(row);
         });
 
-        $("body").append(table);
+        //$("body").append(table);
+        $("#tableContainer").append(table);
         sortTableOnClick();
     }
 
@@ -91,9 +100,4 @@ layout: page
         return $(row).children('td').eq(index).text();
     }
 </script>
-
-
-<h4>Guideline review dates</h4>
-<p>Download an excel version of this table: <a href="../reviewdates.xlsx">reviewdates.xlsx</a></p>
-<p>Click on column headers below to sort the table.</p>
 

@@ -63,9 +63,11 @@ input{
 <div class="col-xs-12 col-md-6 col-lg-4"></div>
 <div class="col-xs-6 col-md-6 col-lg-4">
 <div class="horizontal vertical">
+<form>
 <input id="username" type="text" placeholder="username" /> <br />
 <input id="password" type="password" placeholder="password" /> <br />
 <button id="loginbutton" type="button">Access</button>
+</form>
 <p id="wrongPassword" style="display: none">wrong password</p>
 </div>
 </div>
@@ -106,7 +108,7 @@ function loadPage(pwd) {
 			window.location= url;
 		},
 		error : function(xhr, ajaxOptions, thrownError) {
-						parent.location.hash= hash;
+			parent.location.hash = hash;
 			//$("#wrongPassword").show();
 			$("#password").attr("placeholder","wrong username/password");
 			$("#password").val("");
