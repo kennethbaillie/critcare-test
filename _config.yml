@@ -5,7 +5,6 @@ description: >- # this means to ignore newlines. Copies to footer, meta descript
 theme: minima
 destination: _site
 baseurl: "/critcare-test"
-permalink: /:path/:title/
 url: https://critcare.net
 google_analytics_code: G-573KSGQWF6
 plugins:
