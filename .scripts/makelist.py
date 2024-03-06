@@ -135,20 +135,16 @@ def fixname(thisname):
 def makeid(thisname):
     return ''.join(thisname.split())
 
+def fix_href(thisdir, filename, basedir):
+    linktarget = filename.replace(".md", ".html") if filename.endswith('.md') else filename
+    href = os.path.relpath(os.path.join(thisdir, linktarget), basedir)
+    return href
+
 def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
-        linktarget = entry.replace(".md", ".html") if entry.endswith('.md') else entry
-        href = os.path.relpath(os.path.join(thisdir, linktarget), basedir)
-        '''
-        if entry.endswith(".txt"):
-            # then this is probably an html link
-            with open(os.path.join(thisdir, linktarget)) as f:
-                lines = [x.strip() for x in f.readlines() if len(x.strip())>0]
-            if len(lines) < 3: 
-                href = lines[0]
-        '''
-        print("File:", thisdir, entry, "->", linktarget)
+        href = fix_href(thisdir, entry, basedir)
+        print("File:", thisdir, entry, "->", href)
         # add target="_blank" to open in new tab
         linktext += ('''
             <a href='{href}' onclick="{goog}">
@@ -268,6 +264,8 @@ new_changes_present=False
 with open(changelog) as f:
     changes = json.load(f)
 newtext = "\n------------------------------------------------------------------------\n### {:%d/%m/%Y %H:%M:%S}".format(datetime.now())
+if args.override_changes:
+    newtext += " (running with -o)"
 for thistype in changes:
     typechanges = [x for x in changes[thistype] if gl.accept(os.path.join(args.dir, x), os.path.split(x)[-1])]
     if len(typechanges) > 0:
