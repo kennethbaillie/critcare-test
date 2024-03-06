@@ -135,15 +135,11 @@ def fixname(thisname):
 def makeid(thisname):
     return ''.join(thisname.split())
 
-def fix_href(thisdir, filename, basedir):
-    linktarget = filename.replace(".md", ".html") if filename.endswith('.md') else filename
-    href = os.path.relpath(os.path.join(thisdir, linktarget), basedir)
-    return href
-
 def formatfilelink(thisdir, entry, basedir, depth=0):
     linktext = ""
     if gl.accept(thisdir, entry):
-        href = fix_href(thisdir, entry, basedir)
+        linktarget = gl.fix_filename(entry)
+        href = os.path.relpath(os.path.join(thisdir, linktarget), basedir)
         print("File:", thisdir, entry, "->", href)
         # add target="_blank" to open in new tab
         linktext += ('''

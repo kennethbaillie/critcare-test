@@ -98,11 +98,11 @@ def printablepath(target, link=False):
                                     p.relative_to(pathlib.PurePosixPath(args.destinationdir)), 
                                     args.webstem,
                                     args.destinationdir,
-                                    p.relative_to(pathlib.PurePosixPath(args.destinationdir)),
+                                    gl.fix_filename(p.relative_to(pathlib.PurePosixPath(args.destinationdir))),
                                     )
             except:
                 out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
-                print ("Error: unable to get printable path for {}".format(target))
+                print ("Error: unable to get printable path for {}. Continuing.".format(target))
     else:
         out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
     return out
