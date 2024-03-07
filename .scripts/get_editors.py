@@ -17,7 +17,7 @@ if args.dir == "no_dir_specified":
     sys.exit()
 #-----------------------------
 edin = os.path.join(args.dir,"guidelines","offline_EDITORS.md")
-edout = os.path.join(args.dir,"editors.md")
+edout = os.path.join(args.dir,"editors.txt") # this is a .txt file because it makes it easier for non-computational users to edit it
 if os.path.exists(edin):
     with open(edin) as f:
         lines=f.readlines()
