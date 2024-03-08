@@ -231,4 +231,9 @@ def readheader(filecontents):
         remainder = filecontents.replace(h,'')
     return h, remainder
 
+def fix_filename(thisfilepath):
+    linktarget = thisfilepath.replace(".md", ".html") if thisfilepath.endswith('.md') else thisfilepath
+    return linktarget
+
+
 
