@@ -2,7 +2,7 @@
   secret: 1a74f8f7b8b7e871b413c4697f68b4401fbacdf0
   title: NHS Lothian Critical Care 
   cloudlink: https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0
-  base_url: https://critcare.net/
+  base_url: /test-is-this-used/
   disclaimer: For use by appropriately trained critical care staff in NHS Lothian only.
   navigation:
     - text: Guidelines
