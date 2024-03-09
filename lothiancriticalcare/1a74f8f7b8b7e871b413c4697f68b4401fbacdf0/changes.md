@@ -22,7 +22,7 @@ layout: page
 #### modified
 
 
-- End_of_life_care/Postmortem.md: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Postmortem.md">Link</a>
+- End_of_life_care/Postmortem.md: <a href="../End_of_life_care/Postmortem.md">Link</a>
 
 
 ------------------------------------------------------------------------
@@ -64,76 +64,76 @@ layout: page
 #### modified
 
 
-- Airway/Tracheostomy_Laryngectomy/Tracheostomy suctioning cleaning guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Airway/Tracheostomy_Laryngectomy/Tracheostomy suctioning cleaning guideline.pdf">Link</a>
-- Breathing(Respiratory)/Bronchoscopy in Critical Care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/Bronchoscopy in Critical Care.pdf">Link</a>
-- Breathing(Respiratory)/Manual Ventilation and MHI.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/Manual Ventilation and MHI.pdf">Link</a>
-- Breathing(Respiratory)/Equipment/NIV through Nihon Kohden  Setup.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/Equipment/NIV through Nihon Kohden  Setup.pdf">Link</a>
-- Breathing(Respiratory)/offline_SARI/MERS-CoV Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/offline_SARI/MERS-CoV Guideline.pdf">Link</a>
-- Breathing(Respiratory)/offline_SARI/Setup Guide for Jupiter Hoods.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Breathing(Respiratory)/offline_SARI/Setup Guide for Jupiter Hoods.pdf">Link</a>
-- Cardiovascular/Cardiac Output Monitoring_pub .pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Cardiovascular/Cardiac Output Monitoring_pub .pdf">Link</a>
-- Cardiovascular/Management of Acute Type B Aortic Dissection Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Cardiovascular/Management of Acute Type B Aortic Dissection Guideline.pdf">Link</a>
-- Cardiovascular/Management of hypertension within Critical Care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Cardiovascular/Management of hypertension within Critical Care.pdf">Link</a>
-- Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf">Link</a>
-- Delirium/AWI FAQs.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Delirium/AWI FAQs.pdf">Link</a>
-- Delirium/Learning Disabled liaison team leaflet .pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Delirium/Learning Disabled liaison team leaflet .pdf">Link</a>
-- Drugs/Alteplase for massive PE.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Alteplase for massive PE.pdf">Link</a>
-- Drugs/Epoprostenol.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Epoprostenol.pdf">Link</a>
-- Drugs/Octreotide.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Octreotide.pdf">Link</a>
-- Drugs/Phosphate.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Phosphate.pdf">Link</a>
-- Drugs/Thiopentone.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Thiopentone.pdf">Link</a>
-- Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf">Link</a>
-- Drugs/all IV drug infusion information.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/all IV drug infusion information.pdf">Link</a>
-- Drugs/amiodarone.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/amiodarone.pdf">Link</a>
-- Drugs/atracurium.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/atracurium.pdf">Link</a>
-- Drugs/calcium.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/calcium.pdf">Link</a>
-- Drugs/dalteparin_thromboprophylaxis.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/dalteparin_thromboprophylaxis.pdf">Link</a>
-- Drugs/ketamine_for_status epilepticus.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/ketamine_for_status epilepticus.pdf">Link</a>
-- Drugs/midazolam.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/midazolam.pdf">Link</a>
-- Drugs/nicardipine.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/nicardipine.pdf">Link</a>
-- Drugs/nimodipine.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/nimodipine.pdf">Link</a>
-- Drugs/noradrenaline (peripheral).pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/noradrenaline (peripheral).pdf">Link</a>
-- Drugs/phenylephrine.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/phenylephrine.pdf">Link</a>
-- Drugs/potassium.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/potassium.pdf">Link</a>
-- Drugs/salbutamol.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/salbutamol.pdf">Link</a>
-- Drugs/stress ulcer prophylaxis.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/stress ulcer prophylaxis.pdf">Link</a>
-- Drugs/valproate.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/valproate.pdf">Link</a>
-- Drugs/vancomycin.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/vancomycin.pdf">Link</a>
-- ECLS/Aberdeen ECMO Cannulation and Retrieval Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/ECLS/Aberdeen ECMO Cannulation and Retrieval Guideline.pdf">Link</a>
-- End_of_life_care/Child_Bereavement_Boxes.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Child_Bereavement_Boxes.pdf">Link</a>
-- End_of_life_care/End of Life Care Guideline for Critical Care .pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/End of Life Care Guideline for Critical Care .pdf">Link</a>
-- End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf">Link</a>
-- Ethics_and_Law/ Police access to critical care patients (FICM midnight law).pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Ethics_and_Law/ Police access to critical care patients (FICM midnight law).pdf">Link</a>
-- Ethics_and_Law/AWI FAQs.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Ethics_and_Law/AWI FAQs.pdf">Link</a>
-- Ethics_and_Law/Learning Disabled liaison team leaflet .pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Ethics_and_Law/Learning Disabled liaison team leaflet .pdf">Link</a>
-- Ethics_and_Law/ML Pitfalls In the Assessment of Mental Capacity - SCOTLAND.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Ethics_and_Law/ML Pitfalls In the Assessment of Mental Capacity - SCOTLAND.pdf">Link</a>
-- Infection_and_sepsis/Antifungal guidance in critical care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Infection_and_sepsis/Antifungal guidance in critical care.pdf">Link</a>
-- Infection_and_sepsis/Winter Infections Stepdown Guidance.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Infection_and_sepsis/Winter Infections Stepdown Guidance.pdf">Link</a>
-- Infection_and_sepsis/SARI/MERS-CoV Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Infection_and_sepsis/SARI/MERS-CoV Guideline.pdf">Link</a>
-- Organ_donation/Adult Tissue Donation.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Organ_donation/Adult Tissue Donation.pdf">Link</a>
-- Policies_and_admin/AWI FAQs.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/AWI FAQs.pdf">Link</a>
-- Policies_and_admin/Anticipated Post op flow surgical patients.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/Anticipated Post op flow surgical patients.pdf">Link</a>
-- Policies_and_admin/Pet Visitation.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/Pet Visitation.pdf">Link</a>
-- Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf">Link</a>
-- Post_op_care/Care of the Transgender Patient.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Post_op_care/Care of the Transgender Patient.pdf">Link</a>
-- Procedures/CVC Guidance/CVC NHL  April 2023.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Procedures/CVC Guidance/CVC NHL  April 2023.pdf">Link</a>
-- Procedures/CVC Guidance/CVC Troubleshooting guide.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Procedures/CVC Guidance/CVC Troubleshooting guide.pdf">Link</a>
-- Renal_and_Urology/RRT guideline including citrate.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Renal_and_Urology/RRT guideline including citrate.pdf">Link</a>
-- Routine_Care/Critical Care Recovery Service.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Routine_Care/Critical Care Recovery Service.pdf">Link</a>
-- Routine_Care/Immediate Discharge Letter DOCUMENTATION FAQs.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Routine_Care/Immediate Discharge Letter DOCUMENTATION FAQs.pdf">Link</a>
-- Routine_Care/Sedation Weaning Guideline.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Routine_Care/Sedation Weaning Guideline.pdf">Link</a>
-- Routine_Care/Trak shortcodes.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Routine_Care/Trak shortcodes.pdf">Link</a>
-- Transfer/Handover_pause.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Transfer/Handover_pause.pdf">Link</a>
-- Trauma and Burns/Mangement of burns.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Trauma and Burns/Mangement of burns.pdf">Link</a>
+- Airway/Tracheostomy_Laryngectomy/Tracheostomy suctioning cleaning guideline.pdf: <a href="../Airway/Tracheostomy_Laryngectomy/Tracheostomy suctioning cleaning guideline.pdf">Link</a>
+- Breathing(Respiratory)/Bronchoscopy in Critical Care.pdf: <a href="../Breathing(Respiratory)/Bronchoscopy in Critical Care.pdf">Link</a>
+- Breathing(Respiratory)/Manual Ventilation and MHI.pdf: <a href="../Breathing(Respiratory)/Manual Ventilation and MHI.pdf">Link</a>
+- Breathing(Respiratory)/Equipment/NIV through Nihon Kohden  Setup.pdf: <a href="../Breathing(Respiratory)/Equipment/NIV through Nihon Kohden  Setup.pdf">Link</a>
+- Breathing(Respiratory)/offline_SARI/MERS-CoV Guideline.pdf: <a href="../Breathing(Respiratory)/offline_SARI/MERS-CoV Guideline.pdf">Link</a>
+- Breathing(Respiratory)/offline_SARI/Setup Guide for Jupiter Hoods.pdf: <a href="../Breathing(Respiratory)/offline_SARI/Setup Guide for Jupiter Hoods.pdf">Link</a>
+- Cardiovascular/Cardiac Output Monitoring_pub .pdf: <a href="../Cardiovascular/Cardiac Output Monitoring_pub .pdf">Link</a>
+- Cardiovascular/Management of Acute Type B Aortic Dissection Guideline.pdf: <a href="../Cardiovascular/Management of Acute Type B Aortic Dissection Guideline.pdf">Link</a>
+- Cardiovascular/Management of hypertension within Critical Care.pdf: <a href="../Cardiovascular/Management of hypertension within Critical Care.pdf">Link</a>
+- Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf: <a href="../Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf">Link</a>
+- Delirium/AWI FAQs.pdf: <a href="../Delirium/AWI FAQs.pdf">Link</a>
+- Delirium/Learning Disabled liaison team leaflet .pdf: <a href="../Delirium/Learning Disabled liaison team leaflet .pdf">Link</a>
+- Drugs/Alteplase for massive PE.pdf: <a href="../Drugs/Alteplase for massive PE.pdf">Link</a>
+- Drugs/Epoprostenol.pdf: <a href="../Drugs/Epoprostenol.pdf">Link</a>
+- Drugs/Octreotide.pdf: <a href="../Drugs/Octreotide.pdf">Link</a>
+- Drugs/Phosphate.pdf: <a href="../Drugs/Phosphate.pdf">Link</a>
+- Drugs/Thiopentone.pdf: <a href="../Drugs/Thiopentone.pdf">Link</a>
+- Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf: <a href="../Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf">Link</a>
+- Drugs/all IV drug infusion information.pdf: <a href="../Drugs/all IV drug infusion information.pdf">Link</a>
+- Drugs/amiodarone.pdf: <a href="../Drugs/amiodarone.pdf">Link</a>
+- Drugs/atracurium.pdf: <a href="../Drugs/atracurium.pdf">Link</a>
+- Drugs/calcium.pdf: <a href="../Drugs/calcium.pdf">Link</a>
+- Drugs/dalteparin_thromboprophylaxis.pdf: <a href="../Drugs/dalteparin_thromboprophylaxis.pdf">Link</a>
+- Drugs/ketamine_for_status epilepticus.pdf: <a href="../Drugs/ketamine_for_status epilepticus.pdf">Link</a>
+- Drugs/midazolam.pdf: <a href="../Drugs/midazolam.pdf">Link</a>
+- Drugs/nicardipine.pdf: <a href="../Drugs/nicardipine.pdf">Link</a>
+- Drugs/nimodipine.pdf: <a href="../Drugs/nimodipine.pdf">Link</a>
+- Drugs/noradrenaline (peripheral).pdf: <a href="../Drugs/noradrenaline (peripheral).pdf">Link</a>
+- Drugs/phenylephrine.pdf: <a href="../Drugs/phenylephrine.pdf">Link</a>
+- Drugs/potassium.pdf: <a href="../Drugs/potassium.pdf">Link</a>
+- Drugs/salbutamol.pdf: <a href="../Drugs/salbutamol.pdf">Link</a>
+- Drugs/stress ulcer prophylaxis.pdf: <a href="../Drugs/stress ulcer prophylaxis.pdf">Link</a>
+- Drugs/valproate.pdf: <a href="../Drugs/valproate.pdf">Link</a>
+- Drugs/vancomycin.pdf: <a href="../Drugs/vancomycin.pdf">Link</a>
+- ECLS/Aberdeen ECMO Cannulation and Retrieval Guideline.pdf: <a href="../ECLS/Aberdeen ECMO Cannulation and Retrieval Guideline.pdf">Link</a>
+- End_of_life_care/Child_Bereavement_Boxes.pdf: <a href="../End_of_life_care/Child_Bereavement_Boxes.pdf">Link</a>
+- End_of_life_care/End of Life Care Guideline for Critical Care .pdf: <a href="../End_of_life_care/End of Life Care Guideline for Critical Care .pdf">Link</a>
+- End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf: <a href="../End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf">Link</a>
+- Ethics_and_Law/ Police access to critical care patients (FICM midnight law).pdf: <a href="../Ethics_and_Law/ Police access to critical care patients (FICM midnight law).pdf">Link</a>
+- Ethics_and_Law/AWI FAQs.pdf: <a href="../Ethics_and_Law/AWI FAQs.pdf">Link</a>
+- Ethics_and_Law/Learning Disabled liaison team leaflet .pdf: <a href="../Ethics_and_Law/Learning Disabled liaison team leaflet .pdf">Link</a>
+- Ethics_and_Law/ML Pitfalls In the Assessment of Mental Capacity - SCOTLAND.pdf: <a href="../Ethics_and_Law/ML Pitfalls In the Assessment of Mental Capacity - SCOTLAND.pdf">Link</a>
+- Infection_and_sepsis/Antifungal guidance in critical care.pdf: <a href="../Infection_and_sepsis/Antifungal guidance in critical care.pdf">Link</a>
+- Infection_and_sepsis/Winter Infections Stepdown Guidance.pdf: <a href="../Infection_and_sepsis/Winter Infections Stepdown Guidance.pdf">Link</a>
+- Infection_and_sepsis/SARI/MERS-CoV Guideline.pdf: <a href="../Infection_and_sepsis/SARI/MERS-CoV Guideline.pdf">Link</a>
+- Organ_donation/Adult Tissue Donation.pdf: <a href="../Organ_donation/Adult Tissue Donation.pdf">Link</a>
+- Policies_and_admin/AWI FAQs.pdf: <a href="../Policies_and_admin/AWI FAQs.pdf">Link</a>
+- Policies_and_admin/Anticipated Post op flow surgical patients.pdf: <a href="../Policies_and_admin/Anticipated Post op flow surgical patients.pdf">Link</a>
+- Policies_and_admin/Pet Visitation.pdf: <a href="../Policies_and_admin/Pet Visitation.pdf">Link</a>
+- Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf: <a href="../Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf">Link</a>
+- Post_op_care/Care of the Transgender Patient.pdf: <a href="../Post_op_care/Care of the Transgender Patient.pdf">Link</a>
+- Procedures/CVC Guidance/CVC NHL  April 2023.pdf: <a href="../Procedures/CVC Guidance/CVC NHL  April 2023.pdf">Link</a>
+- Procedures/CVC Guidance/CVC Troubleshooting guide.pdf: <a href="../Procedures/CVC Guidance/CVC Troubleshooting guide.pdf">Link</a>
+- Renal_and_Urology/RRT guideline including citrate.pdf: <a href="../Renal_and_Urology/RRT guideline including citrate.pdf">Link</a>
+- Routine_Care/Critical Care Recovery Service.pdf: <a href="../Routine_Care/Critical Care Recovery Service.pdf">Link</a>
+- Routine_Care/Immediate Discharge Letter DOCUMENTATION FAQs.pdf: <a href="../Routine_Care/Immediate Discharge Letter DOCUMENTATION FAQs.pdf">Link</a>
+- Routine_Care/Sedation Weaning Guideline.pdf: <a href="../Routine_Care/Sedation Weaning Guideline.pdf">Link</a>
+- Routine_Care/Trak shortcodes.pdf: <a href="../Routine_Care/Trak shortcodes.pdf">Link</a>
+- Transfer/Handover_pause.pdf: <a href="../Transfer/Handover_pause.pdf">Link</a>
+- Trauma and Burns/Mangement of burns.pdf: <a href="../Trauma and Burns/Mangement of burns.pdf">Link</a>
 
 #### new
 
 
-- Delirium/Violence and Agression.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Delirium/Violence and Agression.pdf">Link</a>
-- End_of_life_care/Palliative extubation & withdrawal of invasive ventilatory support nursing checklist.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Palliative extubation & withdrawal of invasive ventilatory support nursing checklist.pdf">Link</a>
-- GI_Liver_and_Transplant/Plasma exchange in Acute Liver Failure.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/GI_Liver_and_Transplant/Plasma exchange in Acute Liver Failure.pdf">Link</a>
-- Neurological/Intrathecal policy RIE.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Neurological/Intrathecal policy RIE.pdf">Link</a>
-- Policies_and_admin/Discharge Home from Critical Care.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Policies_and_admin/Discharge Home from Critical Care.pdf">Link</a>
-- Renal_and_Urology/Citrate anticoagulation quick reference.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Renal_and_Urology/Citrate anticoagulation quick reference.pdf">Link</a>
+- Delirium/Violence and Agression.pdf: <a href="../Delirium/Violence and Agression.pdf">Link</a>
+- End_of_life_care/Palliative extubation & withdrawal of invasive ventilatory support nursing checklist.pdf: <a href="../End_of_life_care/Palliative extubation & withdrawal of invasive ventilatory support nursing checklist.pdf">Link</a>
+- GI_Liver_and_Transplant/Plasma exchange in Acute Liver Failure.pdf: <a href="../GI_Liver_and_Transplant/Plasma exchange in Acute Liver Failure.pdf">Link</a>
+- Neurological/Intrathecal policy RIE.pdf: <a href="../Neurological/Intrathecal policy RIE.pdf">Link</a>
+- Policies_and_admin/Discharge Home from Critical Care.pdf: <a href="../Policies_and_admin/Discharge Home from Critical Care.pdf">Link</a>
+- Renal_and_Urology/Citrate anticoagulation quick reference.pdf: <a href="../Renal_and_Urology/Citrate anticoagulation quick reference.pdf">Link</a>
 
 
 ------------------------------------------------------------------------
@@ -149,15 +149,15 @@ layout: page
 #### new
 
 
-- Covid-19/videos/COVID Intubation Simulation Video.md: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Covid-19/videos/COVID Intubation Simulation Video.md">Link</a>
-- Covid-19/videos/COVID Proning Video.md: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Covid-19/videos/COVID Proning Video.md">Link</a>
-- Drugs/BNF/BNF_link.md: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Drugs/BNF/BNF_link.md">Link</a>
+- Covid-19/videos/COVID Intubation Simulation Video.md: <a href="../Covid-19/videos/COVID Intubation Simulation Video.md">Link</a>
+- Covid-19/videos/COVID Proning Video.md: <a href="../Covid-19/videos/COVID Proning Video.md">Link</a>
+- Drugs/BNF/BNF_link.md: <a href="../Drugs/BNF/BNF_link.md">Link</a>
 
 #### renamed
 
 
-- End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD - Sept 22.pdf ==> End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD.pdf">Link</a>
-- End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU v2.pdf ==> End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf: <a href="https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf">Link</a>
+- End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD - Sept 22.pdf ==> End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD.pdf: <a href="../End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD.pdf">Link</a>
+- End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU v2.pdf ==> End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf: <a href="../End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf">Link</a>
 
 
 ------------------------------------------------------------------------
@@ -168,7 +168,7 @@ layout: page
 Guideline following Sudden Cardiac Death where death occurs in ICU
 v2.pdf ==\> End_of_life_care/Guideline following Sudden Cardiac Death
 where death occurs in ICU v2.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Guideline%20following%20Sudden%20Cardiac%20Death%20where%20death%20occurs%20in%20ICU%20v2.pdf)
+[Link](../End_of_life_care/Guideline%20following%20Sudden%20Cardiac%20Death%20where%20death%20occurs%20in%20ICU%20v2.pdf)
 
 ------------------------------------------------------------------------
 
@@ -180,10 +180,10 @@ Breathing(Respiratory)/Equipment/NIV Set up in Critical Care.pdf
 
 Breathing(Respiratory)/Equipment/NIV through Drager Vent Set up in
 Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Equipment/NIV%20through%20Drager%20Vent%20Set%20up%20in%20Critical%20Care.pdf)
+[Link](../Breathing(Respiratory)/Equipment/NIV%20through%20Drager%20Vent%20Set%20up%20in%20Critical%20Care.pdf)
 
 Breathing(Respiratory)/Equipment/NIV through Nihon Kohden Setup.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Equipment/NIV%20through%20Nihon%20Kohden%20%20Setup.pdf)
+[Link](../Breathing(Respiratory)/Equipment/NIV%20through%20Nihon%20Kohden%20%20Setup.pdf)
 
 ------------------------------------------------------------------------
 
@@ -202,7 +202,7 @@ Drugs/phosphate.pdf
 #### new
 
 Drugs/Phosphate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Phosphate.pdf)
+[Link](../Drugs/Phosphate.pdf)
 
 ------------------------------------------------------------------------
 
@@ -210,16 +210,16 @@ Drugs/Phosphate.pdf:
 #### new
 
 Drugs/Octreotide.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Octreotide.pdf)
+[Link](../Drugs/Octreotide.pdf)
 
 Drugs/Prokinetics in ICU.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Prokinetics%20in%20ICU.pdf)
+[Link](../Drugs/Prokinetics%20in%20ICU.pdf)
 
 ECLS/Aberdeen ECMO Cannulation and Retrieval Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/ECLS/Aberdeen%20ECMO%20Cannulation%20and%20Retrieval%20Guideline.pdf)
+[Link](../ECLS/Aberdeen%20ECMO%20Cannulation%20and%20Retrieval%20Guideline.pdf)
 
 GI_Liver_and_Transplant/Prokinetics in ICU.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/GI_Liver_and_Transplant/Prokinetics%20in%20ICU.pdf)
+[Link](../GI_Liver_and_Transplant/Prokinetics%20in%20ICU.pdf)
 
 ------------------------------------------------------------------------
 
@@ -230,7 +230,7 @@ Organ_donation/Donation after brainstem death care bundle.pdf
 #### new
 
 Organ_donation/DBD Donor Optimisation Care Bundle.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Organ_donation/DBD%20Donor%20Optimisation%20Care%20Bundle.pdf)
+[Link](../Organ_donation/DBD%20Donor%20Optimisation%20Care%20Bundle.pdf)
 
 ------------------------------------------------------------------------
 
@@ -238,7 +238,7 @@ Organ_donation/DBD Donor Optimisation Care Bundle.pdf:
 #### modified
 
 Drugs/all IV drug infusion information.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/all%20IV%20drug%20infusion%20information.pdf)
+[Link](../Drugs/all%20IV%20drug%20infusion%20information.pdf)
 
 ------------------------------------------------------------------------
 
@@ -246,7 +246,7 @@ Drugs/all IV drug infusion information.pdf:
 #### modified
 
 Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/Repatriaiton%20Checklist%20for%20Critical%20Care.pdf)
+[Link](../Policies_and_admin/Repatriaiton%20Checklist%20for%20Critical%20Care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -254,13 +254,13 @@ Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf:
 #### new
 
 Policies_and_admin/Anticipated Post op flow surgical patients.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/Anticipated%20Post%20op%20flow%20surgical%20patients.pdf)
+[Link](../Policies_and_admin/Anticipated%20Post%20op%20flow%20surgical%20patients.pdf)
 
 Policies_and_admin/Discharge Home from Critical Care .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/Discharge%20Home%20from%20Critical%20Care%20.pdf)
+[Link](../Policies_and_admin/Discharge%20Home%20from%20Critical%20Care%20.pdf)
 
 Policies_and_admin/Repatriaiton Checklist for Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/Repatriaiton%20Checklist%20for%20Critical%20Care.pdf)
+[Link](../Policies_and_admin/Repatriaiton%20Checklist%20for%20Critical%20Care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -271,7 +271,7 @@ Drugs/thiopentone.pdf
 #### new
 
 Drugs/Thiopentone.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Thiopentone.pdf)
+[Link](../Drugs/Thiopentone.pdf)
 
 ------------------------------------------------------------------------
 
@@ -285,14 +285,14 @@ Infection_and_sepsis/BAL and MiniBAL standardised procedure.pdf
 
 Guideline following Sudden Cardiac Death where death occurs in ICU
 v2.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Guideline%20following%20Sudden%20Cardiac%20Death%20where%20death%20occurs%20in%20ICU%20v2.pdf)
+[Link](../Guideline%20following%20Sudden%20Cardiac%20Death%20where%20death%20occurs%20in%20ICU%20v2.pdf)
 
 Breathing(Respiratory)/Bronchoscopy in Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Bronchoscopy%20in%20Critical%20Care.pdf)
+[Link](../Breathing(Respiratory)/Bronchoscopy%20in%20Critical%20Care.pdf)
 
 Cardiovascular/Guideline following Sudden Cardiac Death where death
 occurs in ICU.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Guideline%20following%20Sudden%20Cardiac%20Death%20where%20death%20occurs%20in%20ICU.pdf)
+[Link](../Cardiovascular/Guideline%20following%20Sudden%20Cardiac%20Death%20where%20death%20occurs%20in%20ICU.pdf)
 
 ------------------------------------------------------------------------
 
@@ -306,18 +306,18 @@ Ethics_and_Law/Police access to critical care patients FICM Midnight Law
 #### new
 
 End_of_life_care/End of Life Care Guideline for Critical Care .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/End%20of%20Life%20Care%20Guideline%20for%20Critical%20Care%20.pdf)
+[Link](../End_of_life_care/End%20of%20Life%20Care%20Guideline%20for%20Critical%20Care%20.pdf)
 
 Ethics_and_Law/ Police access to critical care patients (FICM midnight
 law).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/%20Police%20access%20to%20critical%20care%20patients%20(FICM%20midnight%20law).pdf)
+[Link](../Ethics_and_Law/%20Police%20access%20to%20critical%20care%20patients%20(FICM%20midnight%20law).pdf)
 
 #### renamed
 
 Palliative extubation & withdrawal of invasive ventilatory support
 nursing checklist.docx ==\> End_of_life_care/Palliative extubation &
 withdrawal of invasive ventilatory support nursing checklist.docx:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Palliative%20extubation%20&%20withdrawal%20of%20invasive%20ventilatory%20support%20nursing%20checklist.docx)
+[Link](../End_of_life_care/Palliative%20extubation%20&%20withdrawal%20of%20invasive%20ventilatory%20support%20nursing%20checklist.docx)
 
 ------------------------------------------------------------------------
 
@@ -330,13 +330,13 @@ End_of_life_care/Withdrawal of invasive ventilation nursing guide MJB
 
 Palliative extubation & withdrawal of invasive ventilatory support
 nursing checklist.docx:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Palliative%20extubation%20&%20withdrawal%20of%20invasive%20ventilatory%20support%20nursing%20checklist.docx)
+[Link](../Palliative%20extubation%20&%20withdrawal%20of%20invasive%20ventilatory%20support%20nursing%20checklist.docx)
 #### renamed
 
 End_of_life_care/Draft NHS Lothian Critical Care End of Life care
 Guidance Edited June 24th 2023 MIB 050623 (1)-1.pdf ==\>
 End_of_life_care/End of Life Care Guidance for Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/End%20of%20Life%20Care%20Guidance%20for%20Critical%20Care.pdf)
+[Link](../End_of_life_care/End%20of%20Life%20Care%20Guidance%20for%20Critical%20Care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -344,7 +344,7 @@ End_of_life_care/End of Life Care Guidance for Critical Care.pdf:
 #### new
 
 Infection_and_sepsis/Antifungal guidance in critical care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Antifungal%20guidance%20in%20critical%20care.pdf)
+[Link](../Infection_and_sepsis/Antifungal%20guidance%20in%20critical%20care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -355,7 +355,7 @@ GI_Liver_and_Transplant/stress ulcer prophylaxis.pdf
 #### new
 
 Drugs/stress ulcer prophylaxis.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/stress%20ulcer%20prophylaxis.pdf)
+[Link](../Drugs/stress%20ulcer%20prophylaxis.pdf)
 
 ------------------------------------------------------------------------
 
@@ -363,7 +363,7 @@ Drugs/stress ulcer prophylaxis.pdf:
 #### new
 
 Infection_and_sepsis/Influenza in Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Influenza%20in%20Critical%20Care.pdf)
+[Link](../Infection_and_sepsis/Influenza%20in%20Critical%20Care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -372,7 +372,7 @@ Infection_and_sepsis/Influenza in Critical Care.pdf:
 
 GI_Liver_and_Transplant/Plasma exchange in Acute Liver Failure
 Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/GI_Liver_and_Transplant/Plasma%20exchange%20in%20Acute%20Liver%20Failure%20Guideline.pdf)
+[Link](../GI_Liver_and_Transplant/Plasma%20exchange%20in%20Acute%20Liver%20Failure%20Guideline.pdf)
 
 ------------------------------------------------------------------------
 
@@ -383,7 +383,7 @@ Drugs/alteplase for massive PE.pdf
 #### new
 
 Drugs/Alteplase for massive PE.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Alteplase%20for%20massive%20PE.pdf)
+[Link](../Drugs/Alteplase%20for%20massive%20PE.pdf)
 
 ------------------------------------------------------------------------
 
@@ -391,7 +391,7 @@ Drugs/Alteplase for massive PE.pdf:
 #### modified
 
 Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Vancomycin%20Continuous%20Infusion%20Fluid%20Restricted.pdf)
+[Link](../Drugs/Vancomycin%20Continuous%20Infusion%20Fluid%20Restricted.pdf)
 
 ------------------------------------------------------------------------
 
@@ -407,11 +407,11 @@ Drugs/vancomycin fluid restricted.pdf
 
 Post_op_care/Care of the Transgender Pateint .pdf ==\> Post_op_care/Care
 of the Transgender Patient.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Care%20of%20the%20Transgender%20Patient.pdf)
+[Link](../Post_op_care/Care%20of%20the%20Transgender%20Patient.pdf)
 
 Post_op_care/post-op-carotid-endarterectomy-guidelines-1.pdf ==\>
 Post_op_care/Post_op_carotid_endarterectomy.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Post_op_carotid_endarterectomy.pdf)
+[Link](../Post_op_care/Post_op_carotid_endarterectomy.pdf)
 
 ------------------------------------------------------------------------
 
@@ -422,7 +422,7 @@ Drugs/ketamine for status epilepticus.pdf
 #### new
 
 Drugs/ketamine_for_status epilepticus.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/ketamine_for_status%20epilepticus.pdf)
+[Link](../Drugs/ketamine_for_status%20epilepticus.pdf)
 
 ------------------------------------------------------------------------
 
@@ -430,17 +430,17 @@ Drugs/ketamine_for_status epilepticus.pdf:
 #### renamed
 
 Drugs/Atracurium 2023.pdf ==\> Drugs/atracurium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/atracurium.pdf)
+[Link](../Drugs/atracurium.pdf)
 
 Drugs/Calcium.pdf ==\> Drugs/calcium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/calcium.pdf)
+[Link](../Drugs/calcium.pdf)
 
 Drugs/Phenylephrine v4 Jun 2023.pdf ==\> Drugs/phenylephrine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/phenylephrine.pdf)
+[Link](../Drugs/phenylephrine.pdf)
 
 Drugs/dalteparin_thromboprophylaxis aug23.pdf ==\>
 Drugs/dalteparin_thromboprophylaxis.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/dalteparin_thromboprophylaxis.pdf)
+[Link](../Drugs/dalteparin_thromboprophylaxis.pdf)
 
 ------------------------------------------------------------------------
 
@@ -448,14 +448,14 @@ Drugs/dalteparin_thromboprophylaxis.pdf:
 #### renamed
 
 Drugs/Morphine 2023 v3.pdf ==\> Drugs/morphine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/morphine.pdf)
+[Link](../Drugs/morphine.pdf)
 
 Drugs/Valproate final 23.pdf ==\> Drugs/valproate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/valproate.pdf)
+[Link](../Drugs/valproate.pdf)
 
 Drugs/Vancomycin Continuous Infusion Fluid Restricted Aug23.pdf ==\>
 Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Vancomycin%20Continuous%20Infusion%20Fluid%20Restricted.pdf)
+[Link](../Drugs/Vancomycin%20Continuous%20Infusion%20Fluid%20Restricted.pdf)
 
 ------------------------------------------------------------------------
 
@@ -463,7 +463,7 @@ Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf:
 #### new
 
 Post_op_care/post-op-carotid-endarterectomy-guidelines-1.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/post-op-carotid-endarterectomy-guidelines-1.pdf)
+[Link](../Post_op_care/post-op-carotid-endarterectomy-guidelines-1.pdf)
 
 ------------------------------------------------------------------------
 
@@ -474,7 +474,7 @@ Drugs/valproate.pdf
 #### new
 
 Drugs/Valproate final 23.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Valproate%20final%2023.pdf)
+[Link](../Drugs/Valproate%20final%2023.pdf)
 
 ------------------------------------------------------------------------
 
@@ -486,7 +486,7 @@ Pateint.pdf
 #### new
 
 Post_op_care/Care of the Transgender Pateint .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Care%20of%20the%20Transgender%20Pateint%20.pdf)
+[Link](../Post_op_care/Care%20of%20the%20Transgender%20Pateint%20.pdf)
 
 ------------------------------------------------------------------------
 
@@ -494,7 +494,7 @@ Post_op_care/Care of the Transgender Pateint .pdf:
 #### new
 
 Delirium/Violence and Agression Guidlines.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Delirium/Violence%20and%20Agression%20Guidlines.pdf)
+[Link](../Delirium/Violence%20and%20Agression%20Guidlines.pdf)
 
 ------------------------------------------------------------------------
 
@@ -502,10 +502,10 @@ Delirium/Violence and Agression Guidlines.pdf:
 #### new
 
 End_of_life_care/Pet Visitation.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Pet%20Visitation.pdf)
+[Link](../End_of_life_care/Pet%20Visitation.pdf)
 
 Policies_and_admin/Pet Visitation.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/Pet%20Visitation.pdf)
+[Link](../Policies_and_admin/Pet%20Visitation.pdf)
 
 ------------------------------------------------------------------------
 
@@ -518,13 +518,13 @@ Ethics_and_Law/Capacity and AWI FAQs.pdf
 #### new
 
 Delirium/AWI FAQs.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Delirium/AWI%20FAQs.pdf)
+[Link](../Delirium/AWI%20FAQs.pdf)
 
 Ethics_and_Law/AWI FAQs.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/AWI%20FAQs.pdf)
+[Link](../Ethics_and_Law/AWI%20FAQs.pdf)
 
 Policies_and_admin/AWI FAQs.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/AWI%20FAQs.pdf)
+[Link](../Policies_and_admin/AWI%20FAQs.pdf)
 
 ------------------------------------------------------------------------
 
@@ -543,7 +543,7 @@ Cardiovascular/Sudden Cardiac Death on the ICU - Genetics Follow Up.pdf
 #### new
 
 Cardiovascular/Sudden Cardiac Death where death occurs in ICU_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Sudden%20Cardiac%20Death%20where%20death%20occurs%20in%20ICU_pub.pdf)
+[Link](../Cardiovascular/Sudden%20Cardiac%20Death%20where%20death%20occurs%20in%20ICU_pub.pdf)
 
 ------------------------------------------------------------------------
 
@@ -551,7 +551,7 @@ Cardiovascular/Sudden Cardiac Death where death occurs in ICU_pub.pdf:
 #### new
 
 Infection_and_sepsis/CPE screening.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/CPE%20screening.pdf)
+[Link](../Infection_and_sepsis/CPE%20screening.pdf)
 
 ------------------------------------------------------------------------
 
@@ -559,7 +559,7 @@ Infection_and_sepsis/CPE screening.pdf:
 #### modified
 
 Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
+[Link](../Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
 
 ------------------------------------------------------------------------
 
@@ -579,13 +579,13 @@ Drugs/calcium.pdf
 #### new
 
 Drugs/Atracurium 2023.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Atracurium%202023.pdf)
+[Link](../Drugs/Atracurium%202023.pdf)
 
 Drugs/Calcium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Calcium.pdf)
+[Link](../Drugs/Calcium.pdf)
 
 Drugs/dalteparin_thromboprophylaxis aug23.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/dalteparin_thromboprophylaxis%20aug23.pdf)
+[Link](../Drugs/dalteparin_thromboprophylaxis%20aug23.pdf)
 
 ------------------------------------------------------------------------
 
@@ -593,7 +593,7 @@ Drugs/dalteparin_thromboprophylaxis aug23.pdf:
 #### new
 
 Drugs/Vancomycin Continuous Infusion Fluid Restricted Aug23.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Vancomycin%20Continuous%20Infusion%20Fluid%20Restricted%20Aug23.pdf)
+[Link](../Drugs/Vancomycin%20Continuous%20Infusion%20Fluid%20Restricted%20Aug23.pdf)
 
 ------------------------------------------------------------------------
 
@@ -608,13 +608,13 @@ Routine_Care/post-ICU_recovery.pdf
 #### new
 
 Delirium/Capacity and AWI FAQs.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Delirium/Capacity%20and%20AWI%20FAQs.pdf)
+[Link](../Delirium/Capacity%20and%20AWI%20FAQs.pdf)
 
 Ethics_and_Law/Capacity and AWI FAQs.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Capacity%20and%20AWI%20FAQs.pdf)
+[Link](../Ethics_and_Law/Capacity%20and%20AWI%20FAQs.pdf)
 
 Routine_Care/Critical Care Recovery Service.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/Critical%20Care%20Recovery%20Service.pdf)
+[Link](../Routine_Care/Critical%20Care%20Recovery%20Service.pdf)
 
 ------------------------------------------------------------------------
 
@@ -623,10 +623,10 @@ Routine_Care/Critical Care Recovery Service.pdf:
 
 Cardiovascular/Neurone Specific Enolase for Neuroprognostication
 following OHCA.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Neurone%20Specific%20Enolase%20for%20Neuroprognostication%20following%20OHCA.pdf)
+[Link](../Cardiovascular/Neurone%20Specific%20Enolase%20for%20Neuroprognostication%20following%20OHCA.pdf)
 
 Cardiovascular/Sudden Cardiac Death on the ICU - Genetics Follow Up.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Sudden%20Cardiac%20Death%20on%20the%20ICU%20-%20Genetics%20Follow%20Up.pdf)
+[Link](../Cardiovascular/Sudden%20Cardiac%20Death%20on%20the%20ICU%20-%20Genetics%20Follow%20Up.pdf)
 
 ------------------------------------------------------------------------
 
@@ -634,10 +634,10 @@ Cardiovascular/Sudden Cardiac Death on the ICU - Genetics Follow Up.pdf:
 #### new
 
 Ethics_and_Law/FAQs AWI.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/FAQs%20AWI.pdf)
+[Link](../Ethics_and_Law/FAQs%20AWI.pdf)
 
 Ethics_and_Law/Learning Disabled liaison team leaflet .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Learning%20Disabled%20liaison%20team%20leaflet%20.pdf)
+[Link](../Ethics_and_Law/Learning%20Disabled%20liaison%20team%20leaflet%20.pdf)
 
 ------------------------------------------------------------------------
 
@@ -648,10 +648,10 @@ Delirium/FAQs AWI.pdf
 #### new
 
 Delirium/FAQs about AWI and consent.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Delirium/FAQs%20about%20AWI%20and%20consent.pdf)
+[Link](../Delirium/FAQs%20about%20AWI%20and%20consent.pdf)
 
 Delirium/Learning Disabled liaison team leaflet .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Delirium/Learning%20Disabled%20liaison%20team%20leaflet%20.pdf)
+[Link](../Delirium/Learning%20Disabled%20liaison%20team%20leaflet%20.pdf)
 
 ------------------------------------------------------------------------
 
@@ -664,10 +664,10 @@ Trauma and Burns/All_Major_Trauma_Centre_Guidelines.txt
 #### new
 
 Drugs/BNF/BNF_link.md:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/BNF/BNF_link.md)
+[Link](../Drugs/BNF/BNF_link.md)
 
 Trauma and Burns/All_Major_Trauma_Centre_Guidelines.md:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Trauma%20and%20Burns/All_Major_Trauma_Centre_Guidelines.md)
+[Link](../Trauma%20and%20Burns/All_Major_Trauma_Centre_Guidelines.md)
 
 ------------------------------------------------------------------------
 
@@ -676,7 +676,7 @@ Trauma and Burns/All_Major_Trauma_Centre_Guidelines.md:
 
 Covid-19/videos/COVID Intubation Simulation Video.txt ==\>
 Covid-19/videos/COVID Intubation Simulation Video.md:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/videos/COVID%20Intubation%20Simulation%20Video.md)
+[Link](../Covid-19/videos/COVID%20Intubation%20Simulation%20Video.md)
 
 ------------------------------------------------------------------------
 
@@ -687,12 +687,12 @@ Haematology_CAR-T/clotguide_rotem_clotpro.txt
 #### modified
 
 Covid-19/videos/COVID Intubation Simulation Video.txt:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/videos/COVID%20Intubation%20Simulation%20Video.txt)
+[Link](../Covid-19/videos/COVID%20Intubation%20Simulation%20Video.txt)
 #### renamed
 
 Covid-19/videos/COVID Proning Video.txt ==\> Covid-19/videos/COVID
 Proning Video.md:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/videos/COVID%20Proning%20Video.md)
+[Link](../Covid-19/videos/COVID%20Proning%20Video.md)
 
 ------------------------------------------------------------------------
 
@@ -713,10 +713,10 @@ Transfer/Pause on admission.pdf
 #### new
 
 Haematology_CAR-T/clotguide_rotem_clotpro.txt:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Haematology_CAR-T/clotguide_rotem_clotpro.txt)
+[Link](../Haematology_CAR-T/clotguide_rotem_clotpro.txt)
 
 Transfer/Handover_pause.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Transfer/Handover_pause.pdf)
+[Link](../Transfer/Handover_pause.pdf)
 
 ------------------------------------------------------------------------
 
@@ -725,7 +725,7 @@ Transfer/Handover_pause.pdf:
 
 Post_op_care/Perioperative Care of the Transgender or Non-Binary
 Pateint.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Perioperative%20Care%20of%20the%20Transgender%20or%20Non-Binary%20Pateint.pdf)
+[Link](../Post_op_care/Perioperative%20Care%20of%20the%20Transgender%20or%20Non-Binary%20Pateint.pdf)
 
 ------------------------------------------------------------------------
 
@@ -733,7 +733,7 @@ Pateint.pdf:
 #### new
 
 Neurological/Stroke in pregnancy.docx:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Stroke%20in%20pregnancy.docx)
+[Link](../Neurological/Stroke%20in%20pregnancy.docx)
 
 ------------------------------------------------------------------------
 
@@ -745,15 +745,15 @@ End_of_life_care/End of life care in critical care.pdf
 
 End_of_life_care/Draft NHS Lothian Critical Care End of Life care
 Guidance Edited June 24th 2023 MIB 050623 (1)-1.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Draft%20NHS%20Lothian%20Critical%20Care%20End%20of%20Life%20care%20Guidance%20Edited%20June%2024th%202023%20MIB%20050623%20(1)-1.pdf)
+[Link](../End_of_life_care/Draft%20NHS%20Lothian%20Critical%20Care%20End%20of%20Life%20care%20Guidance%20Edited%20June%2024th%202023%20MIB%20050623%20(1)-1.pdf)
 
 End_of_life_care/Withdrawal of invasive ventilation nursing guide MJB
 050623-1.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Withdrawal%20of%20invasive%20ventilation%20nursing%20guide%20MJB%20050623-1.pdf)
+[Link](../End_of_life_care/Withdrawal%20of%20invasive%20ventilation%20nursing%20guide%20MJB%20050623-1.pdf)
 
 Ethics_and_Law/ML Pitfalls In the Assessment of Mental Capacity -
 SCOTLAND.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/ML%20Pitfalls%20In%20the%20Assessment%20of%20Mental%20Capacity%20-%20SCOTLAND.pdf)
+[Link](../Ethics_and_Law/ML%20Pitfalls%20In%20the%20Assessment%20of%20Mental%20Capacity%20-%20SCOTLAND.pdf)
 
 ------------------------------------------------------------------------
 
@@ -768,13 +768,13 @@ Drugs/phenylephrine.pdf
 #### new
 
 Drugs/Epoprostenol.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Epoprostenol.pdf)
+[Link](../Drugs/Epoprostenol.pdf)
 
 Drugs/Morphine 2023 v3.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Morphine%202023%20v3.pdf)
+[Link](../Drugs/Morphine%202023%20v3.pdf)
 
 Drugs/Phenylephrine v4 Jun 2023.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Phenylephrine%20v4%20Jun%202023.pdf)
+[Link](../Drugs/Phenylephrine%20v4%20Jun%202023.pdf)
 
 ------------------------------------------------------------------------
 
@@ -782,7 +782,7 @@ Drugs/Phenylephrine v4 Jun 2023.pdf:
 #### new
 
 End_of_life_care/Child_Bereavement_Boxes.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Child_Bereavement_Boxes.pdf)
+[Link](../End_of_life_care/Child_Bereavement_Boxes.pdf)
 
 ------------------------------------------------------------------------
 
@@ -790,7 +790,7 @@ End_of_life_care/Child_Bereavement_Boxes.pdf:
 #### new
 
 Breathing(Respiratory)/Manual Ventilation and MHI.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Manual%20Ventilation%20and%20MHI.pdf)
+[Link](../Breathing(Respiratory)/Manual%20Ventilation%20and%20MHI.pdf)
 
 ------------------------------------------------------------------------
 
@@ -803,7 +803,7 @@ critical care.pdf
 
 GI_Liver_and_Transplant/ICU - Upper GI bleeding (Endoscopy
 guideline).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/GI_Liver_and_Transplant/ICU%20-%20Upper%20GI%20bleeding%20(Endoscopy%20guideline).pdf)
+[Link](../GI_Liver_and_Transplant/ICU%20-%20Upper%20GI%20bleeding%20(Endoscopy%20guideline).pdf)
 
 ------------------------------------------------------------------------
 
@@ -811,7 +811,7 @@ guideline).pdf:
 #### modified
 
 Cardiovascular/Cardiac Output Monitoring_pub .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Cardiac%20Output%20Monitoring_pub%20.pdf)
+[Link](../Cardiovascular/Cardiac%20Output%20Monitoring_pub%20.pdf)
 
 ------------------------------------------------------------------------
 
@@ -824,11 +824,11 @@ Drugs/Noradrenaline (peripheral).pdf
 #### new
 
 Drugs/noradrenaline (peripheral).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/noradrenaline%20(peripheral).pdf)
+[Link](../Drugs/noradrenaline%20(peripheral).pdf)
 #### renamed
 
 Drugs/noradrenaline.pdf ==\> Drugs/noradrenaline (central).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/noradrenaline%20(central).pdf)
+[Link](../Drugs/noradrenaline%20(central).pdf)
 
 ------------------------------------------------------------------------
 
@@ -836,10 +836,10 @@ Drugs/noradrenaline.pdf ==\> Drugs/noradrenaline (central).pdf:
 #### new
 
 Drugs/Noradrenaline (peripheral) guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Noradrenaline%20(peripheral)%20guideline.pdf)
+[Link](../Drugs/Noradrenaline%20(peripheral)%20guideline.pdf)
 
 Drugs/Noradrenaline (peripheral).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Noradrenaline%20(peripheral).pdf)
+[Link](../Drugs/Noradrenaline%20(peripheral).pdf)
 
 ------------------------------------------------------------------------
 
@@ -850,7 +850,7 @@ Neurological/Intrathecal policy RIE.pdf
 #### new
 
 Neurological/Intrathecal policy RIE feb 2023.1.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Intrathecal%20policy%20RIE%20feb%202023.1.pdf)
+[Link](../Neurological/Intrathecal%20policy%20RIE%20feb%202023.1.pdf)
 
 ------------------------------------------------------------------------
 
@@ -859,7 +859,7 @@ Neurological/Intrathecal policy RIE feb 2023.1.pdf:
 
 Infection_and_sepsis/Trip Out of Unit SOP.pdf ==\>
 Infection_and_sepsis/Trip Out of Unit infection guidance.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Trip%20Out%20of%20Unit%20infection%20guidance.pdf)
+[Link](../Infection_and_sepsis/Trip%20Out%20of%20Unit%20infection%20guidance.pdf)
 
 ------------------------------------------------------------------------
 
@@ -875,7 +875,7 @@ V1.pdf ==\> Infection_and_sepsis/Trip Out of Unit SOP.pdf
 #### modified
 
 Cardiovascular/Management of hypertension within Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Management%20of%20hypertension%20within%20Critical%20Care.pdf)
+[Link](../Cardiovascular/Management%20of%20hypertension%20within%20Critical%20Care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -884,7 +884,7 @@ Cardiovascular/Management of hypertension within Critical Care.pdf:
 
 Infection_and_sepsis/Trip Out of Unit Standard Operating Procedure
 V1.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Trip%20Out%20of%20Unit%20Standard%20Operating%20Procedure%20V1.pdf)
+[Link](../Infection_and_sepsis/Trip%20Out%20of%20Unit%20Standard%20Operating%20Procedure%20V1.pdf)
 
 ------------------------------------------------------------------------
 
@@ -892,10 +892,10 @@ V1.pdf:
 #### modified
 
 Drugs/amiodarone.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/amiodarone.pdf)
+[Link](../Drugs/amiodarone.pdf)
 
 Drugs/potassium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/potassium.pdf)
+[Link](../Drugs/potassium.pdf)
 
 ------------------------------------------------------------------------
 
@@ -906,7 +906,7 @@ Cardiovascular/Cardiac Output Monitoring \_pub.pdf
 #### new
 
 Cardiovascular/Cardiac Output Monitoring_pub .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Cardiac%20Output%20Monitoring_pub%20.pdf)
+[Link](../Cardiovascular/Cardiac%20Output%20Monitoring_pub%20.pdf)
 
 ------------------------------------------------------------------------
 
@@ -922,7 +922,7 @@ Renal_and_Urology/RRT guideline including citrate UPDATED APR 2023.pdf
 #### new
 
 Organ_donation/Ancillary tetsting - Cerebral CT Angiography.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Organ_donation/Ancillary%20tetsting%20-%20Cerebral%20CT%20Angiography.pdf)
+[Link](../Organ_donation/Ancillary%20tetsting%20-%20Cerebral%20CT%20Angiography.pdf)
 
 ------------------------------------------------------------------------
 
@@ -930,7 +930,7 @@ Organ_donation/Ancillary tetsting - Cerebral CT Angiography.pdf:
 #### new
 
 Routine_Care/Immediate Discharge Letter DOCUMENTATION FAQs.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/Immediate%20Discharge%20Letter%20DOCUMENTATION%20FAQs.pdf)
+[Link](../Routine_Care/Immediate%20Discharge%20Letter%20DOCUMENTATION%20FAQs.pdf)
 
 ------------------------------------------------------------------------
 
@@ -938,7 +938,7 @@ Routine_Care/Immediate Discharge Letter DOCUMENTATION FAQs.pdf:
 #### modified
 
 Drugs/nicardipine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/nicardipine.pdf)
+[Link](../Drugs/nicardipine.pdf)
 
 ------------------------------------------------------------------------
 
@@ -971,11 +971,11 @@ Renal_and_Urology/RRT guideline including citrate.pdf
 #### modified
 
 Renal_and_Urology/Citrate anticoagulation quick reference guide.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Renal_and_Urology/Citrate%20anticoagulation%20quick%20reference%20guide.pdf)
+[Link](../Renal_and_Urology/Citrate%20anticoagulation%20quick%20reference%20guide.pdf)
 #### new
 
 Renal_and_Urology/RRT guideline including citrate UPDATED APR 2023.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Renal_and_Urology/RRT%20guideline%20including%20citrate%20UPDATED%20APR%202023.pdf)
+[Link](../Renal_and_Urology/RRT%20guideline%20including%20citrate%20UPDATED%20APR%202023.pdf)
 
 ------------------------------------------------------------------------
 
@@ -986,7 +986,7 @@ Infection_and_sepsis/Ventriculitis.pdf
 #### new
 
 Transfer/Pause on admission.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Transfer/Pause%20on%20admission.pdf)
+[Link](../Transfer/Pause%20on%20admission.pdf)
 
 ------------------------------------------------------------------------
 
@@ -999,10 +999,10 @@ Drugs/paracetamol.pdf
 #### modified
 
 Drugs/midazolam.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/midazolam.pdf)
+[Link](../Drugs/midazolam.pdf)
 
 Drugs/phosphate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/phosphate.pdf)
+[Link](../Drugs/phosphate.pdf)
 #### renamed
 
 Drugs/Milrinone.pdf ==\> Drugs/milrinone.pdf
@@ -1053,14 +1053,14 @@ Drugs/salbutamol.pdf
 #### modified
 
 Drugs/phenobarbitone.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/phenobarbitone.pdf)
+[Link](../Drugs/phenobarbitone.pdf)
 #### new
 
 Drugs/Nimodipine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Nimodipine.pdf)
+[Link](../Drugs/Nimodipine.pdf)
 
 Drugs/Salbutamol.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Salbutamol.pdf)
+[Link](../Drugs/Salbutamol.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1071,7 +1071,7 @@ Organ_donation/Adult tissue donation.pdf
 #### new
 
 Organ_donation/Adult Tissue Donation.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Organ_donation/Adult%20Tissue%20Donation.pdf)
+[Link](../Organ_donation/Adult%20Tissue%20Donation.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1084,10 +1084,10 @@ Drugs/vancomycin_fluid_restricted.pdf
 #### new
 
 Drugs/Vancomycin fluid restriced.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Vancomycin%20fluid%20restriced.pdf)
+[Link](../Drugs/Vancomycin%20fluid%20restriced.pdf)
 
 Drugs/Vancomycin.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Vancomycin.pdf)
+[Link](../Drugs/Vancomycin.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1095,7 +1095,7 @@ Drugs/Vancomycin.pdf:
 #### new
 
 Routine_Care/Trak shortcodes.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/Trak%20shortcodes.pdf)
+[Link](../Routine_Care/Trak%20shortcodes.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1108,7 +1108,7 @@ and Poster V5 20190702\[90\].pdf
 
 Cardiovascular/Management of Acute Type B Aortic Dissection
 Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Management%20of%20Acute%20Type%20B%20Aortic%20Dissection%20Guideline.pdf)
+[Link](../Cardiovascular/Management%20of%20Acute%20Type%20B%20Aortic%20Dissection%20Guideline.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1119,7 +1119,7 @@ Drugs/Alteplase for massive PE
 #### modified
 
 Drugs/alteplase for massive PE.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/alteplase%20for%20massive%20PE.pdf)
+[Link](../Drugs/alteplase%20for%20massive%20PE.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1131,7 +1131,7 @@ Cardiovascular/Acute Type B Aortic Dissection.pdf
 
 Cardiovascular/Management of Acute Type B Aortic Dissection Guideline
 and Poster V5 20190702\[90\].pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Management%20of%20Acute%20Type%20B%20Aortic%20Dissection%20Guideline%20and%20Poster%20V5%2020190702%5B90%5D.pdf)
+[Link](../Cardiovascular/Management%20of%20Acute%20Type%20B%20Aortic%20Dissection%20Guideline%20and%20Poster%20V5%2020190702%5B90%5D.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1139,7 +1139,7 @@ and Poster V5 20190702\[90\].pdf:
 #### new
 
 Drugs/Alteplase for massive PE:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Alteplase%20for%20massive%20PE)
+[Link](../Drugs/Alteplase%20for%20massive%20PE)
 
 ------------------------------------------------------------------------
 
@@ -1158,72 +1158,72 @@ Procedures/Inadvertent Catheter Placement Guideline Final.pdf
 #### modified
 
 Breathing(Respiratory)/Proning Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Proning%20Guideline.pdf)
+[Link](../Breathing(Respiratory)/Proning%20Guideline.pdf)
 
 Breathing(Respiratory)/Equipment/How to use new Storz scopes.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Equipment/How%20to%20use%20new%20Storz%20scopes.pdf)
+[Link](../Breathing(Respiratory)/Equipment/How%20to%20use%20new%20Storz%20scopes.pdf)
 
 Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
+[Link](../Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
 
 Drugs/Milrinone.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Milrinone.pdf)
+[Link](../Drugs/Milrinone.pdf)
 
 Drugs/adrenaline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/adrenaline.pdf)
+[Link](../Drugs/adrenaline.pdf)
 
 Drugs/alfentanil.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/alfentanil.pdf)
+[Link](../Drugs/alfentanil.pdf)
 
 Drugs/dobutamine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/dobutamine.pdf)
+[Link](../Drugs/dobutamine.pdf)
 
 Drugs/glyceryl_trinitrate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/glyceryl_trinitrate.pdf)
+[Link](../Drugs/glyceryl_trinitrate.pdf)
 
 Drugs/hydralazine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/hydralazine.pdf)
+[Link](../Drugs/hydralazine.pdf)
 
 Drugs/isoprenaline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/isoprenaline.pdf)
+[Link](../Drugs/isoprenaline.pdf)
 
 Drugs/labetalol.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/labetalol.pdf)
+[Link](../Drugs/labetalol.pdf)
 
 Drugs/magnesium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/magnesium.pdf)
+[Link](../Drugs/magnesium.pdf)
 
 Drugs/neostigmine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/neostigmine.pdf)
+[Link](../Drugs/neostigmine.pdf)
 
 Drugs/piperacillin_tazobactam extended_infusion.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/piperacillin_tazobactam%20extended_infusion.pdf)
+[Link](../Drugs/piperacillin_tazobactam%20extended_infusion.pdf)
 
 End_of_life_care/Reasons to report a death to PF.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Reasons%20to%20report%20a%20death%20to%20PF.pdf)
+[Link](../End_of_life_care/Reasons%20to%20report%20a%20death%20to%20PF.pdf)
 
 Neurological/Intrathecal policy RIE.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Intrathecal%20policy%20RIE.pdf)
+[Link](../Neurological/Intrathecal%20policy%20RIE.pdf)
 
 Neurological/SOP for review of Neurosurgical patients in ITU by
 neurosurgical team.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/SOP%20for%20review%20of%20Neurosurgical%20patients%20in%20ITU%20by%20neurosurgical%20team.pdf)
+[Link](../Neurological/SOP%20for%20review%20of%20Neurosurgical%20patients%20in%20ITU%20by%20neurosurgical%20team.pdf)
 
 Obstetrics/Management of the Pregnant Patient in Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Obstetrics/Management%20of%20the%20Pregnant%20Patient%20in%20Critical%20Care.pdf)
+[Link](../Obstetrics/Management%20of%20the%20Pregnant%20Patient%20in%20Critical%20Care.pdf)
 #### new
 
 Breathing(Respiratory)/Equipment/Passy Muir Valve.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Equipment/Passy%20Muir%20Valve.pdf)
+[Link](../Breathing(Respiratory)/Equipment/Passy%20Muir%20Valve.pdf)
 
 Cardiovascular/Cardiac Output Monitoring \_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Cardiac%20Output%20Monitoring%20_pub.pdf)
+[Link](../Cardiovascular/Cardiac%20Output%20Monitoring%20_pub.pdf)
 
 End_of_life_care/blank pf form.docx:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/blank%20pf%20form.docx)
+[Link](../End_of_life_care/blank%20pf%20form.docx)
 
 Procedures/Inadvertent Catheter Placement Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Procedures/Inadvertent%20Catheter%20Placement%20Guideline.pdf)
+[Link](../Procedures/Inadvertent%20Catheter%20Placement%20Guideline.pdf)
 #### renamed
 
 Cardiovascular/Cerebral Oximetry Foresight \_ Set Up Guide_pub.pdf ==\>
@@ -1269,7 +1269,7 @@ CVCs.pdf
 #### new
 
 Drugs/labetalol.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/labetalol.pdf)
+[Link](../Drugs/labetalol.pdf)
 #### renamed
 
 Breathing(Respiratory)/Proning Guideline 3.1.pdf ==\>
@@ -1289,7 +1289,7 @@ Neurological/Intrathecal policy RIE.pdf
 #### new
 
 Drugs/Neostigmine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Neostigmine.pdf)
+[Link](../Drugs/Neostigmine.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1297,7 +1297,7 @@ Drugs/Neostigmine.pdf:
 #### new
 
 Drugs/Piperacillin Tazobactam extended infusion guidelines.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Piperacillin%20Tazobactam%20extended%20infusion%20guidelines.pdf)
+[Link](../Drugs/Piperacillin%20Tazobactam%20extended%20infusion%20guidelines.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1311,7 +1311,7 @@ Transfer/Intra hospital transfer checklist.pdf
 #### new
 
 Transfer/Transfer Guidelines.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Transfer/Transfer%20Guidelines.pdf)
+[Link](../Transfer/Transfer%20Guidelines.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1323,14 +1323,14 @@ Output)\_pub .docx
 #### modified
 
 Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
+[Link](../Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
 #### new
 
 Cardiovascular/Advanced Haemodynamic Monitoring_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Advanced%20Haemodynamic%20Monitoring_pub.pdf)
+[Link](../Cardiovascular/Advanced%20Haemodynamic%20Monitoring_pub.pdf)
 
 Cardiovascular/Cardiac Output Monitoring \_pub .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Cardiac%20Output%20Monitoring%20_pub%20.pdf)
+[Link](../Cardiovascular/Cardiac%20Output%20Monitoring%20_pub%20.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1346,7 +1346,7 @@ Cardiovascular/Cardiac Output Monitor VolumeView Setup.pdf
 
 Cardiovascular/Advanced Haemodynamic Monitoring (inc. Cardiac
 Output)\_pub .docx:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Advanced%20Haemodynamic%20Monitoring%20(inc.%20Cardiac%20Output)_pub%20.docx)
+[Link](../Cardiovascular/Advanced%20Haemodynamic%20Monitoring%20(inc.%20Cardiac%20Output)_pub%20.docx)
 
 ------------------------------------------------------------------------
 
@@ -1357,7 +1357,7 @@ Neurological/Intrathecal policy.pdf
 #### new
 
 Neurological/Intrathecal policy RIE Feb 2023.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Intrathecal%20policy%20RIE%20Feb%202023.pdf)
+[Link](../Neurological/Intrathecal%20policy%20RIE%20Feb%202023.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1365,7 +1365,7 @@ Neurological/Intrathecal policy RIE Feb 2023.pdf:
 #### new
 
 Breathing(Respiratory)/Equipment/NIV Set up in Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Equipment/NIV%20Set%20up%20in%20Critical%20Care.pdf)
+[Link](../Breathing(Respiratory)/Equipment/NIV%20Set%20up%20in%20Critical%20Care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1376,7 +1376,7 @@ Breathing(Respiratory)/Proning guideline.pdf
 #### new
 
 Breathing(Respiratory)/Proning Guideline 3.1.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Proning%20Guideline%203.1.pdf)
+[Link](../Breathing(Respiratory)/Proning%20Guideline%203.1.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1384,7 +1384,7 @@ Breathing(Respiratory)/Proning Guideline 3.1.pdf:
 #### new
 
 Drugs/Milrinone.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Milrinone.pdf)
+[Link](../Drugs/Milrinone.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1395,11 +1395,11 @@ Breathing(Respiratory)/Equipment/Passy Muir Valve.pdf
 #### new
 
 Breathing(Respiratory)/Equipment/Passy Muir Valve .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Equipment/Passy%20Muir%20Valve%20.pdf)
+[Link](../Breathing(Respiratory)/Equipment/Passy%20Muir%20Valve%20.pdf)
 
 Neurological/SOP for review of Neurosurgical patients in ITU by
 neurosurgical team.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/SOP%20for%20review%20of%20Neurosurgical%20patients%20in%20ITU%20by%20neurosurgical%20team.pdf)
+[Link](../Neurological/SOP%20for%20review%20of%20Neurosurgical%20patients%20in%20ITU%20by%20neurosurgical%20team.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1410,7 +1410,7 @@ Drugs/labetalol.pdf
 #### new
 
 Drugs/Labetalol.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Labetalol.pdf)
+[Link](../Drugs/Labetalol.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1418,7 +1418,7 @@ Drugs/Labetalol.pdf:
 #### new
 
 Infection_and_sepsis/Winter Infections Stepdown Guidance:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Winter%20Infections%20Stepdown%20Guidance)
+[Link](../Infection_and_sepsis/Winter%20Infections%20Stepdown%20Guidance)
 
 ------------------------------------------------------------------------
 
@@ -1426,7 +1426,7 @@ Infection_and_sepsis/Winter Infections Stepdown Guidance:
 #### modified
 
 Drugs/magnesium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/magnesium.pdf)
+[Link](../Drugs/magnesium.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1434,7 +1434,7 @@ Drugs/magnesium.pdf:
 #### new
 
 Drugs/isoprenaline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/isoprenaline.pdf)
+[Link](../Drugs/isoprenaline.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1442,7 +1442,7 @@ Drugs/isoprenaline.pdf:
 #### modified
 
 Drugs/alfentanil.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/alfentanil.pdf)
+[Link](../Drugs/alfentanil.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1458,7 +1458,7 @@ conflicted copy 2022-10-13).pdf
 #### modified
 
 Drugs/hydralazine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/hydralazine.pdf)
+[Link](../Drugs/hydralazine.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1466,7 +1466,7 @@ Drugs/hydralazine.pdf:
 #### new
 
 Breathing(Respiratory)/Equipment/How to use new Storz scopes.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Equipment/How%20to%20use%20new%20Storz%20scopes.pdf)
+[Link](../Breathing(Respiratory)/Equipment/How%20to%20use%20new%20Storz%20scopes.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1474,7 +1474,7 @@ Breathing(Respiratory)/Equipment/How to use new Storz scopes.pdf:
 #### new
 
 Airway/Tracheostomy_Laryngectomy/Decannulation Guidline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Airway/Tracheostomy_Laryngectomy/Decannulation%20Guidline.pdf)
+[Link](../Airway/Tracheostomy_Laryngectomy/Decannulation%20Guidline.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1482,7 +1482,7 @@ Airway/Tracheostomy_Laryngectomy/Decannulation Guidline.pdf:
 #### new
 
 Procedures/Inadvertent Catheter Placement Guideline Final.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Procedures/Inadvertent%20Catheter%20Placement%20Guideline%20Final.pdf)
+[Link](../Procedures/Inadvertent%20Catheter%20Placement%20Guideline%20Final.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1494,29 +1494,29 @@ Monitoring.pdf
 #### modified
 
 Drugs/adrenaline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/adrenaline.pdf)
+[Link](../Drugs/adrenaline.pdf)
 
 Drugs/dobutamine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/dobutamine.pdf)
+[Link](../Drugs/dobutamine.pdf)
 
 Drugs/glyceryl_trinitrate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/glyceryl_trinitrate.pdf)
+[Link](../Drugs/glyceryl_trinitrate.pdf)
 #### new
 
 Cardiovascular/Out of Hospital Cardiac Arrest_pub (Thomas Craven\'s
 conflicted copy 2022-10-13).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub%20(Thomas%20Craven's%20conflicted%20copy%202022-10-13).pdf)
+[Link](../Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub%20(Thomas%20Craven's%20conflicted%20copy%202022-10-13).pdf)
 
 End_of_life_care/CMO & NRS Guidance for Doctors completing MCCD - Sept
 22.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/CMO%20&%20NRS%20Guidance%20for%20Doctors%20completing%20MCCD%20-%20Sept%2022.pdf)
+[Link](../End_of_life_care/CMO%20&%20NRS%20Guidance%20for%20Doctors%20completing%20MCCD%20-%20Sept%2022.pdf)
 
 End_of_life_care/Reasons to report a death to PF.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Reasons%20to%20report%20a%20death%20to%20PF.pdf)
+[Link](../End_of_life_care/Reasons%20to%20report%20a%20death%20to%20PF.pdf)
 
 GI_Liver_and_Transplant/Upper GI bleeding (Endoscopy) guideline for
 critical care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/GI_Liver_and_Transplant/Upper%20GI%20bleeding%20%20(Endoscopy)%20guideline%20for%20critical%20care.pdf)
+[Link](../GI_Liver_and_Transplant/Upper%20GI%20bleeding%20%20(Endoscopy)%20guideline%20for%20critical%20care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1533,7 +1533,7 @@ Critical Care.pdf
 #### new
 
 Trauma and Burns/Major Trauma Ward stepdowns from critical care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Trauma%20and%20Burns/Major%20Trauma%20Ward%20stepdowns%20from%20critical%20care.pdf)
+[Link](../Trauma%20and%20Burns/Major%20Trauma%20Ward%20stepdowns%20from%20critical%20care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1545,7 +1545,7 @@ Obstetrics/Management of the Pregnant Patient in Critical Care.pdf
 
 Obstetrics/Management of the Pregnant Patient in Critical Care Oct
 2022.docx.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Obstetrics/Management%20of%20the%20Pregnant%20Patient%20in%20Critical%20Care%20Oct%202022.docx.pdf)
+[Link](../Obstetrics/Management%20of%20the%20Pregnant%20Patient%20in%20Critical%20Care%20Oct%202022.docx.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1597,53 +1597,53 @@ Organ_donation/NHSL Organ and Tissue Donation Policy Final. docx.pdf
 #### modified
 
 Airway/Tracheostomy_Laryngectomy/Laryngectomy Poster.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Airway/Tracheostomy_Laryngectomy/Laryngectomy%20Poster.pdf)
+[Link](../Airway/Tracheostomy_Laryngectomy/Laryngectomy%20Poster.pdf)
 
 Airway/Tracheostomy_Laryngectomy/Tracheostomy Poster.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Airway/Tracheostomy_Laryngectomy/Tracheostomy%20Poster.pdf)
+[Link](../Airway/Tracheostomy_Laryngectomy/Tracheostomy%20Poster.pdf)
 
 Drugs/dexmedetomidine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/dexmedetomidine.pdf)
+[Link](../Drugs/dexmedetomidine.pdf)
 
 Drugs/metaraminol for hypotension.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/metaraminol%20for%20hypotension.pdf)
+[Link](../Drugs/metaraminol%20for%20hypotension.pdf)
 
 ECLS/ECPR QRH.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/ECLS/ECPR%20QRH.pdf)
+[Link](../ECLS/ECPR%20QRH.pdf)
 
 Ethics_and_Law/Care at the End of Life (FICM).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Care%20at%20the%20End%20of%20Life%20(FICM).pdf)
+[Link](../Ethics_and_Law/Care%20at%20the%20End%20of%20Life%20(FICM).pdf)
 
 Ethics_and_Law/Maintaining Safety and Confidence in the Diagnosis of
 Death using Neurological Criteria FICM Midnight Law (UK).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Maintaining%20Safety%20and%20Confidence%20in%20the%20Diagnosis%20of%20Death%20using%20Neurological%20Criteria%20FICM%20Midnight%20Law%20(UK).pdf)
+[Link](../Ethics_and_Law/Maintaining%20Safety%20and%20Confidence%20in%20the%20Diagnosis%20of%20Death%20using%20Neurological%20Criteria%20FICM%20Midnight%20Law%20(UK).pdf)
 
 Ethics_and_Law/Police access to critical care patients FICM Midnight Law
 (UK).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Police%20access%20to%20critical%20care%20patients%20FICM%20Midnight%20Law%20(UK).pdf)
+[Link](../Ethics_and_Law/Police%20access%20to%20critical%20care%20patients%20FICM%20Midnight%20Law%20(UK).pdf)
 
 Ethics_and_Law/Refusal of emergency life saving treatment FICM Midnight
 Law (Scotland).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Refusal%20of%20emergency%20life%20saving%20treatment%20FICM%20Midnight%20Law%20(Scotland).pdf)
+[Link](../Ethics_and_Law/Refusal%20of%20emergency%20life%20saving%20treatment%20FICM%20Midnight%20Law%20(Scotland).pdf)
 
 Ethics_and_Law/Refusal to Accept the diagnosis of death according to
 neurological criteria FICM Midnight Law (UK).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Refusal%20to%20Accept%20the%20diagnosis%20of%20death%20according%20to%20neurological%20criteria%20FICM%20Midnight%20Law%20(UK).pdf)
+[Link](../Ethics_and_Law/Refusal%20to%20Accept%20the%20diagnosis%20of%20death%20according%20to%20neurological%20criteria%20FICM%20Midnight%20Law%20(UK).pdf)
 
 Ethics_and_Law/Relatives recording conversations FICM Midnight Law
 (UK).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Relatives%20recording%20conversations%20FICM%20Midnight%20Law%20(UK).pdf)
+[Link](../Ethics_and_Law/Relatives%20recording%20conversations%20FICM%20Midnight%20Law%20(UK).pdf)
 
 Ethics_and_Law/Treatment rights of the disabled FICM Midnight Law
 (Scotland).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Treatment%20rights%20of%20the%20disabled%20FICM%20Midnight%20Law%20(Scotland).pdf)
+[Link](../Ethics_and_Law/Treatment%20rights%20of%20the%20disabled%20FICM%20Midnight%20Law%20(Scotland).pdf)
 
 Policies_and_admin/Trainees/ACCS curriculum guidance for ICM.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/Trainees/ACCS%20curriculum%20guidance%20for%20ICM.pdf)
+[Link](../Policies_and_admin/Trainees/ACCS%20curriculum%20guidance%20for%20ICM.pdf)
 #### new
 
 Organ_donation/NHSL Organ and Tissue Donation Policy Final.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Organ_donation/NHSL%20Organ%20and%20Tissue%20Donation%20Policy%20Final.pdf)
+[Link](../Organ_donation/NHSL%20Organ%20and%20Tissue%20Donation%20Policy%20Final.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1663,10 +1663,10 @@ Airway/Tracheostomy_Laryngectomy/Tracheostomy_poster_em.pdf
 #### new
 
 Airway/Tracheostomy_Laryngectomy/Laryngectomy Poster.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Airway/Tracheostomy_Laryngectomy/Laryngectomy%20Poster.pdf)
+[Link](../Airway/Tracheostomy_Laryngectomy/Laryngectomy%20Poster.pdf)
 
 Airway/Tracheostomy_Laryngectomy/Tracheostomy Poster.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Airway/Tracheostomy_Laryngectomy/Tracheostomy%20Poster.pdf)
+[Link](../Airway/Tracheostomy_Laryngectomy/Tracheostomy%20Poster.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1685,34 +1685,34 @@ policy for Scotland.pdf
 #### new
 
 Ethics_and_Law/Care at the End of Life FICM policy (UK) .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Care%20at%20the%20End%20of%20Life%20FICM%20policy%20(UK)%20.pdf)
+[Link](../Ethics_and_Law/Care%20at%20the%20End%20of%20Life%20FICM%20policy%20(UK)%20.pdf)
 
 Ethics_and_Law/Maintaining Safety and Confidence in the Diagnosis of
 Death using Neurological Criteria FICM Midnight Law (UK).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Maintaining%20Safety%20and%20Confidence%20in%20the%20Diagnosis%20of%20Death%20using%20Neurological%20Criteria%20FICM%20Midnight%20Law%20(UK).pdf)
+[Link](../Ethics_and_Law/Maintaining%20Safety%20and%20Confidence%20in%20the%20Diagnosis%20of%20Death%20using%20Neurological%20Criteria%20FICM%20Midnight%20Law%20(UK).pdf)
 
 Ethics_and_Law/Police access to critical care patients FICM Midnight Law
 (UK).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Police%20access%20to%20critical%20care%20patients%20FICM%20Midnight%20Law%20(UK).pdf)
+[Link](../Ethics_and_Law/Police%20access%20to%20critical%20care%20patients%20FICM%20Midnight%20Law%20(UK).pdf)
 
 Ethics_and_Law/Refusal of emergency life saving treatment FICM Midnight
 Law (Scotland).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Refusal%20of%20emergency%20life%20saving%20treatment%20FICM%20Midnight%20Law%20(Scotland).pdf)
+[Link](../Ethics_and_Law/Refusal%20of%20emergency%20life%20saving%20treatment%20FICM%20Midnight%20Law%20(Scotland).pdf)
 
 Ethics_and_Law/Refusal to Accept the diagnosis of death according to
 neurological criteria FICM Midnight Law (UK).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Refusal%20to%20Accept%20the%20diagnosis%20of%20death%20according%20to%20neurological%20criteria%20FICM%20Midnight%20Law%20(UK).pdf)
+[Link](../Ethics_and_Law/Refusal%20to%20Accept%20the%20diagnosis%20of%20death%20according%20to%20neurological%20criteria%20FICM%20Midnight%20Law%20(UK).pdf)
 
 Ethics_and_Law/Relatives recording conversations FICM Midnight Law
 (UK).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Relatives%20recording%20conversations%20FICM%20Midnight%20Law%20(UK).pdf)
+[Link](../Ethics_and_Law/Relatives%20recording%20conversations%20FICM%20Midnight%20Law%20(UK).pdf)
 
 Ethics_and_Law/Scotland DNACPR policy.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Scotland%20DNACPR%20policy.pdf)
+[Link](../Ethics_and_Law/Scotland%20DNACPR%20policy.pdf)
 
 Ethics_and_Law/Treatment rights of the disabled FICM Midnight Law
 (Scotland).pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Ethics_and_Law/Treatment%20rights%20of%20the%20disabled%20FICM%20Midnight%20Law%20(Scotland).pdf)
+[Link](../Ethics_and_Law/Treatment%20rights%20of%20the%20disabled%20FICM%20Midnight%20Law%20(Scotland).pdf)
 #### renamed
 
 Ethics_and_Law/Disagreements regarding the treatment of patients who
@@ -1726,7 +1726,7 @@ treatment for patients who lack capacity FICM Midnight Law
 #### new
 
 Organ_donation/NHSL Organ and Tissue Donation Policy Final. docx.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Organ_donation/NHSL%20Organ%20and%20Tissue%20Donation%20Policy%20Final.%20docx.pdf)
+[Link](../Organ_donation/NHSL%20Organ%20and%20Tissue%20Donation%20Policy%20Final.%20docx.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1734,7 +1734,7 @@ Organ_donation/NHSL Organ and Tissue Donation Policy Final. docx.pdf:
 #### modified
 
 Drugs/dexmedetomidine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/dexmedetomidine.pdf)
+[Link](../Drugs/dexmedetomidine.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1742,7 +1742,7 @@ Drugs/dexmedetomidine.pdf:
 #### new
 
 ECLS/ECPR QRH.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/ECLS/ECPR%20QRH.pdf)
+[Link](../ECLS/ECPR%20QRH.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1755,7 +1755,7 @@ of iliofemoral DVT alteplase.pdf
 
 Cardiovascular/Pulmonary_Embolism_and_DVT/Catheter directed thrombolysis
 of iliofemoral DVT alteplase_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Pulmonary_Embolism_and_DVT/Catheter%20directed%20thrombolysis%20of%20iliofemoral%20DVT%20alteplase_pub.pdf)
+[Link](../Cardiovascular/Pulmonary_Embolism_and_DVT/Catheter%20directed%20thrombolysis%20of%20iliofemoral%20DVT%20alteplase_pub.pdf)
 
 ------------------------------------------------------------------------
 
@@ -1796,167 +1796,167 @@ Post_op_care/Metaraminol for hypotension.docx
 #### modified
 
 Breathing(Respiratory)/T piece Y piece guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/T%20piece%20Y%20piece%20guideline.pdf)
+[Link](../Breathing(Respiratory)/T%20piece%20Y%20piece%20guideline.pdf)
 
 Breathing(Respiratory)/Ventilators Circuits, Filters and Closed
 Suction - Set up and Maintenance.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Ventilators%20Circuits,%20Filters%20and%20Closed%20Suction%20-%20Set%20up%20and%20Maintenance.pdf)
+[Link](../Breathing(Respiratory)/Ventilators%20Circuits,%20Filters%20and%20Closed%20Suction%20-%20Set%20up%20and%20Maintenance.pdf)
 
 Cardiovascular/Acute Type B Aortic Dissection.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Acute%20Type%20B%20Aortic%20Dissection.pdf)
+[Link](../Cardiovascular/Acute%20Type%20B%20Aortic%20Dissection.pdf)
 
 Cardiovascular/Adult Advanced Life Support Algorithm_em.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Adult%20Advanced%20Life%20Support%20Algorithm_em.pdf)
+[Link](../Cardiovascular/Adult%20Advanced%20Life%20Support%20Algorithm_em.pdf)
 
 Cardiovascular/Cardiogenic Shock.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Cardiogenic%20Shock.pdf)
+[Link](../Cardiovascular/Cardiogenic%20Shock.pdf)
 
 Cardiovascular/Central Venous Catheters - Guideline for Management of
 Misplacement.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Central%20Venous%20Catheters%20-%20Guideline%20for%20Management%20of%20Misplacement.pdf)
+[Link](../Cardiovascular/Central%20Venous%20Catheters%20-%20Guideline%20for%20Management%20of%20Misplacement.pdf)
 
 Cardiovascular/Intra Aortic Balloon Pump Bedside Checks_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Intra%20Aortic%20Balloon%20Pump%20Bedside%20Checks_pub.pdf)
+[Link](../Cardiovascular/Intra%20Aortic%20Balloon%20Pump%20Bedside%20Checks_pub.pdf)
 
 Cardiovascular/Intra Aortic Balloon Pump Guideline_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Intra%20Aortic%20Balloon%20Pump%20Guideline_pub.pdf)
+[Link](../Cardiovascular/Intra%20Aortic%20Balloon%20Pump%20Guideline_pub.pdf)
 
 Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
+[Link](../Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
 
 Covid-19/Covid 19 Death Certification Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/Covid%2019%20Death%20Certification%20Guideline.pdf)
+[Link](../Covid-19/Covid%2019%20Death%20Certification%20Guideline.pdf)
 
 Covid-19/RRT in COVID+ve or suspected patients.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/RRT%20in%20COVID+ve%20or%20suspected%20patients.pdf)
+[Link](../Covid-19/RRT%20in%20COVID+ve%20or%20suspected%20patients.pdf)
 
 Covid-19/COVID 19 Haematology/Treatment of venous thromboembolism in
 COVID-19 patients.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/COVID%2019%20Haematology/Treatment%20of%20venous%20thromboembolism%20in%20COVID-19%20patients.pdf)
+[Link](../Covid-19/COVID%2019%20Haematology/Treatment%20of%20venous%20thromboembolism%20in%20COVID-19%20patients.pdf)
 
 Covid-19/COVID 19 Haematology/heparin infusion chart COVID-19 in
 critical care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/COVID%2019%20Haematology/heparin%20infusion%20chart%20COVID-19%20in%20critical%20care.pdf)
+[Link](../Covid-19/COVID%2019%20Haematology/heparin%20infusion%20chart%20COVID-19%20in%20critical%20care.pdf)
 
 Covid-19/videos/Donning and Doffing Video.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/videos/Donning%20and%20Doffing%20Video.pdf)
+[Link](../Covid-19/videos/Donning%20and%20Doffing%20Video.pdf)
 
 Delirium/FAQs AWI.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Delirium/FAQs%20AWI.pdf)
+[Link](../Delirium/FAQs%20AWI.pdf)
 
 Drugs/aminophylline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/aminophylline.pdf)
+[Link](../Drugs/aminophylline.pdf)
 
 Drugs/pancuronium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/pancuronium.pdf)
+[Link](../Drugs/pancuronium.pdf)
 
 Drugs/thiopentone.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/thiopentone.pdf)
+[Link](../Drugs/thiopentone.pdf)
 
 Drugs/valproate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/valproate.pdf)
+[Link](../Drugs/valproate.pdf)
 
 Drugs/vasopressin organ donation.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/vasopressin%20organ%20donation.pdf)
+[Link](../Drugs/vasopressin%20organ%20donation.pdf)
 
 GI_Liver_and_Transplant/Confirmation of Nasogastric Tube Position.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/GI_Liver_and_Transplant/Confirmation%20of%20Nasogastric%20Tube%20Position.pdf)
+[Link](../GI_Liver_and_Transplant/Confirmation%20of%20Nasogastric%20Tube%20Position.pdf)
 
 GI_Liver_and_Transplant/Fulminant Liver Failure.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/GI_Liver_and_Transplant/Fulminant%20Liver%20Failure.pdf)
+[Link](../GI_Liver_and_Transplant/Fulminant%20Liver%20Failure.pdf)
 
 Haematology_CAR-T/CRS.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Haematology_CAR-T/CRS.pdf)
+[Link](../Haematology_CAR-T/CRS.pdf)
 
 Haematology_CAR-T/ICANS.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Haematology_CAR-T/ICANS.pdf)
+[Link](../Haematology_CAR-T/ICANS.pdf)
 
 Infection_and_sepsis/BAL and MiniBAL standardised procedure.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/BAL%20and%20MiniBAL%20standardised%20procedure.pdf)
+[Link](../Infection_and_sepsis/BAL%20and%20MiniBAL%20standardised%20procedure.pdf)
 
 Infection_and_sepsis/Infection indications for IVIG.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Infection%20indications%20for%20IVIG.pdf)
+[Link](../Infection_and_sepsis/Infection%20indications%20for%20IVIG.pdf)
 
 Infection_and_sepsis/Ventriculitis.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Ventriculitis.pdf)
+[Link](../Infection_and_sepsis/Ventriculitis.pdf)
 
 Neurological/Intrathecal Administration Guidance.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Intrathecal%20Administration%20Guidance.pdf)
+[Link](../Neurological/Intrathecal%20Administration%20Guidance.pdf)
 
 Neurological/Neurological MRI under GA DCN - SOP for Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Neurological%20MRI%20under%20GA%20DCN%20-%20SOP%20for%20Critical%20Care.pdf)
+[Link](../Neurological/Neurological%20MRI%20under%20GA%20DCN%20-%20SOP%20for%20Critical%20Care.pdf)
 
 Neurological/Treatment of status epilepticus.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Treatment%20of%20status%20epilepticus.pdf)
+[Link](../Neurological/Treatment%20of%20status%20epilepticus.pdf)
 
 Neurological/Ventriculitis Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Ventriculitis%20Guideline.pdf)
+[Link](../Neurological/Ventriculitis%20Guideline.pdf)
 
 Organ_donation/BSD Long version form for the diagnosis of death using
 neurological criteria.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Organ_donation/BSD%20Long%20version%20form%20for%20the%20diagnosis%20of%20death%20using%20neurological%20criteria.pdf)
+[Link](../Organ_donation/BSD%20Long%20version%20form%20for%20the%20diagnosis%20of%20death%20using%20neurological%20criteria.pdf)
 
 Organ_donation/BSD Short version form for the diagnosis of death using
 neurological criteria.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Organ_donation/BSD%20Short%20version%20form%20for%20the%20diagnosis%20of%20death%20using%20neurological%20criteria.pdf)
+[Link](../Organ_donation/BSD%20Short%20version%20form%20for%20the%20diagnosis%20of%20death%20using%20neurological%20criteria.pdf)
 
 Policies_and_admin/Trainees/ACCS curriculum guidance for ICM.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/Trainees/ACCS%20curriculum%20guidance%20for%20ICM.pdf)
+[Link](../Policies_and_admin/Trainees/ACCS%20curriculum%20guidance%20for%20ICM.pdf)
 
 Procedures/Securing CVCs in Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Procedures/Securing%20CVCs%20in%20Critical%20Care.pdf)
+[Link](../Procedures/Securing%20CVCs%20in%20Critical%20Care.pdf)
 
 Renal_and_Urology/RRT guideline including citrate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Renal_and_Urology/RRT%20guideline%20including%20citrate.pdf)
+[Link](../Renal_and_Urology/RRT%20guideline%20including%20citrate.pdf)
 
 Research/current_research_studies.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Research/current_research_studies.pdf)
+[Link](../Research/current_research_studies.pdf)
 
 Routine_Care/ICU Eye Care Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/ICU%20Eye%20Care%20Guideline.pdf)
+[Link](../Routine_Care/ICU%20Eye%20Care%20Guideline.pdf)
 
 Routine_Care/Video Communication.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/Video%20Communication.pdf)
+[Link](../Routine_Care/Video%20Communication.pdf)
 
 Routine_Care/bBraun Spaceplus Failure EMERGENCY ACTION CARD_em.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/bBraun%20Spaceplus%20Failure%20EMERGENCY%20ACTION%20CARD_em.pdf)
+[Link](../Routine_Care/bBraun%20Spaceplus%20Failure%20EMERGENCY%20ACTION%20CARD_em.pdf)
 
 Routine_Care/post-ICU_recovery.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/post-ICU_recovery.pdf)
+[Link](../Routine_Care/post-ICU_recovery.pdf)
 
 Transfer/ACCP Transfers.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Transfer/ACCP%20Transfers.pdf)
+[Link](../Transfer/ACCP%20Transfers.pdf)
 #### new
 
 Breathing(Respiratory)/APRV.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/APRV.pdf)
+[Link](../Breathing(Respiratory)/APRV.pdf)
 
 Breathing(Respiratory)/Bipap V60.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/Bipap%20V60.pdf)
+[Link](../Breathing(Respiratory)/Bipap%20V60.pdf)
 
 Breathing(Respiratory)/CPAP.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Breathing(Respiratory)/CPAP.pdf)
+[Link](../Breathing(Respiratory)/CPAP.pdf)
 
 Cardiovascular/Management of hypertension within Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Management%20of%20hypertension%20within%20Critical%20Care.pdf)
+[Link](../Cardiovascular/Management%20of%20hypertension%20within%20Critical%20Care.pdf)
 
 Drugs/ketamine for status epilepticus.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/ketamine%20for%20status%20epilepticus.pdf)
+[Link](../Drugs/ketamine%20for%20status%20epilepticus.pdf)
 
 Drugs/phenytoin.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/phenytoin.pdf)
+[Link](../Drugs/phenytoin.pdf)
 
 Drugs/phosphate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/phosphate.pdf)
+[Link](../Drugs/phosphate.pdf)
 
 Drugs/rocuronium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/rocuronium.pdf)
+[Link](../Drugs/rocuronium.pdf)
 
 Post_op_care/Epidural hypotension.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Epidural%20hypotension.pdf)
+[Link](../Post_op_care/Epidural%20hypotension.pdf)
 
 Post_op_care/metaraminol for hypotension.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/metaraminol%20for%20hypotension.pdf)
+[Link](../Post_op_care/metaraminol%20for%20hypotension.pdf)
 #### renamed
 
 Drugs/fentanylv1 0.pdf ==\> Drugs/fentanyl.pdf
@@ -1985,7 +1985,7 @@ Renal_and_Urology/RRT in COVID or suspected patients.pdf
 #### modified
 
 End_of_life_care/Postmortem.md:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Postmortem.md)
+[Link](../End_of_life_care/Postmortem.md)
 
 ------------------------------------------------------------------------
 
@@ -1993,7 +1993,7 @@ End_of_life_care/Postmortem.md:
 #### modified
 
 End_of_life_care/Postmortem.md:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/End_of_life_care/Postmortem.md)
+[Link](../End_of_life_care/Postmortem.md)
 
 ------------------------------------------------------------------------
 
@@ -2004,7 +2004,7 @@ Covid-19/COVID 19 ICM guidance basic goals_May_2022.pdf
 #### new
 
 Covid-19/COVID 19 ICM guidance basic goals_June_2022.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/COVID%2019%20ICM%20guidance%20basic%20goals_June_2022.pdf)
+[Link](../Covid-19/COVID%2019%20ICM%20guidance%20basic%20goals_June_2022.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2012,7 +2012,7 @@ Covid-19/COVID 19 ICM guidance basic goals_June_2022.pdf:
 #### modified
 
 Drugs/noradrenaline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/noradrenaline.pdf)
+[Link](../Drugs/noradrenaline.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2024,7 +2024,7 @@ Cardiovascular/Hypertension (Management in Critical Care).pdf
 
 Cardiovascular/Management of hypertension within Critical Care vers
 2.0.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Management%20of%20hypertension%20within%20Critical%20Care%20vers%202.0.pdf)
+[Link](../Cardiovascular/Management%20of%20hypertension%20within%20Critical%20Care%20vers%202.0.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2036,14 +2036,14 @@ Post_op_care/Abdominal Aortic Aneurysm (AAA) Post-Op Care.pdf
 
 Post_op_care/Endovascular Aortic Procedures - Post Op Guideline
 V1.4.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Endovascular%20Aortic%20Procedures%20-%20Post%20Op%20Guideline%20V1.4.pdf)
+[Link](../Post_op_care/Endovascular%20Aortic%20Procedures%20-%20Post%20Op%20Guideline%20V1.4.pdf)
 
 Post_op_care/Open Infra And Juxta-Renal Aortic Surgery - Post Op
 Guideline V1.4.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Open%20Infra%20And%20Juxta-Renal%20Aortic%20Surgery%20-%20Post%20Op%20Guideline%20V1.4.pdf)
+[Link](../Post_op_care/Open%20Infra%20And%20Juxta-Renal%20Aortic%20Surgery%20-%20Post%20Op%20Guideline%20V1.4.pdf)
 
 Post_op_care/Open TAAA Surgery - Post Op Guideline V1.4.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Open%20TAAA%20Surgery%20-%20Post%20Op%20Guideline%20V1.4.pdf)
+[Link](../Post_op_care/Open%20TAAA%20Surgery%20-%20Post%20Op%20Guideline%20V1.4.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2051,7 +2051,7 @@ Post_op_care/Open TAAA Surgery - Post Op Guideline V1.4.pdf:
 #### modified
 
 Drugs/clonidine.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/clonidine.pdf)
+[Link](../Drugs/clonidine.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2059,7 +2059,7 @@ Drugs/clonidine.pdf:
 #### new
 
 Routine_Care/ICU Eye Care Guideline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Routine_Care/ICU%20Eye%20Care%20Guideline.pdf)
+[Link](../Routine_Care/ICU%20Eye%20Care%20Guideline.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2070,7 +2070,7 @@ Covid-19/COVID 19 ICM guidance basic goals.pdf
 #### new
 
 Covid-19/COVID 19 ICM guidance basic goals_May_2022.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Covid-19/COVID%2019%20ICM%20guidance%20basic%20goals_May_2022.pdf)
+[Link](../Covid-19/COVID%2019%20ICM%20guidance%20basic%20goals_May_2022.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2078,7 +2078,7 @@ Covid-19/COVID 19 ICM guidance basic goals_May_2022.pdf:
 #### new
 
 Neurological/Critical Care MRI Procedure_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Critical%20Care%20MRI%20Procedure_pub.pdf)
+[Link](../Neurological/Critical%20Care%20MRI%20Procedure_pub.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2093,11 +2093,11 @@ Policies_and_admin/General Critical Care SOP.pdf
 #### new
 
 Policies_and_admin/General Critical Care SOP_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/General%20Critical%20Care%20SOP_pub.pdf)
+[Link](../Policies_and_admin/General%20Critical%20Care%20SOP_pub.pdf)
 
 Policies_and_admin/NHSL Critical Care Admission Escalation
 Guideline_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/NHSL%20Critical%20Care%20Admission%20%20Escalation%20Guideline_pub.pdf)
+[Link](../Policies_and_admin/NHSL%20Critical%20Care%20Admission%20%20Escalation%20Guideline_pub.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2108,7 +2108,7 @@ Neurological/Intrathecal Administration.pdf
 #### new
 
 Neurological/Intrathecal Administration Guidance.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Intrathecal%20Administration%20Guidance.pdf)
+[Link](../Neurological/Intrathecal%20Administration%20Guidance.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2116,7 +2116,7 @@ Neurological/Intrathecal Administration Guidance.pdf:
 #### new
 
 Policies_and_admin/General Critical Care Interaction with HEPMA_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/General%20Critical%20Care%20Interaction%20with%20HEPMA_pub.pdf)
+[Link](../Policies_and_admin/General%20Critical%20Care%20Interaction%20with%20HEPMA_pub.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2127,7 +2127,7 @@ Post_op_care/Epidural hypotension.pdf
 #### new
 
 Post_op_care/Epidural hypotension 2022 update.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Post_op_care/Epidural%20hypotension%202022%20update.pdf)
+[Link](../Post_op_care/Epidural%20hypotension%202022%20update.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2135,7 +2135,7 @@ Post_op_care/Epidural hypotension 2022 update.pdf:
 #### modified
 
 Drugs/aminophylline.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/aminophylline.pdf)
+[Link](../Drugs/aminophylline.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2166,10 +2166,10 @@ Cardiovascular/Intra-aortic Balloon Pump Safety Checklist.pdf
 #### new
 
 Cardiovascular/Intra Aortic Balloon Pump Bedside Checks_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Intra%20Aortic%20Balloon%20Pump%20Bedside%20Checks_pub.pdf)
+[Link](../Cardiovascular/Intra%20Aortic%20Balloon%20Pump%20Bedside%20Checks_pub.pdf)
 
 Cardiovascular/Intra Aortic Balloon Pump Guideline_pub.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Intra%20Aortic%20Balloon%20Pump%20Guideline_pub.pdf)
+[Link](../Cardiovascular/Intra%20Aortic%20Balloon%20Pump%20Guideline_pub.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2177,7 +2177,7 @@ Cardiovascular/Intra Aortic Balloon Pump Guideline_pub.pdf:
 #### new
 
 Neurological/Neurological MRI under GA DCN - SOP for Critical Care.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Neurological%20MRI%20under%20GA%20DCN%20-%20SOP%20for%20Critical%20Care.pdf)
+[Link](../Neurological/Neurological%20MRI%20under%20GA%20DCN%20-%20SOP%20for%20Critical%20Care.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2197,10 +2197,10 @@ Drugs/rocuronium.pdf
 #### new
 
 Drugs/Phenytoin.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Phenytoin.pdf)
+[Link](../Drugs/Phenytoin.pdf)
 
 Drugs/Rocuronium.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Rocuronium.pdf)
+[Link](../Drugs/Rocuronium.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2208,7 +2208,7 @@ Drugs/Rocuronium.pdf:
 #### new
 
 Delirium/FAQs AWI.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Delirium/FAQs%20AWI.pdf)
+[Link](../Delirium/FAQs%20AWI.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2219,7 +2219,7 @@ Drugs/phosphate.pdf
 #### new
 
 Drugs/Phosphate.pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Phosphate.pdf)
+[Link](../Drugs/Phosphate.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2227,7 +2227,7 @@ Drugs/Phosphate.pdf:
 #### new
 
 Policies_and_admin/Document.docx:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Policies_and_admin/Document.docx)
+[Link](../Policies_and_admin/Document.docx)
 
 ------------------------------------------------------------------------
 
@@ -2245,7 +2245,7 @@ Drugs/pancuromium.pdf
 #### new
 
 Drugs/Pancuronium .pdf:
-[Link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Drugs/Pancuronium%20.pdf)
+[Link](../Drugs/Pancuronium%20.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2271,7 +2271,7 @@ intubation checklist_em_pub.pdf
 #### modified
 
 \- Cardiovascular/Out of Hospital Cardiac Arrest_pub.pdf:
-[link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
+[link](../Cardiovascular/Out%20of%20Hospital%20Cardiac%20Arrest_pub.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2279,10 +2279,10 @@ intubation checklist_em_pub.pdf
 #### new
 
 \- Infection_and_sepsis/Ventriculitis Guideline.pdf:
-[link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Infection_and_sepsis/Ventriculitis%20Guideline.pdf)
+[link](../Infection_and_sepsis/Ventriculitis%20Guideline.pdf)
 
 \- Neurological/Ventriculitis Guideline.pdf:
-[link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Ventriculitis%20Guideline.pdf)
+[link](../Neurological/Ventriculitis%20Guideline.pdf)
 
 ------------------------------------------------------------------------
 
@@ -2290,7 +2290,7 @@ intubation checklist_em_pub.pdf
 #### modified
 
 \- Neurological/Treatment of status epilepticus.pdf:
-[link](https://critcare.net/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/criticalcare/Neurological/Treatment%20of%20status%20epilepticus.pdf)
+[link](../Neurological/Treatment%20of%20status%20epilepticus.pdf)
 
 ------------------------------------------------------------------------
 
