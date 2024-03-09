@@ -7,8 +7,7 @@ import oyaml as yaml
 #-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-f', '--force_errors',    action="store_true", default=False,    help='carries on if errors happen')
-parser.add_argument('-o', '--override_changes', default=False, action="store_true")
+parser.add_argument('-v', '--verbose', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
 path_to_top_level = "../"

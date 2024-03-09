@@ -14,11 +14,13 @@ from msal import ConfidentialClientApplication
 #-----------------------------
 import guideline_functions as gl
 #-----------------------------
+scriptpath = os.path.dirname(os.path.realpath(__file__))
+#-----------------------------
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--sourcedir', default='https://www.dropbox.com/sh/w9jw30h9bj5cbh2/AACEcqEc-_9Sl6J6g0pveapba?dl=0') # default test dir
-parser.add_argument('-d', '--destinationdir', default='lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/', help="relative path from top level directory of jekyll site")
-parser.add_argument('-w', '--webstem', default='https://critcare.net/')
+parser.add_argument('-d', '--dir', default=os.path.join(scriptpath,'../lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/'))
+parser.add_argument('-dn', '--destinationdirname', default='guidelines')
 parser.add_argument('-c', '--cloud', default='dropbox')
 parser.add_argument('-v', '--verbose',    action="store_true", default=False,    help='increases verbosity')
 args = parser.parse_args()
@@ -31,7 +33,7 @@ changestoignore = [
         "editors.md",
     ]
 #-----------------------------
-changelog = os.path.abspath(os.path.join(args.destinationdir,"../",".changes.json")) # same as makelist.py
+changelog = os.path.abspath(os.path.join(args.dir, ".changes.json")) # same as makelist.py
 #-----------------------------
 
 # UNTESTED CODE FOR ONE DRIVE 
@@ -85,26 +87,20 @@ def download_dropbox_folder(folder_url, dest):
 
 def printablepath(target, link=False):
     target = target.replace("/.temp/","/")
-    p = pathlib.PurePosixPath(target)
+    relative_target = os.path.relpath(target, args.dir)
+    if args.verbose:
+        print ("target:", target)
+        print ("relative_target:", relative_target)
     if link:
-        if os.path.isdir(p):
-            out = '{}: [folder]'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
+        if os.path.isdir(target):
+            out = '{}: [folder]'.format(relative_target)
         else:
-            if args.verbose:
-                print (target)
-                print (p)
-            try:
-                out = '{}: [Link]({}{}{})'.format(
-                                    p.relative_to(pathlib.PurePosixPath(args.destinationdir)), 
-                                    args.webstem,
-                                    args.destinationdir,
-                                    gl.fix_filename(p.relative_to(pathlib.PurePosixPath(args.destinationdir))),
+            out = '{}: [Link](../{})'.format(
+                                    gl.fix_filename(relative_target),
+                                    gl.fix_filename(relative_target),
                                     )
-            except:
-                out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
-                print ("Error: unable to get printable path for {}. Continuing.".format(target))
     else:
-        out = '{}'.format(p.relative_to(pathlib.PurePosixPath(args.destinationdir)))
+        out = '{}'.format(relative_target)
     return out
 
 def try_remove(thistarget):
@@ -186,14 +182,16 @@ def download_files_from_dir(folder_url, dir_name, temp, cloud=args.cloud):
 
 #-----------------------------
 # create temp dir, download all to it, parse and then remove
-tempdir = os.path.join(args.destinationdir, ".temp")
+tempdir = os.path.join(args.dir, args.destinationdirname, ".temp")
+if args.verbose:
+    print ("tempdir:", tempdir)
 if not os.path.exists(tempdir):
     os.makedirs(tempdir, exist_ok=True)
     if args.verbose:
-        print ("cloud data downloaded to {}".format(tempdir))
+        print ("New directory created at {}".format(tempdir))
 changes = {"deleted":{},"modified":{},"new":{},"renamed":{}}
 outputc = {"deleted":{},"modified":{},"new":{},"renamed":{}}
-download_files_from_dir(args.sourcedir, args.destinationdir, tempdir)
+download_files_from_dir(args.sourcedir, os.path.join(args.dir, args.destinationdirname), tempdir)
 try_remove(tempdir)
 
 outputc = {}

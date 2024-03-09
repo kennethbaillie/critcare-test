@@ -31,6 +31,7 @@ parser.add_argument('-if', '--indexfilename', default='index.json')
 parser.add_argument('-ed', '--emergencydirname', default='Emergencies')
 parser.add_argument('-gd', '--guidelinesdirname', default='guidelines')
 parser.add_argument('-pd', '--publicdirname', default='public')
+parser.add_argument('-v', '--verbose', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
 guidelinesdir = os.path.join(args.dir, args.guidelinesdirname)

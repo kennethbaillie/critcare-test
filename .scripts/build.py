@@ -9,6 +9,8 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--force_errors',    action="store_true", default=False,    help='carries on if errors happen')
 parser.add_argument('-o', '--override_changes', default=False, action="store_true")
+parser.add_argument('-v', '--verbose', default=False, action="store_true")
+parser.add_argument('-r', '--getreviewdates', default=False, action="store_true")
 args = parser.parse_args()
 #-----------------------------
 path_to_top_level = "../"
@@ -40,14 +42,17 @@ def run_build(directory, secret, cloudlink):
     secretdir = directory + "/" + secret
     publicdir = directory + "/public"
     oc = ""
+    if args.verbose:
+        verbose = "-v"
     if args.override_changes:
         oc = "-o"
-    run_command(f"python3 .scripts/make_robots.py")
-    run_command(f"python3 .scripts/download.py -s '{cloudlink}' -d '{secretdir}/guidelines/'", force=args.force_errors)
-    run_command(f"python3 .scripts/makelist.py -e -d '{secretdir}/' {oc}", force=args.force_errors)
-    run_command(f"python3 .scripts/get_duplicates.py -d '{secretdir}/' {oc}", force=args.force_errors)
-    run_command(f"python3 .scripts/get_review_dates.py -d '{secretdir}/' {oc}", force=args.force_errors)
-    run_command(f"python3 .scripts/get_editors.py -d '{secretdir}/'", force=args.force_errors)
+    run_command(f"python3 .scripts/make_robots.py {verbose}")
+    run_command(f"python3 .scripts/download.py -s '{cloudlink}' -d '{secretdir}/' {verbose}", force=args.force_errors)
+    run_command(f"python3 .scripts/makelist.py -e -d '{secretdir}/' {oc} {verbose}", force=args.force_errors)
+    run_command(f"python3 .scripts/get_duplicates.py -d '{secretdir}/' {oc} {verbose}", force=args.force_errors)
+    run_command(f"python3 .scripts/get_editors.py -d '{secretdir}/' {verbose}", force=args.force_errors)
+    if args.getreviewdates:
+        run_command(f"python3 .scripts/get_review_dates.py -d '{secretdir}/' {oc} {verbose}", force=args.force_errors)
     run_command(f"git add -v {secretdir}/*", force=args.force_errors)
     run_command(f"git add -v {publicdir}/*", force=True)
 #-----------------------------
