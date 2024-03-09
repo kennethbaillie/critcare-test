@@ -8,14 +8,11 @@ Clinical Guidelines Browser
 - nominal security
 - public pages
 - optional "emergencies" links
-
 - automatic detection of changes. This means that you can keep track of all changes to your guidelines, forever, and enables you to keep a copy of yoru guidelines on a local intranet
 - duplicate detection
-- automatic parsing of review dates
-
+- automatic parsing and collation of review dates
 - custom 404 message: if a user searches within your guidelines for an incorrect URL, they are automatically directed to a search within your guidelines. 
-
-
+- automatic generation of a robots.txt file disallowing all secret directories
 
 ## Creating a new Guideline Set
 
