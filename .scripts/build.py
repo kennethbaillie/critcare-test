@@ -42,6 +42,7 @@ def run_build(directory, secret, cloudlink):
     oc = ""
     if args.override_changes:
         oc = "-o"
+    run_command(f"python3 .scripts/make_robots.py")
     run_command(f"python3 .scripts/download.py -s '{cloudlink}' -d '{secretdir}/guidelines/'", force=args.force_errors)
     run_command(f"python3 .scripts/makelist.py -e -d '{secretdir}/' {oc}", force=args.force_errors)
     run_command(f"python3 .scripts/get_duplicates.py -d '{secretdir}/' {oc}", force=args.force_errors)
