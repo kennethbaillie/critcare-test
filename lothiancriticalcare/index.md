@@ -3,72 +3,23 @@ layout: home
 ---
 
 <style>
-
 body {
-	background-attachment: fixed;
 	color: #333;
-	background: rgba(10, 10, 10, 0.8);
+	background: rgba(231,241, 255, 0.8);
 }
-
-.box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
-}
-
-.lightbox {
-	zoom: 1.5;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	margin: auto;
-}
-
-div.horizontal {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-
-div.vertical {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-
-input{
-	text-align: center;
-}
-
-::-webkit-input-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-::-moz-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-:-ms-input-placeholder {
-   color: #955;
-   text-align: center;
-}
-
 </style>
 
 <div class="col-xs-12 col-md-6 col-lg-4"></div>
 <div class="col-xs-6 col-md-6 col-lg-4">
 <div class="horizontal vertical">
 <form>
-<input id="username" type="text" placeholder="username" /> <br />
-<input id="password" type="password" placeholder="password" /> <br />
-<button id="loginbutton" type="button">Access</button>
+<div class="row py-1"><input id="username" type="text" placeholder="username" /></div>
+<div class="row py-1"><input id="password" type="password" placeholder="password" /></div>
+<div class="row py-1"><p id="wrongPassword" style="display: none">wrong username/password</p></div>
+<div class="row py-1">
+	<button id="loginbutton" type="button" class="btn btn-primary btn-lg">Access</button>
+</div>
 </form>
-<p id="wrongPassword" style="display: none">wrong password</p>
 </div>
 </div>
 <div class="col-xs-12 col-md-6 col-lg-4"></div>
@@ -109,7 +60,7 @@ function loadPage(pwd) {
 		},
 		error : function(xhr, ajaxOptions, thrownError) {
 			parent.location.hash = hash;
-			//$("#wrongPassword").show();
+			$("#wrongPassword").show();
 			$("#password").attr("placeholder","wrong username/password");
 			$("#password").val("");
 		}
