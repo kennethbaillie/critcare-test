@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // TEMPORARY CORRECTION TO NHS LOTHIAN GUIDELINES
       if (parts[1] == "criticalcare") {
-        var newUrl = '/lothiancriticalcare/' + parts[0] + "/guidelines/" + parts.slice(2).join("/") + "?redirect=true";
+        var newUrl = "{{ site.baseurl }}/lothiancriticalcare/" + parts[0] + "/guidelines/" + parts.slice(2).join("/") + "?redirect=true";
         console.log(newUrl);
         fetch(newUrl, { method: 'HEAD' }).then(function(response) {
           if (response.ok) {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ======================
 
     // if the user has entered the correct first directories, then they know the secret path so they can go straight to the guidelines
-      var newUrl = '/' + parts[0] + '/' + parts[1] + '/?404=' + parts.slice(2).join("/") + '&searchterm=' + parts.slice(2).join(" ");
+      var newUrl = "{{ site.baseurl }}/" + parts[0] + '/' + parts[1] + '/?404=' + parts.slice(2).join("/") + '&searchterm=' + parts.slice(2).join(" ");
       fetch(newUrl, { method: 'HEAD' }).then(function(response) {
         if(response.ok) {
           window.location.href = newUrl;
