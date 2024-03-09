@@ -74,7 +74,7 @@ The file name becomes the menu item. In the top of the file there is a special s
 
 ```
 ---
-redirect-to: https://youtu.be/o08B9es8JVE
+redirect_to: https://youtu.be/o08B9es8JVE
 ---
 ```
 

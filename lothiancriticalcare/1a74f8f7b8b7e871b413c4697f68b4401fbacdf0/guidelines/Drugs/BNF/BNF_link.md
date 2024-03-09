@@ -1,3 +1,3 @@
 ---
-redirect-to: https://bnf.nice.org.uk/
+redirect_to: https://bnf.nice.org.uk/
 ---
