@@ -5,6 +5,23 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 09/03/2024 17:13:24
+
+#### deleted
+
+
+- guidelines/Delirium/AWI FAQs.pdf
+- guidelines/Ethics_and_Law/Learning Disabled liaison team leaflet .pdf
+- guidelines/Policies_and_admin/AWI FAQs.pdf
+
+#### renamed
+
+
+- guidelines/Delirium/Learning Disabled liaison team leaflet .pdf ==> guidelines/Delirium/Learning Disabled liaison team leaflet.pdf: [Link](../guidelines/Delirium/Learning Disabled liaison team leaflet.pdf)
+- guidelines/Organ_donation/NHSL Organ and Tissue Donation Policy Final.pdf ==> guidelines/Organ_donation/NHSL Organ and Tissue Donation Policy.pdf: [Link](../guidelines/Organ_donation/NHSL Organ and Tissue Donation Policy.pdf)
+
+
+------------------------------------------------------------------------
 ### 09/03/2024 15:33:00
 
 #### deleted
