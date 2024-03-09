@@ -20,6 +20,7 @@ layout: default
 <div class="container">
   <div id="errormessageglobal404">
     <h4>404. Attempting redirect...</h4>
+    <p>If javascript is not enabled on your browser, the redirection won't happen.</p>
   </div>
     <p>
       <a href="/">Go back to home page</a>
@@ -27,18 +28,24 @@ layout: default
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var path = window.location.pathname;
-    var parts = path.split('/').filter(function(part) {
-      return part.length > 0;
-    });
+  var baseurl = "{{ site.baseurl }}"; // Insert baseurl directly from Jekyll
+
+document.addEventListener('DOMContentLoaded', function() {
+  var path = window.location.pathname;
+  // Remove the baseurl from the path if it exists
+  if (baseurl && path.startsWith(baseurl)) {
+    path = path.substring(baseurl.length);
+  }
+  var parts = path.split('/').filter(function(part) {
+    return part.length > 0;
+  });
 
     // ======================
     if (parts.length >= 2) {
     
     // TEMPORARY CORRECTION TO NHS LOTHIAN GUIDELINES
       if (parts[1] == "criticalcare") {
-        var newUrl = '/lothiancriticalcare/' + parts[0] + "/guidelines/" + parts.slice(2).join("/");
+        var newUrl = '/lothiancriticalcare/' + parts[0] + "/guidelines/" + parts.slice(2).join("/") + "?redirect=true";
         console.log(newUrl);
         fetch(newUrl, { method: 'HEAD' }).then(function(response) {
           if (response.ok) {
@@ -74,7 +81,7 @@ layout: default
     }
   });
 
-  //document.getElementById("errormessageglobal404").innerHTML = `<h4>404 error.</h4><p>The requested page could not be found.</p>`;
+  document.getElementById("errormessageglobal404").innerHTML = `<h4>404 error.</h4><p>The requested page could not be found.</p>`;
 
 </script>
 
