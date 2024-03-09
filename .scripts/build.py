@@ -42,6 +42,7 @@ def run_build(directory, secret, cloudlink):
     secretdir = directory + "/" + secret
     publicdir = directory + "/public"
     oc = ""
+    verbose = ""
     if args.verbose:
         verbose = "-v"
     if args.override_changes:
