@@ -153,7 +153,7 @@ def formatfilelink(thisdir, entry, basedir, depth=0):
                 name=fixname(entry),
                 goog=google_analytics_command)
             )
-        if thisdir != args.emergencydirname:
+        if os.path.split(thisdir)[-1] != args.emergencydirname:
             make_search_entry(os.path.join(thisdir, entry), basedir, href)
     return linktext
 
