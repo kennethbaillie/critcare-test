@@ -42,7 +42,7 @@ changes_record_file = os.path.join(args.dir,"changes.md")
 dupout = os.path.join(args.dir,"duplicate_titles.md")
 globalsynonymsfile = os.path.join(args.dir,"synonyms.json") # ovararching synonyms file. May also create individual ones for each folder in future.
 #-----------------------------
-google_analytics_command = "_gaq.push([‘_trackEvent’,’Download’,’PDF’,this.href]);"
+google_analytics_command = "_gaq.push(['_trackEvent','Download','PDF',this.href]);"
 #-----------------------------
 
 def get_unique_words(bigstring):
