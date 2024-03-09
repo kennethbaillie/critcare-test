@@ -18,8 +18,69 @@ layout: default
 </style>
 
 <div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <div id="errormessageglobal404">
+    <h4>404. Attempting redirect...</h4>
+  </div>
+    <p>
+      <a href="/">Go back to home page</a>
+    </p>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var path = window.location.pathname;
+    var parts = path.split('/').filter(function(part) {
+      return part.length > 0;
+    });
+
+    // ======================
+    if (parts.length >= 2) {
+    
+    // TEMPORARY CORRECTION TO NHS LOTHIAN GUIDELINES
+      if (parts[1] == "criticalcare") {
+        var newUrl = '/lothiancriticalcare/' + parts[0] + "/guidelines/" + parts.slice(2).join("/");
+        console.log(newUrl);
+        fetch(newUrl, { method: 'HEAD' }).then(function(response) {
+          if (response.ok) {
+            window.location.href = newUrl;
+          } else {
+            console.error('The new target page does not exist. Staying on the current 404 page.');
+          }
+        }).catch(function(error) {
+          console.error('Error checking for the new target page: ', error);
+        });
+      }
+      else {
+    // THE ABOVE SECTION NOT NECESSARY OUSTIDE OF LOTHIAN
+    // ======================
+
+    // if the user has entered the correct first directories, then they know the secret path so they can go straight to the guidelines
+      var newUrl = '/' + parts[0] + '/' + parts[1] + '/?404=' + parts.slice(2).join("/") + '&searchterm=' + parts.slice(2).join(" ");
+      fetch(newUrl, { method: 'HEAD' }).then(function(response) {
+        if(response.ok) {
+          window.location.href = newUrl;
+        } else {
+          console.error('The new target page does not exist. Staying on the current 404 page.');
+        }
+      }).catch(function(error) {
+        console.error('Error checking for the new target page: ', error);
+      });
+    }
+    // ======================
+    } // also delete this close bracket when removing NHSL redirect 
+    // ======================
+    else {
+      console.log('The URL does not conform to expected structure. Staying on the current 404 page.');
+    }
+  });
+
+  //document.getElementById("errormessageglobal404").innerHTML = `<h4>404 error.</h4><p>The requested page could not be found.</p>`;
+
+</script>
+
+
+
+
+
+
+

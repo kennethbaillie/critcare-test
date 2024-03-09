@@ -1,4 +1,6 @@
 ---
-title: Index
+permalink: /
 redirect_to: lothiancriticalcare
 ---
+
+

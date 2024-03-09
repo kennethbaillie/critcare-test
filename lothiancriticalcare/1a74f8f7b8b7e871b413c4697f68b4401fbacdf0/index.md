@@ -11,6 +11,10 @@ redirect_from:
 
 <div class="col-xs-12 col-md-10 col-lg-8">
   <div class="row">
+    <div id="errorbox404">
+    </div>
+  </div>
+  <div class="row">
     <div class="searchbox">
     Search: <input id="search" type="text" placeholder="enter search term">  
     </div>
@@ -26,7 +30,15 @@ redirect_from:
 
 <script src="sw_load.js"></script>
 
-
+<script>
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const error404 = urlParams.get('404');
+if (error404) {
+  console.log("404 detected");
+  document.getElementById("errorbox404").innerHTML = `<h3>404 error</h3> The page ${error404} was not found.<br>Try this search instead: `;
+}
+</script>
 
 
 
