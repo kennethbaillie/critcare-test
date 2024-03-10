@@ -5,6 +5,15 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 10/03/2024 14:13:07
+
+#### new
+
+
+- guidelines/Research/current_research_studiesin ICU.pdf: [Link](../guidelines/Research/current_research_studiesin ICU.pdf)
+
+
+------------------------------------------------------------------------
 ### 10/03/2024 12:22:56
 
 #### renamed
