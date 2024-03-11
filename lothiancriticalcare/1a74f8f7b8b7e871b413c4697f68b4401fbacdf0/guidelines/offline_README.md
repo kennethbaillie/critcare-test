@@ -20,7 +20,7 @@ The folder names and file names are automatically converted into menu links and 
 
 ## NHS Lothian intranet
 
-Guidelines should not be emailed to Heather for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Heather, who will copy them to the intranet weekly. Heather finds any changes you make by looking at this [web page](https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes). If this system is followed, the guidelines on the intranet cannot get out of sync with the guidelines here. 
+Guidelines should not be emailed to Heather for update any longer. They are uploaded to dropbox by the responsible section editor, and picked up by Heather, who will copy them to the intranet weekly. Heather finds any changes you make by looking at [this web page](https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/changes). If this system is followed, the guidelines on the intranet cannot get out of sync with the guidelines here. 
 
 # Basic use
 
@@ -101,7 +101,9 @@ You can trigger an automatic search directly from the URL by adding a query stri
 
 ## Automatic redirecting
 
-If you enter a slightly incorrect file link, or a link to an old file, the 404 error page will automatically redirect you to a search of the guidelines, as long as you have entered the right "stem" so that the guidelines aren't exposed on the open internet. Try it with [this link](https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Airway/Cook Staged Extubation Set Wrong Link.pdf)
+If you enter a slightly incorrect file link, or a link to an old file, the 404 error page will automatically redirect you to a search of the guidelines, as long as you have entered the right "stem" so that the guidelines aren't exposed on the open internet. Try it with this link: 
+
+[critcare.net/lothiancriticalcare/ 1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/ guidelines/Airway/ Cook Staged Extubation Set Wrong Link.pdf](https://critcare.net/lothiancriticalcare/1a74f8f7b8b7e871b413c4697f68b4401fbacdf0/guidelines/Airway/Cook Staged Extubation Set Wrong Link.pdf)
 
 
 
