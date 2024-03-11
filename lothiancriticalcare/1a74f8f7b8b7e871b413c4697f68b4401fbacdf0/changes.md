@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 11/03/2024 12:26:37
+
+#### new
+
+
+- guidelines/Policies_and_admin/admission criteria and pathway.pdf: [Link](../guidelines/Policies_and_admin/admission criteria and pathway.pdf)
+
+#### renamed
+
+
+- guidelines/Policies_and_admin/NHSL Critical Care Admission  Escalation Guideline_pub.pdf ==> guidelines/Policies_and_admin/Admission  and Escalation policy_pub.pdf: [Link](../guidelines/Policies_and_admin/Admission  and Escalation policy_pub.pdf)
+
+
+------------------------------------------------------------------------
 ### 10/03/2024 17:13:29
 
 #### deleted
