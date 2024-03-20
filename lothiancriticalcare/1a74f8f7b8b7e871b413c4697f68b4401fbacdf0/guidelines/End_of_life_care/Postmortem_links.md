@@ -4,7 +4,7 @@ layout: page
 
 # Postmortem intranet links
 
-*All links below are on the intranet so they only work from NHS computers.*
+*All links below are on the intranet so they only work from internal NHS computers.*
 
 [General PM website](http://intranet.lothian.scot.nhs.uk/Directory/mortuary/Pages/AdultHospitalPostMortem.aspx)
 
