@@ -5,6 +5,22 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 21/03/2024 15:15:53
+
+#### new
+
+
+- guidelines/ICCA/Change screen resolution.jpg: [Link](../guidelines/ICCA/Change screen resolution.jpg)
+- guidelines/ICCA/ICCA access in hospital.jpg: [Link](../guidelines/ICCA/ICCA access in hospital.jpg)
+- guidelines/ICCA/Prescribing RRT.jpg: [Link](../guidelines/ICCA/Prescribing RRT.jpg)
+- guidelines/ICCA/Prescribing electrolytes.jpg: [Link](../guidelines/ICCA/Prescribing electrolytes.jpg)
+- guidelines/ICCA/Prescribing iv fluids.jpg: [Link](../guidelines/ICCA/Prescribing iv fluids.jpg)
+- guidelines/ICCA/Remote access.jpg: [Link](../guidelines/ICCA/Remote access.jpg)
+- guidelines/ICCA/SICSAG diagnosis.jpg: [Link](../guidelines/ICCA/SICSAG diagnosis.jpg)
+- guidelines/ICCA/The prescription pad.jpg: [Link](../guidelines/ICCA/The prescription pad.jpg)
+
+
+------------------------------------------------------------------------
 ### 20/03/2024 17:11:35
 
 #### new
