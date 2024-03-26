@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 26/03/2024 18:18:05
+
+#### deleted
+
+
+- guidelines/End_of_life_care/End of Life Care Guideline for Critical Care .pdf
+
+#### new
+
+
+- guidelines/End_of_life_care/End of Life Care Guideline for Critical Care.pdf: [Link](../guidelines/End_of_life_care/End of Life Care Guideline for Critical Care.pdf)
+
+
+------------------------------------------------------------------------
 ### 26/03/2024 16:18:35
 
 #### deleted
