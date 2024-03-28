@@ -5,6 +5,15 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 28/03/2024 10:15:24
+
+#### new
+
+
+- guidelines/Cardiovascular/Management of acute transfusion reactions_em_pub.pdf: [Link](../guidelines/Cardiovascular/Management of acute transfusion reactions_em_pub.pdf)
+
+
+------------------------------------------------------------------------
 ### 27/03/2024 17:12:44
 
 #### new
