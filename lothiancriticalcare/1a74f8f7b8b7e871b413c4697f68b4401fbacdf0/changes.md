@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 04/04/2024 09:15:02
+
+#### modified
+
+
+- guidelines/End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf: [Link](../guidelines/End_of_life_care/Guideline following Sudden Cardiac Death where death occurs in ICU.pdf)
+
+#### new
+
+
+- guidelines/Renal_and_Urology/Diagnosis and treatment of tumour lysis syndrome in adults .pdf: [Link](../guidelines/Renal_and_Urology/Diagnosis and treatment of tumour lysis syndrome in adults .pdf)
+
+
+------------------------------------------------------------------------
 ### 28/03/2024 10:15:24
 
 #### new
