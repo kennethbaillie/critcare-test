@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 16/04/2024 12:29:15
+
+#### deleted
+
+
+- guidelines/Policies_and_admin/Discharge Home from Critical Care.pdf
+
+#### new
+
+
+- guidelines/Policies_and_admin/Discharge Home from Critical Care .pdf: [Link](../guidelines/Policies_and_admin/Discharge Home from Critical Care .pdf)
+
+
+------------------------------------------------------------------------
 ### 15/04/2024 18:18:27
 
 #### deleted
