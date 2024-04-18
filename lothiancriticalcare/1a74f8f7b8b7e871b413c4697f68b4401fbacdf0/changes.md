@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 18/04/2024 14:14:00
+
+#### deleted
+
+
+- guidelines/Trauma and Burns/Mangement of burns.pdf
+
+#### new
+
+
+- guidelines/Trauma and Burns/Management of Severe Burns v1.6.pdf: [Link](../guidelines/Trauma and Burns/Management of Severe Burns v1.6.pdf)
+
+
+------------------------------------------------------------------------
 ### 16/04/2024 13:16:29
 
 #### new
