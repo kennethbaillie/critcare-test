@@ -5,6 +5,15 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 01/05/2024 09:17:14
+
+#### new
+
+
+- guidelines/Breathing(Respiratory)/Equipment/Astral Vent Full Guideline.pdf: [Link](../guidelines/Breathing(Respiratory)/Equipment/Astral Vent Full Guideline.pdf)
+
+
+------------------------------------------------------------------------
 ### 18/04/2024 14:14:00
 
 #### deleted
