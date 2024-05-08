@@ -5,6 +5,15 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 08/05/2024 14:13:53
+
+#### modified
+
+
+- guidelines/Airway/Tracheostomy_Laryngectomy/Hospital_in-patients_with_a_Tracheostomy.pdf: [Link](../guidelines/Airway/Tracheostomy_Laryngectomy/Hospital_in-patients_with_a_Tracheostomy.pdf)
+
+
+------------------------------------------------------------------------
 ### 01/05/2024 09:17:14
 
 #### new
