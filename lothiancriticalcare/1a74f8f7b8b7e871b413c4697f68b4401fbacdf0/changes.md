@@ -5,6 +5,16 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 16/05/2024 12:28:57
+
+#### renamed
+
+
+- guidelines/Haematology_CAR-T/CRS.pdf ==> guidelines/Haematology_CAR-T/Cytokine Release Syndrome.pdf: [Link](../guidelines/Haematology_CAR-T/Cytokine Release Syndrome.pdf)
+- guidelines/Renal_and_Urology/Diagnosis and treatment of tumour lysis syndrome in adults .pdf ==> guidelines/Haematology_CAR-T/Tumour Lysis Syndrome.pdf: [Link](../guidelines/Haematology_CAR-T/Tumour Lysis Syndrome.pdf)
+
+
+------------------------------------------------------------------------
 ### 08/05/2024 14:13:53
 
 #### modified
