@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 30/05/2024 12:28:54
+
+#### deleted
+
+
+- guidelines/Drugs/noradrenaline (peripheral).pdf
+
+#### new
+
+
+- guidelines/Drugs/noradrenaline (peripheral).docx: [Link](../guidelines/Drugs/noradrenaline (peripheral).docx)
+
+
+------------------------------------------------------------------------
 ### 28/05/2024 18:20:18
 
 #### new
