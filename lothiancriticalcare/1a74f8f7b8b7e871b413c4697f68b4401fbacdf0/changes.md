@@ -5,6 +5,21 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 18/06/2024 13:18:53
+
+#### deleted
+
+
+- guidelines/Delirium/Management of agitated patient.pdf
+- guidelines/Delirium/Managing a Potentially Violent Patient.pdf
+
+#### renamed
+
+
+- guidelines/Delirium/EMERGENCY ACTION CARD V&A.pdf ==> guidelines/Delirium/EMERGENCY ACTION CARD Violent or Severe Agitation .pdf: [Link](../guidelines/Delirium/EMERGENCY ACTION CARD Violent or Severe Agitation .pdf)
+
+
+------------------------------------------------------------------------
 ### 18/06/2024 09:17:25
 
 #### new
