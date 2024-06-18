@@ -5,6 +5,21 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 18/06/2024 16:20:32
+
+#### deleted
+
+
+- guidelines/Drugs/Vancomycin Continuous Infusion Fluid Restricted.pdf
+- guidelines/Drugs/vancomycin.pdf
+
+#### new
+
+
+- guidelines/Drugs/Vancomycin continuous infusion Fluid Restricted.pdf: [Link](../guidelines/Drugs/Vancomycin continuous infusion Fluid Restricted.pdf)
+
+
+------------------------------------------------------------------------
 ### 18/06/2024 15:17:06
 
 #### new
