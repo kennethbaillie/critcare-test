@@ -5,6 +5,21 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 27/06/2024 16:19:38
+
+#### deleted
+
+
+- guidelines/GI_Liver_and_Transplant/Pabrinex Guidline.pdf
+
+#### new
+
+
+- guidelines/Drugs/Pabrinex.pdf: [Link](../guidelines/Drugs/Pabrinex.pdf)
+- guidelines/GI_Liver_and_Transplant/Pabrinex.pdf: [Link](../guidelines/GI_Liver_and_Transplant/Pabrinex.pdf)
+
+
+------------------------------------------------------------------------
 ### 27/06/2024 15:18:04
 
 #### deleted
