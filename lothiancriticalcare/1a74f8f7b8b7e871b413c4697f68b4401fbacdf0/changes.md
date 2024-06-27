@@ -5,6 +5,22 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 27/06/2024 15:18:04
+
+#### deleted
+
+
+- guidelines/GI_Liver_and_Transplant/Nasal bridle.pdf
+
+#### new
+
+
+- guidelines/GI_Liver_and_Transplant/Insertion of Nasojejunal Tubes.pdf: [Link](../guidelines/GI_Liver_and_Transplant/Insertion of Nasojejunal Tubes.pdf)
+- guidelines/GI_Liver_and_Transplant/Nasal Bridle use in Critical Care.pdf: [Link](../guidelines/GI_Liver_and_Transplant/Nasal Bridle use in Critical Care.pdf)
+- guidelines/GI_Liver_and_Transplant/Pabrinex Guidline.pdf: [Link](../guidelines/GI_Liver_and_Transplant/Pabrinex Guidline.pdf)
+
+
+------------------------------------------------------------------------
 ### 27/06/2024 13:18:38
 
 #### new
