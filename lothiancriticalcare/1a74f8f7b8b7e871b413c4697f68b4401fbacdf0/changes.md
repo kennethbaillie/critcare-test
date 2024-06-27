@@ -5,6 +5,15 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 27/06/2024 13:18:38
+
+#### new
+
+
+- guidelines/Airway/Tracheostomy_Laryngectomy/Above Cuff Vocalisation.pdf: [Link](../guidelines/Airway/Tracheostomy_Laryngectomy/Above Cuff Vocalisation.pdf)
+
+
+------------------------------------------------------------------------
 ### 18/06/2024 16:20:32
 
 #### deleted
