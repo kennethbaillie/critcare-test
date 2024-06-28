@@ -5,6 +5,15 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 28/06/2024 17:15:16
+
+#### new
+
+
+- guidelines/Cardiovascular/Focused TOE Guideline for General Critical Care_pub.pdf: [Link](../guidelines/Cardiovascular/Focused TOE Guideline for General Critical Care_pub.pdf)
+
+
+------------------------------------------------------------------------
 ### 27/06/2024 16:19:38
 
 #### deleted
