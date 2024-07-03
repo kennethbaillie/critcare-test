@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 03/07/2024 17:14:19
+
+#### deleted
+
+
+- guidelines/Drugs/rocuronium.pdf
+
+#### new
+
+
+- guidelines/Drugs/Rocuronium.pdf: [Link](../guidelines/Drugs/Rocuronium.pdf)
+
+
+------------------------------------------------------------------------
 ### 28/06/2024 17:15:16
 
 #### new
