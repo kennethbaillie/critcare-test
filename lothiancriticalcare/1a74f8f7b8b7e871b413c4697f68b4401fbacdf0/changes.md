@@ -5,6 +5,21 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 13/08/2024 15:17:27
+
+#### deleted
+
+
+- guidelines/Cardiovascular/Pulmonary_Embolism_and_DVT/Acute pulmonary embolism risk stratification and management.pdf
+
+#### renamed
+
+
+- guidelines/Breathing(Respiratory)/PE Guidelines short version.pdf ==> guidelines/Cardiovascular/Pulmonary_Embolism_and_DVT/PE Guidelines short version.pdf: [Link](../guidelines/Cardiovascular/Pulmonary_Embolism_and_DVT/PE Guidelines short version.pdf)
+- guidelines/Breathing(Respiratory)/RIE PE pathway.pdf ==> guidelines/Cardiovascular/Pulmonary_Embolism_and_DVT/RIE PE pathway.pdf: [Link](../guidelines/Cardiovascular/Pulmonary_Embolism_and_DVT/RIE PE pathway.pdf)
+
+
+------------------------------------------------------------------------
 ### 27/07/2024 18:21:16
 
 #### new
