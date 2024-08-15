@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 15/08/2024 10:19:27
+
+#### deleted
+
+
+- guidelines/Cardiovascular/Pulmonary_Embolism_and_DVT
+
+#### new
+
+
+- guidelines/Breathing(Respiratory)/Pulmonary_Embolism_and_DVT: [folder]
+
+
+------------------------------------------------------------------------
 ### 13/08/2024 15:17:27
 
 #### deleted
