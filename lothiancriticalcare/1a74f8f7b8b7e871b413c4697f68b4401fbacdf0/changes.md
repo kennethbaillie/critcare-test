@@ -5,6 +5,27 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 18/08/2024 18:20:08
+
+#### deleted
+
+
+- guidelines/Ethics_and_Law/Refusal to Accept the diagnosis of death according to neurological criteria FICM Midnight Law (UK).pdf
+
+#### new
+
+
+- guidelines/Ethics_and_Law/CT Angiography to support diagnosis of DNC consensus Guideline JAN 2023.pdf: [Link](../guidelines/Ethics_and_Law/CT Angiography to support diagnosis of DNC consensus Guideline JAN 2023.pdf)
+- guidelines/Ethics_and_Law/Refusal to Accept the diagnosis of death according to neurological criteria FICM Midnight Law Aug 2024.pdf: [Link](../guidelines/Ethics_and_Law/Refusal to Accept the diagnosis of death according to neurological criteria FICM Midnight Law Aug 2024.pdf)
+
+#### renamed
+
+
+- guidelines/Ethics_and_Law/ML Pitfalls In the Assessment of Mental Capacity - SCOTLAND.pdf ==> guidelines/Ethics_and_Law/Pitfalls In the Assessment of Mental Capacity FICM Midnight Law Scotland .pdf: [Link](../guidelines/Ethics_and_Law/Pitfalls In the Assessment of Mental Capacity FICM Midnight Law Scotland .pdf)
+- guidelines/Ethics_and_Law/Maintaining Safety and Confidence in the Diagnosis of Death using Neurological Criteria FICM Midnight Law (UK).pdf ==> guidelines/Ethics_and_Law/Maintaining Safety and Confidence in the Diagnosis of Death using Neurological Criteria (DNC) FICM Midnight Law (UK).pdf: [Link](../guidelines/Ethics_and_Law/Maintaining Safety and Confidence in the Diagnosis of Death using Neurological Criteria (DNC) FICM Midnight Law (UK).pdf)
+
+
+------------------------------------------------------------------------
 ### 15/08/2024 10:19:27
 
 #### deleted
