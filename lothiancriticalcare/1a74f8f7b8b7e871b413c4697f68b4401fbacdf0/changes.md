@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 29/08/2024 12:32:39
+
+#### deleted
+
+
+- guidelines/Drugs/midazolam.pdf
+
+#### new
+
+
+- guidelines/Drugs/Midazolam.docx: [Link](../guidelines/Drugs/Midazolam.docx)
+
+
+------------------------------------------------------------------------
 ### 18/08/2024 18:20:08
 
 #### deleted
