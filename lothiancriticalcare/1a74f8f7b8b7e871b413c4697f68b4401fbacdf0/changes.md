@@ -5,6 +5,20 @@ layout: page
 
 
 ------------------------------------------------------------------------
+### 27/09/2024 17:16:45
+
+#### deleted
+
+
+- guidelines/Diabetes_and_Glucose/Intravenous Insulin Therapy (not for DKA or HHS).pdf
+
+#### new
+
+
+- guidelines/Diabetes_and_Glucose/IV Insulin in CritCare2024 (Not for DKA or HHS).pdf: [Link](../guidelines/Diabetes_and_Glucose/IV Insulin in CritCare2024 (Not for DKA or HHS).pdf)
+
+
+------------------------------------------------------------------------
 ### 17/09/2024 09:18:25
 
 #### new
