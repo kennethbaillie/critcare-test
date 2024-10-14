@@ -2,8 +2,8 @@ name: parse guidelines and deploy
 
 # Controls when the action will run.
 on:
-  schedule:
-    - cron: '0 9-18 * * *'
+  #schedule:
+    #- cron: '0 9-18 * * *'
 
   push:
 
